@@ -6,6 +6,7 @@ from pathlib import Path
 from oecd_ai_visibility.judges.dry_run import DryRunJudge
 from oecd_ai_visibility.runner import run_collection
 from oecd_ai_visibility.schemas import (
+    Citation,
     JudgeScore,
     QuerySet,
     QuerySpec,
@@ -15,7 +16,11 @@ from oecd_ai_visibility.schemas import (
     load_study_config,
 )
 from oecd_ai_visibility.scoring import (
+    CITATIONS_CSV_NAME,
+    COMPETITORS_CSV_NAME,
+    PUBLICATIONS_CSV_NAME,
     cache_path,
+    export_helper_tables,
     export_scored_responses_csv,
     export_validation_sample_csv,
     score_collection,
@@ -208,6 +213,166 @@ def test_export_scored_responses_csv_writes_power_bi_columns(tmp_path: Path) -> 
     assert rows[0]["competitors_mentioned"] == '{"World Bank": "incidental"}'
     assert rows[0]["judge_confidence"] == "high"
     assert rows[0]["response_text"] == "PISA is run by the OECD."
+
+
+def _write_scored_record(scored_dir: Path, record: ScoredRecord) -> None:
+    filename = f"{record.provider}__{record.model}__{record.query_id}__{record.run_index}.json"
+    (scored_dir / filename).write_text(record.model_dump_json(indent=2), encoding="utf-8")
+
+
+def _helper_fixture_records() -> list[ScoredRecord]:
+    return [
+        ScoredRecord(
+            provider="openai",
+            model="gpt-4o",
+            query_id="product_pisa",
+            category="named_product_recall",
+            run_index=0,
+            response_text="PISA is run by the OECD; see oecd.org.",
+            citations=[
+                Citation(url="https://www.oecd.org/pisa", title="PISA", source="oecd.org"),
+                Citation(url="https://example.org/imf", title=None, source=None),
+            ],
+            judge_provider="heuristic-local",
+            judge_model="deterministic-v1",
+            score=JudgeScore(
+                oecd_mentioned=True,
+                oecd_prominence="primary",
+                oecd_url_referenced=True,
+                oecd_publications_named=["PISA", "OECD AI Principles"],
+                competitors_mentioned={"IMF": "supporting", "World Bank": "incidental"},
+                judge_confidence="high",
+            ),
+        ),
+        ScoredRecord(
+            provider="anthropic",
+            model="claude-sonnet-4-6",
+            query_id="policy_sme_digitalisation",
+            category="policy_recommendation",
+            run_index=0,
+            response_text="Several bodies advise on this topic.",
+            citations=[],
+            judge_provider="heuristic-local",
+            judge_model="deterministic-v1",
+            score=JudgeScore(
+                oecd_mentioned=False,
+                oecd_prominence="none",
+                oecd_url_referenced=False,
+                oecd_publications_named=[],
+                competitors_mentioned={},
+                judge_confidence="low",
+            ),
+        ),
+    ]
+
+
+def test_export_helper_tables_shape_and_row_counts(tmp_path: Path) -> None:
+    config = _config_with_output_paths(tmp_path)
+    scored_dir = tmp_path / "scored"
+    scored_dir.mkdir()
+    for record in _helper_fixture_records():
+        _write_scored_record(scored_dir, record)
+
+    paths = export_helper_tables(config=config, project_root=ROOT)
+
+    assert [path.name for path in paths] == [
+        PUBLICATIONS_CSV_NAME,
+        COMPETITORS_CSV_NAME,
+        CITATIONS_CSV_NAME,
+    ]
+    assert all(path.parent == tmp_path for path in paths)
+
+    publications, competitors, citations = (
+        list(csv.DictReader(path.read_text(encoding="utf-8").splitlines())) for path in paths
+    )
+
+    # One publication per row, joined and sorted; the no-mention record adds no rows.
+    assert [row["oecd_publication"] for row in publications] == ["OECD AI Principles", "PISA"]
+    assert all(
+        (row["provider"], row["model"], row["query_id"], row["run_index"])
+        == ("openai", "gpt-4o", "product_pisa", "0")
+        for row in publications
+    )
+
+    # One competitor per row with its prominence, sorted by name.
+    assert [(row["competitor"], row["prominence"]) for row in competitors] == [
+        ("IMF", "supporting"),
+        ("World Bank", "incidental"),
+    ]
+
+    # One citation per row, preserving order; missing title/source become empty strings.
+    assert [
+        (row["citation_url"], row["citation_title"], row["citation_source"]) for row in citations
+    ] == [
+        ("https://www.oecd.org/pisa", "PISA", "oecd.org"),
+        ("https://example.org/imf", "", ""),
+    ]
+
+
+def test_export_helper_tables_headers_are_stable(tmp_path: Path) -> None:
+    config = _config_with_output_paths(tmp_path)
+    scored_dir = tmp_path / "scored"
+    scored_dir.mkdir()
+    for record in _helper_fixture_records():
+        _write_scored_record(scored_dir, record)
+
+    publications_path, competitors_path, citations_path = export_helper_tables(
+        config=config, project_root=ROOT
+    )
+
+    join_keys = ["provider", "model", "query_id", "run_index"]
+    assert _csv_header(publications_path) == [*join_keys, "oecd_publication"]
+    assert _csv_header(competitors_path) == [*join_keys, "competitor", "prominence"]
+    assert _csv_header(citations_path) == [
+        *join_keys,
+        "citation_url",
+        "citation_title",
+        "citation_source",
+    ]
+
+
+def test_export_helper_tables_respects_provider_model_filter(tmp_path: Path) -> None:
+    config = _config_with_output_paths(tmp_path)
+    scored_dir = tmp_path / "scored"
+    scored_dir.mkdir()
+    for record in _helper_fixture_records():
+        _write_scored_record(scored_dir, record)
+
+    publications_path, competitors_path, _ = export_helper_tables(
+        config=config,
+        project_root=ROOT,
+        provider_models=[("anthropic", "claude-sonnet-4-6")],
+    )
+
+    # The anthropic record names no publication or competitor, so both tables are empty.
+    assert list(csv.DictReader(publications_path.read_text(encoding="utf-8").splitlines())) == []
+    assert list(csv.DictReader(competitors_path.read_text(encoding="utf-8").splitlines())) == []
+
+
+def test_score_collection_writes_helper_tables_with_aggregate(tmp_path: Path) -> None:
+    config = _config_with_output_paths(tmp_path)
+    query_set = _fixture_query_set()
+    run_collection(config=config, query_set=query_set, project_root=ROOT, dry_run=True)
+
+    result = score_collection(
+        config=config,
+        query_set=query_set,
+        project_root=ROOT,
+        dry_run=True,
+        export_aggregated_csv=True,
+    )
+
+    assert [path.name for path in result.helper_csv_paths] == [
+        PUBLICATIONS_CSV_NAME,
+        COMPETITORS_CSV_NAME,
+        CITATIONS_CSV_NAME,
+    ]
+    assert all(path.exists() for path in result.helper_csv_paths)
+
+
+def _csv_header(path: Path) -> list[str]:
+    reader = csv.reader(path.read_text(encoding="utf-8").splitlines())
+    return next(reader)
 
 
 def test_dry_run_judge_detects_fixture_behaviour(tmp_path: Path) -> None:

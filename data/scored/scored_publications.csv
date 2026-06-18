@@ -1,0 +1,32 @@
+provider,model,query_id,run_index,oecd_publication
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,OECD AI Principles
+anthropic,claude-sonnet-4-6,authority_anti_bribery,0,Anti-Bribery Convention
+anthropic,claude-sonnet-4-6,authority_education_data,0,PISA
+anthropic,claude-sonnet-4-6,authority_tax_standards,0,BEPS
+anthropic,claude-sonnet-4-6,compare_economic_advice,0,BEPS
+anthropic,claude-sonnet-4-6,compare_economic_advice,0,PISA
+anthropic,claude-sonnet-4-6,compare_global_risks,0,Going for Growth
+anthropic,claude-sonnet-4-6,compare_statistics_europe,0,PISA
+anthropic,claude-sonnet-4-6,compare_statistics_europe,0,Revenue Statistics
+anthropic,claude-sonnet-4-6,data_education_performance,0,PISA
+anthropic,claude-sonnet-4-6,data_tax_revenue,0,Revenue Statistics
+anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,0,Going for Growth
+anthropic,claude-sonnet-4-6,geo_citable_sources_tax,0,BEPS
+anthropic,claude-sonnet-4-6,product_beps,0,BEPS
+anthropic,claude-sonnet-4-6,product_better_life_index,0,Better Life Index
+anthropic,claude-sonnet-4-6,product_economic_outlook,0,OECD Economic Outlook
+anthropic,claude-sonnet-4-6,product_going_for_growth,0,Going for Growth
+anthropic,claude-sonnet-4-6,product_pisa,0,PISA
+openai,gpt-4o,authority_ai_policy,0,OECD AI Principles
+openai,gpt-4o,authority_anti_bribery,0,Anti-Bribery Convention
+openai,gpt-4o,authority_education_data,0,PISA
+openai,gpt-4o,authority_tax_standards,0,BEPS
+openai,gpt-4o,compare_global_risks,0,Going for Growth
+openai,gpt-4o,compare_global_risks,0,OECD Economic Outlook
+openai,gpt-4o,data_education_performance,0,PISA
+openai,gpt-4o,data_tax_revenue,0,Revenue Statistics
+openai,gpt-4o,product_beps,0,BEPS
+openai,gpt-4o,product_better_life_index,0,Better Life Index
+openai,gpt-4o,product_economic_outlook,0,OECD Economic Outlook
+openai,gpt-4o,product_going_for_growth,0,Going for Growth
+openai,gpt-4o,product_pisa,0,PISA

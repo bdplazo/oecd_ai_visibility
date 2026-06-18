@@ -155,6 +155,8 @@ def score_command(
         typer.echo(f"Validation sample: {result.validation_sample_path}")
     if result.aggregated_csv_path:
         typer.echo(f"Aggregated CSV: {result.aggregated_csv_path}")
+    for helper_path in result.helper_csv_paths:
+        typer.echo(f"Helper table: {helper_path}")
 
 
 @app.command("analyse")

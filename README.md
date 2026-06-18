@@ -64,6 +64,18 @@ calls) and exported for analysis:
 uv run oecd-ai-visibility score --config config/study.yaml --heuristic-live-cache --aggregate --no-cache
 ```
 
+`--aggregate` writes the response-level `data/scored/scored_responses.csv` plus three tidy
+relational helper tables next to it, which split that file's nested columns so Power BI can
+join them directly instead of parsing JSON:
+
+- `scored_publications.csv` — one named OECD publication per row.
+- `scored_competitors.csv` — one competitor mention per row, with its prominence.
+- `scored_citations.csv` — one citation per row (empty while providers run with
+  `supports_citations: false`).
+
+Each helper table carries the `provider`, `model`, `query_id`, and `run_index` join keys
+that link back to `scored_responses.csv`.
+
 ## Methodological Principle
 
 The prompt set will be a designed, illustrative sample of plausible user intents in OECD-relevant policy domains. It will not be presented as representative of all possible queries. That caveat is part of the methodology, not a footnote.

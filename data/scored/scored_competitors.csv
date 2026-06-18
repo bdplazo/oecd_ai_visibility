@@ -1,0 +1,89 @@
+provider,model,query_id,run_index,competitor,prominence
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,European Union,incidental
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,G20,supporting
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,G7,incidental
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,Global Partnership on AI,incidental
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,ITU,incidental
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,UNDP,incidental
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,UNESCO,incidental
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,United Nations,incidental
+anthropic,claude-sonnet-4-6,authority_anti_bribery,0,IMF,incidental
+anthropic,claude-sonnet-4-6,authority_anti_bribery,0,United Nations,incidental
+anthropic,claude-sonnet-4-6,authority_anti_bribery,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,authority_development_cooperation,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,authority_education_data,0,UNESCO,supporting
+anthropic,claude-sonnet-4-6,authority_education_data,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,authority_tax_standards,0,European Union,incidental
+anthropic,claude-sonnet-4-6,authority_tax_standards,0,G20,supporting
+anthropic,claude-sonnet-4-6,authority_tax_standards,0,United Nations,incidental
+anthropic,claude-sonnet-4-6,compare_development_policy,0,UNDP,supporting
+anthropic,claude-sonnet-4-6,compare_development_policy,0,World Bank,supporting
+anthropic,claude-sonnet-4-6,compare_economic_advice,0,IMF,supporting
+anthropic,claude-sonnet-4-6,compare_economic_advice,0,World Bank,supporting
+anthropic,claude-sonnet-4-6,compare_global_risks,0,World Economic Forum,supporting
+anthropic,claude-sonnet-4-6,compare_labour_policy,0,ILO,supporting
+anthropic,claude-sonnet-4-6,compare_labour_policy,0,World Bank,supporting
+anthropic,claude-sonnet-4-6,compare_statistics_europe,0,Eurostat,supporting
+anthropic,claude-sonnet-4-6,compare_statistics_europe,0,World Bank,supporting
+anthropic,claude-sonnet-4-6,data_aid_flows,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,data_education_performance,0,UNESCO,supporting
+anthropic,claude-sonnet-4-6,data_education_performance,0,World Bank,supporting
+anthropic,claude-sonnet-4-6,data_health_spending,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,data_tax_revenue,0,IMF,supporting
+anthropic,claude-sonnet-4-6,data_tax_revenue,0,World Bank,supporting
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,0,European Union,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,0,G20,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,0,G7,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,0,ITU,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,0,UNESCO,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,0,IMF,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_tax,0,IMF,incidental
+anthropic,claude-sonnet-4-6,geo_citable_sources_tax,0,World Bank,incidental
+anthropic,claude-sonnet-4-6,product_beps,0,G20,incidental
+openai,gpt-4o,authority_ai_policy,0,European Union,incidental
+openai,gpt-4o,authority_ai_policy,0,Global Partnership on AI,incidental
+openai,gpt-4o,authority_ai_policy,0,ITU,supporting
+openai,gpt-4o,authority_ai_policy,0,UNESCO,supporting
+openai,gpt-4o,authority_ai_policy,0,United Nations,incidental
+openai,gpt-4o,authority_ai_policy,0,World Economic Forum,incidental
+openai,gpt-4o,authority_anti_bribery,0,European Union,incidental
+openai,gpt-4o,authority_anti_bribery,0,United Nations,incidental
+openai,gpt-4o,authority_anti_bribery,0,World Bank,supporting
+openai,gpt-4o,authority_education_data,0,UNESCO,incidental
+openai,gpt-4o,authority_education_data,0,World Bank,incidental
+openai,gpt-4o,authority_tax_standards,0,European Union,incidental
+openai,gpt-4o,authority_tax_standards,0,IMF,supporting
+openai,gpt-4o,authority_tax_standards,0,United Nations,incidental
+openai,gpt-4o,authority_tax_standards,0,World Bank,supporting
+openai,gpt-4o,compare_development_policy,0,UNDP,supporting
+openai,gpt-4o,compare_development_policy,0,United Nations,supporting
+openai,gpt-4o,compare_development_policy,0,World Bank,supporting
+openai,gpt-4o,compare_economic_advice,0,IMF,supporting
+openai,gpt-4o,compare_economic_advice,0,World Bank,supporting
+openai,gpt-4o,compare_global_risks,0,World Economic Forum,supporting
+openai,gpt-4o,compare_labour_policy,0,ILO,supporting
+openai,gpt-4o,compare_labour_policy,0,World Bank,supporting
+openai,gpt-4o,compare_statistics_europe,0,European Union,supporting
+openai,gpt-4o,compare_statistics_europe,0,Eurostat,supporting
+openai,gpt-4o,compare_statistics_europe,0,World Bank,supporting
+openai,gpt-4o,data_aid_flows,0,United Nations,incidental
+openai,gpt-4o,data_aid_flows,0,World Bank,supporting
+openai,gpt-4o,data_education_performance,0,UNESCO,incidental
+openai,gpt-4o,data_education_performance,0,World Bank,incidental
+openai,gpt-4o,data_health_spending,0,Eurostat,supporting
+openai,gpt-4o,data_health_spending,0,World Bank,supporting
+openai,gpt-4o,data_tax_revenue,0,Eurostat,supporting
+openai,gpt-4o,data_tax_revenue,0,IMF,supporting
+openai,gpt-4o,data_tax_revenue,0,World Bank,supporting
+openai,gpt-4o,geo_citable_sources_ai_governance,0,United Nations,incidental
+openai,gpt-4o,geo_citable_sources_ai_governance,0,World Economic Forum,incidental
+openai,gpt-4o,geo_citable_sources_productivity,0,Eurostat,supporting
+openai,gpt-4o,geo_citable_sources_productivity,0,IMF,supporting
+openai,gpt-4o,geo_citable_sources_productivity,0,World Bank,incidental
+openai,gpt-4o,geo_citable_sources_tax,0,European Union,incidental
+openai,gpt-4o,geo_citable_sources_tax,0,IMF,incidental
+openai,gpt-4o,geo_citable_sources_tax,0,United Nations,incidental
+openai,gpt-4o,geo_citable_sources_tax,0,World Bank,incidental
+openai,gpt-4o,geo_citable_sources_tax,0,World Economic Forum,incidental
+openai,gpt-4o,product_beps,0,G20,incidental
