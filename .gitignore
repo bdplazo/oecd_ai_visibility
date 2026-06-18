@@ -8,6 +8,7 @@ __pycache__/
 # Large/generated local-only artefacts
 data/raw/cache/
 outputs/report/*.pdf
+data/scored/validation_sample_stratified_review.xlsx
 
 # OS/editor noise
 .DS_Store

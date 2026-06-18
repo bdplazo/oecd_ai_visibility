@@ -64,30 +64,30 @@ OECD mention and prominence thresholds pass. Strict competitor recall is below t
 | AidData | 2 |
 | IEA | 2 |
 | Our World in Data | 2 |
-| Council of Europe | 1 |
 | AU | 1 |
+| Council of Europe | 1 |
 | UNCTAD | 1 |
 | China | 1 |
 | gulf states | 1 |
+| Commonwealth Fund | 1 |
 | WHO | 1 |
 | Lancet/NEJM studies | 1 |
-| Commonwealth Fund | 1 |
+| Oxford Internet Institute | 1 |
+| OSTP | 1 |
 | Federal Register | 1 |
-| MIT | 1 |
+| Georgetown CSET | 1 |
 | Congressional Research Service | 1 |
 | Standford HAI | 1 |
 | NIST | 1 |
-| Georgetown CSET | 1 |
-| Oxford Internet Institute | 1 |
-| OSTP | 1 |
-| American Economic Review | 1 |
+| MIT | 1 |
 | Review of Economics and Statistics | 1 |
 | Journal of Economic Perspectives (accessible synthesis articles | 1 |
-| EU KLEMS | 1 |
 | Journal of Economic Growth | 1 |
-| Conference Board Total Economy Database | 1 |
-| BIS | 1 |
 | Penn World Tables | 1 |
+| American Economic Review | 1 |
+| BIS | 1 |
+| Conference Board Total Economy Database | 1 |
+| EU KLEMS | 1 |
 | ICC | 1 |
 | Transparency International | 1 |
 | IATI | 1 |

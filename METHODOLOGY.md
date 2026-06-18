@@ -88,3 +88,66 @@ designed question set. They are directionally useful for spotting patterns and s
 communications questions. They are **not** definitive, general-population estimates of OECD
 visibility, and any caveat above (designed sample, two providers only, single run, weak URL
 proxy) should travel with the figures into tables, dashboards, and the written report.
+
+## Phase 5.5 human validation result
+
+Phase 5.5 tested whether the deterministic heuristic was reliable enough to stand as the
+study measurement for the core OECD visibility metrics. The validation used an offline
+A-vs-B design:
+
+- **A: deterministic heuristic scores** already present in `data/scored/`.
+- **B: blind human review** of a stratified sample, used as the reference label set.
+- **C: live LLM judge**, designed as a possible future comparator but not used.
+
+### Sample design
+
+The validation sample was stratified by **provider x category** so both live providers and
+all six query categories were represented. The sample also included edge cases most likely
+to expose heuristic weaknesses, including OECD-negative rows, primary-prominence rows,
+literal `oecd.org` references, and competitor-rich comparative/referral prompts.
+
+The human review was conducted blind to the heuristic labels. Heuristic labels were then
+joined back to the reviewed sample for agreement analysis.
+
+### Metrics and decision rule
+
+The pre-defined decision rule assessed:
+
+- `oecd_mentioned`: raw agreement, Cohen's kappa, missed OECD mentions, and false positives.
+- `oecd_prominence`: exact agreement, adjacent-level agreement, and weighted kappa on the
+  ordered `none -> incidental -> supporting -> primary` scale.
+- `competitors_mentioned`: precision, recall, F1, and a configured-peer recall variant that
+  separates detection quality from gaps in the configured peer list.
+
+The heuristic would be accepted if OECD mention and prominence passed their thresholds. A
+live LLM judge would only be considered if the core metrics failed or if the report required
+judgement tasks the heuristic cannot perform, such as factual quality assessment.
+
+### Result
+
+The reviewed sample contained **46 rows**. The agreement report is saved at
+`data/scored/validation_agreement_report.md`.
+
+| Target | Metric | Result |
+|---|---:|---:|
+| OECD mentioned | agreement | 100.0% |
+| OECD mentioned | Cohen's kappa | 1.000 |
+| Missed OECD mentions | count | 0 |
+| False positive OECD mentions | count | 0 |
+| OECD prominence | exact agreement | 91.3% |
+| OECD prominence | adjacent agreement | 100.0% |
+| OECD prominence | weighted kappa | 0.971 |
+| Competitors | strict macro recall | 79.9% |
+| Competitors | configured-peer recall | 92.8% |
+
+The decision is **accepted_with_competitor_caveat**. OECD mention and OECD prominence pass
+the validation thresholds. Strict competitor recall is below threshold because the human
+review found relevant organisations outside the configured peer list; configured-peer recall
+passes.
+
+**The deterministic heuristic is retained for OECD mention and prominence measurement;
+competitor metrics are interpreted directionally.**
+
+No live LLM judge was used because validation passed for the core metrics. Future work may
+still use a live judge for tasks outside the current heuristic's scope, such as factual
+quality review, but that is not needed for the current OECD visibility measurement.
