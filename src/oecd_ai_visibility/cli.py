@@ -15,8 +15,15 @@ from oecd_ai_visibility.runner import run_collection
 from oecd_ai_visibility.schemas import load_query_set, load_study_config
 from oecd_ai_visibility.scoring import (
     DEFAULT_STRATIFIED_PER_CELL,
+    VALIDATION_SAMPLE_HEURISTIC_KEY_CSV_NAME,
     export_stratified_validation_sample_csv,
     score_collection,
+)
+from oecd_ai_visibility.validation import (
+    REVIEWED_VALIDATION_SAMPLE_CSV_NAME,
+    VALIDATION_AGREEMENT_REPORT_NAME,
+    VALIDATION_AGREEMENT_ROWS_NAME,
+    export_validation_agreement_report,
 )
 
 app = typer.Typer(help="Collect and analyse OECD AI visibility study data.")
@@ -201,6 +208,103 @@ def validation_sample_command(
         f"Wrote stratified validation sample ({result.row_count} rows): {result.sample_path}"
     )
     typer.echo(f"Heuristic key (review blind, join later): {result.heuristic_key_path}")
+
+
+@app.command("validation-report")
+def validation_report_command(
+    config: Annotated[
+        Path,
+        typer.Option("--config", "-c", help="Path to the study YAML configuration."),
+    ] = Path("config/study.yaml"),
+    reviewed_csv: Annotated[
+        Path | None,
+        typer.Option(
+            "--reviewed-csv",
+            help=(
+                "Filled blind-review CSV. Defaults to "
+                "data/scored/validation_sample_stratified_reviewed.csv."
+            ),
+        ),
+    ] = None,
+    heuristic_key: Annotated[
+        Path | None,
+        typer.Option(
+            "--heuristic-key",
+            help=(
+                "Heuristic key CSV. Defaults to data/scored/validation_sample_heuristic_key.csv."
+            ),
+        ),
+    ] = None,
+    report: Annotated[
+        Path | None,
+        typer.Option(
+            "--report",
+            help=(
+                "Markdown report output. Defaults to data/scored/validation_agreement_report.md."
+            ),
+        ),
+    ] = None,
+    row_level: Annotated[
+        Path | None,
+        typer.Option(
+            "--row-level",
+            help=(
+                "Row-level diagnostics CSV. Defaults to data/scored/validation_agreement_rows.csv."
+            ),
+        ),
+    ] = None,
+) -> None:
+    """Compare the filled human-review sample against the heuristic key.
+
+    Reads local CSV artifacts only; makes no provider or judge calls.
+    """
+
+    _configure_logging()
+    config_path = config.resolve()
+    project_root = _project_root_for_config(config_path)
+
+    study_config = load_study_config(config_path)
+    scored_dir = _resolve_project_path(study_config.paths.scored_dir, project_root)
+
+    reviewed_path = (
+        _resolve_project_path(reviewed_csv, project_root)
+        if reviewed_csv is not None
+        else scored_dir / REVIEWED_VALIDATION_SAMPLE_CSV_NAME
+    )
+    heuristic_key_path = (
+        _resolve_project_path(heuristic_key, project_root)
+        if heuristic_key is not None
+        else scored_dir / VALIDATION_SAMPLE_HEURISTIC_KEY_CSV_NAME
+    )
+    report_path = (
+        _resolve_project_path(report, project_root)
+        if report is not None
+        else scored_dir / VALIDATION_AGREEMENT_REPORT_NAME
+    )
+    row_level_path = (
+        _resolve_project_path(row_level, project_root)
+        if row_level is not None
+        else scored_dir / VALIDATION_AGREEMENT_ROWS_NAME
+    )
+
+    result = export_validation_agreement_report(
+        reviewed_path=reviewed_path,
+        heuristic_key_path=heuristic_key_path,
+        report_path=report_path,
+        row_level_path=row_level_path,
+        peer_organisations=study_config.peer_organisations,
+    )
+
+    typer.echo(f"Wrote validation agreement report: {result.report_path}")
+    typer.echo(f"Wrote row-level diagnostics: {result.row_level_path}")
+    typer.echo(
+        "Overall: "
+        f"n={result.row_count}, "
+        f"mentions={result.overall.mention_agreement:.1%}, "
+        f"prominence_exact={result.overall.prominence_exact_agreement:.1%}, "
+        f"competitor_recall={result.overall.competitor_recall:.1%}, "
+        f"decision={result.decision}"
+    )
 
 
 @app.command("analyse")
