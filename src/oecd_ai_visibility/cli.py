@@ -26,7 +26,14 @@ from oecd_ai_visibility.validation import (
     export_validation_agreement_report,
 )
 
-app = typer.Typer(help="Collect and analyse OECD AI visibility study data.")
+LIVE_PROVIDER_CONFIRMATION = "LIVE_PROVIDER_CALLS_APPROVED"
+
+app = typer.Typer(
+    help=(
+        "Collect, score, validate, and analyse OECD AI visibility study data. "
+        "Commands are local-only by default."
+    )
+)
 
 
 @app.callback()
@@ -48,6 +55,16 @@ def run_command(
         bool,
         typer.Option("--live", help="Use live providers with configured API keys."),
     ] = False,
+    confirm_live: Annotated[
+        str | None,
+        typer.Option(
+            "--confirm-live",
+            help=(
+                "Required with --live. Pass "
+                f"{LIVE_PROVIDER_CONFIRMATION!r} to acknowledge provider API calls."
+            ),
+        ),
+    ] = None,
     no_cache: Annotated[
         bool,
         typer.Option("--no-cache", help="Regenerate responses even when raw JSON exists."),
@@ -57,6 +74,8 @@ def run_command(
 
     if dry_run and live:
         raise typer.BadParameter("Use either --dry-run or --live, not both.")
+    if live:
+        _require_live_confirmation(confirm_live)
 
     _configure_logging()
     config_path = config.resolve()
@@ -357,6 +376,43 @@ def figures_command(
     typer.echo(f"Wrote {len(result.written_files)} figures to {result.figures_dir}")
 
 
+@app.command("status")
+def status_command(
+    config: Annotated[
+        Path,
+        typer.Option("--config", "-c", help="Path to the study YAML configuration."),
+    ] = Path("config/study.yaml"),
+) -> None:
+    """Show command hints and local artifact counts without making live calls."""
+
+    config_path = config.resolve()
+    project_root = _project_root_for_config(config_path)
+    study_config = load_study_config(config_path)
+
+    raw_dir = _resolve_project_path(study_config.paths.raw_dir, project_root)
+    scored_dir = _resolve_project_path(study_config.paths.scored_dir, project_root)
+    aggregated_csv = _resolve_project_path(study_config.paths.aggregated_csv, project_root)
+    tables_dir = _resolve_project_path(study_config.paths.tables_dir, project_root)
+    figures_dir = _resolve_project_path(study_config.paths.figures_dir, project_root)
+
+    typer.echo("OECD AI visibility local status")
+    typer.echo(f"Config: {config_path}")
+    typer.echo(f"Dry-run default: {study_config.dry_run.enabled_by_default}")
+    typer.echo(f"Raw JSON files: {_count_files(raw_dir, '*.json')} ({raw_dir})")
+    typer.echo(f"Scored JSON files: {_count_files(scored_dir, '*.json')} ({scored_dir})")
+    typer.echo(f"Aggregated CSV: {'present' if aggregated_csv.exists() else 'missing'}")
+    typer.echo(f"Summary tables: {_count_files(tables_dir, '*.csv')} ({tables_dir})")
+    typer.echo(f"Figures: {_count_files(figures_dir, '*.png')} ({figures_dir})")
+    typer.echo("")
+    typer.echo("Safe local commands:")
+    typer.echo("  oecd-ai-visibility validation-report")
+    typer.echo("  oecd-ai-visibility analyse")
+    typer.echo("  oecd-ai-visibility figures")
+    typer.echo("  oecd-ai-visibility score --heuristic-live-cache --aggregate")
+    typer.echo("")
+    typer.echo(f"Live collection requires --live --confirm-live {LIVE_PROVIDER_CONFIRMATION}")
+
+
 def _configure_logging() -> None:
     try:
         from rich.logging import RichHandler
@@ -370,6 +426,20 @@ def _configure_logging() -> None:
         datefmt="[%X]",
         handlers=[RichHandler(markup=False, show_path=False)],
     )
+
+
+def _require_live_confirmation(confirm_live: str | None) -> None:
+    if confirm_live == LIVE_PROVIDER_CONFIRMATION:
+        return
+    raise typer.BadParameter(
+        "Live provider collection can spend budget and call external APIs. "
+        "Re-run with "
+        f"--confirm-live {LIVE_PROVIDER_CONFIRMATION} only after explicit approval."
+    )
+
+
+def _count_files(directory: Path, pattern: str) -> int:
+    return sum(1 for _ in directory.glob(pattern)) if directory.exists() else 0
 
 
 def _project_root_for_config(config_path: Path) -> Path:

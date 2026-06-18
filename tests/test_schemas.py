@@ -5,7 +5,9 @@ from pydantic import ValidationError
 
 from oecd_ai_visibility.schemas import (
     JudgeScore,
+    QuerySet,
     RawResponseRecord,
+    StudyConfig,
     load_query_set,
     load_study_config,
 )
@@ -42,6 +44,46 @@ def test_query_set_loads_with_unique_ids_and_expected_size() -> None:
         "comparative_peer",
         "generative_search_referral",
     }.issubset(categories)
+
+
+def test_query_set_rejects_duplicate_ids() -> None:
+    with pytest.raises(ValidationError, match="Query ids must be unique"):
+        QuerySet.model_validate(
+            {
+                "version": "test",
+                "design_note": "Synthetic duplicate-id test.",
+                "queries": [
+                    {
+                        "id": "duplicate_id",
+                        "category": "cat",
+                        "text": "A long enough prompt for validation.",
+                    },
+                    {
+                        "id": "duplicate_id",
+                        "category": "cat",
+                        "text": "Another long enough prompt for validation.",
+                    },
+                ],
+            }
+        )
+
+
+def test_study_config_rejects_overlapping_raw_and_scored_paths() -> None:
+    config = load_study_config(ROOT / "config" / "study.yaml")
+    payload = config.model_dump(mode="python")
+    payload["paths"]["scored_dir"] = payload["paths"]["raw_dir"]
+
+    with pytest.raises(ValidationError, match="raw_dir and paths.scored_dir"):
+        StudyConfig.model_validate(payload)
+
+
+def test_study_config_rejects_generated_outputs_under_raw_dir() -> None:
+    config = load_study_config(ROOT / "config" / "study.yaml")
+    payload = config.model_dump(mode="python")
+    payload["paths"]["aggregated_csv"] = Path("data/raw/scored_responses.csv")
+
+    with pytest.raises(ValidationError, match="Generated outputs"):
+        StudyConfig.model_validate(payload)
 
 
 def test_judge_score_rejects_invalid_prominence() -> None:

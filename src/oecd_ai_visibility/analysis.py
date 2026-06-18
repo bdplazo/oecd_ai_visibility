@@ -29,6 +29,18 @@ _GROUP_KEYS = ["provider", "model", "category"]
 
 #: Decimal places used when rounding shares and rates for tidy output.
 _RATE_DECIMALS = 4
+_REQUIRED_AGGREGATED_COLUMNS = {
+    *_GROUP_KEYS,
+    "oecd_mentioned",
+    "oecd_prominence",
+    "oecd_url_referenced",
+    "oecd_publications_named",
+    "competitors_mentioned",
+}
+
+
+class AnalysisInputError(ValueError):
+    """Raised when the aggregated scored CSV cannot be safely analysed."""
 
 
 @dataclass(frozen=True)
@@ -85,10 +97,26 @@ def load_scored_frame(aggregated_csv: Path) -> pd.DataFrame:
     """
 
     frame = pd.read_csv(aggregated_csv, dtype=str, keep_default_na=False)
-    frame["oecd_mentioned"] = frame["oecd_mentioned"].map(_to_bool)
-    frame["oecd_url_referenced"] = frame["oecd_url_referenced"].map(_to_bool)
-    frame["oecd_publications_named"] = frame["oecd_publications_named"].map(_parse_json_list)
-    frame["competitors_mentioned"] = frame["competitors_mentioned"].map(_parse_json_dict)
+    missing = sorted(_REQUIRED_AGGREGATED_COLUMNS - set(frame.columns))
+    if missing:
+        raise AnalysisInputError(f"{aggregated_csv} is missing required columns: {missing}")
+
+    frame["oecd_mentioned"] = [
+        _to_bool(value, field_name="oecd_mentioned", row_number=index + 2)
+        for index, value in enumerate(frame["oecd_mentioned"])
+    ]
+    frame["oecd_url_referenced"] = [
+        _to_bool(value, field_name="oecd_url_referenced", row_number=index + 2)
+        for index, value in enumerate(frame["oecd_url_referenced"])
+    ]
+    frame["oecd_publications_named"] = [
+        _parse_json_list(value, field_name="oecd_publications_named", row_number=index + 2)
+        for index, value in enumerate(frame["oecd_publications_named"])
+    ]
+    frame["competitors_mentioned"] = [
+        _parse_json_dict(value, field_name="competitors_mentioned", row_number=index + 2)
+        for index, value in enumerate(frame["competitors_mentioned"])
+    ]
     return frame
 
 
@@ -207,25 +235,42 @@ def _safe_rate(numerator: pd.Series, denominator: pd.Series) -> pd.Series:
     return rate.round(_RATE_DECIMALS)
 
 
-def _to_bool(value: object) -> bool:
-    return str(value).strip().lower() in {"true", "1", "yes"}
+def _to_bool(value: object, *, field_name: str, row_number: int) -> bool:
+    normalized = str(value).strip().lower()
+    if normalized in {"true", "1", "yes"}:
+        return True
+    if normalized in {"false", "0", "no"}:
+        return False
+    raise AnalysisInputError(f"Invalid boolean in {field_name} at CSV row {row_number}: {value!r}")
 
 
-def _parse_json_list(value: object) -> list[str]:
-    parsed = _parse_json(value)
-    return parsed if isinstance(parsed, list) else []
+def _parse_json_list(value: object, *, field_name: str, row_number: int) -> list[str]:
+    if not str(value).strip():
+        return []
+    parsed = _parse_json(value, field_name=field_name, row_number=row_number)
+    if not isinstance(parsed, list):
+        raise AnalysisInputError(
+            f"Expected JSON list in {field_name} at CSV row {row_number}: {value!r}"
+        )
+    return [str(item) for item in parsed]
 
 
-def _parse_json_dict(value: object) -> dict[str, str]:
-    parsed = _parse_json(value)
-    return parsed if isinstance(parsed, dict) else {}
+def _parse_json_dict(value: object, *, field_name: str, row_number: int) -> dict[str, str]:
+    if not str(value).strip():
+        return {}
+    parsed = _parse_json(value, field_name=field_name, row_number=row_number)
+    if not isinstance(parsed, dict):
+        raise AnalysisInputError(
+            f"Expected JSON object in {field_name} at CSV row {row_number}: {value!r}"
+        )
+    return {str(key): str(value) for key, value in parsed.items()}
 
 
-def _parse_json(value: object) -> object:
+def _parse_json(value: object, *, field_name: str, row_number: int) -> object:
     text = str(value).strip()
-    if not text:
-        return None
     try:
         return json.loads(text)
-    except (TypeError, ValueError):
-        return None
+    except (TypeError, ValueError) as exc:
+        raise AnalysisInputError(
+            f"Invalid JSON in {field_name} at CSV row {row_number}: {value!r}"
+        ) from exc

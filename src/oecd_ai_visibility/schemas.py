@@ -7,7 +7,15 @@ from pathlib import Path
 from typing import Any, Literal
 
 import yaml
-from pydantic import BaseModel, ConfigDict, Field, HttpUrl, NonNegativeFloat, PositiveInt
+from pydantic import (
+    BaseModel,
+    ConfigDict,
+    Field,
+    HttpUrl,
+    NonNegativeFloat,
+    PositiveInt,
+    model_validator,
+)
 
 Prominence = Literal["none", "incidental", "supporting", "primary"]
 JudgeConfidence = Literal["low", "medium", "high"]
@@ -79,6 +87,32 @@ class StudyConfig(BaseModel):
     peer_organisations: list[str] = Field(..., min_length=1)
     dry_run: DryRunConfig = Field(default_factory=DryRunConfig)
 
+    @model_validator(mode="after")
+    def validate_path_separation(self) -> StudyConfig:
+        """Keep raw inputs, scored data, and presentation outputs in separate areas."""
+
+        raw_dir = self.paths.raw_dir
+        scored_dir = self.paths.scored_dir
+        if _paths_overlap(raw_dir, scored_dir):
+            msg = "paths.raw_dir and paths.scored_dir must be separate directories."
+            raise ValueError(msg)
+
+        generated_paths = {
+            "paths.aggregated_csv": self.paths.aggregated_csv,
+            "paths.validation_sample_csv": self.paths.validation_sample_csv,
+            "paths.tables_dir": self.paths.tables_dir,
+            "paths.figures_dir": self.paths.figures_dir,
+            "paths.report_md": self.paths.report_md,
+        }
+        raw_children = [
+            name for name, path in generated_paths.items() if _is_same_or_child(path, raw_dir)
+        ]
+        if raw_children:
+            msg = f"Generated outputs must not be written under paths.raw_dir: {raw_children}"
+            raise ValueError(msg)
+
+        return self
+
 
 class QuerySpec(BaseModel):
     """One transparent prompt in the designed query framework."""
@@ -99,6 +133,15 @@ class QuerySet(BaseModel):
     version: str = Field(..., min_length=1)
     design_note: str = Field(..., min_length=1)
     queries: list[QuerySpec] = Field(..., min_length=1)
+
+    @model_validator(mode="after")
+    def validate_unique_query_ids(self) -> QuerySet:
+        query_ids = [query.id for query in self.queries]
+        duplicates = sorted({query_id for query_id in query_ids if query_ids.count(query_id) > 1})
+        if duplicates:
+            msg = f"Query ids must be unique: {duplicates}"
+            raise ValueError(msg)
+        return self
 
 
 class Citation(BaseModel):
@@ -191,3 +234,17 @@ def load_query_set(path: Path | str) -> QuerySet:
     """Load and validate the query framework."""
 
     return QuerySet.model_validate(_load_yaml(Path(path)))
+
+
+def _paths_overlap(left: Path, right: Path) -> bool:
+    return _is_same_or_child(left, right) or _is_same_or_child(right, left)
+
+
+def _is_same_or_child(path: Path, parent: Path) -> bool:
+    path_parts = _normalized_path_parts(path)
+    parent_parts = _normalized_path_parts(parent)
+    return path_parts[: len(parent_parts)] == parent_parts
+
+
+def _normalized_path_parts(path: Path) -> tuple[str, ...]:
+    return tuple(part.casefold() for part in Path(path).parts)

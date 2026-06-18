@@ -102,6 +102,7 @@ Install dependencies with `uv`, then run the non-live checks and outputs:
 uv run --extra dev pytest tests -p no:cacheprovider
 uv run --extra dev ruff check src tests
 uv run --extra dev ruff format --check src tests
+uv run oecd-ai-visibility status
 uv run oecd-ai-visibility validation-report
 uv run oecd-ai-visibility analyse
 uv run oecd-ai-visibility figures
@@ -112,7 +113,13 @@ These commands use existing local scored data and validation files. They do not 
 The live collection path exists for controlled future runs, but should only be used with explicit budget approval:
 
 ```powershell
-uv run oecd-ai-visibility run --config config/study.yaml --live
+uv run oecd-ai-visibility run --config config/study.yaml --live --confirm-live LIVE_PROVIDER_CALLS_APPROVED
+```
+
+Without the confirmation token, `--live` fails before any provider adapter is built. Local scoring of existing live raw caches remains offline:
+
+```powershell
+uv run oecd-ai-visibility score --heuristic-live-cache --aggregate
 ```
 
 ## Limitations and Caveats

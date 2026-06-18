@@ -5,9 +5,11 @@ import json
 from pathlib import Path
 
 import pandas as pd
+import pytest
 
 from oecd_ai_visibility.analysis import (
     PROMINENCE_LEVELS,
+    AnalysisInputError,
     build_summary_tables,
     competitor_mention_frequency_table,
     load_scored_frame,
@@ -173,6 +175,32 @@ def test_load_scored_frame_parses_typed_columns(tmp_path: Path) -> None:
     }
     assert frame.loc[1, "oecd_publications_named"] == []
     assert frame.loc[1, "competitors_mentioned"] == {}
+
+
+def test_load_scored_frame_rejects_missing_required_columns(tmp_path: Path) -> None:
+    csv_path = tmp_path / "scored_responses.csv"
+    csv_path.write_text("provider,model,category\nopenai,gpt-4o,cat\n", encoding="utf-8")
+
+    with pytest.raises(AnalysisInputError, match="missing required columns"):
+        load_scored_frame(csv_path)
+
+
+def test_load_scored_frame_rejects_invalid_boolean(tmp_path: Path) -> None:
+    csv_path = _write_scored_csv(tmp_path, _frame())
+    content = csv_path.read_text(encoding="utf-8").replace("True", "perhaps", 1)
+    csv_path.write_text(content, encoding="utf-8")
+
+    with pytest.raises(AnalysisInputError, match="Invalid boolean"):
+        load_scored_frame(csv_path)
+
+
+def test_load_scored_frame_rejects_invalid_json_shape(tmp_path: Path) -> None:
+    frame = _frame()
+    frame.at[0, "oecd_publications_named"] = {}
+    csv_path = _write_scored_csv(tmp_path, frame)
+
+    with pytest.raises(AnalysisInputError, match="Expected JSON list"):
+        load_scored_frame(csv_path)
 
 
 def test_build_summary_tables_writes_all_tables_deterministically(tmp_path: Path) -> None:
