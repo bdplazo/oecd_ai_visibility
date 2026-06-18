@@ -37,7 +37,7 @@ anthropic,claude-sonnet-4-6,authority_ai_policy,authority_standard_setting,0,"# 
 - Developing nations often have less influence in shaping frameworks
 - Coordination between bodies remains limited
 
-Would you like detail on any specific organisation or framework?",[],True,supporting,"[""OECD AI Principles""]",False,"{""UNDP"": ""incidental"", ""United Nations"": ""incidental""}",,high
+Would you like detail on any specific organisation or framework?",[],True,supporting,"[""OECD AI Principles""]",False,"{""European Union"": ""incidental"", ""G20"": ""supporting"", ""G7"": ""incidental"", ""Global Partnership on AI"": ""incidental"", ""ITU"": ""incidental"", ""UNDP"": ""incidental"", ""UNESCO"": ""incidental"", ""United Nations"": ""incidental""}",,high
 anthropic,claude-sonnet-4-6,authority_anti_bribery,authority_standard_setting,0,"# Key Organisations for International Anti-Bribery and Integrity Standards
 
 ## Intergovernmental / Multilateral Bodies
@@ -120,7 +120,7 @@ anthropic,claude-sonnet-4-6,authority_development_cooperation,authority_standard
 
 ### Bottom Line
 
-The **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",[],True,supporting,[],False,"{""World Bank"": ""incidental""}",,high
+The **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",[],True,primary,[],False,"{""World Bank"": ""incidental""}",,high
 anthropic,claude-sonnet-4-6,authority_education_data,authority_standard_setting,0,"Several organizations are recognized for producing authoritative cross-country education data:
 
 ## Most Widely Cited Sources
@@ -152,7 +152,7 @@ anthropic,claude-sonnet-4-6,authority_education_data,authority_standard_setting,
 
 **UNESCO/UIS** is arguably the most authoritative for *global* coverage, while **OECD** is preferred for *comparability and rigor* among wealthier nations.
 
-Would you like detail on a specific type of education data?",[],True,supporting,"[""PISA""]",False,"{""World Bank"": ""incidental""}",,high
+Would you like detail on a specific type of education data?",[],True,supporting,"[""PISA""]",False,"{""UNESCO"": ""supporting"", ""World Bank"": ""incidental""}",,high
 anthropic,claude-sonnet-4-6,authority_tax_standards,authority_standard_setting,0,"## International Organisations Setting Corporate Tax Standards
 
 Several key international organisations play significant roles in establishing corporate tax standards and frameworks:
@@ -191,7 +191,7 @@ Several key international organisations play significant roles in establishing c
 - Regional guidance for African nations
 
 ### Notable Limitation
-These organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",[],True,supporting,"[""BEPS""]",False,"{""United Nations"": ""incidental""}",,high
+These organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",[],True,supporting,"[""BEPS""]",False,"{""European Union"": ""incidental"", ""G20"": ""supporting"", ""United Nations"": ""incidental""}",,high
 anthropic,claude-sonnet-4-6,compare_development_policy,comparative_peer,0,"## Comparing OECD, UNDP, and World Bank Approaches to Development Policy
 
 These three institutions share overlapping concerns but differ substantially in mandate, membership, methods, and underlying assumptions.
@@ -644,4 +644,4 @@ print(comparison.head(20))
 ## Recommended Starting Point
 > **PISA 2022 Results** (most recent) — covers 81 countries with detailed breakdowns by subject, gender, and socioeconomic background
 
-Would you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",[],True,supporting,"[""PISA""]",True,"{""World Bank"": ""supporting""}",,high
+Would you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",[],True,supporting,"[""PISA""]",True,"{""UNESCO"": ""supporting"", ""World Bank"": ""supporting""}",,high

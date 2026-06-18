@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "Choosing between OECD, Eurostat, and World Bank data depends on your specific needs and the context of your research or analysis. Here's a brief guide to help you decide:\n\n1. **OECD Data**:\n   - **Focus**: Primarily covers member countries, which are mostly high-income economies.\n   - **Strengths**: Offers detailed data on economic indicators, education, health, and innovation. Known for high-quality, comparable statistics across developed countries.\n   - **Use When**: You need in-depth analysis of policy issues, economic trends, or social indicators in developed countries.\n\n2. **Eurostat Data**:\n   - **Focus**: Provides statistical information on the European Union and its member states.\n   - **Strengths**: Comprehensive data on EU-specific topics like regional statistics, EU policies, and integration.\n   - **Use When**: Your research is focused on European countries, especially within the context of EU policies and comparisons.\n\n3. **World Bank Data**:\n   - **Focus**: Global coverage, including low and middle-income countries.\n   - **Strengths**: Extensive data on development indicators, poverty, and global economic trends.\n   - **Use When**: You need a broad, global perspective, especially for development-related research or when comparing countries across different income levels.\n\nIn summary, use OECD data for detailed analysis of developed countries, Eurostat for EU-specific research, and World Bank for a global perspective, especially on development issues.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.397231Z",
+  "scored_at_utc": "2026-06-18T13:41:51.483355Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -16,7 +16,8 @@
     "oecd_url_referenced": false,
     "competitors_mentioned": {
       "World Bank": "supporting",
-      "Eurostat": "supporting"
+      "Eurostat": "supporting",
+      "European Union": "supporting"
     },
     "factual_issues": "",
     "judge_confidence": "high"

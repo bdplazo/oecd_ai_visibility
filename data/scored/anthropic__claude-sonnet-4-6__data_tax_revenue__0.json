@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "## Sources for Comparing Tax Revenue as % of GDP\n\nHere are the most reliable sources:\n\n### International Organizations\n- **OECD** (stats.oecd.org) - \"Revenue Statistics\" database; excellent for OECD member countries\n- **World Bank** (data.worldbank.org) - search \"tax revenue % of GDP\"; broader country coverage\n- **IMF** (imf.org) - Government Finance Statistics; good for developing economies\n- **Our World in Data** (ourworldindata.org) - user-friendly charts and visualizations\n\n### Specific Tools\n- **OECD Tax Database** - allows detailed breakdowns by tax type\n- **IMF Fiscal Monitor** - published twice yearly with comparative data\n- **World Bank Open Data** - downloadable datasets\n\n### Practical Recommendations\n| If you want... | Use... |\n|----------------|--------|\n| Easy visualization | Our World in Data |\n| Detailed OECD comparisons | OECD.Stat |\n| Developing country data | World Bank or IMF |\n| Historical trends | IMF or World Bank |\n\n### Things to Note\n- Definitions of \"tax revenue\" can vary slightly between sources\n- Some countries have significant **subnational taxes** that may or may not be included\n- Data lag is typically **1-3 years**\n\nWould you like help interpreting the data or finding a specific country comparison?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:45.172358Z",
+  "scored_at_utc": "2026-06-18T13:41:52.189586Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

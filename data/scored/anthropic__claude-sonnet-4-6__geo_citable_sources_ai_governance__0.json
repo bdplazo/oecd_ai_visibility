@@ -6,15 +6,21 @@
   "run_index": 0,
   "response_text": "# Reliable Sources for Government AI Governance Frameworks\n\n## Primary/Official Government Sources\n\n**United States**\n- White House Office of Science and Technology Policy (OSTP)\n- NIST AI Risk Management Framework (ai.gov, nist.gov)\n- Congressional Research Service reports\n- Federal Register notices and executive orders\n\n**European Union**\n- EUR-Lex (official EU law database)\n- European Commission official publications\n- European Parliament legislative documents\n\n**International Bodies**\n- OECD AI Policy Observatory (oecd.ai)\n- UNESCO AI Ethics recommendations\n- ITU AI for Good publications\n- G7/G20 official communiqués\n\n## Academic & Research Institutions\n\n- Brookings Institution AI governance research\n- Georgetown CSET (Center for Security and Emerging Technology)\n- Oxford Internet Institute\n- MIT Technology Policy program\n- Stanford HAI (Human-Centered AI)\n\n## Quality Indicators to Check\n\n- [ ] Primary source documents over secondary summaries\n- [ ] Publication dates (this field changes rapidly)\n- [ ] Author credentials and institutional affiliation\n- [ ] Peer review status where applicable\n- [ ] Whether analysis distinguishes proposals from enacted policy\n\n## Practical Cautions\n\n- **Verify currency** - frameworks update frequently\n- **Check jurisdiction** - frameworks vary significantly by country\n- **Distinguish binding vs. voluntary** guidelines\n- **Cross-reference** multiple sources for contested interpretations\n\nWould you like recommendations for a specific jurisdiction or policy area?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:45.834489Z",
+  "scored_at_utc": "2026-06-18T13:41:52.732794Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
     "oecd_mentioned": true,
-    "oecd_prominence": "primary",
+    "oecd_prominence": "supporting",
     "oecd_publications_named": [],
     "oecd_url_referenced": false,
-    "competitors_mentioned": {},
+    "competitors_mentioned": {
+      "UNESCO": "incidental",
+      "European Union": "incidental",
+      "ITU": "incidental",
+      "G7": "incidental",
+      "G20": "incidental"
+    },
     "factual_issues": "",
     "judge_confidence": "high"
   }

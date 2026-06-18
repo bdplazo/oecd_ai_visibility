@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "You can find comparable data on aid flows from donor countries through several reliable sources:\n\n1. **OECD's Development Assistance Committee (DAC):** The OECD provides comprehensive data on official development assistance (ODA) from its member countries. Their database includes detailed statistics on aid flows.\n\n2. **World Bank:** The World Bank offers data on aid and development finance, including information on donor contributions and recipient countries.\n\n3. **International Aid Transparency Initiative (IATI):** IATI provides data on aid flows from various donors, including governments, NGOs, and private sector organizations, in a standardized format.\n\n4. **UN Data:** The United Nations provides data on international aid flows, including contributions from member states and other donors.\n\n5. **AidData:** AidData is a research lab that provides data and analysis on development finance, including aid flows from various donors.\n\nThese sources offer tools and databases that allow you to compare aid flows across different countries and regions.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.089289Z",
+  "scored_at_utc": "2026-06-18T13:41:51.051652Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

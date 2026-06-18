@@ -58,6 +58,12 @@ peer_organisations:
   - UNDP
   - World Economic Forum
   - Eurostat
+  - UNESCO
+  - European Union
+  - ITU
+  - Global Partnership on AI
+  - G7
+  - G20
 
 dry_run:
   enabled_by_default: true

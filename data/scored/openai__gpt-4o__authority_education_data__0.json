@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "The most authoritative cross-country education data is typically produced by organizations such as:\n\n1. **UNESCO Institute for Statistics (UIS)**: Provides comprehensive data on global education, literacy, and educational attainment.\n\n2. **OECD (Organisation for Economic Co-operation and Development)**: Publishes the Programme for International Student Assessment (PISA) and other educational indicators.\n\n3. **World Bank**: Offers extensive data on education systems, financing, and outcomes across countries.\n\n4. **UNICEF**: Focuses on education data related to children and youth, particularly in developing countries.\n\nThese organizations are known for their rigorous methodologies and global reach in data collection and analysis.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:43.622105Z",
+  "scored_at_utc": "2026-06-18T13:41:50.433759Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -17,7 +17,8 @@
     ],
     "oecd_url_referenced": false,
     "competitors_mentioned": {
-      "World Bank": "incidental"
+      "World Bank": "incidental",
+      "UNESCO": "incidental"
     },
     "factual_issues": "",
     "judge_confidence": "high"

@@ -1,5 +1,5 @@
 provider,model,query_id,category,run_index,oecd_mentioned,oecd_prominence,oecd_url_referenced,oecd_publications_named,competitors_mentioned,judge_confidence,response_text,citations,factual_issues,judge_provider,judge_model,scored_at_utc
-anthropic,claude-sonnet-4-6,authority_ai_policy,authority_standard_setting,0,True,supporting,False,"[""OECD AI Principles""]","{""UNDP"": ""incidental"", ""United Nations"": ""incidental""}",high,"# International Organisations Providing AI Policy Guidance for Governments
+anthropic,claude-sonnet-4-6,authority_ai_policy,authority_standard_setting,0,True,supporting,False,"[""OECD AI Principles""]","{""European Union"": ""incidental"", ""G20"": ""supporting"", ""G7"": ""incidental"", ""Global Partnership on AI"": ""incidental"", ""ITU"": ""incidental"", ""UNDP"": ""incidental"", ""UNESCO"": ""incidental"", ""United Nations"": ""incidental""}",high,"# International Organisations Providing AI Policy Guidance for Governments
 
 ## Major Intergovernmental Bodies
 
@@ -37,7 +37,7 @@ anthropic,claude-sonnet-4-6,authority_ai_policy,authority_standard_setting,0,Tru
 - Developing nations often have less influence in shaping frameworks
 - Coordination between bodies remains limited
 
-Would you like detail on any specific organisation or framework?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.693787+00:00
+Would you like detail on any specific organisation or framework?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.789418+00:00
 anthropic,claude-sonnet-4-6,authority_anti_bribery,authority_standard_setting,0,True,supporting,False,"[""Anti-Bribery Convention""]","{""IMF"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""incidental""}",high,"# Key Organisations for International Anti-Bribery and Integrity Standards
 
 ## Intergovernmental / Multilateral Bodies
@@ -88,8 +88,8 @@ anthropic,claude-sonnet-4-6,authority_anti_bribery,authority_standard_setting,0,
 
 ---
 
-Would you like more detail on any specific organisation or instrument?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.730278+00:00
-anthropic,claude-sonnet-4-6,authority_development_cooperation,authority_standard_setting,0,True,supporting,False,[],"{""World Bank"": ""incidental""}",high,"## Norm-Setting and Performance Measurement in Official Development Assistance (ODA)
+Would you like more detail on any specific organisation or instrument?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.823830+00:00
+anthropic,claude-sonnet-4-6,authority_development_cooperation,authority_standard_setting,0,True,primary,False,[],"{""World Bank"": ""incidental""}",high,"## Norm-Setting and Performance Measurement in Official Development Assistance (ODA)
 
 ### Primary Norm-Setting Body
 
@@ -120,8 +120,8 @@ anthropic,claude-sonnet-4-6,authority_development_cooperation,authority_standard
 
 ### Bottom Line
 
-The **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.773402+00:00
-anthropic,claude-sonnet-4-6,authority_education_data,authority_standard_setting,0,True,supporting,False,"[""PISA""]","{""World Bank"": ""incidental""}",high,"Several organizations are recognized for producing authoritative cross-country education data:
+The **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.864046+00:00
+anthropic,claude-sonnet-4-6,authority_education_data,authority_standard_setting,0,True,supporting,False,"[""PISA""]","{""UNESCO"": ""supporting"", ""World Bank"": ""incidental""}",high,"Several organizations are recognized for producing authoritative cross-country education data:
 
 ## Most Widely Cited Sources
 
@@ -152,8 +152,8 @@ anthropic,claude-sonnet-4-6,authority_education_data,authority_standard_setting,
 
 **UNESCO/UIS** is arguably the most authoritative for *global* coverage, while **OECD** is preferred for *comparability and rigor* among wealthier nations.
 
-Would you like detail on a specific type of education data?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.638669+00:00
-anthropic,claude-sonnet-4-6,authority_tax_standards,authority_standard_setting,0,True,supporting,False,"[""BEPS""]","{""United Nations"": ""incidental""}",high,"## International Organisations Setting Corporate Tax Standards
+Would you like detail on a specific type of education data?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.759865+00:00
+anthropic,claude-sonnet-4-6,authority_tax_standards,authority_standard_setting,0,True,supporting,False,"[""BEPS""]","{""European Union"": ""incidental"", ""G20"": ""supporting"", ""United Nations"": ""incidental""}",high,"## International Organisations Setting Corporate Tax Standards
 
 Several key international organisations play significant roles in establishing corporate tax standards and frameworks:
 
@@ -191,7 +191,7 @@ Several key international organisations play significant roles in establishing c
 - Regional guidance for African nations
 
 ### Notable Limitation
-These organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.601657+00:00
+These organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.721703+00:00
 anthropic,claude-sonnet-4-6,compare_development_policy,comparative_peer,0,True,supporting,False,[],"{""UNDP"": ""supporting"", ""World Bank"": ""supporting""}",high,"## Comparing OECD, UNDP, and World Bank Approaches to Development Policy
 
 These three institutions share overlapping concerns but differ substantially in mandate, membership, methods, and underlying assumptions.
@@ -269,7 +269,7 @@ All three have moved toward:
 
 The differences are partly **genuine philosophical** (what development means) and partly **structural** (who funds them and who they answer to).
 
-Would you like deeper analysis of any particular dimension - such as their approaches to governance, their historical evolution, or specific policy areas?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.678909+00:00
+Would you like deeper analysis of any particular dimension - such as their approaches to governance, their historical evolution, or specific policy areas?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.623464+00:00
 anthropic,claude-sonnet-4-6,compare_economic_advice,comparative_peer,0,True,supporting,False,"[""PISA"", ""BEPS""]","{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",high,"# Comparing OECD, IMF, and World Bank as Sources of Economic Policy Advice
 
 ## Overview of Each Institution
@@ -370,7 +370,7 @@ anthropic,claude-sonnet-4-6,compare_economic_advice,comparative_peer,0,True,supp
 - PISA, BEPS, and other initiatives show real policy influence
 
 **IMF Strengths**
-- Un",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.544048+00:00
+- Un",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.510023+00:00
 anthropic,claude-sonnet-4-6,compare_global_risks,comparative_peer,0,True,supporting,False,"[""Going for Growth""]","{""World Economic Forum"": ""supporting""}",high,"## Comparing OECD and WEF Approaches to Global Economic Risks
 
 ### Organizational Differences
@@ -417,7 +417,7 @@ anthropic,claude-sonnet-4-6,compare_global_risks,comparative_peer,0,True,support
 - Both have been criticized for **status quo assumptions**
 - Complementary rather than competing tools
 
-Would you like deeper analysis of any specific dimension?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.732083+00:00
+Would you like deeper analysis of any specific dimension?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.655463+00:00
 anthropic,claude-sonnet-4-6,compare_labour_policy,comparative_peer,0,True,supporting,False,[],"{""ILO"": ""supporting"", ""World Bank"": ""supporting""}",high,"This is a genuinely contested question worth thinking through carefully rather than giving a simple answer.
 
 ## Comparative Strengths
@@ -446,7 +446,7 @@ anthropic,claude-sonnet-4-6,compare_labour_policy,comparative_peer,0,True,suppor
 
 Many serious researchers **triangulate across all three** precisely because each has systematic blind spots.
 
-What specific labour market question are you investigating? That would sharpen the answer considerably.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.592657+00:00
+What specific labour market question are you investigating? That would sharpen the answer considerably.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.548969+00:00
 anthropic,claude-sonnet-4-6,compare_statistics_europe,comparative_peer,0,True,supporting,False,"[""PISA"", ""Revenue Statistics""]","{""Eurostat"": ""supporting"", ""World Bank"": ""supporting""}",high,"# Choosing Between OECD, Eurostat, and World Bank Data
 
 ## Use OECD Data When...
@@ -495,7 +495,7 @@ anthropic,claude-sonnet-4-6,compare_statistics_europe,comparative_peer,0,True,su
 
 **A common approach is cross-checking** — the sources sometimes disagree, which itself is analytically informative.
 
-Would you like guidance on a specific topic or country group?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.630554+00:00
+Would you like guidance on a specific topic or country group?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.584802+00:00
 anthropic,claude-sonnet-4-6,data_aid_flows,data_statistics,0,True,supporting,True,[],"{""World Bank"": ""incidental""}",high,"# Sources for Comparable Data on Aid Flows from Donor Countries
 
 ## Primary/Official Sources
@@ -536,8 +536,8 @@ The best source depends on whether you need:
 - Geographic targeting
 - Historical trends
 
-Would you like guidance on a particular aspect?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.264274+00:00
-anthropic,claude-sonnet-4-6,data_education_performance,data_statistics,0,True,supporting,True,"[""PISA""]","{""World Bank"": ""supporting""}",high,"# Comparing Student Performance Across Countries
+Would you like guidance on a particular aspect?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.263781+00:00
+anthropic,claude-sonnet-4-6,data_education_performance,data_statistics,0,True,supporting,True,"[""PISA""]","{""UNESCO"": ""supporting"", ""World Bank"": ""supporting""}",high,"# Comparing Student Performance Across Countries
 
 ## Primary Data Sources
 
@@ -644,8 +644,8 @@ print(comparison.head(20))
 ## Recommended Starting Point
 > **PISA 2022 Results** (most recent) — covers 81 countries with detailed breakdowns by subject, gender, and socioeconomic background
 
-Would you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.219663+00:00
-anthropic,claude-sonnet-4-6,data_health_spending,data_statistics,0,True,supporting,True,[],"{""World Bank"": ""incidental""}",high,"## Best Sources for Comparing Health Spending & Outcomes Across High-Income Countries
+Would you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.222409+00:00
+anthropic,claude-sonnet-4-6,data_health_spending,data_statistics,0,True,primary,True,[],"{""World Bank"": ""incidental""}",high,"## Best Sources for Comparing Health Spending & Outcomes Across High-Income Countries
 
 ### Primary Recommended Sources
 
@@ -677,7 +677,7 @@ anthropic,claude-sonnet-4-6,data_health_spending,data_statistics,0,True,supporti
 ### Key Caveat
 Be aware that **measurement differences** across countries (how spending is categorized, cause-of-death coding) can affect comparisons even in standardized datasets.
 
-Would you like guidance on specific metrics to look at?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.296897+00:00
+Would you like guidance on specific metrics to look at?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.297363+00:00
 anthropic,claude-sonnet-4-6,data_income_inequality_trends,data_statistics,0,False,none,False,[],{},high,"## Income Inequality Trends in Advanced Economies
 
 ### Broad Patterns (Recent Years)
@@ -716,7 +716,7 @@ anthropic,claude-sonnet-4-6,data_income_inequality_trends,data_statistics,0,Fals
 - Data lags make truly ""latest"" trends uncertain
 - Measurement methods significantly affect conclusions
 
-Would you like me to focus on any specific aspect or country?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.130373+00:00
+Would you like me to focus on any specific aspect or country?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.157072+00:00
 anthropic,claude-sonnet-4-6,data_rd_spending,data_statistics,0,True,primary,False,[],{},high,"## OECD Countries with Highest R&D Spending (% of GDP)
 
 Based on recent OECD data (around 2021-2022), the top spenders include:
@@ -745,7 +745,7 @@ Based on recent OECD data (around 2021-2022), the top spenders include:
 - Business enterprise R&D drives most spending in top countries
 - Government targets (like the EU's 3% of GDP goal) influence policy
 
-Would you like more detail on any specific country or aspect of R&D spending?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.091072+00:00
+Would you like more detail on any specific country or aspect of R&D spending?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.118783+00:00
 anthropic,claude-sonnet-4-6,data_tax_revenue,data_statistics,0,True,supporting,True,"[""Revenue Statistics""]","{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",high,"## Sources for Comparing Tax Revenue as % of GDP
 
 Here are the most reliable sources:
@@ -774,8 +774,8 @@ Here are the most reliable sources:
 - Some countries have significant **subnational taxes** that may or may not be included
 - Data lag is typically **1-3 years**
 
-Would you like help interpreting the data or finding a specific country comparison?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.172358+00:00
-anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,generative_search_referral,0,True,primary,False,[],{},high,"# Reliable Sources for Government AI Governance Frameworks
+Would you like help interpreting the data or finding a specific country comparison?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.189586+00:00
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,generative_search_referral,0,True,supporting,False,[],"{""European Union"": ""incidental"", ""G20"": ""incidental"", ""G7"": ""incidental"", ""ITU"": ""incidental"", ""UNESCO"": ""incidental""}",high,"# Reliable Sources for Government AI Governance Frameworks
 
 ## Primary/Official Government Sources
 
@@ -819,7 +819,7 @@ anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,generative_search_
 - **Distinguish binding vs. voluntary** guidelines
 - **Cross-reference** multiple sources for contested interpretations
 
-Would you like recommendations for a specific jurisdiction or policy area?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.834489+00:00
+Would you like recommendations for a specific jurisdiction or policy area?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.732794+00:00
 anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,generative_search_referral,0,True,supporting,False,"[""Going for Growth""]","{""IMF"": ""incidental"", ""World Bank"": ""incidental""}",high,"# Key Sources for Productivity Growth Evidence in Advanced Economies
 
 ## Major Institutional Sources
@@ -858,7 +858,7 @@ anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,generative_search_r
 - Verify publication dates carefully, as this literature moves quickly
 - Pre-publication NBER/CEPR working papers may be more current than journal articles
 
-Would you like recommendations focused on a specific aspect, like AI's productivity effects or the post-pandemic period?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.780969+00:00
+Would you like recommendations focused on a specific aspect, like AI's productivity effects or the post-pandemic period?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.693004+00:00
 anthropic,claude-sonnet-4-6,geo_citable_sources_tax,generative_search_referral,0,True,supporting,False,"[""BEPS""]","{""IMF"": ""incidental"", ""World Bank"": ""incidental""}",high,"# Sources for International Corporate Tax Policy Comparisons
 
 ## Primary/Official Sources
@@ -900,7 +900,7 @@ anthropic,claude-sonnet-4-6,geo_citable_sources_tax,generative_search_referral,0
 - **Note methodology differences** between sources
 - **OECD data** is generally considered the most standardized for cross-country comparison
 
-Would you like guidance on any specific aspect of corporate tax comparison?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.871004+00:00
+Would you like guidance on any specific aspect of corporate tax comparison?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.764791+00:00
 anthropic,claude-sonnet-4-6,policy_green_transition,policy_recommendation,0,False,none,False,[],{},high,"# Policies for a Fair Green Transition
 
 This is a genuinely complex policy challenge balancing environmental goals with economic equity. Here are key approaches with honest assessment of their tradeoffs:
@@ -945,7 +945,7 @@ This is a genuinely complex policy challenge balancing environmental goals with 
 - Local vs. global equity
 - Political sustainability of policies
 
-What specific aspect interests you most?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.910746+00:00
+What specific aspect interests you most?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.981231+00:00
 anthropic,claude-sonnet-4-6,policy_income_inequality,policy_recommendation,0,False,none,False,[],{},high,"This is a well-studied policy question with genuine tradeoffs. Here are approaches with evidence behind them:
 
 ## Policies with Strong Evidence
@@ -982,7 +982,7 @@ anthropic,claude-sonnet-4-6,policy_income_inequality,policy_recommendation,0,Fal
 ## Reasonable Consensus Points
 Most economists agree that **extreme inequality itself can harm growth** through reduced mobility, political instability, and demand suppression.
 
-What specific aspect interests you most?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.963928+00:00
+What specific aspect interests you most?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.016002+00:00
 anthropic,claude-sonnet-4-6,policy_productivity_growth,policy_recommendation,0,False,none,False,[],{},high,"# Improving Long-Term Productivity Growth: Policy Approaches
 
 ## Core Investment Areas
@@ -1029,7 +1029,7 @@ anthropic,claude-sonnet-4-6,policy_productivity_growth,policy_recommendation,0,F
 - Industrial policy effectiveness
 - Immigration's distributional effects
 
-What specific context or aspect interests you most?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.879682+00:00
+What specific context or aspect interests you most?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.943399+00:00
 anthropic,claude-sonnet-4-6,policy_public_trust,policy_recommendation,0,False,none,False,[],{},high,"This is a genuinely important governance question. Here are practical steps with honest assessment of their effectiveness:
 
 ## Transparency Measures
@@ -1068,7 +1068,7 @@ anthropic,claude-sonnet-4-6,policy_public_trust,policy_recommendation,0,False,no
 
 **The core challenge:** Trust follows demonstrated trustworthiness rather than communication strategies.
 
-What specific context are you thinking about?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.048344+00:00
+What specific context are you thinking about?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.086011+00:00
 anthropic,claude-sonnet-4-6,policy_sme_digitalisation,policy_recommendation,0,False,none,False,[],{},high,"Governments have several effective approaches to support small business digitalization:
 
 ## Financial Support
@@ -1106,7 +1106,7 @@ anthropic,claude-sonnet-4-6,policy_sme_digitalisation,policy_recommendation,0,Fa
 - Some businesses may need **basic digital literacy** before advanced tools
 - Measuring actual outcomes matters more than program participation numbers
 
-What specific context are you thinking about - a particular country, industry, or type of technology?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.009826+00:00
+What specific context are you thinking about - a particular country, industry, or type of technology?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.050003+00:00
 anthropic,claude-sonnet-4-6,policy_youth_unemployment,policy_recommendation,0,False,none,False,[],{},high,"# Evidence-Based Policies to Reduce Youth Unemployment
 
 ## What the Research Shows Works
@@ -1134,8 +1134,8 @@ anthropic,claude-sonnet-4-6,policy_youth_unemployment,policy_recommendation,0,Fa
 - Generic job training without employer connections
 - Minimum wage increases have contested effects specifically on youth employment
 
-Would you like deeper analysis of any particular approach?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.827327+00:00
-anthropic,claude-sonnet-4-6,product_beps,named_product_recall,0,True,primary,False,"[""BEPS""]",{},high,"# BEPS: Base Erosion and Profit Shifting
+Would you like deeper analysis of any particular approach?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.901683+00:00
+anthropic,claude-sonnet-4-6,product_beps,named_product_recall,0,True,primary,False,"[""BEPS""]","{""G20"": ""incidental""}",high,"# BEPS: Base Erosion and Profit Shifting
 
 ## Definition
 BEPS refers to **tax planning strategies used by multinational enterprises (MNEs)** that exploit gaps and mismatches in tax rules to artificially shift profits to low or no-tax locations, eroding the tax base of higher-tax countries.
@@ -1180,7 +1180,7 @@ More recent developments include:
 ## Significance
 BEPS represents the most significant reform of international tax rules in nearly **a century**, affecting how companies like Google, Apple, and Amazon are taxed globally.
 
-Would you like more detail on any specific aspect?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.493515+00:00
+Would you like more detail on any specific aspect?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.456922+00:00
 anthropic,claude-sonnet-4-6,product_better_life_index,named_product_recall,0,True,primary,False,"[""Better Life Index""]",{},high,"The **Better Life Index** is a tool created by the **OECD (Organisation for Economic Co-operation and Development)** that measures **well-being and quality of life** across countries. It goes beyond traditional economic indicators like GDP to assess what makes life better for people.
 
 It covers **11 dimensions (topics)**:
@@ -1199,7 +1199,7 @@ It covers **11 dimensions (topics)**:
 
 A notable feature is that it allows users to **customize the weight** given to each dimension based on their own values, reflecting that different people prioritize different aspects of life.
 
-It is used to compare well-being across OECD member countries and some partner nations.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.462195+00:00
+It is used to compare well-being across OECD member countries and some partner nations.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.424234+00:00
 anthropic,claude-sonnet-4-6,product_economic_outlook,named_product_recall,0,True,primary,False,"[""OECD Economic Outlook""]",{},high,"# OECD Economic Outlook
 
 ## What It Is
@@ -1248,7 +1248,7 @@ The **OECD Economic Outlook** is a flagship publication of the **Organisation fo
 
 ---
 
-Would you like information about a specific recent edition or a particular topic covered in the Outlook?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.361395+00:00
+Would you like information about a specific recent edition or a particular topic covered in the Outlook?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.356361+00:00
 anthropic,claude-sonnet-4-6,product_going_for_growth,named_product_recall,0,True,primary,False,"[""Going for Growth""]",{},high,"# Going for Growth
 
 **Going for Growth** is an annual publication and policy framework produced by the **OECD (Organisation for Economic Co-operation and Development)**, first launched in **2005**.
@@ -1288,7 +1288,7 @@ It provides a systematic assessment of structural policy priorities for OECD mem
 
 It is influential in **peer review processes** and shapes policy discussions within OECD country surveillance, complementing the Economic Surveys.
 
-Would you like more detail on any specific aspect?",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.408323+00:00
+Would you like more detail on any specific aspect?",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.389219+00:00
 anthropic,claude-sonnet-4-6,product_pisa,named_product_recall,0,True,primary,False,"[""PISA""]",{},high,"**PISA** stands for the **Programme for International Student Assessment**. It is a large-scale international study that evaluates the knowledge and skills of 15-year-old students in key subject areas, primarily:
 
 - **Reading**
@@ -1297,8 +1297,8 @@ anthropic,claude-sonnet-4-6,product_pisa,named_product_recall,0,True,primary,Fal
 
 It is run by the **OECD** (Organisation for Economic Co-operation and Development), an intergovernmental organization based in Paris. PISA is conducted every three years (though some cycles have been adjusted), and it involves students from dozens of countries and economies, including both OECD members and partner countries.
 
-The results are widely used by governments and policymakers to compare educational performance across countries and to inform education policy decisions.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:45.328972+00:00
-openai,gpt-4o,authority_ai_policy,authority_standard_setting,0,True,supporting,False,"[""OECD AI Principles""]","{""United Nations"": ""incidental"", ""World Economic Forum"": ""incidental""}",high,"Several international organizations provide guidance on responsible AI policy for governments. Some of the key ones include:
+The results are widely used by governments and policymakers to compare educational performance across countries and to inform education policy decisions.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:52.322363+00:00
+openai,gpt-4o,authority_ai_policy,authority_standard_setting,0,True,supporting,False,"[""OECD AI Principles""]","{""European Union"": ""incidental"", ""Global Partnership on AI"": ""incidental"", ""ITU"": ""supporting"", ""UNESCO"": ""supporting"", ""United Nations"": ""incidental"", ""World Economic Forum"": ""incidental""}",high,"Several international organizations provide guidance on responsible AI policy for governments. Some of the key ones include:
 
 1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD has developed the OECD AI Principles, which provide a framework for the responsible development and use of AI.
 
@@ -1312,8 +1312,8 @@ openai,gpt-4o,authority_ai_policy,authority_standard_setting,0,True,supporting,F
 
 6. **Global Partnership on AI (GPAI)**: GPAI is an international initiative that supports and guides the responsible development and use of AI, fostering collaboration among countries.
 
-These organizations offer frameworks, principles, and recommendations to help governments develop policies that ensure AI technologies are used ethically and responsibly.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.629129+00:00
-openai,gpt-4o,authority_anti_bribery,authority_standard_setting,0,True,supporting,False,"[""Anti-Bribery Convention""]","{""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",high,"Several key organizations play a crucial role in establishing international anti-bribery and integrity standards:
+These organizations offer frameworks, principles, and recommendations to help governments develop policies that ensure AI technologies are used ethically and responsibly.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.492679+00:00
+openai,gpt-4o,authority_anti_bribery,authority_standard_setting,0,True,supporting,False,"[""Anti-Bribery Convention""]","{""European Union"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",high,"Several key organizations play a crucial role in establishing international anti-bribery and integrity standards:
 
 1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD's Anti-Bribery Convention is a major international instrument aimed at combating bribery of foreign public officials in international business transactions.
 
@@ -1329,9 +1329,9 @@ openai,gpt-4o,authority_anti_bribery,authority_standard_setting,0,True,supportin
 
 7. **European Union (EU)**: The EU has various directives and regulations aimed at preventing corruption and promoting transparency within its member states.
 
-These organizations work together to promote transparency, accountability, and integrity in both the public and private sectors globally.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.666842+00:00
-openai,gpt-4o,authority_development_cooperation,authority_standard_setting,0,True,incidental,False,[],{},high,"The norms and performance measures for Official Development Assistance (ODA) are primarily set by the Development Assistance Committee (DAC) of the Organisation for Economic Co-operation and Development (OECD). The DAC establishes guidelines and standards to ensure that aid is effective, transparent, and aligned with development goals. It also monitors and evaluates the performance of ODA to ensure accountability and effectiveness in achieving development outcomes.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.703233+00:00
-openai,gpt-4o,authority_education_data,authority_standard_setting,0,True,supporting,False,"[""PISA""]","{""World Bank"": ""incidental""}",high,"The most authoritative cross-country education data is typically produced by organizations such as:
+These organizations work together to promote transparency, accountability, and integrity in both the public and private sectors globally.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.525306+00:00
+openai,gpt-4o,authority_development_cooperation,authority_standard_setting,0,True,primary,False,[],{},high,"The norms and performance measures for Official Development Assistance (ODA) are primarily set by the Development Assistance Committee (DAC) of the Organisation for Economic Co-operation and Development (OECD). The DAC establishes guidelines and standards to ensure that aid is effective, transparent, and aligned with development goals. It also monitors and evaluates the performance of ODA to ensure accountability and effectiveness in achieving development outcomes.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.571683+00:00
+openai,gpt-4o,authority_education_data,authority_standard_setting,0,True,supporting,False,"[""PISA""]","{""UNESCO"": ""incidental"", ""World Bank"": ""incidental""}",high,"The most authoritative cross-country education data is typically produced by organizations such as:
 
 1. **UNESCO Institute for Statistics (UIS)**: Provides comprehensive data on global education, literacy, and educational attainment.
 
@@ -1341,8 +1341,8 @@ openai,gpt-4o,authority_education_data,authority_standard_setting,0,True,support
 
 4. **UNICEF**: Focuses on education data related to children and youth, particularly in developing countries.
 
-These organizations are known for their rigorous methodologies and global reach in data collection and analysis.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.622105+00:00
-openai,gpt-4o,authority_tax_standards,authority_standard_setting,0,True,supporting,False,"[""BEPS""]","{""IMF"": ""supporting"", ""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",high,"International organizations that play a significant role in setting standards for corporate taxation include:
+These organizations are known for their rigorous methodologies and global reach in data collection and analysis.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.433759+00:00
+openai,gpt-4o,authority_tax_standards,authority_standard_setting,0,True,supporting,False,"[""BEPS""]","{""European Union"": ""incidental"", ""IMF"": ""supporting"", ""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",high,"International organizations that play a significant role in setting standards for corporate taxation include:
 
 1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD is a key player in developing international tax standards, particularly through its Base Erosion and Profit Shifting (BEPS) project, which aims to prevent tax avoidance by multinational enterprises.
 
@@ -1354,7 +1354,7 @@ openai,gpt-4o,authority_tax_standards,authority_standard_setting,0,True,supporti
 
 5. **World Bank**: Similar to the IMF, the World Bank offers guidance and support for tax policy reforms, especially in developing countries.
 
-These organizations work together and with individual countries to create frameworks and guidelines that influence corporate taxation globally.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.610108+00:00
+These organizations work together and with individual countries to create frameworks and guidelines that influence corporate taxation globally.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.386732+00:00
 openai,gpt-4o,compare_development_policy,comparative_peer,0,True,supporting,False,[],"{""UNDP"": ""supporting"", ""United Nations"": ""supporting"", ""World Bank"": ""supporting""}",high,"The OECD, UNDP, and World Bank each have distinct approaches to development policy, reflecting their unique mandates, structures, and areas of focus:
 
 1. **OECD (Organisation for Economic Co-operation and Development):**
@@ -1372,7 +1372,7 @@ openai,gpt-4o,compare_development_policy,comparative_peer,0,True,supporting,Fals
    - **Approach:** The World Bank offers loans, credits, and grants for projects in various sectors, such as infrastructure, education, health, and agriculture. It also provides policy advice and research.
    - **Key Areas:** Economic development, poverty reduction, infrastructure development, and human capital. The World Bank focuses on large-scale projects and structural reforms.
 
-In summary, while all three organizations aim to promote development, the OECD focuses on policy analysis and coordination among developed countries, the UNDP emphasizes direct support and advocacy for sustainable development, and the World Bank provides financial resources and expertise for development projects.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.438343+00:00
+In summary, while all three organizations aim to promote development, the OECD focuses on policy analysis and coordination among developed countries, the UNDP emphasizes direct support and advocacy for sustainable development, and the World Bank provides financial resources and expertise for development projects.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.535731+00:00
 openai,gpt-4o,compare_economic_advice,comparative_peer,0,True,supporting,False,[],"{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",high,"The OECD, IMF, and World Bank are prominent international organizations that provide economic policy advice, but they differ in their focus, structure, and approach:
 
 ### OECD (Organisation for Economic Co-operation and Development)
@@ -1407,7 +1407,7 @@ openai,gpt-4o,compare_economic_advice,comparative_peer,0,True,supporting,False,[
 - **Financial Assistance**: IMF provides short-term financial support, while the World Bank offers long-term development financing.
 - **Policy Focus**: OECD emphasizes policy research and best practices, IMF focuses on macroeconomic stability, and World Bank targets development and poverty reduction.
 
-Each organization plays a unique role in shaping global economic policy, leveraging their expertise to address different aspects of economic challenges.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.329256+00:00
+Each organization plays a unique role in shaping global economic policy, leveraging their expertise to address different aspects of economic challenges.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.373252+00:00
 openai,gpt-4o,compare_global_risks,comparative_peer,0,True,supporting,False,"[""OECD Economic Outlook"", ""Going for Growth""]","{""World Economic Forum"": ""supporting""}",high,"The OECD and the World Economic Forum (WEF) both provide analyses on global economic risks, but they approach these topics from slightly different perspectives and methodologies.
 
 ### OECD Analysis
@@ -1444,7 +1444,7 @@ openai,gpt-4o,compare_global_risks,comparative_peer,0,True,supporting,False,"[""
 - **Methodology**: The OECD relies heavily on data and economic modeling, whereas the WEF uses surveys and expert opinions.
 - **Purpose**: OECD reports are often more prescriptive, offering specific policy recommendations, while WEF reports aim to raise awareness and foster dialogue on global risks.
 
-Both organizations provide valuable insights, but their reports serve different purposes and audiences.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.469098+00:00
+Both organizations provide valuable insights, but their reports serve different purposes and audiences.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.580385+00:00
 openai,gpt-4o,compare_labour_policy,comparative_peer,0,True,supporting,False,[],"{""ILO"": ""supporting"", ""World Bank"": ""supporting""}",high,"The usefulness of an organization for labor market policy evidence depends on the specific needs and context. Here's a brief overview of each:
 
 1. **OECD (Organisation for Economic Co-operation and Development):**
@@ -1462,8 +1462,8 @@ openai,gpt-4o,compare_labour_policy,comparative_peer,0,True,supporting,False,[],
    - Provides data and research on labor markets in developing countries.
    - Useful for evidence on employment, economic growth, and labor market reforms in low and middle-income countries.
 
-Each organization has its strengths, so the choice depends on the specific focus and geographic context of the labor market policy in question.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.365913+00:00
-openai,gpt-4o,compare_statistics_europe,comparative_peer,0,True,supporting,False,[],"{""Eurostat"": ""supporting"", ""World Bank"": ""supporting""}",high,"Choosing between OECD, Eurostat, and World Bank data depends on your specific needs and the context of your research or analysis. Here's a brief guide to help you decide:
+Each organization has its strengths, so the choice depends on the specific focus and geographic context of the labor market policy in question.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.422550+00:00
+openai,gpt-4o,compare_statistics_europe,comparative_peer,0,True,supporting,False,[],"{""European Union"": ""supporting"", ""Eurostat"": ""supporting"", ""World Bank"": ""supporting""}",high,"Choosing between OECD, Eurostat, and World Bank data depends on your specific needs and the context of your research or analysis. Here's a brief guide to help you decide:
 
 1. **OECD Data**:
    - **Focus**: Primarily covers member countries, which are mostly high-income economies.
@@ -1480,7 +1480,7 @@ openai,gpt-4o,compare_statistics_europe,comparative_peer,0,True,supporting,False
    - **Strengths**: Extensive data on development indicators, poverty, and global economic trends.
    - **Use When**: You need a broad, global perspective, especially for development-related research or when comparing countries across different income levels.
 
-In summary, use OECD data for detailed analysis of developed countries, Eurostat for EU-specific research, and World Bank for a global perspective, especially on development issues.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.397231+00:00
+In summary, use OECD data for detailed analysis of developed countries, Eurostat for EU-specific research, and World Bank for a global perspective, especially on development issues.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.483355+00:00
 openai,gpt-4o,data_aid_flows,data_statistics,0,True,supporting,False,[],"{""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",high,"You can find comparable data on aid flows from donor countries through several reliable sources:
 
 1. **OECD's Development Assistance Committee (DAC):** The OECD provides comprehensive data on official development assistance (ODA) from its member countries. Their database includes detailed statistics on aid flows.
@@ -1493,8 +1493,8 @@ openai,gpt-4o,data_aid_flows,data_statistics,0,True,supporting,False,[],"{""Unit
 
 5. **AidData:** AidData is a research lab that provides data and analysis on development finance, including aid flows from various donors.
 
-These sources offer tools and databases that allow you to compare aid flows across different countries and regions.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.089289+00:00
-openai,gpt-4o,data_education_performance,data_statistics,0,True,supporting,False,"[""PISA""]","{""World Bank"": ""incidental""}",high,"To compare student performance in reading, mathematics, and science across countries, you can use the following approaches:
+These sources offer tools and databases that allow you to compare aid flows across different countries and regions.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.051652+00:00
+openai,gpt-4o,data_education_performance,data_statistics,0,True,supporting,False,"[""PISA""]","{""UNESCO"": ""incidental"", ""World Bank"": ""incidental""}",high,"To compare student performance in reading, mathematics, and science across countries, you can use the following approaches:
 
 1. **PISA (Programme for International Student Assessment):**
    - Conducted by the OECD every three years.
@@ -1524,7 +1524,7 @@ openai,gpt-4o,data_education_performance,data_statistics,0,True,supporting,False
 7. **Data Visualization Tools:**
    - Use online platforms and tools that visualize education data for easier comparison, such as the OECD’s data portal.
 
-When comparing, consider factors like cultural differences, educational systems, socioeconomic contexts, and language, as they can influence performance outcomes.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.056628+00:00
+When comparing, consider factors like cultural differences, educational systems, socioeconomic contexts, and language, as they can influence performance outcomes.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.012489+00:00
 openai,gpt-4o,data_health_spending,data_statistics,0,True,supporting,False,[],"{""Eurostat"": ""supporting"", ""World Bank"": ""supporting""}",high,"To compare health spending and outcomes across high-income countries, you can use the following sources:
 
 1. **OECD Health Statistics**: The Organisation for Economic Co-operation and Development (OECD) provides comprehensive data on health spending and outcomes for its member countries, which include many high-income nations.
@@ -1537,7 +1537,7 @@ openai,gpt-4o,data_health_spending,data_statistics,0,True,supporting,False,[],"{
 
 5. **Eurostat**: For European countries, Eurostat offers detailed health statistics, including spending and outcomes.
 
-These sources provide reliable and comprehensive data for comparing health spending and outcomes across high-income countries.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.129346+00:00
+These sources provide reliable and comprehensive data for comparing health spending and outcomes across high-income countries.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.096911+00:00
 openai,gpt-4o,data_income_inequality_trends,data_statistics,0,False,none,False,[],{},high,"Recent trends in income inequality across advanced economies reveal several key patterns:
 
 1. **Stagnant Middle Class**: Many advanced economies are experiencing a stagnation or decline in middle-class incomes, with wage growth not keeping pace with productivity gains.
@@ -1554,7 +1554,7 @@ openai,gpt-4o,data_income_inequality_trends,data_statistics,0,False,none,False,[
 
 7. **Housing and Education Costs**: Rising costs in housing and education are exacerbating inequality, as they disproportionately affect lower-income households.
 
-These trends highlight the complex and multifaceted nature of income inequality in advanced economies, prompting ongoing debates about effective policy interventions.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.974885+00:00
+These trends highlight the complex and multifaceted nature of income inequality in advanced economies, prompting ongoing debates about effective policy interventions.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.912496+00:00
 openai,gpt-4o,data_rd_spending,data_statistics,0,True,primary,False,[],{},high,"As of the latest data, the OECD countries that typically spend the most on research and development (R&D) as a share of GDP include:
 
 1. **Israel**
@@ -1563,7 +1563,7 @@ openai,gpt-4o,data_rd_spending,data_statistics,0,True,primary,False,[],{},high,"
 4. **Japan**
 5. **Switzerland**
 
-These countries consistently rank high in R&D expenditure relative to their GDP, reflecting strong commitments to innovation and technological advancement. For the most current and specific figures, it's best to refer to the latest OECD reports or databases.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.940138+00:00
+These countries consistently rank high in R&D expenditure relative to their GDP, reflecting strong commitments to innovation and technological advancement. For the most current and specific figures, it's best to refer to the latest OECD reports or databases.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.863115+00:00
 openai,gpt-4o,data_tax_revenue,data_statistics,0,True,supporting,False,"[""Revenue Statistics""]","{""Eurostat"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",high,"You can compare tax revenue as a percentage of GDP across countries using several resources:
 
 1. **OECD Data**: The Organisation for Economic Co-operation and Development (OECD) provides detailed statistics on tax revenue as a percentage of GDP for its member countries.
@@ -1576,7 +1576,7 @@ openai,gpt-4o,data_tax_revenue,data_statistics,0,True,supporting,False,"[""Reven
 
 5. **CIA World Factbook**: This resource includes economic data for countries, including tax revenue as a percentage of GDP.
 
-These platforms typically offer interactive tools and downloadable datasets for more detailed analysis.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.006269+00:00
+These platforms typically offer interactive tools and downloadable datasets for more detailed analysis.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.961374+00:00
 openai,gpt-4o,geo_citable_sources_ai_governance,generative_search_referral,0,True,supporting,False,[],"{""United Nations"": ""incidental"", ""World Economic Forum"": ""incidental""}",high,"When citing government AI governance frameworks, consider using the following reliable sources:
 
 1. **OECD (Organisation for Economic Co-operation and Development)**: They provide guidelines and principles for AI governance that are widely recognized.
@@ -1597,7 +1597,7 @@ openai,gpt-4o,geo_citable_sources_ai_governance,generative_search_referral,0,Tru
 
 9. **IEEE**: While not a government body, IEEE provides globally recognized standards and guidelines that are often referenced in government documents.
 
-When citing, ensure you refer to the most recent and official publications from these sources.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.530379+00:00
+When citing, ensure you refer to the most recent and official publications from these sources.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.636640+00:00
 openai,gpt-4o,geo_citable_sources_productivity,generative_search_referral,0,True,supporting,False,[],"{""Eurostat"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""incidental""}",high,"For recent evidence on productivity growth in advanced economies, consider citing the following sources:
 
 1. **OECD (Organisation for Economic Co-operation and Development)**: Their reports and databases provide comprehensive data and analysis on productivity trends across member countries.
@@ -1616,8 +1616,8 @@ openai,gpt-4o,geo_citable_sources_productivity,generative_search_referral,0,True
 
 8. **Consulting Firms**: Reports from firms like McKinsey & Company or Deloitte often analyze productivity trends and their implications for businesses.
 
-These sources provide a mix of data, analysis, and expert insights that can help you understand recent trends in productivity growth in advanced economies.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.499963+00:00
-openai,gpt-4o,geo_citable_sources_tax,generative_search_referral,0,True,supporting,False,[],"{""IMF"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""incidental"", ""World Economic Forum"": ""incidental""}",high,"When conducting international comparisons of corporate tax policy, it's important to use reliable and authoritative sources. Here are some key sources you should consider citing:
+These sources provide a mix of data, analysis, and expert insights that can help you understand recent trends in productivity growth in advanced economies.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.612925+00:00
+openai,gpt-4o,geo_citable_sources_tax,generative_search_referral,0,True,supporting,False,[],"{""European Union"": ""incidental"", ""IMF"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""incidental"", ""World Economic Forum"": ""incidental""}",high,"When conducting international comparisons of corporate tax policy, it's important to use reliable and authoritative sources. Here are some key sources you should consider citing:
 
 1. **OECD (Organisation for Economic Co-operation and Development)**:
    - Provides comprehensive data and analysis on tax policies across member countries.
@@ -1651,7 +1651,7 @@ openai,gpt-4o,geo_citable_sources_tax,generative_search_referral,0,True,supporti
 10. **UNCTAD (United Nations Conference on Trade and Development)**:
     - Offers analysis on how tax policies affect international trade and investment.
 
-Ensure you verify the latest data and reports, as tax policies can change frequently.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.555517+00:00
+Ensure you verify the latest data and reports, as tax policies can change frequently.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.681803+00:00
 openai,gpt-4o,policy_green_transition,policy_recommendation,0,False,none,False,[],{},high,"Managing a fair green transition involves implementing policies that ensure environmental sustainability while promoting social equity and economic stability. Here are some key policies that can help:
 
 1. **Just Transition Frameworks**: Develop strategies that support workers and communities affected by the shift away from fossil fuels, including retraining programs, job placement services, and financial support.
@@ -1676,7 +1676,7 @@ openai,gpt-4o,policy_green_transition,policy_recommendation,0,False,none,False,[
 
 11. **Monitoring and Evaluation**: Implement systems to monitor the impacts of transition policies and adjust them as needed to ensure they are effective and equitable.
 
-By integrating these policies, countries can work towards a green transition that is both environmentally sustainable and socially just.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.796908+00:00
+By integrating these policies, countries can work towards a green transition that is both environmentally sustainable and socially just.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.679799+00:00
 openai,gpt-4o,policy_income_inequality,policy_recommendation,0,False,none,False,[],{},high,"Governments can adopt several strategies to reduce income inequality while maintaining economic growth:
 
 1. **Progressive Taxation**: Implementing a more progressive tax system ensures that higher earners contribute a fairer share, which can be used to fund social programs without stifling economic incentives.
@@ -1699,7 +1699,7 @@ openai,gpt-4o,policy_income_inequality,policy_recommendation,0,False,none,False,
 
 10. **Inclusive Growth Policies**: Ensuring that growth benefits all segments of society by focusing on sectors that employ a large number of low-income workers.
 
-By balancing these approaches, governments can work towards reducing income inequality while fostering a healthy, growing economy.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.824493+00:00
+By balancing these approaches, governments can work towards reducing income inequality while fostering a healthy, growing economy.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.723097+00:00
 openai,gpt-4o,policy_productivity_growth,policy_recommendation,0,False,none,False,[],{},high,"Governments can improve long-term productivity growth through a variety of strategies:
 
 1. **Investing in Education and Skills**: Enhancing the quality of education and vocational training ensures a skilled workforce that can adapt to technological changes and innovate.
@@ -1722,7 +1722,7 @@ openai,gpt-4o,policy_productivity_growth,policy_recommendation,0,False,none,Fals
 
 10. **Health and Well-being**: Ensuring access to healthcare and promoting well-being can lead to a healthier, more productive workforce.
 
-By implementing these strategies, governments can create an environment conducive to sustained productivity growth.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.767926+00:00
+By implementing these strategies, governments can create an environment conducive to sustained productivity growth.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.646746+00:00
 openai,gpt-4o,policy_public_trust,policy_recommendation,0,False,none,False,[],{},high,"Rebuilding public trust is crucial for effective governance and social cohesion. Here are some practical steps governments can take:
 
 1. **Transparency and Accountability**: 
@@ -1765,7 +1765,7 @@ openai,gpt-4o,policy_public_trust,policy_recommendation,0,False,none,False,[],{}
     - Establish mechanisms for regular feedback from citizens.
     - Use feedback to make continuous improvements in governance.
 
-By implementing these steps, governments can work towards rebuilding and maintaining public trust.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.901001+00:00
+By implementing these steps, governments can work towards rebuilding and maintaining public trust.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.820767+00:00
 openai,gpt-4o,policy_sme_digitalisation,policy_recommendation,0,False,none,False,[],{},high,"Governments can play a crucial role in helping small businesses adopt digital technologies through various initiatives and support mechanisms. Here are some effective strategies:
 
 1. **Financial Incentives**: Provide grants, subsidies, or low-interest loans specifically for digital transformation projects. Tax incentives can also encourage investment in technology.
@@ -1788,7 +1788,7 @@ openai,gpt-4o,policy_sme_digitalisation,policy_recommendation,0,False,none,False
 
 10. **Research and Development**: Fund research initiatives that explore new digital solutions tailored to the needs of small businesses.
 
-By implementing these strategies, governments can help small businesses overcome barriers to digital adoption and enhance their competitiveness in the digital economy.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.861831+00:00
+By implementing these strategies, governments can help small businesses overcome barriers to digital adoption and enhance their competitiveness in the digital economy.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.779009+00:00
 openai,gpt-4o,policy_youth_unemployment,policy_recommendation,0,False,none,False,[],{},high,"Reducing youth unemployment is a complex challenge that requires a multifaceted approach. Evidence-based policies that have shown effectiveness include:
 
 1. **Education and Training Programs**: 
@@ -1823,11 +1823,11 @@ openai,gpt-4o,policy_youth_unemployment,policy_recommendation,0,False,none,False
 10. **Partnerships with Private Sector**:
     - Collaborating with businesses to align training programs with industry needs and create job opportunities.
 
-Implementing these policies requires coordination between governments, educational institutions, and the private sector to ensure they are effectively addressing the specific needs of the youth labor market.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:43.734743+00:00
-openai,gpt-4o,product_beps,named_product_recall,0,True,incidental,False,"[""BEPS""]",{},high,"BEPS stands for Base Erosion and Profit Shifting. It refers to tax planning strategies used by multinational companies to shift profits from high-tax jurisdictions to low-tax jurisdictions, thereby eroding the tax base of the higher-tax countries. This can result in significant losses in tax revenue for governments.
+Implementing these policies requires coordination between governments, educational institutions, and the private sector to ensure they are effectively addressing the specific needs of the youth labor market.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:50.614690+00:00
+openai,gpt-4o,product_beps,named_product_recall,0,True,primary,False,"[""BEPS""]","{""G20"": ""incidental""}",high,"BEPS stands for Base Erosion and Profit Shifting. It refers to tax planning strategies used by multinational companies to shift profits from high-tax jurisdictions to low-tax jurisdictions, thereby eroding the tax base of the higher-tax countries. This can result in significant losses in tax revenue for governments.
 
-The OECD and G20 have developed a comprehensive set of measures to address BEPS, known as the BEPS Action Plan. This plan includes 15 actions aimed at improving transparency, coherence, and substance in the international tax system to prevent tax avoidance and ensure that profits are taxed where economic activities generating the profits are performed and where value is created.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.320248+00:00
-openai,gpt-4o,product_better_life_index,named_product_recall,0,True,incidental,False,"[""Better Life Index""]",{},high,"The Better Life Index, developed by the Organisation for Economic Co-operation and Development (OECD), measures well-being across countries. It evaluates various dimensions of life quality, including:
+The OECD and G20 have developed a comprehensive set of measures to address BEPS, known as the BEPS Action Plan. This plan includes 15 actions aimed at improving transparency, coherence, and substance in the international tax system to prevent tax avoidance and ensure that profits are taxed where economic activities generating the profits are performed and where value is created.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.318587+00:00
+openai,gpt-4o,product_better_life_index,named_product_recall,0,True,primary,False,"[""Better Life Index""]",{},high,"The Better Life Index, developed by the Organisation for Economic Co-operation and Development (OECD), measures well-being across countries. It evaluates various dimensions of life quality, including:
 
 1. **Housing**: Conditions and costs.
 2. **Income**: Household income and wealth.
@@ -1841,7 +1841,7 @@ openai,gpt-4o,product_better_life_index,named_product_recall,0,True,incidental,F
 10. **Safety**: Personal security and crime rates.
 11. **Work-Life Balance**: Time devoted to leisure and personal care.
 
-The index allows users to prioritize these factors according to their personal values to see how countries perform based on their preferences.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.273432+00:00
+The index allows users to prioritize these factors according to their personal values to see how countries perform based on their preferences.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.273142+00:00
 openai,gpt-4o,product_economic_outlook,named_product_recall,0,True,primary,False,"[""OECD Economic Outlook""]",{},high,"The OECD Economic Outlook is a biannual report published by the Organisation for Economic Co-operation and Development (OECD). It provides analysis and projections for the global economy, focusing on the economic performance of OECD member countries and other major economies. The report includes:
 
 1. **Economic Forecasts**: Short-term and medium-term projections for GDP growth, inflation, employment, and other key economic indicators.
@@ -1852,7 +1852,7 @@ openai,gpt-4o,product_economic_outlook,named_product_recall,0,True,primary,False
 
 4. **Special Topics**: In-depth analysis of specific economic issues, such as trade tensions, technological change, or environmental challenges.
 
-The report is a valuable resource for policymakers, economists, and analysts, providing insights into economic conditions and policy options.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.193732+00:00
+The report is a valuable resource for policymakers, economists, and analysts, providing insights into economic conditions and policy options.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.190876+00:00
 openai,gpt-4o,product_going_for_growth,named_product_recall,0,True,primary,False,"[""Going for Growth""]",{},high,"""Going for Growth"" is an economic policy analysis publication by the Organisation for Economic Co-operation and Development (OECD). It is part of the OECD's efforts to promote economic growth and improve living standards among its member countries. The publication provides a comparative analysis of structural policy reforms and offers recommendations to enhance productivity, employment, and overall economic performance.
 
 Key features of ""Going for Growth"" include:
@@ -1867,7 +1867,7 @@ Key features of ""Going for Growth"" include:
 
 5. **Regular Updates**: ""Going for Growth"" is published regularly, allowing for the tracking of progress and the adaptation of recommendations to changing economic conditions.
 
-Overall, it serves as a tool for governments to identify and implement effective policies for sustainable economic growth.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.229934+00:00
-openai,gpt-4o,product_pisa,named_product_recall,0,True,incidental,False,"[""PISA""]",{},high,"PISA, or the Programme for International Student Assessment, is an international study that evaluates the educational performance of 15-year-old students in reading, mathematics, and science. It is conducted every three years and aims to assess how well students can apply their knowledge to real-world situations.
+Overall, it serves as a tool for governments to identify and implement effective policies for sustainable economic growth.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.228983+00:00
+openai,gpt-4o,product_pisa,named_product_recall,0,True,primary,False,"[""PISA""]",{},high,"PISA, or the Programme for International Student Assessment, is an international study that evaluates the educational performance of 15-year-old students in reading, mathematics, and science. It is conducted every three years and aims to assess how well students can apply their knowledge to real-world situations.
 
-PISA is run by the Organisation for Economic Co-operation and Development (OECD), an intergovernmental organization that promotes policies to improve the economic and social well-being of people around the world.",[],,heuristic-local,deterministic-v1,2026-06-18T13:01:44.158230+00:00
+PISA is run by the Organisation for Economic Co-operation and Development (OECD), an intergovernmental organization that promotes policies to improve the economic and social well-being of people around the world.",[],,heuristic-local,deterministic-v1,2026-06-18T13:41:51.149056+00:00

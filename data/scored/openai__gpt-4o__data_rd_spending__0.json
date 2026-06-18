@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "As of the latest data, the OECD countries that typically spend the most on research and development (R&D) as a share of GDP include:\n\n1. **Israel**\n2. **South Korea**\n3. **Sweden**\n4. **Japan**\n5. **Switzerland**\n\nThese countries consistently rank high in R&D expenditure relative to their GDP, reflecting strong commitments to innovation and technological advancement. For the most current and specific figures, it's best to refer to the latest OECD reports or databases.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:43.940138Z",
+  "scored_at_utc": "2026-06-18T13:41:50.863115Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

@@ -50,18 +50,26 @@ class DryRunJudge(Judge):
             query=query,
             peer_organisations=self.peer_organisations,
         )
+        # NOTE: ``oecd_url_referenced`` is a weak proxy. The configured providers run with
+        # ``supports_citations: false``, so structured ``citations`` are almost always empty.
+        # In practice this flag therefore detects a literal ``oecd.org`` string typed in the
+        # answer prose, not genuine citation/referral behaviour. Treat it as a lower bound on
+        # OECD referral visibility, not a measure of it.
         oecd_url_referenced = any(_is_oecd_citation(citation) for citation in raw_record.citations)
         if not oecd_url_referenced:
             oecd_url_referenced = "oecd.org" in response_text.casefold()
 
+        publications = _oecd_publications_named(response_text)
         return JudgeScore(
             oecd_mentioned=oecd_mentioned,
             oecd_prominence=_oecd_prominence(
                 response_text=response_text,
+                category=query.category,
                 oecd_mentioned=oecd_mentioned,
                 competitors_mentioned=competitors,
+                publications_named=publications,
             ),
-            oecd_publications_named=_oecd_publications_named(response_text),
+            oecd_publications_named=publications,
             oecd_url_referenced=oecd_url_referenced,
             competitors_mentioned=competitors,
             factual_issues="",
@@ -82,26 +90,76 @@ def _mentions_oecd(response_text: str, citations: list[Citation]) -> bool:
 def _oecd_prominence(
     *,
     response_text: str,
+    category: str,
     oecd_mentioned: bool,
     competitors_mentioned: dict[str, Prominence],
+    publications_named: list[str],
 ) -> Prominence:
+    """Classify how central the OECD is to the answer.
+
+    Designed to avoid the earlier verbosity bias, where simply repeating "OECD"
+    twice was enough to earn ``primary``. Repetition count is deliberately not used.
+    The signals are instead about *centrality*:
+
+    * ``named_product_recall`` queries ask directly about an OECD product (PISA,
+      BEPS, ...). If OECD is mentioned and an OECD publication is named, the answer
+      is squarely about the OECD, so prominence is floored at ``primary``.
+    * Otherwise the OECD is ``primary`` only when it *leads* the answer: it appears
+      in the opening segment and no peer organisation shares that opening. This
+      captures "the answer is about the OECD" while excluding comparative lead-ins
+      that merely list the OECD among peers.
+    * If peers are present (and OECD does not lead) the OECD is ``supporting``.
+    * A bare ``oecd.org``/"strong citable source" signal also counts as ``supporting``.
+    * Anything else with a mention is ``incidental``.
+    """
+
     if not oecd_mentioned:
         return "none"
 
-    normalized = " ".join(response_text.split()).casefold()
-    first_sentence = re.split(r"(?<=[.!?])\s+", normalized, maxsplit=1)[0]
-    if first_sentence.startswith("the oecd is the primary") or (
-        "oecd" in first_sentence and "primary international reference point" in first_sentence
-    ):
+    if category == "named_product_recall" and publications_named:
+        return "primary"
+
+    lead = _lead_segment(response_text)
+    oecd_leads = "oecd" in lead and not any(
+        peer.casefold() in lead for peer in competitors_mentioned
+    )
+    if oecd_leads:
         return "primary"
 
     if competitors_mentioned:
         return "supporting"
+
+    normalized = " ".join(response_text.split()).casefold()
     if "strong citable source" in normalized or "oecd.org" in normalized:
         return "supporting"
-    if normalized.count("oecd") >= 2:
-        return "primary"
     return "incidental"
+
+
+def _lead_segment(response_text: str) -> str:
+    """Return the casefolded opening sentence, robust to markdown structure.
+
+    Markdown table rows and separators are dropped and header/emphasis markers are
+    stripped before taking the first sentence. Without this, a leading markdown
+    table would be collapsed into one giant "sentence", letting an OECD reference
+    buried deep inside a comparison table masquerade as the lead of the answer.
+    """
+
+    cleaned: list[str] = []
+    for line in response_text.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("|"):  # markdown table data row
+            continue
+        if set(stripped) <= set("|-: "):  # markdown table separator row
+            continue
+        stripped = stripped.lstrip("#").strip().replace("*", "").replace("`", "")
+        if stripped:
+            cleaned.append(stripped)
+
+    joined = " ".join(cleaned)
+    first_sentence = re.split(r"(?<=[.!?])\s+", joined, maxsplit=1)[0]
+    return first_sentence.casefold()
 
 
 def _oecd_publications_named(response_text: str) -> list[str]:

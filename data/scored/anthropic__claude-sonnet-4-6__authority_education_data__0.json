@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "Several organizations are recognized for producing authoritative cross-country education data:\n\n## Most Widely Cited Sources\n\n**OECD**\n- **Education at a Glance** - annual publication covering OECD and partner countries\n- **PISA** (Programme for International Student Assessment) - student achievement data\n- Generally considered the gold standard for developed countries\n\n**UNESCO**\n- **UNESCO Institute for Statistics (UIS)** - broadest global coverage\n- Tracks enrollment, literacy, spending across nearly all countries\n- Official data source for UN Sustainable Development Goal 4 (education)\n\n**World Bank**\n- Compiles and redistributes education indicators\n- Strong coverage of developing countries\n- Often draws from UIS data\n\n## Specialized Assessments\n- **TIMSS & PIRLS** (IEA) - math, science, and reading achievement\n- **SACMEQ / PASEC** - regional assessments for Africa\n- **LLECE** - Latin America\n\n## Considerations\n- **Coverage vs. quality tradeoff**: UNESCO covers more countries; OECD data tends to be more methodologically rigorous\n- **Self-reported data** from governments can vary in reliability\n- Different sources suit different research questions\n\n**UNESCO/UIS** is arguably the most authoritative for *global* coverage, while **OECD** is preferred for *comparability and rigor* among wealthier nations.\n\nWould you like detail on a specific type of education data?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.638669Z",
+  "scored_at_utc": "2026-06-18T13:41:51.759865Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -17,7 +17,8 @@
     ],
     "oecd_url_referenced": false,
     "competitors_mentioned": {
-      "World Bank": "incidental"
+      "World Bank": "incidental",
+      "UNESCO": "supporting"
     },
     "factual_issues": "",
     "judge_confidence": "high"

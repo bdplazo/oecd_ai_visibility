@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "When citing government AI governance frameworks, consider using the following reliable sources:\n\n1. **OECD (Organisation for Economic Co-operation and Development)**: They provide guidelines and principles for AI governance that are widely recognized.\n\n2. **European Commission**: The EU has developed comprehensive AI strategies and regulatory frameworks, such as the AI Act.\n\n3. **U.S. Government**: Look for documents from the National Institute of Standards and Technology (NIST) and the White House Office of Science and Technology Policy.\n\n4. **United Nations**: The UN has various reports and guidelines on AI ethics and governance.\n\n5. **World Economic Forum**: They offer insights and frameworks on AI governance from a global perspective.\n\n6. **UK Government**: The UK has published several white papers and strategies on AI governance.\n\n7. **Singapore Government**: Known for its Model AI Governance Framework, which is a reference for many countries.\n\n8. **Canadian Government**: Canada has been active in developing AI policies and ethical guidelines.\n\n9. **IEEE**: While not a government body, IEEE provides globally recognized standards and guidelines that are often referenced in government documents.\n\nWhen citing, ensure you refer to the most recent and official publications from these sources.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.530379Z",
+  "scored_at_utc": "2026-06-18T13:41:51.636640Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

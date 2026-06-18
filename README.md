@@ -37,6 +37,28 @@ uv run oecd-ai-visibility run --config config/study.yaml --live
 
 Providers with missing API-key environment variables are skipped with a warning.
 
+## Deterministic Scoring Notes
+
+The deterministic local judge (`DryRunJudge` / `HeuristicJudge`) is a transparent,
+network-free stand-in for the LLM judge. Two limitations are worth stating plainly:
+
+- **`oecd_url_referenced` is a weak proxy.** All configured providers run with
+  `supports_citations: false`, so structured citations are almost always empty. The flag
+  therefore detects a literal `oecd.org` string in the answer text, not genuine
+  citation/referral behaviour. Treat it as a lower bound on OECD referral visibility.
+- **`oecd_prominence` measures centrality, not repetition.** `primary` requires that the
+  OECD leads the answer (it appears in the opening segment with no peer sharing that
+  opening), or — for `named_product_recall` queries — that an OECD publication is named.
+  Raw OECD mention counts are deliberately not used, to avoid rewarding verbose answers.
+  Markdown tables are stripped before the opening segment is read.
+
+Existing live raw caches can be re-scored with the deterministic heuristic (no judge API
+calls) and exported for analysis:
+
+```powershell
+uv run oecd-ai-visibility score --config config/study.yaml --heuristic-live-cache --aggregate --no-cache
+```
+
 ## Methodological Principle
 
 The prompt set will be a designed, illustrative sample of plausible user intents in OECD-relevant policy domains. It will not be presented as representative of all possible queries. That caveat is part of the methodology, not a footnote.

@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "## International Organisations Setting Corporate Tax Standards\n\nSeveral key international organisations play significant roles in establishing corporate tax standards and frameworks:\n\n### Primary Standard-Setters\n\n**OECD (Organisation for Economic Co-operation and Development)**\n- Most influential body in international corporate taxation\n- Developed the **BEPS (Base Erosion and Profit Shifting)** framework\n- Produces the **Model Tax Convention** used as basis for bilateral tax treaties\n- Led the **Two-Pillar Solution** (Pillar One and Pillar Two/Global Minimum Tax of 15%)\n- Publishes Transfer Pricing Guidelines\n\n**G20**\n- Provides political backing for OECD tax initiatives\n- Endorsed the BEPS project and global minimum tax\n\n### Broader Participation Bodies\n\n**OECD/G20 Inclusive Framework on BEPS**\n- Over 140 countries participating\n- Extends OECD standards beyond member states\n\n**United Nations**\n- Produces the **UN Model Double Taxation Convention** (often preferred by developing countries)\n- Committee of Experts on International Cooperation in Tax Matters\n- Advocates for a **UN Tax Convention** (gaining momentum recently)\n\n### Regional Bodies\n\n**European Union**\n- Implements directives on corporate taxation (e.g., Anti-Tax Avoidance Directives)\n- Enforces state aid rules affecting corporate tax\n\n**African Tax Administration Forum (ATAF)**\n- Regional guidance for African nations\n\n### Notable Limitation\nThese organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.601657Z",
+  "scored_at_utc": "2026-06-18T13:41:51.721703Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -17,7 +17,9 @@
     ],
     "oecd_url_referenced": false,
     "competitors_mentioned": {
-      "United Nations": "incidental"
+      "United Nations": "incidental",
+      "European Union": "incidental",
+      "G20": "supporting"
     },
     "factual_issues": "",
     "judge_confidence": "high"

@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "Several key organizations play a crucial role in establishing international anti-bribery and integrity standards:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD's Anti-Bribery Convention is a major international instrument aimed at combating bribery of foreign public officials in international business transactions.\n\n2. **United Nations (UN)**: The UN Convention against Corruption (UNCAC) is a comprehensive global framework for combating corruption, including bribery.\n\n3. **Transparency International**: This non-governmental organization is known for its Corruption Perceptions Index and advocacy for anti-corruption measures worldwide.\n\n4. **Financial Action Task Force (FATF)**: While primarily focused on money laundering, FATF's recommendations also address corruption and bribery as part of financial crimes.\n\n5. **World Bank**: The World Bank implements anti-corruption measures in its projects and provides guidance and support to countries in strengthening their anti-corruption frameworks.\n\n6. **International Chamber of Commerce (ICC)**: The ICC provides guidelines and tools for businesses to combat corruption and promote integrity in international trade.\n\n7. **European Union (EU)**: The EU has various directives and regulations aimed at preventing corruption and promoting transparency within its member states.\n\nThese organizations work together to promote transparency, accountability, and integrity in both the public and private sectors globally.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:43.666842Z",
+  "scored_at_utc": "2026-06-18T13:41:50.525306Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -18,7 +18,8 @@
     "oecd_url_referenced": false,
     "competitors_mentioned": {
       "World Bank": "supporting",
-      "United Nations": "incidental"
+      "United Nations": "incidental",
+      "European Union": "incidental"
     },
     "factual_issues": "",
     "judge_confidence": "high"

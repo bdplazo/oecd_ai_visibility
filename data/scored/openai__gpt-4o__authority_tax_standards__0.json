@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "International organizations that play a significant role in setting standards for corporate taxation include:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD is a key player in developing international tax standards, particularly through its Base Erosion and Profit Shifting (BEPS) project, which aims to prevent tax avoidance by multinational enterprises.\n\n2. **United Nations (UN)**: The UN develops guidelines and models for international tax cooperation, particularly focusing on the needs of developing countries.\n\n3. **European Union (EU)**: The EU sets tax-related directives and regulations for its member states, aiming to harmonize tax policies and prevent tax avoidance within the EU.\n\n4. **International Monetary Fund (IMF)**: While not directly setting tax standards, the IMF provides analysis and advice on tax policy and administration to its member countries.\n\n5. **World Bank**: Similar to the IMF, the World Bank offers guidance and support for tax policy reforms, especially in developing countries.\n\nThese organizations work together and with individual countries to create frameworks and guidelines that influence corporate taxation globally.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:43.610108Z",
+  "scored_at_utc": "2026-06-18T13:41:50.386732Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -19,7 +19,8 @@
     "competitors_mentioned": {
       "IMF": "supporting",
       "World Bank": "supporting",
-      "United Nations": "incidental"
+      "United Nations": "incidental",
+      "European Union": "incidental"
     },
     "factual_issues": "",
     "judge_confidence": "high"

@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "To compare health spending and outcomes across high-income countries, you can use the following sources:\n\n1. **OECD Health Statistics**: The Organisation for Economic Co-operation and Development (OECD) provides comprehensive data on health spending and outcomes for its member countries, which include many high-income nations.\n\n2. **World Health Organization (WHO) Global Health Expenditure Database**: This database offers detailed information on health expenditures and outcomes globally, including high-income countries.\n\n3. **World Bank Health Nutrition and Population Statistics**: The World Bank provides data on health expenditures and outcomes, which can be filtered by income level, including high-income countries.\n\n4. **Commonwealth Fund International Health Policy Surveys**: These surveys provide insights into health system performance and outcomes across several high-income countries.\n\n5. **Eurostat**: For European countries, Eurostat offers detailed health statistics, including spending and outcomes.\n\nThese sources provide reliable and comprehensive data for comparing health spending and outcomes across high-income countries.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.129346Z",
+  "scored_at_utc": "2026-06-18T13:41:51.096911Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

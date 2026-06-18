@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "## OECD Countries with Highest R&D Spending (% of GDP)\n\nBased on recent OECD data (around 2021-2022), the top spenders include:\n\n| Country | R&D as % of GDP |\n|---------|----------------|\n| **Israel** | ~5.4% |\n| **South Korea** | ~4.9% |\n| **Sweden** | ~3.4% |\n| **United States** | ~3.5% |\n| **Belgium** | ~3.4% |\n| **Japan** | ~3.3% |\n| **Austria** | ~3.2% |\n| **Germany** | ~3.1% |\n| **Denmark** | ~3.0% |\n| **Finland** | ~3.0% |\n\n### Key Observations:\n- **Israel and South Korea** consistently lead the OECD\n- The **OECD average** is roughly **2.7%**\n- Nordic countries tend to cluster near the top\n- The **US** has seen its share grow, driven largely by the **private sector** (especially tech)\n- Countries like **Turkey, Mexico, and Chile** tend to be at the lower end\n\n### Notable Context:\n- Business enterprise R&D drives most spending in top countries\n- Government targets (like the EU's 3% of GDP goal) influence policy\n\nWould you like more detail on any specific country or aspect of R&D spending?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:45.091072Z",
+  "scored_at_utc": "2026-06-18T13:41:52.118783Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "The **Better Life Index** is a tool created by the **OECD (Organisation for Economic Co-operation and Development)** that measures **well-being and quality of life** across countries. It goes beyond traditional economic indicators like GDP to assess what makes life better for people.\n\nIt covers **11 dimensions (topics)**:\n\n1. **Housing** – rooms per person, basic facilities\n2. **Income** – household net wealth and financial wealth\n3. **Jobs** – employment rates, job security, earnings\n4. **Community** – social support networks\n5. **Education** – educational attainment, skills\n6. **Environment** – air quality, water quality\n7. **Civic Engagement** – voter turnout, rule-making consultation\n8. **Health** – life expectancy, self-reported health\n9. **Life Satisfaction** – overall happiness and well-being\n10. **Safety** – homicide rates, feeling of safety\n11. **Work-Life Balance** – time for leisure and personal care\n\nA notable feature is that it allows users to **customize the weight** given to each dimension based on their own values, reflecting that different people prioritize different aspects of life.\n\nIt is used to compare well-being across OECD member countries and some partner nations.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:45.462195Z",
+  "scored_at_utc": "2026-06-18T13:41:52.424234Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

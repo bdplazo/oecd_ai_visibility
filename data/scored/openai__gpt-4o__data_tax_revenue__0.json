@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "You can compare tax revenue as a percentage of GDP across countries using several resources:\n\n1. **OECD Data**: The Organisation for Economic Co-operation and Development (OECD) provides detailed statistics on tax revenue as a percentage of GDP for its member countries.\n\n2. **World Bank**: The World Bank offers data on tax revenue as a percentage of GDP for many countries worldwide.\n\n3. **IMF Data**: The International Monetary Fund (IMF) provides various economic indicators, including tax revenue statistics.\n\n4. **Eurostat**: For European countries, Eurostat provides comprehensive data on tax revenue and other economic indicators.\n\n5. **CIA World Factbook**: This resource includes economic data for countries, including tax revenue as a percentage of GDP.\n\nThese platforms typically offer interactive tools and downloadable datasets for more detailed analysis.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.006269Z",
+  "scored_at_utc": "2026-06-18T13:41:50.961374Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {

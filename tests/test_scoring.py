@@ -8,6 +8,7 @@ from oecd_ai_visibility.runner import run_collection
 from oecd_ai_visibility.schemas import (
     JudgeScore,
     QuerySet,
+    QuerySpec,
     RawResponseRecord,
     ScoredRecord,
     load_query_set,
@@ -247,6 +248,102 @@ def test_dry_run_judge_detects_fixture_behaviour(tmp_path: Path) -> None:
     assert citation_score.oecd_url_referenced is True
     assert no_mention_score.oecd_mentioned is False
     assert no_mention_score.oecd_prominence == "none"
+
+
+def _judge() -> DryRunJudge:
+    config = load_study_config(ROOT / "config" / "study.yaml")
+    return DryRunJudge(peer_organisations=config.peer_organisations)
+
+
+def _raw(text: str, query_id: str = "q_test") -> RawResponseRecord:
+    return RawResponseRecord(
+        provider="openai",
+        model="gpt-4o",
+        query_id=query_id,
+        run_index=0,
+        latency_seconds=0.01,
+        response_text=text,
+    )
+
+
+def _query(category: str, query_id: str = "q_test") -> QuerySpec:
+    return QuerySpec(id=query_id, category=category, text="A transparent test prompt.")
+
+
+def test_named_product_recall_floors_terse_answer_to_primary() -> None:
+    # A terse answer that names an OECD product but mentions "OECD" only once must not
+    # be demoted to incidental purely for being short (the earlier verbosity artifact).
+    judge = _judge()
+    score = judge.score(
+        raw_record=_raw("PISA is run by the OECD.", query_id="product_pisa"),
+        query=_query("named_product_recall", query_id="product_pisa"),
+    )
+    assert score.oecd_publications_named == ["PISA"]
+    assert score.oecd_prominence == "primary"
+
+
+def test_repeating_oecd_is_not_enough_for_primary() -> None:
+    # Two OECD mentions without OECD leading the answer or any product floor must not
+    # reach primary; raw mention count is deliberately ignored.
+    judge = _judge()
+    text = "Many bodies study this. The OECD has data here, and the OECD also publishes reports."
+    score = judge.score(
+        raw_record=_raw(text),
+        query=_query("policy_recommendation"),
+    )
+    assert score.oecd_mentioned is True
+    assert score.oecd_prominence == "incidental"
+
+
+def test_oecd_leading_the_answer_is_primary() -> None:
+    judge = _judge()
+    text = "The OECD is the leading authority here, providing comparable cross-country indicators."
+    score = judge.score(
+        raw_record=_raw(text),
+        query=_query("authority_standard_setting"),
+    )
+    assert score.oecd_prominence == "primary"
+
+
+def test_peer_co_listing_in_lead_is_supporting_not_primary() -> None:
+    judge = _judge()
+    text = "The OECD, IMF, and World Bank all publish relevant economic analysis."
+    score = judge.score(
+        raw_record=_raw(text),
+        query=_query("comparative_peer"),
+    )
+    assert score.oecd_prominence == "supporting"
+    assert set(score.competitors_mentioned) == {"IMF", "World Bank"}
+
+
+def test_markdown_table_does_not_inflate_prominence_to_primary() -> None:
+    # An OECD reference buried in a comparison table (alongside a peer) is supporting,
+    # not primary: the markdown table must not be read as the answer's lead.
+    judge = _judge()
+    text = (
+        "# Comparison of data sources\n\n"
+        "| Source | Coverage |\n"
+        "|--------|----------|\n"
+        "| World Bank | global |\n"
+        "| OECD | member countries |\n\n"
+        "Both provide useful statistics."
+    )
+    score = judge.score(
+        raw_record=_raw(text),
+        query=_query("data_statistics"),
+    )
+    assert score.oecd_mentioned is True
+    assert score.oecd_prominence == "supporting"
+
+
+def test_expanded_peer_list_detects_new_peers() -> None:
+    judge = _judge()
+    text = "Guidance comes from the OECD, UNESCO, the ITU, and the G20."
+    score = judge.score(
+        raw_record=_raw(text),
+        query=_query("authority_standard_setting"),
+    )
+    assert {"UNESCO", "ITU", "G20"} <= set(score.competitors_mentioned)
 
 
 def _config_with_output_paths(tmp_path: Path, validation_sample_size: int = 12):

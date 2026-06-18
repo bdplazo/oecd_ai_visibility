@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "# BEPS: Base Erosion and Profit Shifting\n\n## Definition\nBEPS refers to **tax planning strategies used by multinational enterprises (MNEs)** that exploit gaps and mismatches in tax rules to artificially shift profits to low or no-tax locations, eroding the tax base of higher-tax countries.\n\n---\n\n## Core Problem\n- Profits are reported where taxes are lowest\n- Economic activity actually occurs elsewhere\n- Legal structures don't reflect economic substance\n- Countries lose significant tax revenue\n\n---\n\n## The OECD/G20 BEPS Project\nLaunched in **2013**, the OECD developed **15 Action Plans** to address these issues:\n\n| Actions | Focus Area |\n|---------|-----------|\n| 1-5 | Digital economy, hybrid mismatches, harmful tax practices |\n| 6-10 | Treaty abuse, transfer pricing, permanent establishment |\n| 11-15 | Data collection, dispute resolution, multilateral instruments |\n\n---\n\n## Key Mechanisms Targeted\n- **Transfer pricing manipulation** – mispricing intra-group transactions\n- **Hybrid mismatches** – instruments treated differently across jurisdictions\n- **Treaty shopping** – using treaties without genuine economic presence\n- **Artificial PE avoidance** – avoiding taxable presence\n- **IP holding structures** – parking intellectual property in low-tax jurisdictions\n\n---\n\n## BEPS 2.0 (Pillar One & Two)\nMore recent developments include:\n- **Pillar One** – Reallocating taxing rights to market jurisdictions\n- **Pillar Two** – Global minimum tax of **15%** for large MNEs\n\n---\n\n## Significance\nBEPS represents the most significant reform of international tax rules in nearly **a century**, affecting how companies like Google, Apple, and Amazon are taxed globally.\n\nWould you like more detail on any specific aspect?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:45.493515Z",
+  "scored_at_utc": "2026-06-18T13:41:52.456922Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -16,7 +16,9 @@
       "BEPS"
     ],
     "oecd_url_referenced": false,
-    "competitors_mentioned": {},
+    "competitors_mentioned": {
+      "G20": "incidental"
+    },
     "factual_issues": "",
     "judge_confidence": "high"
   }

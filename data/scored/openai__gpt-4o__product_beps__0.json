@@ -6,17 +6,19 @@
   "run_index": 0,
   "response_text": "BEPS stands for Base Erosion and Profit Shifting. It refers to tax planning strategies used by multinational companies to shift profits from high-tax jurisdictions to low-tax jurisdictions, thereby eroding the tax base of the higher-tax countries. This can result in significant losses in tax revenue for governments.\n\nThe OECD and G20 have developed a comprehensive set of measures to address BEPS, known as the BEPS Action Plan. This plan includes 15 actions aimed at improving transparency, coherence, and substance in the international tax system to prevent tax avoidance and ensure that profits are taxed where economic activities generating the profits are performed and where value is created.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.320248Z",
+  "scored_at_utc": "2026-06-18T13:41:51.318587Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
     "oecd_mentioned": true,
-    "oecd_prominence": "incidental",
+    "oecd_prominence": "primary",
     "oecd_publications_named": [
       "BEPS"
     ],
     "oecd_url_referenced": false,
-    "competitors_mentioned": {},
+    "competitors_mentioned": {
+      "G20": "incidental"
+    },
     "factual_issues": "",
     "judge_confidence": "high"
   }

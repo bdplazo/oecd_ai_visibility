@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "To compare student performance in reading, mathematics, and science across countries, you can use the following approaches:\n\n1. **PISA (Programme for International Student Assessment):**\n   - Conducted by the OECD every three years.\n   - Assesses 15-year-olds in reading, mathematics, and science.\n   - Provides detailed reports and data for comparison across participating countries.\n\n2. **TIMSS (Trends in International Mathematics and Science Study):**\n   - Conducted by the IEA every four years.\n   - Focuses on mathematics and science for 4th and 8th graders.\n   - Offers comprehensive data and analysis for international comparison.\n\n3. **PIRLS (Progress in International Reading Literacy Study):**\n   - Also conducted by the IEA every five years.\n   - Assesses reading comprehension of 4th graders.\n   - Provides insights into reading literacy across countries.\n\n4. **National Reports and Databases:**\n   - Many countries publish national assessments and reports that can be used for comparison.\n   - Look for education ministries or departments that release performance data.\n\n5. **World Bank and UNESCO Data:**\n   - These organizations provide educational statistics and reports that can be useful for broader context and analysis.\n\n6. **Research Articles and Studies:**\n   - Academic journals and research papers often analyze international education data and provide insights into comparative performance.\n\n7. **Data Visualization Tools:**\n   - Use online platforms and tools that visualize education data for easier comparison, such as the OECD’s data portal.\n\nWhen comparing, consider factors like cultural differences, educational systems, socioeconomic contexts, and language, as they can influence performance outcomes.",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.056628Z",
+  "scored_at_utc": "2026-06-18T13:41:51.012489Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -17,7 +17,8 @@
     ],
     "oecd_url_referenced": false,
     "competitors_mentioned": {
-      "World Bank": "incidental"
+      "World Bank": "incidental",
+      "UNESCO": "incidental"
     },
     "factual_issues": "",
     "judge_confidence": "high"

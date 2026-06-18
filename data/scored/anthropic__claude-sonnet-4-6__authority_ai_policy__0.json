@@ -6,7 +6,7 @@
   "run_index": 0,
   "response_text": "# International Organisations Providing AI Policy Guidance for Governments\n\n## Major Intergovernmental Bodies\n\n**United Nations System**\n- **UNESCO** - Recommendation on the Ethics of AI (2021), adopted by 193 member states\n- **ITU** - AI for Good platform, technical standards work\n- **UNDP** - AI governance capacity building for developing nations\n- **UNCTAD** - AI policy frameworks for trade and development contexts\n\n**OECD**\n- OECD AI Principles (2019) - widely referenced baseline framework\n- OECD.AI Policy Observatory - comparative policy database\n- Influenced G20 AI Principles\n\n**Council of Europe**\n- Framework Convention on AI (2024) - legally binding treaty\n- Focus on human rights, democracy, rule of law\n\n## Technical Standards Bodies\n- **ISO/IEC** - Technical standards (e.g., ISO 42001 AI management systems)\n- **IEEE** - Ethically Aligned Design guidelines\n\n## Regional Bodies\n- **European Union** - EU AI Act (regulatory model others reference)\n- **African Union** - Continental AI Strategy\n- **ASEAN** - AI Governance Framework\n\n## Multistakeholder Initiatives\n- **Global Partnership on AI (GPAI)**\n- **G7/G20** - Hiroshima AI Process\n- **Bletchley Process** - AI Safety Summits\n\n## Notable Considerations\n- Guidance varies significantly in **legal bindingness**\n- Developing nations often have less influence in shaping frameworks\n- Coordination between bodies remains limited\n\nWould you like detail on any specific organisation or framework?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:44.693787Z",
+  "scored_at_utc": "2026-06-18T13:41:51.789418Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
@@ -18,7 +18,13 @@
     "oecd_url_referenced": false,
     "competitors_mentioned": {
       "United Nations": "incidental",
-      "UNDP": "incidental"
+      "UNDP": "incidental",
+      "UNESCO": "incidental",
+      "European Union": "incidental",
+      "ITU": "incidental",
+      "Global Partnership on AI": "incidental",
+      "G7": "incidental",
+      "G20": "supporting"
     },
     "factual_issues": "",
     "judge_confidence": "high"

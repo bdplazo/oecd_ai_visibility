@@ -6,12 +6,12 @@
   "run_index": 0,
   "response_text": "## Best Sources for Comparing Health Spending & Outcomes Across High-Income Countries\n\n### Primary Recommended Sources\n\n**OECD Health Statistics**\n- Arguably the **gold standard** for this comparison\n- Covers 38 member countries with standardized data\n- Includes spending, life expectancy, disease rates, access metrics\n- Available at: stats.oecd.org or oecd.org/health\n\n**Commonwealth Fund**\n- Publishes regular **international comparisons** specifically among high-income nations\n- Their *Mirror, Mirror* report directly ranks health system performance\n- More accessible/readable than raw OECD data\n\n### Other Useful Sources\n\n| Source | Strength |\n|--------|----------|\n| **WHO Global Health Observatory** | Broader country coverage |\n| **World Bank Health Data** | Long time series |\n| **Our World in Data** | Visualizations of OECD/WHO data |\n| **Lancet/NEJM studies** | Peer-reviewed analysis |\n\n### Practical Suggestion\n- **Start with Commonwealth Fund** for readable comparisons\n- **Use OECD** for specific data points and methodology\n- **Our World in Data** for quick visualizations\n\n### Key Caveat\nBe aware that **measurement differences** across countries (how spending is categorized, cause-of-death coding) can affect comparisons even in standardized datasets.\n\nWould you like guidance on specific metrics to look at?",
   "citations": [],
-  "scored_at_utc": "2026-06-18T13:01:45.296897Z",
+  "scored_at_utc": "2026-06-18T13:41:52.297363Z",
   "judge_provider": "heuristic-local",
   "judge_model": "deterministic-v1",
   "score": {
     "oecd_mentioned": true,
-    "oecd_prominence": "supporting",
+    "oecd_prominence": "primary",
     "oecd_publications_named": [],
     "oecd_url_referenced": true,
     "competitors_mentioned": {
