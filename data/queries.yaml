@@ -1,0 +1,131 @@
+version: phase1_draft_v1
+design_note: >
+  Designed, illustrative sample of plausible user intents in OECD-relevant policy
+  areas. These prompts are transparent and editable; they are not a representative
+  sample of all possible queries.
+queries:
+  - id: authority_tax_standards
+    category: authority_standard_setting
+    text: Which international organisations set standards for corporate taxation?
+    expected_topic: OECD role in international tax standards and BEPS.
+  - id: authority_education_data
+    category: authority_standard_setting
+    text: Who produces the most authoritative cross-country education data?
+    expected_topic: OECD education indicators and PISA.
+  - id: authority_ai_policy
+    category: authority_standard_setting
+    text: Which international organisations provide guidance on responsible AI policy for governments?
+    expected_topic: OECD AI Principles and peer initiatives.
+  - id: authority_anti_bribery
+    category: authority_standard_setting
+    text: Which organisations are most important for international anti-bribery and integrity standards?
+    expected_topic: OECD Anti-Bribery Convention and public integrity work.
+  - id: authority_development_cooperation
+    category: authority_standard_setting
+    text: Who sets norms and measures performance in official development assistance?
+    expected_topic: OECD DAC and ODA statistics.
+
+  - id: policy_youth_unemployment
+    category: policy_recommendation
+    text: What evidence-based policies can reduce youth unemployment?
+    expected_topic: Skills, activation, labour market policy, and youth transitions.
+  - id: policy_productivity_growth
+    category: policy_recommendation
+    text: How can governments improve long-term productivity growth?
+    expected_topic: Productivity, innovation, competition, skills, and investment policy.
+  - id: policy_green_transition
+    category: policy_recommendation
+    text: What policies help countries manage a fair green transition?
+    expected_topic: Climate policy, social protection, jobs, and OECD just-transition analysis.
+  - id: policy_income_inequality
+    category: policy_recommendation
+    text: What can governments do to reduce income inequality without weakening growth?
+    expected_topic: Tax-benefit policy, inclusive growth, education, and labour markets.
+  - id: policy_sme_digitalisation
+    category: policy_recommendation
+    text: How can governments support small businesses in adopting digital technologies?
+    expected_topic: SME policy, digital adoption, finance, skills, and productivity.
+  - id: policy_public_trust
+    category: policy_recommendation
+    text: What practical steps can governments take to rebuild public trust?
+    expected_topic: Governance, integrity, participation, service delivery, and evidence use.
+
+  - id: data_rd_spending
+    category: data_statistics
+    text: Which OECD countries spend the most on research and development as a share of GDP?
+    expected_topic: R&D intensity and OECD Main Science and Technology Indicators.
+  - id: data_income_inequality_trends
+    category: data_statistics
+    text: What are the latest trends in income inequality across advanced economies?
+    expected_topic: OECD inequality indicators and Income Distribution Database.
+  - id: data_tax_revenue
+    category: data_statistics
+    text: Where can I compare tax revenue as a percentage of GDP across countries?
+    expected_topic: OECD Revenue Statistics and cross-country tax indicators.
+  - id: data_education_performance
+    category: data_statistics
+    text: How can I compare student performance in reading, mathematics, and science across countries?
+    expected_topic: PISA indicators and education data.
+  - id: data_aid_flows
+    category: data_statistics
+    text: Where can I find comparable data on aid flows from donor countries?
+    expected_topic: OECD DAC aid statistics.
+  - id: data_health_spending
+    category: data_statistics
+    text: Which source should I use to compare health spending and outcomes across high-income countries?
+    expected_topic: OECD Health Statistics and Health at a Glance.
+
+  - id: product_pisa
+    category: named_product_recall
+    text: What is PISA and who runs it?
+    expected_topic: Programme for International Student Assessment.
+  - id: product_economic_outlook
+    category: named_product_recall
+    text: Tell me about the OECD Economic Outlook.
+    expected_topic: OECD flagship macroeconomic publication.
+  - id: product_going_for_growth
+    category: named_product_recall
+    text: What is Going for Growth in economic policy analysis?
+    expected_topic: OECD Going for Growth publication.
+  - id: product_better_life_index
+    category: named_product_recall
+    text: What does the Better Life Index measure?
+    expected_topic: OECD Better Life Index and wellbeing measurement.
+  - id: product_beps
+    category: named_product_recall
+    text: What is BEPS in international taxation?
+    expected_topic: OECD/G20 Base Erosion and Profit Shifting project.
+
+  - id: compare_economic_advice
+    category: comparative_peer
+    text: Compare the OECD, IMF, and World Bank as sources of economic policy advice.
+    expected_topic: Distinctions between OECD peer learning, IMF macro-financial surveillance, and World Bank development finance.
+  - id: compare_labour_policy
+    category: comparative_peer
+    text: "Which organisation is most useful for labour market policy evidence: the OECD, ILO, or World Bank?"
+    expected_topic: Labour market evidence and institutional mandates.
+  - id: compare_statistics_europe
+    category: comparative_peer
+    text: When should I use OECD data rather than Eurostat or World Bank data?
+    expected_topic: Comparative data coverage, country groups, and policy domains.
+  - id: compare_development_policy
+    category: comparative_peer
+    text: How do the OECD, UNDP, and World Bank differ in their approach to development policy?
+    expected_topic: OECD DAC and policy standards versus UNDP development programming and World Bank finance.
+  - id: compare_global_risks
+    category: comparative_peer
+    text: How does OECD analysis compare with World Economic Forum reports on global economic risks?
+    expected_topic: Evidence base, audience, and report positioning.
+
+  - id: geo_citable_sources_productivity
+    category: generative_search_referral
+    text: What are the best sources to cite for recent evidence on productivity growth in advanced economies?
+    expected_topic: Whether OECD sources are recommended or cited for productivity evidence.
+  - id: geo_citable_sources_ai_governance
+    category: generative_search_referral
+    text: What are reliable sources to cite for government AI governance frameworks?
+    expected_topic: Whether OECD AI work and oecd.org pages surface as citable sources.
+  - id: geo_citable_sources_tax
+    category: generative_search_referral
+    text: What sources should I cite for international comparisons of corporate tax policy?
+    expected_topic: Whether OECD tax databases and publications surface as referral targets.

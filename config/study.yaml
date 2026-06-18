@@ -1,0 +1,66 @@
+study_name: oecd_ai_visibility_snapshot
+description: >
+  Exploratory, config-driven study of OECD visibility in LLM and generative-search
+  answers across a designed sample of OECD-relevant user intents.
+n_runs: 1
+budget_eur: 25.0
+
+providers:
+  - name: openai
+    enabled: true
+    model: gpt-4o
+    temperature: 0.0
+    max_output_tokens: 900
+    supports_citations: false
+    env_var: OPENAI_API_KEY
+  - name: anthropic
+    enabled: true
+    model: claude-3-5-sonnet-latest
+    temperature: 0.0
+    max_output_tokens: 900
+    supports_citations: false
+    env_var: ANTHROPIC_API_KEY
+  - name: gemini
+    enabled: true
+    model: gemini-1.5-pro
+    temperature: 0.0
+    max_output_tokens: 900
+    supports_citations: false
+    env_var: GOOGLE_API_KEY
+  - name: perplexity
+    enabled: true
+    model: sonar-pro
+    temperature: 0.0
+    max_output_tokens: 900
+    supports_citations: true
+    env_var: PERPLEXITY_API_KEY
+
+judge:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.0
+  validation_sample_size: 12
+
+paths:
+  queries: data/queries.yaml
+  raw_dir: data/raw
+  scored_dir: data/scored
+  aggregated_csv: data/scored/scored_responses.csv
+  validation_sample_csv: data/scored/validation_sample.csv
+  figures_dir: outputs/figures
+  report_md: outputs/report/report.md
+
+peer_organisations:
+  - IMF
+  - World Bank
+  - ILO
+  - United Nations
+  - UNDP
+  - World Economic Forum
+  - Eurostat
+
+dry_run:
+  enabled_by_default: true
+  fixture_dir: data/fixtures
+  mock_provider_name: fixture
+  mock_model: fixture-v1

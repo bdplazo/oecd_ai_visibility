@@ -6,14 +6,14 @@ This project is designed as an exploratory communications-intelligence study: tr
 
 ## Current Status
 
-Phase 0 scaffold is in place. The implementation will proceed in reviewed phases:
+Phase 1 is in place: schemas, study configuration, and the first transparent query framework.
+The remaining implementation will proceed in reviewed phases:
 
-1. Schemas, configuration, and query framework.
-2. Provider adapters and dry-run pipeline.
-3. LLM-as-judge scoring.
-4. Live run, after explicit budget approval.
-5. Aggregation, Power BI export, and visualisations.
-6. Markdown report drafted from real computed numbers.
+1. Provider adapters and dry-run pipeline.
+2. LLM-as-judge scoring.
+3. Live run, after explicit budget approval.
+4. Aggregation, Power BI export, and visualisations.
+5. Markdown report drafted from real computed numbers.
 
 ## Intended Command
 
