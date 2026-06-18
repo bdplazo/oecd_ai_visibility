@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "authority_tax_standards",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:37:11.412772Z",
+  "latency_seconds": 45.20913329999894,
+  "response_text": "International organizations that play a significant role in setting standards for corporate taxation include:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD is a key player in developing international tax standards, particularly through its Base Erosion and Profit Shifting (BEPS) project, which aims to prevent tax avoidance by multinational enterprises.\n\n2. **United Nations (UN)**: The UN develops guidelines and models for international tax cooperation, particularly focusing on the needs of developing countries.\n\n3. **European Union (EU)**: The EU sets tax-related directives and regulations for its member states, aiming to harmonize tax policies and prevent tax avoidance within the EU.\n\n4. **International Monetary Fund (IMF)**: While not directly setting tax standards, the IMF provides analysis and advice on tax policy and administration to its member countries.\n\n5. **World Bank**: Similar to the IMF, the World Bank offers guidance and support for tax policy reforms, especially in developing countries.\n\nThese organizations work together and with individual countries to create frameworks and guidelines that influence corporate taxation globally.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 16,
+    "output_tokens": 216,
+    "total_tokens": 232
+  },
+  "raw_payload": {
+    "id": "resp_040c06e03de692dc006a33bc6f4784819d836b4fa569128228",
+    "created_at": 1781775471.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_040c06e03de692dc006a33bc711d60819db57baf1128916ee5",
+        "content": [
+          {
+            "annotations": [],
+            "text": "International organizations that play a significant role in setting standards for corporate taxation include:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD is a key player in developing international tax standards, particularly through its Base Erosion and Profit Shifting (BEPS) project, which aims to prevent tax avoidance by multinational enterprises.\n\n2. **United Nations (UN)**: The UN develops guidelines and models for international tax cooperation, particularly focusing on the needs of developing countries.\n\n3. **European Union (EU)**: The EU sets tax-related directives and regulations for its member states, aiming to harmonize tax policies and prevent tax avoidance within the EU.\n\n4. **International Monetary Fund (IMF)**: While not directly setting tax standards, the IMF provides analysis and advice on tax policy and administration to its member countries.\n\n5. **World Bank**: Similar to the IMF, the World Bank offers guidance and support for tax policy reforms, especially in developing countries.\n\nThese organizations work together and with individual countries to create frameworks and guidelines that influence corporate taxation globally.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 16,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 232
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775474,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

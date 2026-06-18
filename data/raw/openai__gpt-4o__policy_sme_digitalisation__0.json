@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "policy_sme_digitalisation",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:38:51.900969Z",
+  "latency_seconds": 8.466025999980047,
+  "response_text": "Governments can play a crucial role in helping small businesses adopt digital technologies through various initiatives and support mechanisms. Here are some effective strategies:\n\n1. **Financial Incentives**: Provide grants, subsidies, or low-interest loans specifically for digital transformation projects. Tax incentives can also encourage investment in technology.\n\n2. **Training and Education**: Offer workshops, online courses, and resources to help small business owners and their employees develop digital skills and understand the benefits of digital tools.\n\n3. **Advisory Services**: Establish digital advisory services or helplines where businesses can receive personalized advice on technology adoption and digital strategy.\n\n4. **Public-Private Partnerships**: Collaborate with tech companies to offer discounted or free access to digital tools and platforms for small businesses.\n\n5. **Infrastructure Development**: Invest in improving digital infrastructure, such as high-speed internet access, especially in underserved areas, to ensure businesses can effectively utilize digital technologies.\n\n6. **Digital Hubs and Incubators**: Create innovation hubs or incubators that provide small businesses with access to technology, mentorship, and networking opportunities.\n\n7. **Regulatory Support**: Simplify regulations and provide clear guidelines to facilitate the adoption of digital technologies, such as e-commerce and digital payments.\n\n8. **Awareness Campaigns**: Launch campaigns to raise awareness about the benefits of digital transformation and share success stories of businesses that have successfully adopted digital technologies.\n\n9. **Cybersecurity Support**: Offer resources and training to help small businesses protect themselves against cyber threats, ensuring they can adopt digital tools safely.\n\n10. **Research and Development**: Fund research initiatives that explore new digital solutions tailored to the needs of small businesses.\n\nBy implementing these strategies, governments can help small businesses overcome barriers to digital adoption and enhance their competitiveness in the digital economy.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 18,
+    "output_tokens": 363,
+    "total_tokens": 381
+  },
+  "raw_payload": {
+    "id": "resp_08c15d29a60735ed006a33bcab0950819dae0c2fd4d178ea4c",
+    "created_at": 1781775531.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_08c15d29a60735ed006a33bcab8cfc819d88b4322a12a3640d",
+        "content": [
+          {
+            "annotations": [],
+            "text": "Governments can play a crucial role in helping small businesses adopt digital technologies through various initiatives and support mechanisms. Here are some effective strategies:\n\n1. **Financial Incentives**: Provide grants, subsidies, or low-interest loans specifically for digital transformation projects. Tax incentives can also encourage investment in technology.\n\n2. **Training and Education**: Offer workshops, online courses, and resources to help small business owners and their employees develop digital skills and understand the benefits of digital tools.\n\n3. **Advisory Services**: Establish digital advisory services or helplines where businesses can receive personalized advice on technology adoption and digital strategy.\n\n4. **Public-Private Partnerships**: Collaborate with tech companies to offer discounted or free access to digital tools and platforms for small businesses.\n\n5. **Infrastructure Development**: Invest in improving digital infrastructure, such as high-speed internet access, especially in underserved areas, to ensure businesses can effectively utilize digital technologies.\n\n6. **Digital Hubs and Incubators**: Create innovation hubs or incubators that provide small businesses with access to technology, mentorship, and networking opportunities.\n\n7. **Regulatory Support**: Simplify regulations and provide clear guidelines to facilitate the adoption of digital technologies, such as e-commerce and digital payments.\n\n8. **Awareness Campaigns**: Launch campaigns to raise awareness about the benefits of digital transformation and share success stories of businesses that have successfully adopted digital technologies.\n\n9. **Cybersecurity Support**: Offer resources and training to help small businesses protect themselves against cyber threats, ensuring they can adopt digital tools safely.\n\n10. **Research and Development**: Fund research initiatives that explore new digital solutions tailored to the needs of small businesses.\n\nBy implementing these strategies, governments can help small businesses overcome barriers to digital adoption and enhance their competitiveness in the digital economy.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 18,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 381
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775538,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "compare_statistics_europe",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:40:04.695688Z",
+  "latency_seconds": 7.351497400086373,
+  "response_text": "Choosing between OECD, Eurostat, and World Bank data depends on your specific needs and the context of your research or analysis. Here's a brief guide to help you decide:\n\n1. **OECD Data**:\n   - **Focus**: Primarily covers member countries, which are mostly high-income economies.\n   - **Strengths**: Offers detailed data on economic indicators, education, health, and innovation. Known for high-quality, comparable statistics across developed countries.\n   - **Use When**: You need in-depth analysis of policy issues, economic trends, or social indicators in developed countries.\n\n2. **Eurostat Data**:\n   - **Focus**: Provides statistical information on the European Union and its member states.\n   - **Strengths**: Comprehensive data on EU-specific topics like regional statistics, EU policies, and integration.\n   - **Use When**: Your research is focused on European countries, especially within the context of EU policies and comparisons.\n\n3. **World Bank Data**:\n   - **Focus**: Global coverage, including low and middle-income countries.\n   - **Strengths**: Extensive data on development indicators, poverty, and global economic trends.\n   - **Use When**: You need a broad, global perspective, especially for development-related research or when comparing countries across different income levels.\n\nIn summary, use OECD data for detailed analysis of developed countries, Eurostat for EU-specific research, and World Bank for a global perspective, especially on development issues.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 22,
+    "output_tokens": 300,
+    "total_tokens": 322
+  },
+  "raw_payload": {
+    "id": "resp_084ed898de5c0abb006a33bcf3e6408192acfb0be2a2c2503b",
+    "created_at": 1781775603.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_084ed898de5c0abb006a33bcf459888192a6c20cf98c4e1720",
+        "content": [
+          {
+            "annotations": [],
+            "text": "Choosing between OECD, Eurostat, and World Bank data depends on your specific needs and the context of your research or analysis. Here's a brief guide to help you decide:\n\n1. **OECD Data**:\n   - **Focus**: Primarily covers member countries, which are mostly high-income economies.\n   - **Strengths**: Offers detailed data on economic indicators, education, health, and innovation. Known for high-quality, comparable statistics across developed countries.\n   - **Use When**: You need in-depth analysis of policy issues, economic trends, or social indicators in developed countries.\n\n2. **Eurostat Data**:\n   - **Focus**: Provides statistical information on the European Union and its member states.\n   - **Strengths**: Comprehensive data on EU-specific topics like regional statistics, EU policies, and integration.\n   - **Use When**: Your research is focused on European countries, especially within the context of EU policies and comparisons.\n\n3. **World Bank Data**:\n   - **Focus**: Global coverage, including low and middle-income countries.\n   - **Strengths**: Extensive data on development indicators, poverty, and global economic trends.\n   - **Use When**: You need a broad, global perspective, especially for development-related research or when comparing countries across different income levels.\n\nIn summary, use OECD data for detailed analysis of developed countries, Eurostat for EU-specific research, and World Bank for a global perspective, especially on development issues.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 22,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 322
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775610,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "authority_anti_bribery",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:38:03.610365Z",
+  "latency_seconds": 15.718366499990225,
+  "response_text": "Several key organizations play a crucial role in establishing international anti-bribery and integrity standards:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD's Anti-Bribery Convention is a major international instrument aimed at combating bribery of foreign public officials in international business transactions.\n\n2. **United Nations (UN)**: The UN Convention against Corruption (UNCAC) is a comprehensive global framework for combating corruption, including bribery.\n\n3. **Transparency International**: This non-governmental organization is known for its Corruption Perceptions Index and advocacy for anti-corruption measures worldwide.\n\n4. **Financial Action Task Force (FATF)**: While primarily focused on money laundering, FATF's recommendations also address corruption and bribery as part of financial crimes.\n\n5. **World Bank**: The World Bank implements anti-corruption measures in its projects and provides guidance and support to countries in strengthening their anti-corruption frameworks.\n\n6. **International Chamber of Commerce (ICC)**: The ICC provides guidelines and tools for businesses to combat corruption and promote integrity in international trade.\n\n7. **European Union (EU)**: The EU has various directives and regulations aimed at preventing corruption and promoting transparency within its member states.\n\nThese organizations work together to promote transparency, accountability, and integrity in both the public and private sectors globally.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 22,
+    "output_tokens": 270,
+    "total_tokens": 292
+  },
+  "raw_payload": {
+    "id": "resp_0009b5dd9b924701006a33bc85a3fc81a183e2fd7c09c453f1",
+    "created_at": 1781775493.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0009b5dd9b924701006a33bc8728f081a1b6fa0356270ea19f",
+        "content": [
+          {
+            "annotations": [],
+            "text": "Several key organizations play a crucial role in establishing international anti-bribery and integrity standards:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD's Anti-Bribery Convention is a major international instrument aimed at combating bribery of foreign public officials in international business transactions.\n\n2. **United Nations (UN)**: The UN Convention against Corruption (UNCAC) is a comprehensive global framework for combating corruption, including bribery.\n\n3. **Transparency International**: This non-governmental organization is known for its Corruption Perceptions Index and advocacy for anti-corruption measures worldwide.\n\n4. **Financial Action Task Force (FATF)**: While primarily focused on money laundering, FATF's recommendations also address corruption and bribery as part of financial crimes.\n\n5. **World Bank**: The World Bank implements anti-corruption measures in its projects and provides guidance and support to countries in strengthening their anti-corruption frameworks.\n\n6. **International Chamber of Commerce (ICC)**: The ICC provides guidelines and tools for businesses to combat corruption and promote integrity in international trade.\n\n7. **European Union (EU)**: The EU has various directives and regulations aimed at preventing corruption and promoting transparency within its member states.\n\nThese organizations work together to promote transparency, accountability, and integrity in both the public and private sectors globally.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 22,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 292
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775497,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

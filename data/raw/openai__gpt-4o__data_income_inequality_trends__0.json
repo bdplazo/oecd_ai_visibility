@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "data_income_inequality_trends",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:09.236488Z",
+  "latency_seconds": 3.218178200069815,
+  "response_text": "Recent trends in income inequality across advanced economies reveal several key patterns:\n\n1. **Stagnant Middle Class**: Many advanced economies are experiencing a stagnation or decline in middle-class incomes, with wage growth not keeping pace with productivity gains.\n\n2. **Wealth Concentration**: There is an increasing concentration of wealth among the top earners, with the richest individuals and families accumulating a larger share of total wealth.\n\n3. **Technological Impact**: Automation and digitalization are disproportionately benefiting high-skilled workers, widening the income gap between them and low-skilled workers.\n\n4. **Globalization Effects**: While globalization has driven economic growth, it has also contributed to job displacement in certain sectors, affecting income distribution.\n\n5. **Policy Responses**: Some countries are implementing policies to address inequality, such as progressive taxation, increased minimum wages, and social welfare programs.\n\n6. **Gender and Racial Disparities**: Persistent gender and racial income gaps continue to contribute to overall inequality, with women and minority groups often earning less than their counterparts.\n\n7. **Housing and Education Costs**: Rising costs in housing and education are exacerbating inequality, as they disproportionately affect lower-income households.\n\nThese trends highlight the complex and multifaceted nature of income inequality in advanced economies, prompting ongoing debates about effective policy interventions.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 19,
+    "output_tokens": 264,
+    "total_tokens": 283
+  },
+  "raw_payload": {
+    "id": "resp_0f4c77dc3594034f006a33bcbc557481a3916cc3ce3ce5bfa9",
+    "created_at": 1781775548.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0f4c77dc3594034f006a33bcbcb44c81a3a1d3d816e5348487",
+        "content": [
+          {
+            "annotations": [],
+            "text": "Recent trends in income inequality across advanced economies reveal several key patterns:\n\n1. **Stagnant Middle Class**: Many advanced economies are experiencing a stagnation or decline in middle-class incomes, with wage growth not keeping pace with productivity gains.\n\n2. **Wealth Concentration**: There is an increasing concentration of wealth among the top earners, with the richest individuals and families accumulating a larger share of total wealth.\n\n3. **Technological Impact**: Automation and digitalization are disproportionately benefiting high-skilled workers, widening the income gap between them and low-skilled workers.\n\n4. **Globalization Effects**: While globalization has driven economic growth, it has also contributed to job displacement in certain sectors, affecting income distribution.\n\n5. **Policy Responses**: Some countries are implementing policies to address inequality, such as progressive taxation, increased minimum wages, and social welfare programs.\n\n6. **Gender and Racial Disparities**: Persistent gender and racial income gaps continue to contribute to overall inequality, with women and minority groups often earning less than their counterparts.\n\n7. **Housing and Education Costs**: Rising costs in housing and education are exacerbating inequality, as they disproportionately affect lower-income households.\n\nThese trends highlight the complex and multifaceted nature of income inequality in advanced economies, prompting ongoing debates about effective policy interventions.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 19,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 283
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775550,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

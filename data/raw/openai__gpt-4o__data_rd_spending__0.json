@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "data_rd_spending",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:06.573102Z",
+  "latency_seconds": 2.6612454999703914,
+  "response_text": "As of the latest data, the OECD countries that typically spend the most on research and development (R&D) as a share of GDP include:\n\n1. **Israel**\n2. **South Korea**\n3. **Sweden**\n4. **Japan**\n5. **Switzerland**\n\nThese countries consistently rank high in R&D expenditure relative to their GDP, reflecting strong commitments to innovation and technological advancement. For the most current and specific figures, it's best to refer to the latest OECD reports or databases.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 23,
+    "output_tokens": 101,
+    "total_tokens": 124
+  },
+  "raw_payload": {
+    "id": "resp_0c29a642d861a7dd006a33bcb9dac88191bd56747021df11dc",
+    "created_at": 1781775545.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0c29a642d861a7dd006a33bcba439c8191baec5eb625a7bd93",
+        "content": [
+          {
+            "annotations": [],
+            "text": "As of the latest data, the OECD countries that typically spend the most on research and development (R&D) as a share of GDP include:\n\n1. **Israel**\n2. **South Korea**\n3. **Sweden**\n4. **Japan**\n5. **Switzerland**\n\nThese countries consistently rank high in R&D expenditure relative to their GDP, reflecting strong commitments to innovation and technological advancement. For the most current and specific figures, it's best to refer to the latest OECD reports or databases.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 23,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 101,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 124
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775547,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

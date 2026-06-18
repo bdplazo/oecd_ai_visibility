@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_beps",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:44.865955Z",
+  "latency_seconds": 5.948407200165093,
+  "response_text": "BEPS stands for Base Erosion and Profit Shifting. It refers to tax planning strategies used by multinational companies to shift profits from high-tax jurisdictions to low-tax jurisdictions, thereby eroding the tax base of the higher-tax countries. This can result in significant losses in tax revenue for governments.\n\nThe OECD and G20 have developed a comprehensive set of measures to address BEPS, known as the BEPS Action Plan. This plan includes 15 actions aimed at improving transparency, coherence, and substance in the international tax system to prevent tax avoidance and ensure that profits are taxed where economic activities generating the profits are performed and where value is created.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 15,
+    "output_tokens": 128,
+    "total_tokens": 143
+  },
+  "raw_payload": {
+    "id": "resp_069119d2f614b6ae006a33bce035b0819cb577adc0d7c2f077",
+    "created_at": 1781775584.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_069119d2f614b6ae006a33bce19040819ca120ac560c14fc34",
+        "content": [
+          {
+            "annotations": [],
+            "text": "BEPS stands for Base Erosion and Profit Shifting. It refers to tax planning strategies used by multinational companies to shift profits from high-tax jurisdictions to low-tax jurisdictions, thereby eroding the tax base of the higher-tax countries. This can result in significant losses in tax revenue for governments.\n\nThe OECD and G20 have developed a comprehensive set of measures to address BEPS, known as the BEPS Action Plan. This plan includes 15 actions aimed at improving transparency, coherence, and substance in the international tax system to prevent tax avoidance and ensure that profits are taxed where economic activities generating the profits are performed and where value is created.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 15,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 143
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775589,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

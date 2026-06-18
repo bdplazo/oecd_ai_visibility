@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_pisa",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:29.902801Z",
+  "latency_seconds": 1.9703798000700772,
+  "response_text": "PISA, or the Programme for International Student Assessment, is an international study that evaluates the educational performance of 15-year-old students in reading, mathematics, and science. It is conducted every three years and aims to assess how well students can apply their knowledge to real-world situations.\n\nPISA is run by the Organisation for Economic Co-operation and Development (OECD), an intergovernmental organization that promotes policies to improve the economic and social well-being of people around the world.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 16,
+    "output_tokens": 96,
+    "total_tokens": 112
+  },
+  "raw_payload": {
+    "id": "resp_0f693ef6f2c4b665006a33bcd0e35481a0afba2a59533df2c3",
+    "created_at": 1781775568.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0f693ef6f2c4b665006a33bcd1428881a094e9b226038875e3",
+        "content": [
+          {
+            "annotations": [],
+            "text": "PISA, or the Programme for International Student Assessment, is an international study that evaluates the educational performance of 15-year-old students in reading, mathematics, and science. It is conducted every three years and aims to assess how well students can apply their knowledge to real-world situations.\n\nPISA is run by the Organisation for Economic Co-operation and Development (OECD), an intergovernmental organization that promotes policies to improve the economic and social well-being of people around the world.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 16,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 96,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 112
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775570,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

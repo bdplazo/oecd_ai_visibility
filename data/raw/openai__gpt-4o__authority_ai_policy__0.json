@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "authority_ai_policy",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:37:59.429026Z",
+  "latency_seconds": 4.175053099868819,
+  "response_text": "Several international organizations provide guidance on responsible AI policy for governments. Some of the key ones include:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD has developed the OECD AI Principles, which provide a framework for the responsible development and use of AI.\n\n2. **United Nations Educational, Scientific and Cultural Organization (UNESCO)**: UNESCO has established recommendations on the ethics of AI, focusing on human rights and ethical considerations.\n\n3. **European Union (EU)**: The EU has been active in creating guidelines and regulations for AI, including the proposed AI Act, which aims to ensure AI systems are safe and respect fundamental rights.\n\n4. **World Economic Forum (WEF)**: The WEF provides insights and frameworks for AI governance, emphasizing collaboration between public and private sectors.\n\n5. **International Telecommunication Union (ITU)**: The ITU works on AI for Good initiatives, promoting AI technologies that align with sustainable development goals.\n\n6. **Global Partnership on AI (GPAI)**: GPAI is an international initiative that supports and guides the responsible development and use of AI, fostering collaboration among countries.\n\nThese organizations offer frameworks, principles, and recommendations to help governments develop policies that ensure AI technologies are used ethically and responsibly.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 19,
+    "output_tokens": 253,
+    "total_tokens": 272
+  },
+  "raw_payload": {
+    "id": "resp_095197c90c27782b006a33bc767db8819dbec8259bbedd0a19",
+    "created_at": 1781775478.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_095197c90c27782b006a33bc781980819d97e6cd5f6974395d",
+        "content": [
+          {
+            "annotations": [],
+            "text": "Several international organizations provide guidance on responsible AI policy for governments. Some of the key ones include:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD has developed the OECD AI Principles, which provide a framework for the responsible development and use of AI.\n\n2. **United Nations Educational, Scientific and Cultural Organization (UNESCO)**: UNESCO has established recommendations on the ethics of AI, focusing on human rights and ethical considerations.\n\n3. **European Union (EU)**: The EU has been active in creating guidelines and regulations for AI, including the proposed AI Act, which aims to ensure AI systems are safe and respect fundamental rights.\n\n4. **World Economic Forum (WEF)**: The WEF provides insights and frameworks for AI governance, emphasizing collaboration between public and private sectors.\n\n5. **International Telecommunication Union (ITU)**: The ITU works on AI for Good initiatives, promoting AI technologies that align with sustainable development goals.\n\n6. **Global Partnership on AI (GPAI)**: GPAI is an international initiative that supports and guides the responsible development and use of AI, fostering collaboration among countries.\n\nThese organizations offer frameworks, principles, and recommendations to help governments develop policies that ensure AI technologies are used ethically and responsibly.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 19,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 272
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775481,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

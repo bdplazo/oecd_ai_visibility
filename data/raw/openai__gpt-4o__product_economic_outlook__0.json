@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_economic_outlook",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:31.878360Z",
+  "latency_seconds": 3.9822003999724984,
+  "response_text": "The OECD Economic Outlook is a biannual report published by the Organisation for Economic Co-operation and Development (OECD). It provides analysis and projections for the global economy, focusing on the economic performance of OECD member countries and other major economies. The report includes:\n\n1. **Economic Forecasts**: Short-term and medium-term projections for GDP growth, inflation, employment, and other key economic indicators.\n\n2. **Policy Analysis**: Recommendations for fiscal, monetary, and structural policies to address economic challenges and promote sustainable growth.\n\n3. **Global Trends**: Examination of global economic trends and their implications for member and non-member countries.\n\n4. **Special Topics**: In-depth analysis of specific economic issues, such as trade tensions, technological change, or environmental challenges.\n\nThe report is a valuable resource for policymakers, economists, and analysts, providing insights into economic conditions and policy options.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 15,
+    "output_tokens": 177,
+    "total_tokens": 192
+  },
+  "raw_payload": {
+    "id": "resp_0659cfa6e8408970006a33bcd32514819fb9ce7c2664389b1f",
+    "created_at": 1781775571.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0659cfa6e8408970006a33bcd37e04819fa2ee0f4bbd65f1de",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The OECD Economic Outlook is a biannual report published by the Organisation for Economic Co-operation and Development (OECD). It provides analysis and projections for the global economy, focusing on the economic performance of OECD member countries and other major economies. The report includes:\n\n1. **Economic Forecasts**: Short-term and medium-term projections for GDP growth, inflation, employment, and other key economic indicators.\n\n2. **Policy Analysis**: Recommendations for fiscal, monetary, and structural policies to address economic challenges and promote sustainable growth.\n\n3. **Global Trends**: Examination of global economic trends and their implications for member and non-member countries.\n\n4. **Special Topics**: In-depth analysis of specific economic issues, such as trade tensions, technological change, or environmental challenges.\n\nThe report is a valuable resource for policymakers, economists, and analysts, providing insights into economic conditions and policy options.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 15,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 177,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 192
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775574,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

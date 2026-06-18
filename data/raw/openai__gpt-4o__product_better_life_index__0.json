@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_better_life_index",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:41.145599Z",
+  "latency_seconds": 3.7172940999735147,
+  "response_text": "The Better Life Index, developed by the Organisation for Economic Co-operation and Development (OECD), measures well-being across countries. It evaluates various dimensions of life quality, including:\n\n1. **Housing**: Conditions and costs.\n2. **Income**: Household income and wealth.\n3. **Jobs**: Employment rates and job security.\n4. **Community**: Social connections and support networks.\n5. **Education**: Access to and quality of education.\n6. **Environment**: Quality of the environment and pollution levels.\n7. **Governance**: Civic engagement and trust in institutions.\n8. **Health**: Life expectancy and health status.\n9. **Life Satisfaction**: Overall happiness and satisfaction with life.\n10. **Safety**: Personal security and crime rates.\n11. **Work-Life Balance**: Time devoted to leisure and personal care.\n\nThe index allows users to prioritize these factors according to their personal values to see how countries perform based on their preferences.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 15,
+    "output_tokens": 199,
+    "total_tokens": 214
+  },
+  "raw_payload": {
+    "id": "resp_0a672a6d668f590f006a33bcdc231481a09bc4d91635d34c5d",
+    "created_at": 1781775580.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0a672a6d668f590f006a33bcdcc72881a080fd92f326b5a306",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The Better Life Index, developed by the Organisation for Economic Co-operation and Development (OECD), measures well-being across countries. It evaluates various dimensions of life quality, including:\n\n1. **Housing**: Conditions and costs.\n2. **Income**: Household income and wealth.\n3. **Jobs**: Employment rates and job security.\n4. **Community**: Social connections and support networks.\n5. **Education**: Access to and quality of education.\n6. **Environment**: Quality of the environment and pollution levels.\n7. **Governance**: Civic engagement and trust in institutions.\n8. **Health**: Life expectancy and health status.\n9. **Life Satisfaction**: Overall happiness and satisfaction with life.\n10. **Safety**: Personal security and crime rates.\n11. **Work-Life Balance**: Time devoted to leisure and personal care.\n\nThe index allows users to prioritize these factors according to their personal values to see how countries perform based on their preferences.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 15,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 214
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775583,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

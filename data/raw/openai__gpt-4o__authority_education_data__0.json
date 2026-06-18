@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "authority_education_data",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:37:56.629828Z",
+  "latency_seconds": 2.7932742999400944,
+  "response_text": "The most authoritative cross-country education data is typically produced by organizations such as:\n\n1. **UNESCO Institute for Statistics (UIS)**: Provides comprehensive data on global education, literacy, and educational attainment.\n\n2. **OECD (Organisation for Economic Co-operation and Development)**: Publishes the Programme for International Student Assessment (PISA) and other educational indicators.\n\n3. **World Bank**: Offers extensive data on education systems, financing, and outcomes across countries.\n\n4. **UNICEF**: Focuses on education data related to children and youth, particularly in developing countries.\n\nThese organizations are known for their rigorous methodologies and global reach in data collection and analysis.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 17,
+    "output_tokens": 134,
+    "total_tokens": 151
+  },
+  "raw_payload": {
+    "id": "resp_0501cf67e189fce5006a33bc73b33081a38309c420387d59f9",
+    "created_at": 1781775475.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0501cf67e189fce5006a33bc741b6081a38479a223fbb3dca7",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The most authoritative cross-country education data is typically produced by organizations such as:\n\n1. **UNESCO Institute for Statistics (UIS)**: Provides comprehensive data on global education, literacy, and educational attainment.\n\n2. **OECD (Organisation for Economic Co-operation and Development)**: Publishes the Programme for International Student Assessment (PISA) and other educational indicators.\n\n3. **World Bank**: Offers extensive data on education systems, financing, and outcomes across countries.\n\n4. **UNICEF**: Focuses on education data related to children and youth, particularly in developing countries.\n\nThese organizations are known for their rigorous methodologies and global reach in data collection and analysis.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 17,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 134,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 151
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775477,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "compare_development_policy",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:40:12.050636Z",
+  "latency_seconds": 6.401092499960214,
+  "response_text": "The OECD, UNDP, and World Bank each have distinct approaches to development policy, reflecting their unique mandates, structures, and areas of focus:\n\n1. **OECD (Organisation for Economic Co-operation and Development):**\n   - **Mandate and Focus:** The OECD is primarily a forum for governments to discuss and coordinate economic and social policies. It focuses on promoting policies that improve economic and social well-being globally.\n   - **Approach:** The OECD emphasizes data collection, analysis, and policy recommendations. It provides a platform for member countries to share experiences and best practices. Its work often involves setting international standards and guidelines.\n   - **Key Areas:** Economic growth, trade, education, innovation, and governance. The OECD also addresses issues like tax policy and environmental sustainability.\n\n2. **UNDP (United Nations Development Programme):**\n   - **Mandate and Focus:** The UNDP is the UN's global development network, focusing on poverty reduction, democratic governance, crisis prevention, and sustainable development.\n   - **Approach:** The UNDP works directly with countries to implement development projects and programs. It emphasizes capacity building, technical assistance, and advocacy for sustainable development goals (SDGs).\n   - **Key Areas:** Poverty alleviation, gender equality, climate change, and governance. The UNDP is heavily involved in supporting the achievement of the SDGs.\n\n3. **World Bank:**\n   - **Mandate and Focus:** The World Bank provides financial and technical assistance to developing countries for development projects that are expected to improve economic prospects and quality of life.\n   - **Approach:** The World Bank offers loans, credits, and grants for projects in various sectors, such as infrastructure, education, health, and agriculture. It also provides policy advice and research.\n   - **Key Areas:** Economic development, poverty reduction, infrastructure development, and human capital. The World Bank focuses on large-scale projects and structural reforms.\n\nIn summary, while all three organizations aim to promote development, the OECD focuses on policy analysis and coordination among developed countries, the UNDP emphasizes direct support and advocacy for sustainable development, and the World Bank provides financial resources and expertise for development projects.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 26,
+    "output_tokens": 436,
+    "total_tokens": 462
+  },
+  "raw_payload": {
+    "id": "resp_0ec9a983999050d6006a33bcfb3a9c81929a5c2d763e76f8b0",
+    "created_at": 1781775611.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0ec9a983999050d6006a33bcfbae8c819295d0480c8da921e8",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The OECD, UNDP, and World Bank each have distinct approaches to development policy, reflecting their unique mandates, structures, and areas of focus:\n\n1. **OECD (Organisation for Economic Co-operation and Development):**\n   - **Mandate and Focus:** The OECD is primarily a forum for governments to discuss and coordinate economic and social policies. It focuses on promoting policies that improve economic and social well-being globally.\n   - **Approach:** The OECD emphasizes data collection, analysis, and policy recommendations. It provides a platform for member countries to share experiences and best practices. Its work often involves setting international standards and guidelines.\n   - **Key Areas:** Economic growth, trade, education, innovation, and governance. The OECD also addresses issues like tax policy and environmental sustainability.\n\n2. **UNDP (United Nations Development Programme):**\n   - **Mandate and Focus:** The UNDP is the UN's global development network, focusing on poverty reduction, democratic governance, crisis prevention, and sustainable development.\n   - **Approach:** The UNDP works directly with countries to implement development projects and programs. It emphasizes capacity building, technical assistance, and advocacy for sustainable development goals (SDGs).\n   - **Key Areas:** Poverty alleviation, gender equality, climate change, and governance. The UNDP is heavily involved in supporting the achievement of the SDGs.\n\n3. **World Bank:**\n   - **Mandate and Focus:** The World Bank provides financial and technical assistance to developing countries for development projects that are expected to improve economic prospects and quality of life.\n   - **Approach:** The World Bank offers loans, credits, and grants for projects in various sectors, such as infrastructure, education, health, and agriculture. It also provides policy advice and research.\n   - **Key Areas:** Economic development, poverty reduction, infrastructure development, and human capital. The World Bank focuses on large-scale projects and structural reforms.\n\nIn summary, while all three organizations aim to promote development, the OECD focuses on policy analysis and coordination among developed countries, the UNDP emphasizes direct support and advocacy for sustainable development, and the World Bank provides financial resources and expertise for development projects.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 26,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 436,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 462
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775616,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

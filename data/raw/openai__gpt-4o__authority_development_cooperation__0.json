@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "authority_development_cooperation",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:38:19.333492Z",
+  "latency_seconds": 2.347062800079584,
+  "response_text": "The norms and performance measures for Official Development Assistance (ODA) are primarily set by the Development Assistance Committee (DAC) of the Organisation for Economic Co-operation and Development (OECD). The DAC establishes guidelines and standards to ensure that aid is effective, transparent, and aligned with development goals. It also monitors and evaluates the performance of ODA to ensure accountability and effectiveness in achieving development outcomes.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 18,
+    "output_tokens": 78,
+    "total_tokens": 96
+  },
+  "raw_payload": {
+    "id": "resp_0f1a8559077f6cc1006a33bc8a6894819e99f82484d87abfa7",
+    "created_at": 1781775498.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0f1a8559077f6cc1006a33bc8aed9c819ebd3c539c4bb6027b",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The norms and performance measures for Official Development Assistance (ODA) are primarily set by the Development Assistance Committee (DAC) of the Organisation for Economic Co-operation and Development (OECD). The DAC establishes guidelines and standards to ensure that aid is effective, transparent, and aligned with development goals. It also monitors and evaluates the performance of ODA to ensure accountability and effectiveness in achieving development outcomes.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 18,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 96
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775499,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

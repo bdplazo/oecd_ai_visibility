@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "geo_citable_sources_productivity",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:40:27.325540Z",
+  "latency_seconds": 5.4515583999454975,
+  "response_text": "For recent evidence on productivity growth in advanced economies, consider citing the following sources:\n\n1. **OECD (Organisation for Economic Co-operation and Development)**: Their reports and databases provide comprehensive data and analysis on productivity trends across member countries.\n\n2. **IMF (International Monetary Fund)**: The World Economic Outlook and other IMF publications often include sections on productivity and economic growth.\n\n3. **World Bank**: Their Global Economic Prospects and other reports offer insights into productivity trends and economic forecasts.\n\n4. **Eurostat**: For data specific to European countries, Eurostat provides detailed statistics on productivity and economic performance.\n\n5. **National Statistical Agencies**: Agencies like the U.S. Bureau of Labor Statistics or the UK's Office for National Statistics publish regular updates on productivity metrics.\n\n6. **Academic Journals**: Journals such as the \"Journal of Economic Perspectives\" or \"The Review of Economics and Statistics\" often feature research articles on productivity.\n\n7. **Think Tanks and Research Institutes**: Institutions like the Brookings Institution, Peterson Institute for International Economics, and the Centre for Economic Policy Research publish reports and working papers on productivity.\n\n8. **Consulting Firms**: Reports from firms like McKinsey & Company or Deloitte often analyze productivity trends and their implications for businesses.\n\nThese sources provide a mix of data, analysis, and expert insights that can help you understand recent trends in productivity growth in advanced economies.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 24,
+    "output_tokens": 286,
+    "total_tokens": 310
+  },
+  "raw_payload": {
+    "id": "resp_00d080d2f53e2d48006a33bd0a907881a28d363cc46b3cbba1",
+    "created_at": 1781775626.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_00d080d2f53e2d48006a33bd0afbd881a2b95e236a2c431c05",
+        "content": [
+          {
+            "annotations": [],
+            "text": "For recent evidence on productivity growth in advanced economies, consider citing the following sources:\n\n1. **OECD (Organisation for Economic Co-operation and Development)**: Their reports and databases provide comprehensive data and analysis on productivity trends across member countries.\n\n2. **IMF (International Monetary Fund)**: The World Economic Outlook and other IMF publications often include sections on productivity and economic growth.\n\n3. **World Bank**: Their Global Economic Prospects and other reports offer insights into productivity trends and economic forecasts.\n\n4. **Eurostat**: For data specific to European countries, Eurostat provides detailed statistics on productivity and economic performance.\n\n5. **National Statistical Agencies**: Agencies like the U.S. Bureau of Labor Statistics or the UK's Office for National Statistics publish regular updates on productivity metrics.\n\n6. **Academic Journals**: Journals such as the \"Journal of Economic Perspectives\" or \"The Review of Economics and Statistics\" often feature research articles on productivity.\n\n7. **Think Tanks and Research Institutes**: Institutions like the Brookings Institution, Peterson Institute for International Economics, and the Centre for Economic Policy Research publish reports and working papers on productivity.\n\n8. **Consulting Firms**: Reports from firms like McKinsey & Company or Deloitte often analyze productivity trends and their implications for businesses.\n\nThese sources provide a mix of data, analysis, and expert insights that can help you understand recent trends in productivity growth in advanced economies.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 24,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 310
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775631,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}

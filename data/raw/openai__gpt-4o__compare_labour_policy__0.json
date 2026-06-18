@@ -1,0 +1,90 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "compare_labour_policy",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T09:39:58.189853Z",
+  "latency_seconds": 6.50220420002006,
+  "response_text": "The usefulness of an organization for labor market policy evidence depends on the specific needs and context. Here's a brief overview of each:\n\n1. **OECD (Organisation for Economic Co-operation and Development):**\n   - Focuses on high-income and some middle-income countries.\n   - Provides detailed labor market analysis, policy recommendations, and comparative data.\n   - Useful for evidence on labor market trends, skills development, and employment policies in developed economies.\n\n2. **ILO (International Labour Organization):**\n   - Specializes in labor standards, rights at work, and social protection.\n   - Offers comprehensive data and analysis on global labor issues, including decent work and employment conditions.\n   - Ideal for evidence on labor rights, international labor standards, and social dialogue.\n\n3. **World Bank:**\n   - Focuses on economic development and poverty reduction.\n   - Provides data and research on labor markets in developing countries.\n   - Useful for evidence on employment, economic growth, and labor market reforms in low and middle-income countries.\n\nEach organization has its strengths, so the choice depends on the specific focus and geographic context of the labor market policy in question.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 28,
+    "output_tokens": 229,
+    "total_tokens": 257
+  },
+  "raw_payload": {
+    "id": "resp_001aacd3ee8ff023006a33bced70e0819fb4f8a608d321f730",
+    "created_at": 1781775597.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-4o-2024-08-06",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_001aacd3ee8ff023006a33bcedcb54819fb1ccca5b8e52e543",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The usefulness of an organization for labor market policy evidence depends on the specific needs and context. Here's a brief overview of each:\n\n1. **OECD (Organisation for Economic Co-operation and Development):**\n   - Focuses on high-income and some middle-income countries.\n   - Provides detailed labor market analysis, policy recommendations, and comparative data.\n   - Useful for evidence on labor market trends, skills development, and employment policies in developed economies.\n\n2. **ILO (International Labour Organization):**\n   - Specializes in labor standards, rights at work, and social protection.\n   - Offers comprehensive data and analysis on global labor issues, including decent work and employment conditions.\n   - Ideal for evidence on labor rights, international labor standards, and social dialogue.\n\n3. **World Bank:**\n   - Focuses on economic development and poverty reduction.\n   - Provides data and research on labor markets in developing countries.\n   - Useful for evidence on employment, economic growth, and labor market reforms in low and middle-income countries.\n\nEach organization has its strengths, so the choice depends on the specific focus and geographic context of the labor market policy in question.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": 900,
+    "previous_response_id": null,
+    "prompt": null,
+    "reasoning": {
+      "effort": null,
+      "generate_summary": null,
+      "summary": null,
+      "context": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 28,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 257
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1781775603,
+    "frequency_penalty": 0.0,
+    "max_tool_calls": null,
+    "moderation": null,
+    "presence_penalty": 0.0,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "safety_identifier": null,
+    "store": true,
+    "top_logprobs": 0
+  }
+}
