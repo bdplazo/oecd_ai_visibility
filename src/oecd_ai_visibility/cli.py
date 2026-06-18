@@ -9,6 +9,7 @@ from typing import Annotated
 import typer
 from dotenv import load_dotenv
 
+from oecd_ai_visibility.analysis import build_summary_tables
 from oecd_ai_visibility.runner import run_collection
 from oecd_ai_visibility.schemas import load_query_set, load_study_config
 from oecd_ai_visibility.scoring import score_collection
@@ -154,6 +155,31 @@ def score_command(
         typer.echo(f"Validation sample: {result.validation_sample_path}")
     if result.aggregated_csv_path:
         typer.echo(f"Aggregated CSV: {result.aggregated_csv_path}")
+
+
+@app.command("analyse")
+def analyse_command(
+    config: Annotated[
+        Path,
+        typer.Option("--config", "-c", help="Path to the study YAML configuration."),
+    ] = Path("config/study.yaml"),
+) -> None:
+    """Build Power BI friendly summary tables from the aggregated scored CSV.
+
+    Reshapes existing scored data only; makes no provider or judge calls.
+    """
+
+    _configure_logging()
+    config_path = config.resolve()
+    project_root = _project_root_for_config(config_path)
+
+    study_config = load_study_config(config_path)
+    aggregated_csv = _resolve_project_path(study_config.paths.aggregated_csv, project_root)
+    tables_dir = _resolve_project_path(study_config.paths.tables_dir, project_root)
+
+    result = build_summary_tables(aggregated_csv=aggregated_csv, tables_dir=tables_dir)
+
+    typer.echo(f"Wrote {len(result.written_files)} summary tables to {result.tables_dir}")
 
 
 def _configure_logging() -> None:

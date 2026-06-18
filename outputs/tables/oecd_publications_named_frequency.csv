@@ -1,0 +1,17 @@
+provider,model,publication,n_mentions
+anthropic,claude-sonnet-4-6,PISA,5
+anthropic,claude-sonnet-4-6,BEPS,4
+anthropic,claude-sonnet-4-6,Going for Growth,3
+openai,gpt-4o,PISA,3
+anthropic,claude-sonnet-4-6,Revenue Statistics,2
+openai,gpt-4o,BEPS,2
+openai,gpt-4o,Going for Growth,2
+openai,gpt-4o,OECD Economic Outlook,2
+anthropic,claude-sonnet-4-6,Anti-Bribery Convention,1
+anthropic,claude-sonnet-4-6,Better Life Index,1
+anthropic,claude-sonnet-4-6,OECD AI Principles,1
+anthropic,claude-sonnet-4-6,OECD Economic Outlook,1
+openai,gpt-4o,Anti-Bribery Convention,1
+openai,gpt-4o,Better Life Index,1
+openai,gpt-4o,OECD AI Principles,1
+openai,gpt-4o,Revenue Statistics,1

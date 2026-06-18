@@ -1,0 +1,13 @@
+provider,model,category,n_responses,n_oecd_mentioned,oecd_mention_rate
+anthropic,claude-sonnet-4-6,authority_standard_setting,5,5,1.0
+anthropic,claude-sonnet-4-6,comparative_peer,5,5,1.0
+anthropic,claude-sonnet-4-6,data_statistics,6,5,0.8333
+anthropic,claude-sonnet-4-6,generative_search_referral,3,3,1.0
+anthropic,claude-sonnet-4-6,named_product_recall,5,5,1.0
+anthropic,claude-sonnet-4-6,policy_recommendation,6,0,0.0
+openai,gpt-4o,authority_standard_setting,5,5,1.0
+openai,gpt-4o,comparative_peer,5,5,1.0
+openai,gpt-4o,data_statistics,6,5,0.8333
+openai,gpt-4o,generative_search_referral,3,3,1.0
+openai,gpt-4o,named_product_recall,5,5,1.0
+openai,gpt-4o,policy_recommendation,6,0,0.0

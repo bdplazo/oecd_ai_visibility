@@ -47,6 +47,7 @@ paths:
   scored_dir: data/scored
   aggregated_csv: data/scored/scored_responses.csv
   validation_sample_csv: data/scored/validation_sample.csv
+  tables_dir: outputs/tables
   figures_dir: outputs/figures
   report_md: outputs/report/report.md
 

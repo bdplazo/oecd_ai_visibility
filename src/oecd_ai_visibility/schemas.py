@@ -48,6 +48,7 @@ class PathConfig(BaseModel):
     scored_dir: Path
     aggregated_csv: Path
     validation_sample_csv: Path
+    tables_dir: Path = Path("outputs/tables")
     figures_dir: Path
     report_md: Path
 
