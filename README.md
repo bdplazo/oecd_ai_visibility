@@ -76,6 +76,25 @@ join them directly instead of parsing JSON:
 Each helper table carries the `provider`, `model`, `query_id`, and `run_index` join keys
 that link back to `scored_responses.csv`.
 
+## Sanity Figures
+
+Minimal visual checks can be rendered from the same aggregated scored CSV. This step makes
+no provider or judge calls; it only plots already-scored data:
+
+```powershell
+uv run oecd-ai-visibility figures --config config/study.yaml
+```
+
+This writes four plainly labelled PNGs to the configured `figures_dir` (`outputs/figures`):
+
+- `oecd_mention_rate_by_provider_model.png` — OECD mention rate per provider/model.
+- `oecd_mention_rate_by_category.png` — OECD mention rate per query category.
+- `oecd_prominence_distribution.png` — stacked OECD prominence shares per provider/model.
+- `competitor_mention_frequency.png` — most frequently mentioned peer organisations.
+
+These are exploratory sanity checks, not report graphics; read [METHODOLOGY.md](METHODOLOGY.md)
+before interpreting them.
+
 ## Methodological Principle
 
 The prompt set will be a designed, illustrative sample of plausible user intents in OECD-relevant policy domains. It will not be presented as representative of all possible queries. That caveat is part of the methodology, not a footnote.

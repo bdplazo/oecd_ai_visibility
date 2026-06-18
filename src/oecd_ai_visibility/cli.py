@@ -10,6 +10,7 @@ import typer
 from dotenv import load_dotenv
 
 from oecd_ai_visibility.analysis import build_summary_tables
+from oecd_ai_visibility.figures import build_figures
 from oecd_ai_visibility.runner import run_collection
 from oecd_ai_visibility.schemas import load_query_set, load_study_config
 from oecd_ai_visibility.scoring import score_collection
@@ -182,6 +183,31 @@ def analyse_command(
     result = build_summary_tables(aggregated_csv=aggregated_csv, tables_dir=tables_dir)
 
     typer.echo(f"Wrote {len(result.written_files)} summary tables to {result.tables_dir}")
+
+
+@app.command("figures")
+def figures_command(
+    config: Annotated[
+        Path,
+        typer.Option("--config", "-c", help="Path to the study YAML configuration."),
+    ] = Path("config/study.yaml"),
+) -> None:
+    """Render minimal sanity figures from the aggregated scored CSV.
+
+    Plots existing scored data only; makes no provider or judge calls.
+    """
+
+    _configure_logging()
+    config_path = config.resolve()
+    project_root = _project_root_for_config(config_path)
+
+    study_config = load_study_config(config_path)
+    aggregated_csv = _resolve_project_path(study_config.paths.aggregated_csv, project_root)
+    figures_dir = _resolve_project_path(study_config.paths.figures_dir, project_root)
+
+    result = build_figures(aggregated_csv=aggregated_csv, figures_dir=figures_dir)
+
+    typer.echo(f"Wrote {len(result.written_files)} figures to {result.figures_dir}")
 
 
 def _configure_logging() -> None:
