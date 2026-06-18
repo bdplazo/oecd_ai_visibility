@@ -1,0 +1,1477 @@
+provider,model,query_id,category,run_index,response_text,citations,human_oecd_mentioned,human_oecd_prominence,human_oecd_url_referenced,human_oecd_publications_named,human_competitors_mentioned,human_factual_issues,reviewer_notes
+anthropic,claude-sonnet-4-6,authority_ai_policy,authority_standard_setting,0,"# International Organisations Providing AI Policy Guidance for Governments
+
+## Major Intergovernmental Bodies
+
+**United Nations System**
+- **UNESCO** - Recommendation on the Ethics of AI (2021), adopted by 193 member states
+- **ITU** - AI for Good platform, technical standards work
+- **UNDP** - AI governance capacity building for developing nations
+- **UNCTAD** - AI policy frameworks for trade and development contexts
+
+**OECD**
+- OECD AI Principles (2019) - widely referenced baseline framework
+- OECD.AI Policy Observatory - comparative policy database
+- Influenced G20 AI Principles
+
+**Council of Europe**
+- Framework Convention on AI (2024) - legally binding treaty
+- Focus on human rights, democracy, rule of law
+
+## Technical Standards Bodies
+- **ISO/IEC** - Technical standards (e.g., ISO 42001 AI management systems)
+- **IEEE** - Ethically Aligned Design guidelines
+
+## Regional Bodies
+- **European Union** - EU AI Act (regulatory model others reference)
+- **African Union** - Continental AI Strategy
+- **ASEAN** - AI Governance Framework
+
+## Multistakeholder Initiatives
+- **Global Partnership on AI (GPAI)**
+- **G7/G20** - Hiroshima AI Process
+- **Bletchley Process** - AI Safety Summits
+
+## Notable Considerations
+- Guidance varies significantly in **legal bindingness**
+- Developing nations often have less influence in shaping frameworks
+- Coordination between bodies remains limited
+
+Would you like detail on any specific organisation or framework?",[],,,,,,,
+anthropic,claude-sonnet-4-6,authority_anti_bribery,authority_standard_setting,0,"# Key Organisations for International Anti-Bribery and Integrity Standards
+
+## Intergovernmental / Multilateral Bodies
+
+### **OECD**
+- Administers the **OECD Anti-Bribery Convention** (1997), covering bribery of foreign public officials
+- Working Group on Bribery monitors implementation across 44+ signatory countries
+- Produces influential guidelines and peer reviews
+
+### **United Nations**
+- **UNODC** administers the **UN Convention Against Corruption (UNCAC)** (2003) - the broadest global instrument
+- Conference of States Parties oversees implementation review mechanism
+
+### **FATF** (Financial Action Task Force)
+- Sets global standards on anti-money laundering and counter-terrorist financing
+- Closely linked to corruption proceeds and asset recovery
+
+### **World Bank / IMF**
+- Integrity Vice Presidency (INT) investigates fraud in Bank-funded projects
+- Governance and anti-corruption conditionality in lending
+
+---
+
+## Regional Bodies
+
+| Organisation | Instrument |
+|---|---|
+| **Council of Europe / GRECO** | Criminal & Civil Law Conventions on Corruption |
+| **African Union** | AU Convention on Preventing Corruption |
+| **OAS** | Inter-American Convention Against Corruption (IACAC) |
+| **APEC** | Anti-Corruption and Transparency Working Group |
+| **EU** | Anti-corruption directives and enforcement frameworks |
+
+---
+
+## Civil Society & Standard-Setting
+
+- **Transparency International** – Corruption Perceptions Index, advocacy
+- **Basel Institute on Governance** – technical assistance, asset recovery
+- **TRACE International** – business compliance standards
+- **ICC** (International Chamber of Commerce) – business anti-corruption rules
+
+---
+
+## Key Legal Frameworks to Note
+- **US Foreign Corrupt Practices Act (FCPA)** – extraterritorial reach makes the DOJ/SEC globally significant
+- **UK Bribery Act 2010** – similarly broad jurisdiction
+
+---
+
+Would you like more detail on any specific organisation or instrument?",[],,,,,,,
+anthropic,claude-sonnet-4-6,authority_development_cooperation,authority_standard_setting,0,"## Norm-Setting and Performance Measurement in Official Development Assistance (ODA)
+
+### Primary Norm-Setting Body
+
+**The OECD Development Assistance Committee (DAC)** is the central institution that sets norms and measures performance in ODA. It:
+
+- **Defines what counts as ODA** (the official statistical definition)
+- Sets the **0.7% of GNI target** (originally established through UN resolutions)
+- Establishes **reporting standards and methodologies**
+- Conducts **peer reviews** of member countries' aid programs
+- Publishes comparative **aid statistics and rankings**
+
+### Key Mechanisms
+
+| Function | Body/Process |
+|----------|-------------|
+| Statistical definition | OECD-DAC |
+| Peer review | DAC Peer Review process |
+| Effectiveness principles | Busan/Paris Declaration frameworks |
+| Volume targets | UN General Assembly resolutions |
+| Multilateral assessment | World Bank, UN agencies |
+
+### Complications and Critiques
+
+- **Non-DAC donors** (China, Gulf states) operate outside this framework
+- Recipient countries have historically had **limited voice** in norm-setting
+- Debates exist over what activities should **qualify as ODA**
+- The **Global Partnership for Effective Development Co-operation** (GPEDC) attempts broader inclusion
+
+### Bottom Line
+
+The **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",[],,,,,,,
+anthropic,claude-sonnet-4-6,compare_development_policy,comparative_peer,0,"## Comparing OECD, UNDP, and World Bank Approaches to Development Policy
+
+These three institutions share overlapping concerns but differ substantially in mandate, membership, methods, and underlying assumptions.
+
+---
+
+### OECD (Organisation for Economic Co-operation and Development)
+
+**Core orientation:** Club of wealthy democracies producing research and setting standards
+- Primarily serves member countries (38 mostly high-income nations)
+- Focuses on **policy benchmarking, peer review, and best practice sharing**
+- Produces influential data and normative frameworks (tax policy, governance standards, anti-corruption)
+- Development work largely concerns **aid effectiveness and donor coordination** (DAC committee)
+- Generally reflects **liberal market economics** with attention to institutional quality
+- Less direct operational presence in developing countries
+
+---
+
+### UNDP (UN Development Programme)
+
+**Core orientation:** Human development and capacity building within UN system
+- Explicitly **country-driven** with strong emphasis on national ownership
+- Popularized the **Human Development Index** - deliberately broadening development beyond GDP
+- Focuses on **governance, democratic institutions, poverty reduction, and SDGs**
+- Operates through technical assistance rather than large loans
+- More explicitly **political** in engaging civil society and rights frameworks
+- Reflects diverse UN membership, giving developing countries more voice
+
+---
+
+### World Bank
+
+**Core orientation:** Financing and technical assistance for development projects
+- Primary tool is **lending** (loans, credits, grants) creating direct leverage
+- Historically associated with **structural adjustment** and conditionality
+- Has evolved considerably - now emphasizes poverty reduction, climate, social inclusion
+- Produces enormously influential research shaping global development discourse
+- Tension between **shareholder governance** (weighted toward wealthy nations) and stated pro-poor mission
+- More operationally powerful than the others due to financial resources
+
+---
+
+### Key Analytical Differences
+
+| Dimension | OECD | UNDP | World Bank |
+|-----------|------|------|------------|
+| Primary tool | Research/standards | Technical assistance | Lending |
+| Whose voice dominates | Rich countries | Broader membership | Weighted shareholders |
+| Development concept | Productivity/institutions | Human capabilities | Poverty/growth |
+| Conditionality | Soft (peer pressure) | Minimal | Significant historically |
+| Political engagement | Limited | Explicit | Officially restricted |
+
+---
+
+### Genuine Tensions and Criticisms
+
+**OECD** is criticized for representing donor interests and producing frameworks that developing countries had little role in designing.
+
+**UNDP** is criticized for being diffuse, bureaucratic, and sometimes lacking the resources or leverage to implement its ambitious frameworks.
+
+**World Bank** faces persistent criticism for:
+- Conditionality undermining sovereignty
+- Governance weighted toward wealthy nations
+- Historical promotion of Washington Consensus policies with mixed results
+
+---
+
+### Convergences Worth Noting
+
+All three have moved toward:
+- Recognizing multidimensional poverty
+- Emphasizing institutional quality and governance
+- Incorporating climate and sustainability concerns
+- Acknowledging that one-size-fits-all approaches fail
+
+The differences are partly **genuine philosophical** (what development means) and partly **structural** (who funds them and who they answer to).
+
+Would you like deeper analysis of any particular dimension - such as their approaches to governance, their historical evolution, or specific policy areas?",[],,,,,,,
+anthropic,claude-sonnet-4-6,compare_economic_advice,comparative_peer,0,"# Comparing OECD, IMF, and World Bank as Sources of Economic Policy Advice
+
+## Overview of Each Institution
+
+### OECD (Organisation for Economic Co-operation and Development)
+- **Membership**: ~38 primarily high-income democracies
+- **Core function**: Research, data collection, peer review, and best-practice sharing
+- **Funding**: Member country contributions; no lending capacity
+
+### IMF (International Monetary Fund)
+- **Membership**: 190 countries
+- **Core function**: Monetary stability, balance of payments support, crisis lending
+- **Funding**: Member quotas; substantial lending resources
+
+### World Bank
+- **Membership**: 189 countries
+- **Core function**: Development financing and poverty reduction
+- **Funding**: Capital markets borrowing; concessional lending to poor countries
+
+---
+
+## Comparative Analysis
+
+### 1. Nature and Basis of Advice
+
+| Dimension | OECD | IMF | World Bank |
+|-----------|------|-----|------------|
+| Primary basis | Peer review & research | Macroeconomic surveillance | Development economics |
+| Conditionality | None (voluntary) | Strong (tied to loans) | Moderate (tied to projects) |
+| Enforcement mechanism | Soft power/reputation | Financial leverage | Financial leverage |
+| Theoretical orientation | Pluralistic but market-oriented | Strongly neoclassical/fiscal | Neoclassical with development focus |
+
+### 2. Policy Focus Areas
+
+**OECD**
+- Tax policy and reform
+- Labor market regulation
+- Education and innovation
+- Governance and anti-corruption
+- Trade liberalization
+- Increasingly: inequality, well-being, climate
+
+**IMF**
+- Fiscal consolidation and debt sustainability
+- Exchange rate policy
+- Monetary policy and inflation
+- Financial sector stability
+- Capital account management
+- Crisis prevention and resolution
+
+**World Bank**
+- Infrastructure investment
+- Health and education systems
+- Institutional capacity building
+- Private sector development
+- Environmental sustainability
+- Social protection programs
+
+### 3. Ideological Orientation and Evolution
+
+**OECD**
+- Historically promoted liberalization (""OECD consensus"")
+- Has notably shifted toward acknowledging inequality costs
+- More willing to endorse progressive taxation and redistribution
+- Relatively more pluralistic in recent years
+
+**IMF**
+- Most associated with **Washington Consensus** (fiscal austerity, privatization, liberalization)
+- Significant self-criticism after Asian financial crisis (1997–98)
+- Post-2008: acknowledged austerity costs and multiplier effects
+- Now more openly discusses inequality and capital controls
+- Still fundamentally orthodox in crisis lending conditions
+
+**World Bank**
+- Evolved from infrastructure focus to structural adjustment (1980s)
+- Structural Adjustment Programs widely criticized for social costs
+- Shifted toward ""post-Washington Consensus"" emphasizing institutions
+- Now incorporates social, environmental, and governance dimensions
+- More eclectic than IMF in development approaches
+
+### 4. Credibility and Legitimacy
+
+| Issue | OECD | IMF | World Bank |
+|-------|------|-----|------------|
+| Research quality | Very high | Very high | High |
+| Political independence | Relatively high | Moderate | Moderate |
+| Governance representation | Criticized (rich-country club) | Weighted voting favors rich | Weighted voting favors rich |
+| Transparency | High | Improved significantly | Improved |
+| Accountability | Low (no conditionality) | High scrutiny | High scrutiny |
+
+### 5. Strengths as Policy Advisors
+
+**OECD Strengths**
+- Deep comparative data across countries
+- No coercive leverage → advice more freely accepted
+- Strong technical expertise in specific domains (tax, education, health)
+- Peer learning model reduces stigma
+- PISA, BEPS, and other initiatives show real policy influence
+
+**IMF Strengths**
+- Un",[],,,,,,,
+anthropic,claude-sonnet-4-6,data_aid_flows,data_statistics,0,"# Sources for Comparable Data on Aid Flows from Donor Countries
+
+## Primary/Official Sources
+
+### **OECD Development Assistance Committee (DAC)**
+- **OECD.Stat** (stats.oecd.org) - most comprehensive source
+- Creditor Reporting System (CRS) - project-level data
+- DAC1/DAC2 tables - aggregate flows by donor
+- Covers Official Development Assistance (ODA) definitions
+
+### **AidData**
+- aiddata.org
+- Geocoded project-level data
+- Includes some non-DAC donors (China, etc.)
+
+### **World Bank**
+- World Development Indicators
+- OECD-DAC data republished with other development indicators
+
+## For Non-Traditional Donors
+
+- **AidData** - tracks Chinese development finance
+- **OECD Total Official Support for Sustainable Development (TOSSD)**
+- **UN OCHA Financial Tracking Service (FTS)** - humanitarian aid specifically
+
+## Key Considerations When Comparing
+
+- ODA definitions vary
+- Loans vs. grants treatment differs
+- Reporting lags can be significant
+- Some donors self-report inconsistently
+
+## What Specifically Are You Looking For?
+
+The best source depends on whether you need:
+- Bilateral vs. multilateral flows
+- Specific sectors
+- Geographic targeting
+- Historical trends
+
+Would you like guidance on a particular aspect?",[],,,,,,,
+anthropic,claude-sonnet-4-6,data_education_performance,data_statistics,0,"# Comparing Student Performance Across Countries
+
+## Primary Data Sources
+
+### International Assessment Programs
+| Assessment | Subject Focus | Age/Grade | Frequency |
+|------------|--------------|-----------|-----------|
+| **PISA** (OECD) | Reading, Math, Science | Age 15 | Every 3 years |
+| **TIMSS** (IEA) | Math, Science | Grades 4 & 8 | Every 4 years |
+| **PIRLS** (IEA) | Reading | Grade 4 | Every 5 years |
+| **PIAAC** (OECD) | Adult literacy/numeracy | Adults | Periodic |
+
+---
+
+## Step-by-Step Approach
+
+### 1. Access the Data
+- **OECD Data Portal**: data.oecd.org
+- **IEA Data Repository**: iea.nl/data-tools
+- **World Bank Education Statistics**: datatopics.worldbank.org/education
+- **UNESCO Institute for Statistics**: uis.unesco.org
+
+### 2. Choose Your Comparison Framework
+- **Mean scores** by country
+- **Proficiency level distributions** (% at each level)
+- **Score gaps** (gender, socioeconomic status)
+- **Trend analysis** over multiple cycles
+
+### 3. Key Metrics to Examine
+```
+- Average scale scores (typically 500 = OECD mean)
+- Standard deviations (score spread within countries)
+- Percentile distributions (top vs. bottom performers)
+- Equity indicators (score gap by SES)
+```
+
+---
+
+## Analytical Methods
+
+### Basic Comparison
+- Rank countries by mean score
+- Calculate differences from OECD average
+- Identify statistically significant differences
+
+### Deeper Analysis
+- **Regression analysis** — control for GDP, spending, demographics
+- **Multilevel modeling** — separate school vs. country effects
+- **Trend analysis** — track improvement/decline over time
+- **Gap analysis** — compare high vs. low performers within countries
+
+---
+
+## Important Caveats
+
+### Methodological Considerations
+- ⚠️ **Sampling differences** — participation rates vary
+- ⚠️ **Translation issues** — test items may not translate equally
+- ⚠️ **Cultural context** — test-taking attitudes differ
+- ⚠️ **Selection bias** — some countries exclude certain students
+
+### Contextual Factors to Account For
+- GDP per capita / education spending
+- Language of instruction
+- School system structure
+- Demographic composition
+- Cultural attitudes toward education
+
+---
+
+## Practical Tools
+
+### For Non-Programmers
+- **PISA Data Explorer** (OECD interactive tool)
+- **TIMSS & PIRLS International Database**
+- **World Bank EdStats Query Tool**
+
+### For Data Analysis
+```python
+# Example: Loading PISA data in Python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Download from OECD and load
+pisa_data = pd.read_csv('pisa_scores.csv')
+
+# Compare mean scores by country and subject
+comparison = pisa_data.groupby('country')[
+    ['reading', 'math', 'science']
+].mean().sort_values('math', ascending=False)
+
+print(comparison.head(20))
+```
+
+---
+
+## Common Findings to Investigate
+- East Asian countries (Singapore, Japan, Korea) consistently score high
+- Nordic countries show strong equity alongside performance
+- Large within-country variation often exceeds between-country variation
+- Spending alone doesn't predict performance
+
+---
+
+## Recommended Starting Point
+> **PISA 2022 Results** (most recent) — covers 81 countries with detailed breakdowns by subject, gender, and socioeconomic background
+
+Would you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",[],,,,,,,
+anthropic,claude-sonnet-4-6,data_health_spending,data_statistics,0,"## Best Sources for Comparing Health Spending & Outcomes Across High-Income Countries
+
+### Primary Recommended Sources
+
+**OECD Health Statistics**
+- Arguably the **gold standard** for this comparison
+- Covers 38 member countries with standardized data
+- Includes spending, life expectancy, disease rates, access metrics
+- Available at: stats.oecd.org or oecd.org/health
+
+**Commonwealth Fund**
+- Publishes regular **international comparisons** specifically among high-income nations
+- Their *Mirror, Mirror* report directly ranks health system performance
+- More accessible/readable than raw OECD data
+
+### Other Useful Sources
+
+| Source | Strength |
+|--------|----------|
+| **WHO Global Health Observatory** | Broader country coverage |
+| **World Bank Health Data** | Long time series |
+| **Our World in Data** | Visualizations of OECD/WHO data |
+| **Lancet/NEJM studies** | Peer-reviewed analysis |
+
+### Practical Suggestion
+- **Start with Commonwealth Fund** for readable comparisons
+- **Use OECD** for specific data points and methodology
+- **Our World in Data** for quick visualizations
+
+### Key Caveat
+Be aware that **measurement differences** across countries (how spending is categorized, cause-of-death coding) can affect comparisons even in standardized datasets.
+
+Would you like guidance on specific metrics to look at?",[],,,,,,,
+anthropic,claude-sonnet-4-6,data_income_inequality_trends,data_statistics,0,"## Income Inequality Trends in Advanced Economies
+
+### Broad Patterns (Recent Years)
+
+**Long-term trajectory**
+- Inequality rose significantly from the 1980s through roughly 2010 in most advanced economies
+- The trend has been **more mixed since then**, varying considerably by country
+
+**Recent developments worth noting**
+- Some measures showed modest **narrowing during 2020-2022** due to pandemic-era transfers
+- However, **wealth inequality** generally widened as asset prices rose
+- Inflation post-2021 disproportionately hurt lower-income households, potentially reversing gains
+
+### Key Dimensions
+
+| Factor | Direction |
+|--------|-----------|
+| Wage inequality | Modestly compressing in some countries |
+| Wealth concentration | Continuing to rise |
+| Top 1% income share | Elevated but somewhat plateaued |
+| Intergenerational mobility | Declining in many countries |
+
+### Country Variation
+- **Nordic countries** maintain relatively lower inequality
+- **US and UK** remain among the more unequal advanced economies
+- **Southern Europe** saw inequality rise sharply after 2008 austerity
+
+### Driving Forces Debated
+- Technology and automation
+- Declining union membership
+- Tax and transfer policy changes
+- Housing costs as a major new factor
+- Returns to capital vs. labor
+
+### Important Caveats
+- Data lags make truly ""latest"" trends uncertain
+- Measurement methods significantly affect conclusions
+
+Would you like me to focus on any specific aspect or country?",[],,,,,,,
+anthropic,claude-sonnet-4-6,data_rd_spending,data_statistics,0,"## OECD Countries with Highest R&D Spending (% of GDP)
+
+Based on recent OECD data (around 2021-2022), the top spenders include:
+
+| Country | R&D as % of GDP |
+|---------|----------------|
+| **Israel** | ~5.4% |
+| **South Korea** | ~4.9% |
+| **Sweden** | ~3.4% |
+| **United States** | ~3.5% |
+| **Belgium** | ~3.4% |
+| **Japan** | ~3.3% |
+| **Austria** | ~3.2% |
+| **Germany** | ~3.1% |
+| **Denmark** | ~3.0% |
+| **Finland** | ~3.0% |
+
+### Key Observations:
+- **Israel and South Korea** consistently lead the OECD
+- The **OECD average** is roughly **2.7%**
+- Nordic countries tend to cluster near the top
+- The **US** has seen its share grow, driven largely by the **private sector** (especially tech)
+- Countries like **Turkey, Mexico, and Chile** tend to be at the lower end
+
+### Notable Context:
+- Business enterprise R&D drives most spending in top countries
+- Government targets (like the EU's 3% of GDP goal) influence policy
+
+Would you like more detail on any specific country or aspect of R&D spending?",[],,,,,,,
+anthropic,claude-sonnet-4-6,data_tax_revenue,data_statistics,0,"## Sources for Comparing Tax Revenue as % of GDP
+
+Here are the most reliable sources:
+
+### International Organizations
+- **OECD** (stats.oecd.org) - ""Revenue Statistics"" database; excellent for OECD member countries
+- **World Bank** (data.worldbank.org) - search ""tax revenue % of GDP""; broader country coverage
+- **IMF** (imf.org) - Government Finance Statistics; good for developing economies
+- **Our World in Data** (ourworldindata.org) - user-friendly charts and visualizations
+
+### Specific Tools
+- **OECD Tax Database** - allows detailed breakdowns by tax type
+- **IMF Fiscal Monitor** - published twice yearly with comparative data
+- **World Bank Open Data** - downloadable datasets
+
+### Practical Recommendations
+| If you want... | Use... |
+|----------------|--------|
+| Easy visualization | Our World in Data |
+| Detailed OECD comparisons | OECD.Stat |
+| Developing country data | World Bank or IMF |
+| Historical trends | IMF or World Bank |
+
+### Things to Note
+- Definitions of ""tax revenue"" can vary slightly between sources
+- Some countries have significant **subnational taxes** that may or may not be included
+- Data lag is typically **1-3 years**
+
+Would you like help interpreting the data or finding a specific country comparison?",[],,,,,,,
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,generative_search_referral,0,"# Reliable Sources for Government AI Governance Frameworks
+
+## Primary/Official Government Sources
+
+**United States**
+- White House Office of Science and Technology Policy (OSTP)
+- NIST AI Risk Management Framework (ai.gov, nist.gov)
+- Congressional Research Service reports
+- Federal Register notices and executive orders
+
+**European Union**
+- EUR-Lex (official EU law database)
+- European Commission official publications
+- European Parliament legislative documents
+
+**International Bodies**
+- OECD AI Policy Observatory (oecd.ai)
+- UNESCO AI Ethics recommendations
+- ITU AI for Good publications
+- G7/G20 official communiqués
+
+## Academic & Research Institutions
+
+- Brookings Institution AI governance research
+- Georgetown CSET (Center for Security and Emerging Technology)
+- Oxford Internet Institute
+- MIT Technology Policy program
+- Stanford HAI (Human-Centered AI)
+
+## Quality Indicators to Check
+
+- [ ] Primary source documents over secondary summaries
+- [ ] Publication dates (this field changes rapidly)
+- [ ] Author credentials and institutional affiliation
+- [ ] Peer review status where applicable
+- [ ] Whether analysis distinguishes proposals from enacted policy
+
+## Practical Cautions
+
+- **Verify currency** - frameworks update frequently
+- **Check jurisdiction** - frameworks vary significantly by country
+- **Distinguish binding vs. voluntary** guidelines
+- **Cross-reference** multiple sources for contested interpretations
+
+Would you like recommendations for a specific jurisdiction or policy area?",[],,,,,,,
+anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,generative_search_referral,0,"# Key Sources for Productivity Growth Evidence in Advanced Economies
+
+## Major Institutional Sources
+
+**International Organizations**
+- **OECD** - Compendium of Productivity Indicators (annual); Going for Growth reports
+- **IMF** - World Economic Outlook chapters on productivity; Working Papers series
+- **World Bank** - World Development Report; Total Factor Productivity databases
+- **BIS** - Working papers on productivity and finance
+
+## Academic Journals
+- *Journal of Economic Perspectives* (accessible synthesis articles)
+- *American Economic Review*
+- *Journal of Economic Growth*
+- *Review of Economics and Statistics*
+
+## Prominent Research Centers
+- **Brookings Institution** - Hamilton Project productivity analyses
+- **McKinsey Global Institute** - sector-level productivity studies
+- **Peterson Institute for International Economics**
+- **NBER** - Working papers (Fernald, Syverson, Gordon are notable authors)
+
+## Key Individual Researchers
+- **John Fernald** (San Francisco Fed) - TFP measurement
+- **Robert Gordon** - secular stagnation arguments
+- **Chad Syverson** - productivity puzzles
+- **Daron Acemoglu** - technology and productivity
+
+## Specific Databases
+- **Penn World Tables**
+- **EU KLEMS**
+- **Conference Board Total Economy Database**
+
+## Honest Caveats
+- My knowledge cuts off in early 2025
+- Verify publication dates carefully, as this literature moves quickly
+- Pre-publication NBER/CEPR working papers may be more current than journal articles
+
+Would you like recommendations focused on a specific aspect, like AI's productivity effects or the post-pandemic period?",[],,,,,,,
+anthropic,claude-sonnet-4-6,policy_green_transition,policy_recommendation,0,"# Policies for a Fair Green Transition
+
+This is a genuinely complex policy challenge balancing environmental goals with economic equity. Here are key approaches with honest assessment of their tradeoffs:
+
+## Distributional Concerns to Address
+- Carbon pricing can be regressive (hitting lower-income households harder)
+- Job losses concentrated in specific regions/communities
+- Energy cost increases affecting vulnerable populations
+- Developing countries bearing costs for historically small emissions
+
+---
+
+## Core Policy Approaches
+
+### Revenue Recycling from Carbon Pricing
+- **Dividend payments** (returning carbon revenue equally to citizens)
+- **Targeted rebates** for low-income households
+- Evidence from British Columbia and Alaska suggests this can be progressive
+- *Debate exists* about whether dividends vs. green investment is better use
+
+### Just Transition Programs
+- Retraining and job placement for fossil fuel workers
+- Economic diversification funding for coal/oil-dependent regions
+- Early retirement support for older workers
+- **Honest limitation:** retraining programs have mixed success records
+
+### Energy Access Policies
+- Subsidies for home efficiency upgrades
+- Low-income solar/EV access programs
+- Preventing energy poverty during transition
+
+### International Dimensions
+- Climate finance for developing nations
+- Technology transfer agreements
+- Carbon border adjustments (contested fairness implications)
+
+---
+
+## Genuine Tensions
+- Speed vs. disruption management
+- Who pays - polluters, consumers, taxpayers
+- Local vs. global equity
+- Political sustainability of policies
+
+What specific aspect interests you most?",[],,,,,,,
+anthropic,claude-sonnet-4-6,policy_income_inequality,policy_recommendation,0,"This is a well-studied policy question with genuine tradeoffs. Here are approaches with evidence behind them:
+
+## Policies with Strong Evidence
+
+**Human Capital Investment**
+- Early childhood education (high returns, reduces gaps before they compound)
+- Quality public education funding
+- Workforce retraining programs
+- These build productive capacity rather than just redistributing
+
+**Labor Market Policies**
+- Minimum wage increases (moderate ones show limited employment effects)
+- Strengthening collective bargaining rights
+- Reducing barriers to worker mobility
+
+**Tax Structure**
+- Shifting from income taxes toward consumption/wealth taxes
+- Closing loopholes that disproportionately benefit high earners
+- Earned income tax credits (broadly supported across political spectrum)
+
+## More Contested Approaches
+
+- **Redistribution scale** - economists debate how much reduces growth vs. corrects market failures
+- **Universal basic income** - promising experiments but large-scale effects uncertain
+- **Industrial policy** - can create good jobs but risks inefficiency
+
+## Honest Complications
+
+- Some inequality reflects productivity differences, some reflects rent-seeking - policies should distinguish between them
+- Short-term vs. long-term tradeoffs are real
+- Implementation quality matters enormously
+- Context varies significantly between countries
+
+## Reasonable Consensus Points
+Most economists agree that **extreme inequality itself can harm growth** through reduced mobility, political instability, and demand suppression.
+
+What specific aspect interests you most?",[],,,,,,,
+anthropic,claude-sonnet-4-6,policy_productivity_growth,policy_recommendation,0,"# Improving Long-Term Productivity Growth: Policy Approaches
+
+## Core Investment Areas
+
+**Human Capital**
+- Education quality improvements, particularly STEM and technical skills
+- Vocational training and apprenticeship programs
+- Healthcare access (healthy workers are more productive)
+- Immigration policies attracting skilled workers
+
+**Physical Infrastructure**
+- Transportation networks reducing logistics costs
+- Digital infrastructure (broadband, 5G)
+- Energy reliability and transition to stable supplies
+
+**Research & Development**
+- Public funding for basic research
+- R&D tax incentives for private sector
+- University-industry partnerships
+
+## Institutional & Regulatory Reforms
+
+- Reducing regulatory barriers to business entry and competition
+- Strengthening property rights and contract enforcement
+- Reducing corruption and improving governance quality
+- Streamlining permitting processes
+
+## Market Structure Considerations
+
+- Antitrust enforcement (monopolies often reduce innovation incentives)
+- Technology transfer policies
+- Financial system development enabling capital allocation
+
+## Honest Complications
+
+- **Trade-offs exist**: Some regulations reduce productivity but serve other legitimate goals
+- **Time horizons matter**: Many investments take decades to show results
+- **Context dependency**: What works varies significantly by country development level
+- **Measurement challenges**: Productivity statistics may miss quality improvements
+
+## Areas of Genuine Debate
+
+- Optimal public vs. private R&D balance
+- Industrial policy effectiveness
+- Immigration's distributional effects
+
+What specific context or aspect interests you most?",[],,,,,,,
+anthropic,claude-sonnet-4-6,policy_public_trust,policy_recommendation,0,"This is a genuinely important governance question. Here are practical steps with honest assessment of their effectiveness:
+
+## Transparency Measures
+- Publish government data openly and accessibly
+- Require clear explanations for policy decisions
+- Make lobbying and campaign finance visible
+- **Limitation:** Transparency alone doesn't rebuild trust if underlying problems persist
+
+## Accountability Mechanisms
+- Independent oversight bodies with real enforcement power
+- Consistent consequences for official misconduct
+- Whistleblower protections that actually work
+- **Key factor:** These must apply to powerful people, not just minor officials
+
+## Genuine Participation
+- Citizen assemblies on major decisions
+- Meaningful consultation rather than performative hearings
+- Local decision-making where appropriate
+- **Caution:** Participation feels hollow if input is ignored
+
+## Competence Demonstration
+- Actually delivering promised services reliably
+- Honest communication about failures and corrections
+- Setting realistic rather than inflated expectations
+
+## Structural Reforms
+- Reducing corruption opportunities through institutional design
+- Competitive elections with fair rules
+- Independent judiciary
+
+## Honest Considerations
+- Trust rebuilding takes years, sometimes decades
+- Some distrust reflects legitimate grievances requiring real change
+- Quick symbolic gestures often backfire
+- Different communities have different reasons for distrust requiring different responses
+
+**The core challenge:** Trust follows demonstrated trustworthiness rather than communication strategies.
+
+What specific context are you thinking about?",[],,,,,,,
+anthropic,claude-sonnet-4-6,policy_sme_digitalisation,policy_recommendation,0,"Governments have several effective approaches to support small business digitalization:
+
+## Financial Support
+- **Grants and subsidies** for technology purchases
+- **Tax incentives** for digital investments
+- **Low-interest loans** specifically for tech adoption
+- **Voucher programs** covering software or training costs
+
+## Education and Training
+- Free or subsidized digital skills workshops
+- Online learning platforms for business owners
+- Mentorship programs pairing businesses with tech experts
+- Industry-specific guidance on relevant tools
+
+## Infrastructure Development
+- Expanding broadband access to underserved areas
+- Improving reliable internet connectivity
+- Creating shared digital hubs or co-working spaces
+
+## Regulatory and Administrative Support
+- Simplifying compliance processes through digital tools
+- Creating clear cybersecurity guidelines
+- Reducing bureaucratic barriers to technology adoption
+- Establishing data privacy frameworks businesses can trust
+
+## Ecosystem Building
+- Connecting small businesses with technology providers
+- Supporting industry associations that share best practices
+- Facilitating peer learning networks
+- Partnering with universities for research and support
+
+## Honest Considerations
+- Programs work best when **tailored to specific business needs** rather than generic
+- **Uptake can be low** if administrative burdens are high
+- Some businesses may need **basic digital literacy** before advanced tools
+- Measuring actual outcomes matters more than program participation numbers
+
+What specific context are you thinking about - a particular country, industry, or type of technology?",[],,,,,,,
+anthropic,claude-sonnet-4-6,policy_youth_unemployment,policy_recommendation,0,"# Evidence-Based Policies to Reduce Youth Unemployment
+
+## What the Research Shows Works
+
+### Education & Training Interventions
+- **Vocational education and apprenticeships** - Strong evidence from Germany, Switzerland, Austria showing dual-system apprenticeships significantly reduce youth unemployment
+- **Work-based learning programs** - Combining classroom instruction with employer partnerships outperforms purely academic approaches
+- **Community college pathways** - Targeted programs connecting credentials to local labor market needs show measurable employment gains
+
+### Labor Market Interventions
+- **Wage subsidies to employers** - Moderately effective when well-targeted; reduces hiring risk for young workers
+- **Public employment programs** - Mixed evidence; works better when building transferable skills rather than temporary work
+- **Job search assistance** - Cost-effective; counseling, resume help, and interview preparation show consistent positive returns
+
+### Structural Reforms
+- **Reducing hiring/firing rigidity** - Evidence suggests overly protective labor laws can paradoxically exclude youth from formal employment
+- **Addressing credential barriers** - Occupational licensing reform can open entry-level opportunities
+
+## Important Caveats
+- **Context matters significantly** - What works in Germany may not transfer directly elsewhere
+- **Displacement effects** - Some subsidies shift rather than create employment
+- **Long-term vs. short-term outcomes** differ considerably across programs
+
+## What Shows Weaker Evidence
+- Generic job training without employer connections
+- Minimum wage increases have contested effects specifically on youth employment
+
+Would you like deeper analysis of any particular approach?",[],,,,,,,
+anthropic,claude-sonnet-4-6,product_beps,named_product_recall,0,"# BEPS: Base Erosion and Profit Shifting
+
+## Definition
+BEPS refers to **tax planning strategies used by multinational enterprises (MNEs)** that exploit gaps and mismatches in tax rules to artificially shift profits to low or no-tax locations, eroding the tax base of higher-tax countries.
+
+---
+
+## Core Problem
+- Profits are reported where taxes are lowest
+- Economic activity actually occurs elsewhere
+- Legal structures don't reflect economic substance
+- Countries lose significant tax revenue
+
+---
+
+## The OECD/G20 BEPS Project
+Launched in **2013**, the OECD developed **15 Action Plans** to address these issues:
+
+| Actions | Focus Area |
+|---------|-----------|
+| 1-5 | Digital economy, hybrid mismatches, harmful tax practices |
+| 6-10 | Treaty abuse, transfer pricing, permanent establishment |
+| 11-15 | Data collection, dispute resolution, multilateral instruments |
+
+---
+
+## Key Mechanisms Targeted
+- **Transfer pricing manipulation** – mispricing intra-group transactions
+- **Hybrid mismatches** – instruments treated differently across jurisdictions
+- **Treaty shopping** – using treaties without genuine economic presence
+- **Artificial PE avoidance** – avoiding taxable presence
+- **IP holding structures** – parking intellectual property in low-tax jurisdictions
+
+---
+
+## BEPS 2.0 (Pillar One & Two)
+More recent developments include:
+- **Pillar One** – Reallocating taxing rights to market jurisdictions
+- **Pillar Two** – Global minimum tax of **15%** for large MNEs
+
+---
+
+## Significance
+BEPS represents the most significant reform of international tax rules in nearly **a century**, affecting how companies like Google, Apple, and Amazon are taxed globally.
+
+Would you like more detail on any specific aspect?",[],,,,,,,
+anthropic,claude-sonnet-4-6,product_better_life_index,named_product_recall,0,"The **Better Life Index** is a tool created by the **OECD (Organisation for Economic Co-operation and Development)** that measures **well-being and quality of life** across countries. It goes beyond traditional economic indicators like GDP to assess what makes life better for people.
+
+It covers **11 dimensions (topics)**:
+
+1. **Housing** – rooms per person, basic facilities
+2. **Income** – household net wealth and financial wealth
+3. **Jobs** – employment rates, job security, earnings
+4. **Community** – social support networks
+5. **Education** – educational attainment, skills
+6. **Environment** – air quality, water quality
+7. **Civic Engagement** – voter turnout, rule-making consultation
+8. **Health** – life expectancy, self-reported health
+9. **Life Satisfaction** – overall happiness and well-being
+10. **Safety** – homicide rates, feeling of safety
+11. **Work-Life Balance** – time for leisure and personal care
+
+A notable feature is that it allows users to **customize the weight** given to each dimension based on their own values, reflecting that different people prioritize different aspects of life.
+
+It is used to compare well-being across OECD member countries and some partner nations.",[],,,,,,,
+anthropic,claude-sonnet-4-6,product_economic_outlook,named_product_recall,0,"# OECD Economic Outlook
+
+## What It Is
+
+The **OECD Economic Outlook** is a flagship publication of the **Organisation for Economic Co-operation and Development (OECD)**, providing analysis and forecasts of major economic trends across member and selected non-member countries.
+
+---
+
+## Key Features
+
+### Publication Schedule
+- Published **twice a year** (typically in **May/June** and **November/December**)
+- Interim updates are sometimes released between main editions
+
+### Coverage
+- Analyzes economic conditions in **OECD member countries** (38 members) and major non-member economies
+- Covers the **global economy** as a whole
+
+---
+
+## Main Content Areas
+
+- **GDP growth forecasts**
+- **Inflation projections**
+- **Employment and labor market trends**
+- **Trade and current account balances**
+- **Fiscal and monetary policy analysis**
+- **Structural reform recommendations**
+- **Risk assessments** (upside and downside scenarios)
+
+---
+
+## Purpose and Audience
+
+- Informs **policymakers**, **governments**, and **central banks**
+- Used by **researchers**, **businesses**, and **financial markets**
+- Provides **policy recommendations** to promote sustainable growth
+
+---
+
+## Notable Aspects
+
+- Includes detailed **statistical annexes** with historical and projected data
+- Often addresses **specific themes** like climate, inequality, or financial stability
+- Widely cited in **media and academic research**
+
+---
+
+Would you like information about a specific recent edition or a particular topic covered in the Outlook?",[],,,,,,,
+anthropic,claude-sonnet-4-6,product_going_for_growth,named_product_recall,0,"# Going for Growth
+
+**Going for Growth** is an annual publication and policy framework produced by the **OECD (Organisation for Economic Co-operation and Development)**, first launched in **2005**.
+
+## Core Purpose
+
+It provides a systematic assessment of structural policy priorities for OECD member countries (and increasingly some non-member economies) aimed at **raising long-term economic growth and living standards**.
+
+## Key Features
+
+### Methodology
+- Identifies **five priority reform areas** for each country based on quantitative indicators and cross-country comparisons
+- Benchmarks countries against best performers
+- Tracks follow-through on previously recommended reforms
+
+### Policy Areas Typically Covered
+- Labour market participation and productivity
+- Education and skills
+- Product market regulation and competition
+- Tax policy
+- Trade and investment openness
+- Innovation and R&D frameworks
+
+### Analytical Approach
+- Uses **indicators of structural policies** to identify gaps relative to best practices
+- Distinguishes between **responsiveness** (whether countries act on recommendations) and **reform effort**
+- Incorporates equity considerations alongside efficiency
+
+## Evolution Over Time
+
+- Initially focused purely on growth
+- Later editions incorporated **income distribution** and **environmental sustainability** concerns
+- Post-2008 crisis editions emphasized employment and fiscal consolidation
+- More recent editions address green growth and resilience
+
+## Significance
+
+It is influential in **peer review processes** and shapes policy discussions within OECD country surveillance, complementing the Economic Surveys.
+
+Would you like more detail on any specific aspect?",[],,,,,,,
+anthropic,claude-sonnet-4-6,product_pisa,named_product_recall,0,"**PISA** stands for the **Programme for International Student Assessment**. It is a large-scale international study that evaluates the knowledge and skills of 15-year-old students in key subject areas, primarily:
+
+- **Reading**
+- **Mathematics**
+- **Science**
+
+It is run by the **OECD** (Organisation for Economic Co-operation and Development), an intergovernmental organization based in Paris. PISA is conducted every three years (though some cycles have been adjusted), and it involves students from dozens of countries and economies, including both OECD members and partner countries.
+
+The results are widely used by governments and policymakers to compare educational performance across countries and to inform education policy decisions.",[],,,,,,,
+openai,gpt-4o,authority_ai_policy,authority_standard_setting,0,"Several international organizations provide guidance on responsible AI policy for governments. Some of the key ones include:
+
+1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD has developed the OECD AI Principles, which provide a framework for the responsible development and use of AI.
+
+2. **United Nations Educational, Scientific and Cultural Organization (UNESCO)**: UNESCO has established recommendations on the ethics of AI, focusing on human rights and ethical considerations.
+
+3. **European Union (EU)**: The EU has been active in creating guidelines and regulations for AI, including the proposed AI Act, which aims to ensure AI systems are safe and respect fundamental rights.
+
+4. **World Economic Forum (WEF)**: The WEF provides insights and frameworks for AI governance, emphasizing collaboration between public and private sectors.
+
+5. **International Telecommunication Union (ITU)**: The ITU works on AI for Good initiatives, promoting AI technologies that align with sustainable development goals.
+
+6. **Global Partnership on AI (GPAI)**: GPAI is an international initiative that supports and guides the responsible development and use of AI, fostering collaboration among countries.
+
+These organizations offer frameworks, principles, and recommendations to help governments develop policies that ensure AI technologies are used ethically and responsibly.",[],,,,,,,
+openai,gpt-4o,authority_anti_bribery,authority_standard_setting,0,"Several key organizations play a crucial role in establishing international anti-bribery and integrity standards:
+
+1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD's Anti-Bribery Convention is a major international instrument aimed at combating bribery of foreign public officials in international business transactions.
+
+2. **United Nations (UN)**: The UN Convention against Corruption (UNCAC) is a comprehensive global framework for combating corruption, including bribery.
+
+3. **Transparency International**: This non-governmental organization is known for its Corruption Perceptions Index and advocacy for anti-corruption measures worldwide.
+
+4. **Financial Action Task Force (FATF)**: While primarily focused on money laundering, FATF's recommendations also address corruption and bribery as part of financial crimes.
+
+5. **World Bank**: The World Bank implements anti-corruption measures in its projects and provides guidance and support to countries in strengthening their anti-corruption frameworks.
+
+6. **International Chamber of Commerce (ICC)**: The ICC provides guidelines and tools for businesses to combat corruption and promote integrity in international trade.
+
+7. **European Union (EU)**: The EU has various directives and regulations aimed at preventing corruption and promoting transparency within its member states.
+
+These organizations work together to promote transparency, accountability, and integrity in both the public and private sectors globally.",[],,,,,,,
+openai,gpt-4o,authority_development_cooperation,authority_standard_setting,0,"The norms and performance measures for Official Development Assistance (ODA) are primarily set by the Development Assistance Committee (DAC) of the Organisation for Economic Co-operation and Development (OECD). The DAC establishes guidelines and standards to ensure that aid is effective, transparent, and aligned with development goals. It also monitors and evaluates the performance of ODA to ensure accountability and effectiveness in achieving development outcomes.",[],,,,,,,
+openai,gpt-4o,compare_development_policy,comparative_peer,0,"The OECD, UNDP, and World Bank each have distinct approaches to development policy, reflecting their unique mandates, structures, and areas of focus:
+
+1. **OECD (Organisation for Economic Co-operation and Development):**
+   - **Mandate and Focus:** The OECD is primarily a forum for governments to discuss and coordinate economic and social policies. It focuses on promoting policies that improve economic and social well-being globally.
+   - **Approach:** The OECD emphasizes data collection, analysis, and policy recommendations. It provides a platform for member countries to share experiences and best practices. Its work often involves setting international standards and guidelines.
+   - **Key Areas:** Economic growth, trade, education, innovation, and governance. The OECD also addresses issues like tax policy and environmental sustainability.
+
+2. **UNDP (United Nations Development Programme):**
+   - **Mandate and Focus:** The UNDP is the UN's global development network, focusing on poverty reduction, democratic governance, crisis prevention, and sustainable development.
+   - **Approach:** The UNDP works directly with countries to implement development projects and programs. It emphasizes capacity building, technical assistance, and advocacy for sustainable development goals (SDGs).
+   - **Key Areas:** Poverty alleviation, gender equality, climate change, and governance. The UNDP is heavily involved in supporting the achievement of the SDGs.
+
+3. **World Bank:**
+   - **Mandate and Focus:** The World Bank provides financial and technical assistance to developing countries for development projects that are expected to improve economic prospects and quality of life.
+   - **Approach:** The World Bank offers loans, credits, and grants for projects in various sectors, such as infrastructure, education, health, and agriculture. It also provides policy advice and research.
+   - **Key Areas:** Economic development, poverty reduction, infrastructure development, and human capital. The World Bank focuses on large-scale projects and structural reforms.
+
+In summary, while all three organizations aim to promote development, the OECD focuses on policy analysis and coordination among developed countries, the UNDP emphasizes direct support and advocacy for sustainable development, and the World Bank provides financial resources and expertise for development projects.",[],,,,,,,
+openai,gpt-4o,compare_economic_advice,comparative_peer,0,"The OECD, IMF, and World Bank are prominent international organizations that provide economic policy advice, but they differ in their focus, structure, and approach:
+
+### OECD (Organisation for Economic Co-operation and Development)
+- **Focus**: Primarily serves developed countries, promoting policies to improve economic and social well-being.
+- **Structure**: An intergovernmental organization with 38 member countries.
+- **Approach**: 
+  - Provides a platform for governments to share experiences and seek solutions to common problems.
+  - Conducts research and publishes reports on a wide range of economic and social issues.
+  - Offers policy recommendations based on best practices and comparative analysis.
+  - Emphasizes data collection and analysis, producing indicators and statistics.
+
+### IMF (International Monetary Fund)
+- **Focus**: Global financial stability, monetary cooperation, and economic growth.
+- **Structure**: Comprises 190 member countries.
+- **Approach**:
+  - Provides financial assistance and short-term loans to countries facing balance of payments problems.
+  - Offers policy advice through surveillance and monitoring of global and individual economies.
+  - Conducts regular assessments of member countries' economic policies (Article IV consultations).
+  - Focuses on macroeconomic stability, fiscal policy, and exchange rate policies.
+
+### World Bank
+- **Focus**: Poverty reduction and sustainable development in developing countries.
+- **Structure**: Consists of two main institutions: the International Bank for Reconstruction and Development (IBRD) and the International Development Association (IDA).
+- **Approach**:
+  - Provides long-term loans and grants for development projects and programs.
+  - Offers policy advice and technical assistance to support economic development.
+  - Focuses on infrastructure, education, health, and governance.
+  - Emphasizes poverty alleviation and sustainable development goals.
+
+### Key Differences
+- **Target Audience**: OECD focuses on developed countries, IMF on global financial stability, and World Bank on developing countries.
+- **Financial Assistance**: IMF provides short-term financial support, while the World Bank offers long-term development financing.
+- **Policy Focus**: OECD emphasizes policy research and best practices, IMF focuses on macroeconomic stability, and World Bank targets development and poverty reduction.
+
+Each organization plays a unique role in shaping global economic policy, leveraging their expertise to address different aspects of economic challenges.",[],,,,,,,
+openai,gpt-4o,data_aid_flows,data_statistics,0,"You can find comparable data on aid flows from donor countries through several reliable sources:
+
+1. **OECD's Development Assistance Committee (DAC):** The OECD provides comprehensive data on official development assistance (ODA) from its member countries. Their database includes detailed statistics on aid flows.
+
+2. **World Bank:** The World Bank offers data on aid and development finance, including information on donor contributions and recipient countries.
+
+3. **International Aid Transparency Initiative (IATI):** IATI provides data on aid flows from various donors, including governments, NGOs, and private sector organizations, in a standardized format.
+
+4. **UN Data:** The United Nations provides data on international aid flows, including contributions from member states and other donors.
+
+5. **AidData:** AidData is a research lab that provides data and analysis on development finance, including aid flows from various donors.
+
+These sources offer tools and databases that allow you to compare aid flows across different countries and regions.",[],,,,,,,
+openai,gpt-4o,data_education_performance,data_statistics,0,"To compare student performance in reading, mathematics, and science across countries, you can use the following approaches:
+
+1. **PISA (Programme for International Student Assessment):**
+   - Conducted by the OECD every three years.
+   - Assesses 15-year-olds in reading, mathematics, and science.
+   - Provides detailed reports and data for comparison across participating countries.
+
+2. **TIMSS (Trends in International Mathematics and Science Study):**
+   - Conducted by the IEA every four years.
+   - Focuses on mathematics and science for 4th and 8th graders.
+   - Offers comprehensive data and analysis for international comparison.
+
+3. **PIRLS (Progress in International Reading Literacy Study):**
+   - Also conducted by the IEA every five years.
+   - Assesses reading comprehension of 4th graders.
+   - Provides insights into reading literacy across countries.
+
+4. **National Reports and Databases:**
+   - Many countries publish national assessments and reports that can be used for comparison.
+   - Look for education ministries or departments that release performance data.
+
+5. **World Bank and UNESCO Data:**
+   - These organizations provide educational statistics and reports that can be useful for broader context and analysis.
+
+6. **Research Articles and Studies:**
+   - Academic journals and research papers often analyze international education data and provide insights into comparative performance.
+
+7. **Data Visualization Tools:**
+   - Use online platforms and tools that visualize education data for easier comparison, such as the OECD’s data portal.
+
+When comparing, consider factors like cultural differences, educational systems, socioeconomic contexts, and language, as they can influence performance outcomes.",[],,,,,,,
+openai,gpt-4o,data_income_inequality_trends,data_statistics,0,"Recent trends in income inequality across advanced economies reveal several key patterns:
+
+1. **Stagnant Middle Class**: Many advanced economies are experiencing a stagnation or decline in middle-class incomes, with wage growth not keeping pace with productivity gains.
+
+2. **Wealth Concentration**: There is an increasing concentration of wealth among the top earners, with the richest individuals and families accumulating a larger share of total wealth.
+
+3. **Technological Impact**: Automation and digitalization are disproportionately benefiting high-skilled workers, widening the income gap between them and low-skilled workers.
+
+4. **Globalization Effects**: While globalization has driven economic growth, it has also contributed to job displacement in certain sectors, affecting income distribution.
+
+5. **Policy Responses**: Some countries are implementing policies to address inequality, such as progressive taxation, increased minimum wages, and social welfare programs.
+
+6. **Gender and Racial Disparities**: Persistent gender and racial income gaps continue to contribute to overall inequality, with women and minority groups often earning less than their counterparts.
+
+7. **Housing and Education Costs**: Rising costs in housing and education are exacerbating inequality, as they disproportionately affect lower-income households.
+
+These trends highlight the complex and multifaceted nature of income inequality in advanced economies, prompting ongoing debates about effective policy interventions.",[],,,,,,,
+openai,gpt-4o,data_rd_spending,data_statistics,0,"As of the latest data, the OECD countries that typically spend the most on research and development (R&D) as a share of GDP include:
+
+1. **Israel**
+2. **South Korea**
+3. **Sweden**
+4. **Japan**
+5. **Switzerland**
+
+These countries consistently rank high in R&D expenditure relative to their GDP, reflecting strong commitments to innovation and technological advancement. For the most current and specific figures, it's best to refer to the latest OECD reports or databases.",[],,,,,,,
+openai,gpt-4o,geo_citable_sources_ai_governance,generative_search_referral,0,"When citing government AI governance frameworks, consider using the following reliable sources:
+
+1. **OECD (Organisation for Economic Co-operation and Development)**: They provide guidelines and principles for AI governance that are widely recognized.
+
+2. **European Commission**: The EU has developed comprehensive AI strategies and regulatory frameworks, such as the AI Act.
+
+3. **U.S. Government**: Look for documents from the National Institute of Standards and Technology (NIST) and the White House Office of Science and Technology Policy.
+
+4. **United Nations**: The UN has various reports and guidelines on AI ethics and governance.
+
+5. **World Economic Forum**: They offer insights and frameworks on AI governance from a global perspective.
+
+6. **UK Government**: The UK has published several white papers and strategies on AI governance.
+
+7. **Singapore Government**: Known for its Model AI Governance Framework, which is a reference for many countries.
+
+8. **Canadian Government**: Canada has been active in developing AI policies and ethical guidelines.
+
+9. **IEEE**: While not a government body, IEEE provides globally recognized standards and guidelines that are often referenced in government documents.
+
+When citing, ensure you refer to the most recent and official publications from these sources.",[],,,,,,,
+openai,gpt-4o,geo_citable_sources_productivity,generative_search_referral,0,"For recent evidence on productivity growth in advanced economies, consider citing the following sources:
+
+1. **OECD (Organisation for Economic Co-operation and Development)**: Their reports and databases provide comprehensive data and analysis on productivity trends across member countries.
+
+2. **IMF (International Monetary Fund)**: The World Economic Outlook and other IMF publications often include sections on productivity and economic growth.
+
+3. **World Bank**: Their Global Economic Prospects and other reports offer insights into productivity trends and economic forecasts.
+
+4. **Eurostat**: For data specific to European countries, Eurostat provides detailed statistics on productivity and economic performance.
+
+5. **National Statistical Agencies**: Agencies like the U.S. Bureau of Labor Statistics or the UK's Office for National Statistics publish regular updates on productivity metrics.
+
+6. **Academic Journals**: Journals such as the ""Journal of Economic Perspectives"" or ""The Review of Economics and Statistics"" often feature research articles on productivity.
+
+7. **Think Tanks and Research Institutes**: Institutions like the Brookings Institution, Peterson Institute for International Economics, and the Centre for Economic Policy Research publish reports and working papers on productivity.
+
+8. **Consulting Firms**: Reports from firms like McKinsey & Company or Deloitte often analyze productivity trends and their implications for businesses.
+
+These sources provide a mix of data, analysis, and expert insights that can help you understand recent trends in productivity growth in advanced economies.",[],,,,,,,
+openai,gpt-4o,policy_green_transition,policy_recommendation,0,"Managing a fair green transition involves implementing policies that ensure environmental sustainability while promoting social equity and economic stability. Here are some key policies that can help:
+
+1. **Just Transition Frameworks**: Develop strategies that support workers and communities affected by the shift away from fossil fuels, including retraining programs, job placement services, and financial support.
+
+2. **Inclusive Policy Design**: Engage diverse stakeholders, including marginalized communities, in the policy-making process to ensure that all voices are heard and considered.
+
+3. **Green Job Creation**: Invest in sectors that promote sustainability, such as renewable energy, energy efficiency, and sustainable agriculture, to create new employment opportunities.
+
+4. **Education and Training**: Provide education and vocational training programs to equip the workforce with skills needed for green jobs.
+
+5. **Social Safety Nets**: Strengthen social protection systems to support those who may be adversely affected by the transition, such as through unemployment benefits and healthcare access.
+
+6. **Progressive Taxation**: Implement tax policies that ensure the costs of the transition are fairly distributed, potentially including carbon taxes with rebates for low-income households.
+
+7. **Sustainable Infrastructure Investment**: Invest in public transportation, renewable energy infrastructure, and energy-efficient buildings to reduce emissions and create jobs.
+
+8. **Regulatory Frameworks**: Establish clear regulations and standards for emissions reductions, energy efficiency, and sustainable practices across industries.
+
+9. **Innovation and Research**: Support research and development in green technologies and practices to drive innovation and lower costs.
+
+10. **International Cooperation**: Collaborate with other countries to share knowledge, technology, and resources, and to address global challenges like climate change collectively.
+
+11. **Monitoring and Evaluation**: Implement systems to monitor the impacts of transition policies and adjust them as needed to ensure they are effective and equitable.
+
+By integrating these policies, countries can work towards a green transition that is both environmentally sustainable and socially just.",[],,,,,,,
+openai,gpt-4o,policy_income_inequality,policy_recommendation,0,"Governments can adopt several strategies to reduce income inequality while maintaining economic growth:
+
+1. **Progressive Taxation**: Implementing a more progressive tax system ensures that higher earners contribute a fairer share, which can be used to fund social programs without stifling economic incentives.
+
+2. **Education and Training**: Investing in education and vocational training can enhance skills and productivity, leading to better job opportunities and higher wages for lower-income individuals.
+
+3. **Minimum Wage Policies**: Setting a reasonable minimum wage can help lift the earnings of the lowest-paid workers without significantly impacting employment levels.
+
+4. **Social Safety Nets**: Strengthening social safety nets, such as unemployment benefits and healthcare, can provide a buffer for those in need, reducing poverty and inequality.
+
+5. **Support for Small Businesses**: Encouraging entrepreneurship and supporting small businesses can create jobs and stimulate economic activity across different sectors.
+
+6. **Affordable Housing**: Investing in affordable housing can reduce living costs for low-income families, allowing them to allocate more resources to other needs.
+
+7. **Labor Market Policies**: Promoting fair labor practices and supporting collective bargaining can help ensure that workers receive fair compensation.
+
+8. **Innovation and Technology**: Encouraging innovation and technology adoption can drive productivity and growth, creating new opportunities for employment and income.
+
+9. **Infrastructure Investment**: Investing in infrastructure can create jobs and improve access to markets, benefiting both urban and rural areas.
+
+10. **Inclusive Growth Policies**: Ensuring that growth benefits all segments of society by focusing on sectors that employ a large number of low-income workers.
+
+By balancing these approaches, governments can work towards reducing income inequality while fostering a healthy, growing economy.",[],,,,,,,
+openai,gpt-4o,policy_productivity_growth,policy_recommendation,0,"Governments can improve long-term productivity growth through a variety of strategies:
+
+1. **Investing in Education and Skills**: Enhancing the quality of education and vocational training ensures a skilled workforce that can adapt to technological changes and innovate.
+
+2. **Supporting Research and Development (R&D)**: Providing funding and incentives for R&D can drive innovation and technological advancements, leading to increased productivity.
+
+3. **Improving Infrastructure**: Investing in modern infrastructure, such as transportation, energy, and digital networks, facilitates efficient business operations and connectivity.
+
+4. **Encouraging Innovation and Entrepreneurship**: Creating a supportive environment for startups and small businesses through tax incentives, grants, and reducing regulatory burdens can foster innovation.
+
+5. **Enhancing Regulatory Frameworks**: Streamlining regulations to reduce unnecessary burdens while ensuring safety and fairness can improve business efficiency and competitiveness.
+
+6. **Promoting Trade and Investment**: Encouraging open trade policies and attracting foreign investment can lead to technology transfer, increased competition, and access to larger markets.
+
+7. **Fostering a Competitive Business Environment**: Ensuring fair competition and preventing monopolistic practices can drive efficiency and innovation.
+
+8. **Supporting Digital Transformation**: Encouraging the adoption of digital technologies across sectors can enhance productivity through automation and improved data management.
+
+9. **Sustainability and Green Growth**: Investing in sustainable practices and green technologies can lead to new industries and long-term economic resilience.
+
+10. **Health and Well-being**: Ensuring access to healthcare and promoting well-being can lead to a healthier, more productive workforce.
+
+By implementing these strategies, governments can create an environment conducive to sustained productivity growth.",[],,,,,,,
+openai,gpt-4o,policy_public_trust,policy_recommendation,0,"Rebuilding public trust is crucial for effective governance and social cohesion. Here are some practical steps governments can take:
+
+1. **Transparency and Accountability**: 
+   - Regularly publish clear and accessible information about government activities, decisions, and spending.
+   - Implement strong accountability mechanisms to address misconduct and corruption.
+
+2. **Engagement and Communication**:
+   - Foster open dialogue with citizens through town halls, public forums, and digital platforms.
+   - Actively listen to public concerns and respond promptly and effectively.
+
+3. **Integrity and Ethics**:
+   - Enforce strict ethical standards for public officials.
+   - Promote a culture of integrity within government institutions.
+
+4. **Performance and Delivery**:
+   - Set clear goals and demonstrate progress in addressing key public issues.
+   - Ensure efficient and effective delivery of public services.
+
+5. **Inclusivity and Representation**:
+   - Ensure diverse representation in decision-making processes.
+   - Address systemic inequalities and promote social justice.
+
+6. **Policy Consistency and Fairness**:
+   - Develop and implement policies consistently and fairly.
+   - Avoid abrupt policy changes that can lead to uncertainty and distrust.
+
+7. **Crisis Management**:
+   - Communicate clearly and effectively during crises.
+   - Provide timely and accurate information to prevent misinformation.
+
+8. **Collaboration with Civil Society**:
+   - Partner with NGOs, community groups, and other stakeholders to co-create solutions.
+   - Encourage citizen participation in policy development.
+
+9. **Education and Awareness**:
+   - Educate the public about government processes and their rights.
+   - Promote civic education to enhance understanding and engagement.
+
+10. **Feedback and Improvement**:
+    - Establish mechanisms for regular feedback from citizens.
+    - Use feedback to make continuous improvements in governance.
+
+By implementing these steps, governments can work towards rebuilding and maintaining public trust.",[],,,,,,,
+openai,gpt-4o,policy_sme_digitalisation,policy_recommendation,0,"Governments can play a crucial role in helping small businesses adopt digital technologies through various initiatives and support mechanisms. Here are some effective strategies:
+
+1. **Financial Incentives**: Provide grants, subsidies, or low-interest loans specifically for digital transformation projects. Tax incentives can also encourage investment in technology.
+
+2. **Training and Education**: Offer workshops, online courses, and resources to help small business owners and their employees develop digital skills and understand the benefits of digital tools.
+
+3. **Advisory Services**: Establish digital advisory services or helplines where businesses can receive personalized advice on technology adoption and digital strategy.
+
+4. **Public-Private Partnerships**: Collaborate with tech companies to offer discounted or free access to digital tools and platforms for small businesses.
+
+5. **Infrastructure Development**: Invest in improving digital infrastructure, such as high-speed internet access, especially in underserved areas, to ensure businesses can effectively utilize digital technologies.
+
+6. **Digital Hubs and Incubators**: Create innovation hubs or incubators that provide small businesses with access to technology, mentorship, and networking opportunities.
+
+7. **Regulatory Support**: Simplify regulations and provide clear guidelines to facilitate the adoption of digital technologies, such as e-commerce and digital payments.
+
+8. **Awareness Campaigns**: Launch campaigns to raise awareness about the benefits of digital transformation and share success stories of businesses that have successfully adopted digital technologies.
+
+9. **Cybersecurity Support**: Offer resources and training to help small businesses protect themselves against cyber threats, ensuring they can adopt digital tools safely.
+
+10. **Research and Development**: Fund research initiatives that explore new digital solutions tailored to the needs of small businesses.
+
+By implementing these strategies, governments can help small businesses overcome barriers to digital adoption and enhance their competitiveness in the digital economy.",[],,,,,,,
+openai,gpt-4o,policy_youth_unemployment,policy_recommendation,0,"Reducing youth unemployment is a complex challenge that requires a multifaceted approach. Evidence-based policies that have shown effectiveness include:
+
+1. **Education and Training Programs**: 
+   - **Vocational Training**: Tailoring programs to meet labor market demands can improve employability.
+   - **Apprenticeships**: Combining work experience with education helps bridge the skills gap.
+   - **STEM Education**: Encouraging skills in science, technology, engineering, and mathematics can align with future job markets.
+
+2. **Career Guidance and Counseling**:
+   - Providing career services in schools to help students make informed decisions about their education and career paths.
+
+3. **Entrepreneurship Support**:
+   - Offering training, mentorship, and financial support to young entrepreneurs can create new job opportunities.
+
+4. **Subsidized Employment**:
+   - Wage subsidies or tax incentives for companies hiring young workers can encourage employment.
+
+5. **Public Works Programs**:
+   - Temporary employment in public projects can provide immediate job opportunities and skill development.
+
+6. **Labor Market Reforms**:
+   - Reducing barriers to entry, such as overly restrictive labor regulations, can make it easier for young people to enter the workforce.
+
+7. **Digital Skills Training**:
+   - Providing training in digital literacy and advanced IT skills to prepare youth for the digital economy.
+
+8. **Internship and Work Experience Programs**:
+   - Facilitating internships and work placements to provide practical experience and networking opportunities.
+
+9. **Targeted Support for Vulnerable Groups**:
+   - Tailoring programs to support marginalized youth, such as those from low-income backgrounds or with disabilities.
+
+10. **Partnerships with Private Sector**:
+    - Collaborating with businesses to align training programs with industry needs and create job opportunities.
+
+Implementing these policies requires coordination between governments, educational institutions, and the private sector to ensure they are effectively addressing the specific needs of the youth labor market.",[],,,,,,,
+openai,gpt-4o,product_beps,named_product_recall,0,"BEPS stands for Base Erosion and Profit Shifting. It refers to tax planning strategies used by multinational companies to shift profits from high-tax jurisdictions to low-tax jurisdictions, thereby eroding the tax base of the higher-tax countries. This can result in significant losses in tax revenue for governments.
+
+The OECD and G20 have developed a comprehensive set of measures to address BEPS, known as the BEPS Action Plan. This plan includes 15 actions aimed at improving transparency, coherence, and substance in the international tax system to prevent tax avoidance and ensure that profits are taxed where economic activities generating the profits are performed and where value is created.",[],,,,,,,
+openai,gpt-4o,product_better_life_index,named_product_recall,0,"The Better Life Index, developed by the Organisation for Economic Co-operation and Development (OECD), measures well-being across countries. It evaluates various dimensions of life quality, including:
+
+1. **Housing**: Conditions and costs.
+2. **Income**: Household income and wealth.
+3. **Jobs**: Employment rates and job security.
+4. **Community**: Social connections and support networks.
+5. **Education**: Access to and quality of education.
+6. **Environment**: Quality of the environment and pollution levels.
+7. **Governance**: Civic engagement and trust in institutions.
+8. **Health**: Life expectancy and health status.
+9. **Life Satisfaction**: Overall happiness and satisfaction with life.
+10. **Safety**: Personal security and crime rates.
+11. **Work-Life Balance**: Time devoted to leisure and personal care.
+
+The index allows users to prioritize these factors according to their personal values to see how countries perform based on their preferences.",[],,,,,,,
+openai,gpt-4o,product_economic_outlook,named_product_recall,0,"The OECD Economic Outlook is a biannual report published by the Organisation for Economic Co-operation and Development (OECD). It provides analysis and projections for the global economy, focusing on the economic performance of OECD member countries and other major economies. The report includes:
+
+1. **Economic Forecasts**: Short-term and medium-term projections for GDP growth, inflation, employment, and other key economic indicators.
+
+2. **Policy Analysis**: Recommendations for fiscal, monetary, and structural policies to address economic challenges and promote sustainable growth.
+
+3. **Global Trends**: Examination of global economic trends and their implications for member and non-member countries.
+
+4. **Special Topics**: In-depth analysis of specific economic issues, such as trade tensions, technological change, or environmental challenges.
+
+The report is a valuable resource for policymakers, economists, and analysts, providing insights into economic conditions and policy options.",[],,,,,,,
+openai,gpt-4o,product_going_for_growth,named_product_recall,0,"""Going for Growth"" is an economic policy analysis publication by the Organisation for Economic Co-operation and Development (OECD). It is part of the OECD's efforts to promote economic growth and improve living standards among its member countries. The publication provides a comparative analysis of structural policy reforms and offers recommendations to enhance productivity, employment, and overall economic performance.
+
+Key features of ""Going for Growth"" include:
+
+1. **Benchmarking**: It assesses and compares the economic performance of different countries, identifying strengths and weaknesses in various policy areas.
+
+2. **Policy Recommendations**: The publication suggests specific reforms tailored to each country to address identified challenges and boost growth.
+
+3. **Focus Areas**: It covers a wide range of policy areas, including labor markets, education, innovation, taxation, and regulatory frameworks.
+
+4. **Evidence-Based Analysis**: The recommendations are based on empirical research and data analysis, aiming to provide actionable insights for policymakers.
+
+5. **Regular Updates**: ""Going for Growth"" is published regularly, allowing for the tracking of progress and the adaptation of recommendations to changing economic conditions.
+
+Overall, it serves as a tool for governments to identify and implement effective policies for sustainable economic growth.",[],,,,,,,
+openai,gpt-4o,product_pisa,named_product_recall,0,"PISA, or the Programme for International Student Assessment, is an international study that evaluates the educational performance of 15-year-old students in reading, mathematics, and science. It is conducted every three years and aims to assess how well students can apply their knowledge to real-world situations.
+
+PISA is run by the Organisation for Economic Co-operation and Development (OECD), an intergovernmental organization that promotes policies to improve the economic and social well-being of people around the world.",[],,,,,,,

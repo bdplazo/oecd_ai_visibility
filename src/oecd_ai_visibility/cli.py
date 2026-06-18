@@ -13,7 +13,11 @@ from oecd_ai_visibility.analysis import build_summary_tables
 from oecd_ai_visibility.figures import build_figures
 from oecd_ai_visibility.runner import run_collection
 from oecd_ai_visibility.schemas import load_query_set, load_study_config
-from oecd_ai_visibility.scoring import score_collection
+from oecd_ai_visibility.scoring import (
+    DEFAULT_STRATIFIED_PER_CELL,
+    export_stratified_validation_sample_csv,
+    score_collection,
+)
 
 app = typer.Typer(help="Collect and analyse OECD AI visibility study data.")
 
@@ -158,6 +162,45 @@ def score_command(
         typer.echo(f"Aggregated CSV: {result.aggregated_csv_path}")
     for helper_path in result.helper_csv_paths:
         typer.echo(f"Helper table: {helper_path}")
+
+
+@app.command("validation-sample")
+def validation_sample_command(
+    config: Annotated[
+        Path,
+        typer.Option("--config", "-c", help="Path to the study YAML configuration."),
+    ] = Path("config/study.yaml"),
+    per_cell: Annotated[
+        int,
+        typer.Option(
+            "--per-cell",
+            help="Rows drawn from each provider x category stratum before forced edge cases.",
+        ),
+    ] = DEFAULT_STRATIFIED_PER_CELL,
+) -> None:
+    """Export the Phase 5.5 stratified manual-review sample from existing scored data.
+
+    Writes ``validation_sample_stratified.csv`` (blind review layout) and
+    ``validation_sample_heuristic_key.csv`` (heuristic scores, joined back later) into the
+    scored directory. Reshapes already-scored data only; makes no provider or judge calls
+    and never touches ``data/raw/`` or the default ``validation_sample.csv``.
+    """
+
+    _configure_logging()
+    config_path = config.resolve()
+    project_root = _project_root_for_config(config_path)
+
+    study_config = load_study_config(config_path)
+    result = export_stratified_validation_sample_csv(
+        config=study_config,
+        project_root=project_root,
+        per_cell=per_cell,
+    )
+
+    typer.echo(
+        f"Wrote stratified validation sample ({result.row_count} rows): {result.sample_path}"
+    )
+    typer.echo(f"Heuristic key (review blind, join later): {result.heuristic_key_path}")
 
 
 @app.command("analyse")

@@ -1,0 +1,47 @@
+provider,model,query_id,run_index,category,oecd_mentioned,oecd_prominence,oecd_url_referenced,oecd_publications_named,competitors_mentioned,factual_issues,judge_confidence,selection_reason
+anthropic,claude-sonnet-4-6,authority_ai_policy,0,authority_standard_setting,True,supporting,False,"[""OECD AI Principles""]","{""European Union"": ""incidental"", ""G20"": ""supporting"", ""G7"": ""incidental"", ""Global Partnership on AI"": ""incidental"", ""ITU"": ""incidental"", ""UNDP"": ""incidental"", ""UNESCO"": ""incidental"", ""United Nations"": ""incidental""}",,high,stratum
+anthropic,claude-sonnet-4-6,authority_anti_bribery,0,authority_standard_setting,True,supporting,False,"[""Anti-Bribery Convention""]","{""IMF"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""incidental""}",,high,stratum
+anthropic,claude-sonnet-4-6,authority_development_cooperation,0,authority_standard_setting,True,primary,False,[],"{""World Bank"": ""incidental""}",,high,edge_prominence_primary
+anthropic,claude-sonnet-4-6,compare_development_policy,0,comparative_peer,True,supporting,False,[],"{""UNDP"": ""supporting"", ""World Bank"": ""supporting""}",,high,stratum
+anthropic,claude-sonnet-4-6,compare_economic_advice,0,comparative_peer,True,supporting,False,"[""PISA"", ""BEPS""]","{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high,stratum
+anthropic,claude-sonnet-4-6,data_aid_flows,0,data_statistics,True,supporting,True,[],"{""World Bank"": ""incidental""}",,high,stratum|edge_url_referenced
+anthropic,claude-sonnet-4-6,data_education_performance,0,data_statistics,True,supporting,True,"[""PISA""]","{""UNESCO"": ""supporting"", ""World Bank"": ""supporting""}",,high,stratum|edge_url_referenced
+anthropic,claude-sonnet-4-6,data_health_spending,0,data_statistics,True,primary,True,[],"{""World Bank"": ""incidental""}",,high,edge_prominence_primary|edge_url_referenced
+anthropic,claude-sonnet-4-6,data_income_inequality_trends,0,data_statistics,False,none,False,[],{},,high,edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,data_rd_spending,0,data_statistics,True,primary,False,[],{},,high,edge_prominence_primary
+anthropic,claude-sonnet-4-6,data_tax_revenue,0,data_statistics,True,supporting,True,"[""Revenue Statistics""]","{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high,edge_url_referenced
+anthropic,claude-sonnet-4-6,geo_citable_sources_ai_governance,0,generative_search_referral,True,supporting,False,[],"{""European Union"": ""incidental"", ""G20"": ""incidental"", ""G7"": ""incidental"", ""ITU"": ""incidental"", ""UNESCO"": ""incidental""}",,high,stratum
+anthropic,claude-sonnet-4-6,geo_citable_sources_productivity,0,generative_search_referral,True,supporting,False,"[""Going for Growth""]","{""IMF"": ""incidental"", ""World Bank"": ""incidental""}",,high,stratum
+anthropic,claude-sonnet-4-6,policy_green_transition,0,policy_recommendation,False,none,False,[],{},,high,stratum|edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,policy_income_inequality,0,policy_recommendation,False,none,False,[],{},,high,stratum|edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,policy_productivity_growth,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,policy_public_trust,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,policy_sme_digitalisation,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,policy_youth_unemployment,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+anthropic,claude-sonnet-4-6,product_beps,0,named_product_recall,True,primary,False,"[""BEPS""]","{""G20"": ""incidental""}",,high,stratum|edge_prominence_primary
+anthropic,claude-sonnet-4-6,product_better_life_index,0,named_product_recall,True,primary,False,"[""Better Life Index""]",{},,high,stratum|edge_prominence_primary
+anthropic,claude-sonnet-4-6,product_economic_outlook,0,named_product_recall,True,primary,False,"[""OECD Economic Outlook""]",{},,high,edge_prominence_primary
+anthropic,claude-sonnet-4-6,product_going_for_growth,0,named_product_recall,True,primary,False,"[""Going for Growth""]",{},,high,edge_prominence_primary
+anthropic,claude-sonnet-4-6,product_pisa,0,named_product_recall,True,primary,False,"[""PISA""]",{},,high,edge_prominence_primary
+openai,gpt-4o,authority_ai_policy,0,authority_standard_setting,True,supporting,False,"[""OECD AI Principles""]","{""European Union"": ""incidental"", ""Global Partnership on AI"": ""incidental"", ""ITU"": ""supporting"", ""UNESCO"": ""supporting"", ""United Nations"": ""incidental"", ""World Economic Forum"": ""incidental""}",,high,stratum
+openai,gpt-4o,authority_anti_bribery,0,authority_standard_setting,True,supporting,False,"[""Anti-Bribery Convention""]","{""European Union"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",,high,stratum
+openai,gpt-4o,authority_development_cooperation,0,authority_standard_setting,True,primary,False,[],{},,high,edge_prominence_primary
+openai,gpt-4o,compare_development_policy,0,comparative_peer,True,supporting,False,[],"{""UNDP"": ""supporting"", ""United Nations"": ""supporting"", ""World Bank"": ""supporting""}",,high,stratum
+openai,gpt-4o,compare_economic_advice,0,comparative_peer,True,supporting,False,[],"{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high,stratum
+openai,gpt-4o,data_aid_flows,0,data_statistics,True,supporting,False,[],"{""United Nations"": ""incidental"", ""World Bank"": ""supporting""}",,high,stratum
+openai,gpt-4o,data_education_performance,0,data_statistics,True,supporting,False,"[""PISA""]","{""UNESCO"": ""incidental"", ""World Bank"": ""incidental""}",,high,stratum
+openai,gpt-4o,data_income_inequality_trends,0,data_statistics,False,none,False,[],{},,high,edge_oecd_not_mentioned
+openai,gpt-4o,data_rd_spending,0,data_statistics,True,primary,False,[],{},,high,edge_prominence_primary
+openai,gpt-4o,geo_citable_sources_ai_governance,0,generative_search_referral,True,supporting,False,[],"{""United Nations"": ""incidental"", ""World Economic Forum"": ""incidental""}",,high,stratum
+openai,gpt-4o,geo_citable_sources_productivity,0,generative_search_referral,True,supporting,False,[],"{""Eurostat"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""incidental""}",,high,stratum
+openai,gpt-4o,policy_green_transition,0,policy_recommendation,False,none,False,[],{},,high,stratum|edge_oecd_not_mentioned
+openai,gpt-4o,policy_income_inequality,0,policy_recommendation,False,none,False,[],{},,high,stratum|edge_oecd_not_mentioned
+openai,gpt-4o,policy_productivity_growth,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+openai,gpt-4o,policy_public_trust,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+openai,gpt-4o,policy_sme_digitalisation,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+openai,gpt-4o,policy_youth_unemployment,0,policy_recommendation,False,none,False,[],{},,high,edge_oecd_not_mentioned
+openai,gpt-4o,product_beps,0,named_product_recall,True,primary,False,"[""BEPS""]","{""G20"": ""incidental""}",,high,stratum|edge_prominence_primary
+openai,gpt-4o,product_better_life_index,0,named_product_recall,True,primary,False,"[""Better Life Index""]",{},,high,stratum|edge_prominence_primary
+openai,gpt-4o,product_economic_outlook,0,named_product_recall,True,primary,False,"[""OECD Economic Outlook""]",{},,high,edge_prominence_primary
+openai,gpt-4o,product_going_for_growth,0,named_product_recall,True,primary,False,"[""Going for Growth""]",{},,high,edge_prominence_primary
+openai,gpt-4o,product_pisa,0,named_product_recall,True,primary,False,"[""PISA""]",{},,high,edge_prominence_primary

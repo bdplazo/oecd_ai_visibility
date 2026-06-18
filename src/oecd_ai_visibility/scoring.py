@@ -14,6 +14,7 @@ from oecd_ai_visibility.judges.base import Judge, LiveJudgeAdapter
 from oecd_ai_visibility.judges.dry_run import DryRunJudge
 from oecd_ai_visibility.judges.heuristic import HeuristicJudge
 from oecd_ai_visibility.schemas import (
+    JudgeScore,
     QuerySet,
     QuerySpec,
     RawResponseRecord,
@@ -30,6 +31,16 @@ PUBLICATIONS_CSV_NAME = "scored_publications.csv"
 COMPETITORS_CSV_NAME = "scored_competitors.csv"
 CITATIONS_CSV_NAME = "scored_citations.csv"
 
+#: Phase 5.5 stratified manual-review artifacts, written into ``scored_dir`` next to
+#: (but never overwriting) the default ``validation_sample.csv``. The blind file holds
+#: the responses plus empty ``human_*`` label columns; the key file holds the heuristic's
+#: own scores and is joined back on provider/model/query_id/run_index for later scoring.
+STRATIFIED_VALIDATION_SAMPLE_CSV_NAME = "validation_sample_stratified.csv"
+VALIDATION_SAMPLE_HEURISTIC_KEY_CSV_NAME = "validation_sample_heuristic_key.csv"
+
+#: Default number of rows drawn from each provider x category stratum.
+DEFAULT_STRATIFIED_PER_CELL = 2
+
 
 @dataclass(frozen=True)
 class ScoreResult:
@@ -41,6 +52,19 @@ class ScoreResult:
     validation_sample_path: Path | None = None
     aggregated_csv_path: Path | None = None
     helper_csv_paths: list[Path] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class StratifiedSampleResult:
+    """Summary of one stratified validation-sample export."""
+
+    sample_path: Path
+    heuristic_key_path: Path
+    row_count: int
+    #: ``(provider, category) -> rows drawn`` for the 12 stratification cells.
+    stratum_counts: dict[tuple[str, str], int] = field(default_factory=dict)
+    #: Number of selected rows carrying each forced edge-case reason.
+    edge_case_counts: dict[str, int] = field(default_factory=dict)
 
 
 def score_collection(
@@ -190,6 +214,93 @@ def export_validation_sample_csv(
 
     log.info("Wrote validation sample: %s", sample_path)
     return sample_path
+
+
+def export_stratified_validation_sample_csv(
+    *,
+    config: StudyConfig,
+    project_root: Path,
+    per_cell: int = DEFAULT_STRATIFIED_PER_CELL,
+    logger: logging.Logger | None = None,
+) -> StratifiedSampleResult:
+    """Export the Phase 5.5 stratified manual-review sample as two new CSVs.
+
+    Reshapes already-scored data only: it reads ``scored_dir/*.json`` and writes
+    ``validation_sample_stratified.csv`` (blind review layout — responses plus empty
+    ``human_*`` columns) and ``validation_sample_heuristic_key.csv`` (the heuristic's own
+    scores, kept separate so labelling is not anchored). The default
+    ``validation_sample.csv`` and every ``data/raw/`` file are left untouched. Makes no
+    live provider or judge calls.
+
+    Only the configured (enabled) live providers form the population, so the ``fixture``
+    dry-run artifacts that share ``scored_dir`` are excluded — matching the filter the
+    aggregated CSV uses.
+    """
+
+    log = logger or LOGGER
+    scored_dir = _resolve_project_path(config.paths.scored_dir, project_root)
+    sample_path = scored_dir / STRATIFIED_VALIDATION_SAMPLE_CSV_NAME
+    key_path = scored_dir / VALIDATION_SAMPLE_HEURISTIC_KEY_CSV_NAME
+    scored_dir.mkdir(parents=True, exist_ok=True)
+
+    provider_models = [
+        (provider.name, provider.model) for provider in config.providers if provider.enabled
+    ]
+    records = _load_scored_records(
+        config=config,
+        project_root=project_root,
+        provider_models=provider_models,
+    )
+    selected, reasons = _select_stratified_validation_sample(records, per_cell=per_cell)
+
+    _write_rows(
+        sample_path,
+        _stratified_sample_fields(),
+        (_stratified_sample_row(record) for record in selected),
+    )
+    _write_rows(
+        key_path,
+        _heuristic_key_fields(),
+        (_heuristic_key_row(record, reasons[_sample_sort_key(record)]) for record in selected),
+    )
+
+    stratum_counts: dict[tuple[str, str], int] = {}
+    edge_case_counts: dict[str, int] = {}
+    for record in selected:
+        for reason in reasons[_sample_sort_key(record)]:
+            if reason == "stratum":
+                cell = (record.provider, record.category)
+                stratum_counts[cell] = stratum_counts.get(cell, 0) + 1
+            else:
+                edge_case_counts[reason] = edge_case_counts.get(reason, 0) + 1
+
+    log.info("Wrote stratified validation sample (%d rows): %s", len(selected), sample_path)
+    log.info("Wrote stratified heuristic key: %s", key_path)
+    return StratifiedSampleResult(
+        sample_path=sample_path,
+        heuristic_key_path=key_path,
+        row_count=len(selected),
+        stratum_counts=stratum_counts,
+        edge_case_counts=edge_case_counts,
+    )
+
+
+def select_stratified_validation_sample(
+    records: list[ScoredRecord],
+    *,
+    per_cell: int = DEFAULT_STRATIFIED_PER_CELL,
+) -> list[ScoredRecord]:
+    """Return the deterministic stratified + forced-edge-case review sample.
+
+    Selection: stratify by ``provider`` x ``category`` and take the first ``per_cell``
+    rows of each cell after sorting by ``(provider, model, query_id, run_index)``, then
+    union in every forced edge case (``oecd_mentioned`` false, ``oecd_prominence``
+    ``primary``, or ``oecd_url_referenced`` true). The result is deduplicated on the join
+    key and returned in stable sort order.
+    """
+
+    selected, _ = _select_stratified_validation_sample(records, per_cell=per_cell)
+    return selected
 
 
 def export_scored_responses_csv(
@@ -507,6 +618,151 @@ def _validation_sample_row(record: ScoredRecord) -> dict[str, str | int | bool]:
         "competitors_mentioned": json.dumps(score.competitors_mentioned, sort_keys=True),
         "factual_issues": score.factual_issues,
         "judge_confidence": score.judge_confidence,
+    }
+
+
+def _sample_sort_key(record: ScoredRecord) -> tuple[str, str, str, int]:
+    """The stable, reviewer-independent ordering key used for selection and output."""
+
+    return (record.provider, record.model, record.query_id, record.run_index)
+
+
+def _edge_case_reasons(score: JudgeScore) -> list[str]:
+    """Forced-include reasons the heuristic is most likely to get wrong."""
+
+    reasons: list[str] = []
+    if not score.oecd_mentioned:
+        reasons.append("edge_oecd_not_mentioned")
+    if score.oecd_prominence == "primary":
+        reasons.append("edge_prominence_primary")
+    if score.oecd_url_referenced:
+        reasons.append("edge_url_referenced")
+    return reasons
+
+
+def _select_stratified_validation_sample(
+    records: list[ScoredRecord],
+    *,
+    per_cell: int,
+) -> tuple[list[ScoredRecord], dict[tuple[str, str, str, int], list[str]]]:
+    """Deterministic stratified + forced-edge selection; returns rows and their reasons.
+
+    Sorting everything by the stable key first means both the per-cell ``[:per_cell]``
+    slice and the final output are reproducible and independent of filesystem order.
+    """
+
+    ordered = sorted(records, key=_sample_sort_key)
+
+    cells: dict[tuple[str, str], list[ScoredRecord]] = {}
+    for record in ordered:
+        cells.setdefault((record.provider, record.category), []).append(record)
+    stratum_keys = {
+        _sample_sort_key(record)
+        for cell_records in cells.values()
+        for record in cell_records[:per_cell]
+    }
+
+    selected: dict[tuple[str, str, str, int], ScoredRecord] = {}
+    reasons: dict[tuple[str, str, str, int], list[str]] = {}
+    for record in ordered:
+        key = _sample_sort_key(record)
+        record_reasons: list[str] = []
+        if key in stratum_keys:
+            record_reasons.append("stratum")
+        record_reasons.extend(_edge_case_reasons(record.score))
+        if record_reasons:
+            selected[key] = record
+            reasons[key] = record_reasons
+
+    ordered_keys = sorted(selected)
+    return [selected[key] for key in ordered_keys], {key: reasons[key] for key in ordered_keys}
+
+
+#: Empty label columns the manual reviewer fills in, blind to the heuristic output.
+_HUMAN_LABEL_FIELDS = [
+    "human_oecd_mentioned",
+    "human_oecd_prominence",
+    "human_oecd_url_referenced",
+    "human_oecd_publications_named",
+    "human_competitors_mentioned",
+    "human_factual_issues",
+    "reviewer_notes",
+]
+
+
+def _stratified_sample_fields() -> list[str]:
+    return [
+        "provider",
+        "model",
+        "query_id",
+        "category",
+        "run_index",
+        "response_text",
+        "citations",
+        *_HUMAN_LABEL_FIELDS,
+    ]
+
+
+def _heuristic_key_fields() -> list[str]:
+    return [
+        "provider",
+        "model",
+        "query_id",
+        "run_index",
+        "category",
+        "oecd_mentioned",
+        "oecd_prominence",
+        "oecd_url_referenced",
+        "oecd_publications_named",
+        "competitors_mentioned",
+        "factual_issues",
+        "judge_confidence",
+        "selection_reason",
+    ]
+
+
+def _stratified_sample_row(record: ScoredRecord) -> dict[str, str | int | bool]:
+    """Blind review row: response content plus empty ``human_*`` label columns.
+
+    Deliberately omits every heuristic score so the reviewer is not anchored; those live
+    in the separate heuristic-key file and join back on the four key columns.
+    """
+
+    row: dict[str, str | int | bool] = {
+        "provider": record.provider,
+        "model": record.model,
+        "query_id": record.query_id,
+        "category": record.category,
+        "run_index": record.run_index,
+        "response_text": record.response_text,
+        "citations": json.dumps(
+            [citation.model_dump(mode="json") for citation in record.citations],
+            sort_keys=True,
+        ),
+    }
+    for field_name in _HUMAN_LABEL_FIELDS:
+        row[field_name] = ""
+    return row
+
+
+def _heuristic_key_row(record: ScoredRecord, reasons: list[str]) -> dict[str, str | int | bool]:
+    """The heuristic's own scores for one sampled row, for joining after blind review."""
+
+    score = record.score
+    return {
+        "provider": record.provider,
+        "model": record.model,
+        "query_id": record.query_id,
+        "run_index": record.run_index,
+        "category": record.category,
+        "oecd_mentioned": score.oecd_mentioned,
+        "oecd_prominence": score.oecd_prominence,
+        "oecd_url_referenced": score.oecd_url_referenced,
+        "oecd_publications_named": json.dumps(score.oecd_publications_named, sort_keys=True),
+        "competitors_mentioned": json.dumps(score.competitors_mentioned, sort_keys=True),
+        "factual_issues": score.factual_issues,
+        "judge_confidence": score.judge_confidence,
+        "selection_reason": "|".join(reasons),
     }
 
 

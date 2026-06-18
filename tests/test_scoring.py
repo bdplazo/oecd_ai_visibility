@@ -19,11 +19,15 @@ from oecd_ai_visibility.scoring import (
     CITATIONS_CSV_NAME,
     COMPETITORS_CSV_NAME,
     PUBLICATIONS_CSV_NAME,
+    STRATIFIED_VALIDATION_SAMPLE_CSV_NAME,
+    VALIDATION_SAMPLE_HEURISTIC_KEY_CSV_NAME,
     cache_path,
     export_helper_tables,
     export_scored_responses_csv,
+    export_stratified_validation_sample_csv,
     export_validation_sample_csv,
     score_collection,
+    select_stratified_validation_sample,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -108,6 +112,201 @@ def test_validation_sample_csv_is_deterministic_and_respects_size(tmp_path: Path
     assert rows[0]["query_id"] <= rows[1]["query_id"]
     assert "response_text" in rows[0]
     assert "competitors_mentioned" in rows[0]
+
+
+def _stratified_record(
+    *,
+    provider: str,
+    category: str,
+    query_id: str,
+    oecd_mentioned: bool = True,
+    oecd_prominence: str = "supporting",
+    oecd_url_referenced: bool = False,
+) -> ScoredRecord:
+    model = "gpt-4o" if provider == "openai" else "claude-sonnet-4-6"
+    return ScoredRecord(
+        provider=provider,
+        model=model,
+        query_id=query_id,
+        category=category,
+        run_index=0,
+        response_text=f"Answer for {provider}/{query_id}.",
+        citations=[],
+        judge_provider="heuristic-local",
+        judge_model="deterministic-v1",
+        score=JudgeScore(
+            oecd_mentioned=oecd_mentioned,
+            oecd_prominence=oecd_prominence,
+            oecd_url_referenced=oecd_url_referenced,
+            oecd_publications_named=[],
+            competitors_mentioned={},
+            judge_confidence="high",
+        ),
+    )
+
+
+def _stratified_fixture_records() -> list[ScoredRecord]:
+    """Two providers x two categories x three queries, with three forced edge cases.
+
+    Stratification (per_cell=2) takes a1/a2 and b1/b2 from each cell (8 rows). The forced
+    edge cases push in two extra rows: openai/cat_a/a3 (a missed mention) and
+    anthropic/cat_b/b3 (a primary). openai/cat_b/b1 carries a URL but is already a stratum
+    pick, so it adds no new row. Expected unique total: 10.
+    """
+
+    records: list[ScoredRecord] = []
+    for provider in ("openai", "anthropic"):
+        for category, prefix in (("cat_a", "a"), ("cat_b", "b")):
+            for index in (1, 2, 3):
+                records.append(
+                    _stratified_record(
+                        provider=provider,
+                        category=category,
+                        query_id=f"{prefix}{index}",
+                    )
+                )
+
+    by_key = {(r.provider, r.query_id): r for r in records}
+    by_key[("openai", "a3")] = _stratified_record(
+        provider="openai",
+        category="cat_a",
+        query_id="a3",
+        oecd_mentioned=False,
+        oecd_prominence="none",
+    )
+    by_key[("anthropic", "b3")] = _stratified_record(
+        provider="anthropic",
+        category="cat_b",
+        query_id="b3",
+        oecd_prominence="primary",
+    )
+    by_key[("openai", "b1")] = _stratified_record(
+        provider="openai",
+        category="cat_b",
+        query_id="b1",
+        oecd_url_referenced=True,
+    )
+    return list(by_key.values())
+
+
+def _write_stratified_fixture(scored_dir: Path) -> None:
+    scored_dir.mkdir(parents=True, exist_ok=True)
+    for record in _stratified_fixture_records():
+        _write_scored_record(scored_dir, record)
+
+
+def test_select_stratified_validation_sample_covers_strata_and_forced_edges() -> None:
+    selected = select_stratified_validation_sample(_stratified_fixture_records(), per_cell=2)
+    keys = {(r.provider, r.query_id) for r in selected}
+
+    # 4 cells x 2 stratum picks + 2 extra forced rows, deduped.
+    assert len(selected) == 10
+    # Every provider x category cell contributes its first two queries.
+    for provider in ("openai", "anthropic"):
+        for prefix in ("a", "b"):
+            assert (provider, f"{prefix}1") in keys
+            assert (provider, f"{prefix}2") in keys
+    # Forced edge cases pulled in beyond the per-cell slice.
+    assert ("openai", "a3") in keys  # missed mention (oecd_mentioned=False)
+    assert ("anthropic", "b3") in keys  # primary prominence
+    # Deterministic, stable-sorted output.
+    assert [_sample_key(r) for r in selected] == sorted(_sample_key(r) for r in selected)
+
+
+def test_export_stratified_validation_sample_blind_layout_and_separate_key(
+    tmp_path: Path,
+) -> None:
+    config = _config_with_output_paths(tmp_path)
+    scored_dir = tmp_path / "scored"
+    _write_stratified_fixture(scored_dir)
+
+    result = export_stratified_validation_sample_csv(config=config, project_root=ROOT, per_cell=2)
+
+    assert result.sample_path == scored_dir / STRATIFIED_VALIDATION_SAMPLE_CSV_NAME
+    assert result.heuristic_key_path == scored_dir / VALIDATION_SAMPLE_HEURISTIC_KEY_CSV_NAME
+    assert result.row_count == 10
+    # All four strata represented with two rows each.
+    assert result.stratum_counts == {
+        ("openai", "cat_a"): 2,
+        ("openai", "cat_b"): 2,
+        ("anthropic", "cat_a"): 2,
+        ("anthropic", "cat_b"): 2,
+    }
+    assert result.edge_case_counts == {
+        "edge_oecd_not_mentioned": 1,
+        "edge_prominence_primary": 1,
+        "edge_url_referenced": 1,
+    }
+
+    sample_rows = list(csv.DictReader(result.sample_path.read_text(encoding="utf-8").splitlines()))
+    key_rows = list(
+        csv.DictReader(result.heuristic_key_path.read_text(encoding="utf-8").splitlines())
+    )
+    assert len(sample_rows) == 10
+    assert len(key_rows) == 10
+
+    # Blind layout: no heuristic score leaks into the review file; human columns are empty.
+    header = _csv_header(result.sample_path)
+    assert "oecd_mentioned" not in header
+    assert "oecd_prominence" not in header
+    assert "judge_confidence" not in header
+    human_columns = [name for name in header if name.startswith("human_")] + ["reviewer_notes"]
+    assert "human_oecd_mentioned" in human_columns
+    for row in sample_rows:
+        assert all(row[name] == "" for name in human_columns)
+
+    # The key file carries the heuristic scores and joins back on the four keys.
+    assert "oecd_mentioned" in _csv_header(result.heuristic_key_path)
+
+    def join_keys(rows: list[dict[str, str]]) -> set[tuple[str, str, str, str]]:
+        return {(r["provider"], r["model"], r["query_id"], r["run_index"]) for r in rows}
+
+    assert join_keys(sample_rows) == join_keys(key_rows)
+
+
+def test_export_stratified_validation_sample_is_deterministic(tmp_path: Path) -> None:
+    config = _config_with_output_paths(tmp_path)
+    _write_stratified_fixture(tmp_path / "scored")
+
+    first = export_stratified_validation_sample_csv(config=config, project_root=ROOT)
+    first_sample = first.sample_path.read_text(encoding="utf-8")
+    first_key = first.heuristic_key_path.read_text(encoding="utf-8")
+
+    second = export_stratified_validation_sample_csv(config=config, project_root=ROOT)
+
+    assert second.sample_path.read_text(encoding="utf-8") == first_sample
+    assert second.heuristic_key_path.read_text(encoding="utf-8") == first_key
+
+
+def test_export_stratified_validation_sample_leaves_existing_files_untouched(
+    tmp_path: Path,
+) -> None:
+    config = _config_with_output_paths(tmp_path)
+    scored_dir = tmp_path / "scored"
+    _write_stratified_fixture(scored_dir)
+
+    # Sentinels for the default validation sample and a raw response record.
+    default_sample = tmp_path / "validation_sample.csv"
+    default_sample.write_text("DO NOT TOUCH\n", encoding="utf-8")
+    raw_dir = tmp_path / "raw"
+    raw_dir.mkdir()
+    raw_file = raw_dir / "openai__gpt-4o__a1__0.json"
+    raw_file.write_text('{"raw": true}\n', encoding="utf-8")
+
+    before = {path: path.read_text(encoding="utf-8") for path in (default_sample, raw_file)}
+    # Also snapshot the source scored JSON files.
+    scored_before = {path: path.read_text(encoding="utf-8") for path in scored_dir.glob("*.json")}
+
+    export_stratified_validation_sample_csv(config=config, project_root=ROOT)
+
+    for path, content in before.items():
+        assert path.read_text(encoding="utf-8") == content
+    for path, content in scored_before.items():
+        assert path.read_text(encoding="utf-8") == content
+
+
+def _sample_key(record: ScoredRecord) -> tuple[str, str, str, int]:
+    return (record.provider, record.model, record.query_id, record.run_index)
 
 
 def test_heuristic_live_cache_scores_only_existing_live_raw_records(tmp_path: Path) -> None:
