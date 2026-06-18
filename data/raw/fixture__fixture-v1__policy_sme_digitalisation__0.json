@@ -1,0 +1,24 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "policy_sme_digitalisation",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T08:50:01.632820Z",
+  "latency_seconds": 0.00020080013200640678,
+  "response_text": "Governments can support small businesses with digital skills programmes, access to finance, practical advisory services, cybersecurity guidance, and incentives for adopting productivity-enhancing tools.\n",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 39,
+    "output_tokens": 32,
+    "total_tokens": 71
+  },
+  "raw_payload": {
+    "fixture_id": "no_oecd_mention",
+    "query_id": "policy_sme_digitalisation",
+    "query_text": "How can governments support small businesses in adopting digital technologies?",
+    "run_index": 0,
+    "fixture_payload": {
+      "fixture_kind": "no_oecd_answer"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "authority_tax_standards",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T08:50:01.501988Z",
+  "latency_seconds": 0.00009240000508725643,
+  "response_text": "The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.\n",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 42,
+    "output_tokens": 38,
+    "total_tokens": 80
+  },
+  "raw_payload": {
+    "fixture_id": "oecd_primary",
+    "query_id": "authority_tax_standards",
+    "query_text": "Which international organisations set standards for corporate taxation?",
+    "run_index": 0,
+    "fixture_payload": {
+      "fixture_kind": "oecd_primary_answer"
+    }
+  }
+}

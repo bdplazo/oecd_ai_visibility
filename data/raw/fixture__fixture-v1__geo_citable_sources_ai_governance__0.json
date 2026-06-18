@@ -1,0 +1,30 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "geo_citable_sources_ai_governance",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T08:50:02.082170Z",
+  "latency_seconds": 0.0003674000035971403,
+  "response_text": "A strong citable source is OECD analysis published on oecd.org, especially where it provides cross-country indicators, policy frameworks, or links to downloadable data tables.\n",
+  "citations": [
+    {
+      "url": "https://www.oecd.org/",
+      "title": "OECD",
+      "source": "oecd.org"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 44,
+    "output_tokens": 35,
+    "total_tokens": 79
+  },
+  "raw_payload": {
+    "fixture_id": "oecd_org_citation",
+    "query_id": "geo_citable_sources_ai_governance",
+    "query_text": "What are reliable sources to cite for government AI governance frameworks?",
+    "run_index": 0,
+    "fixture_payload": {
+      "fixture_kind": "citation_answer"
+    }
+  }
+}

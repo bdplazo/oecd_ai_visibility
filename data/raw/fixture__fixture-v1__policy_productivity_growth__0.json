@@ -1,0 +1,24 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "policy_productivity_growth",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T08:50:01.583929Z",
+  "latency_seconds": 0.00017079990357160568,
+  "response_text": "The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.\n",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 42,
+    "output_tokens": 38,
+    "total_tokens": 80
+  },
+  "raw_payload": {
+    "fixture_id": "oecd_primary",
+    "query_id": "policy_productivity_growth",
+    "query_text": "How can governments improve long-term productivity growth?",
+    "run_index": 0,
+    "fixture_payload": {
+      "fixture_kind": "oecd_primary_answer"
+    }
+  }
+}

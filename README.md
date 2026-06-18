@@ -6,24 +6,31 @@ This project is designed as an exploratory communications-intelligence study: tr
 
 ## Current Status
 
-Phase 1 is in place: schemas, study configuration, and the first transparent query framework.
+Phase 2 is in place: schemas, study configuration, query framework, provider adapters, and a fixture-backed dry-run pipeline.
 The remaining implementation will proceed in reviewed phases:
 
-1. Provider adapters and dry-run pipeline.
-2. LLM-as-judge scoring.
-3. Live run, after explicit budget approval.
-4. Aggregation, Power BI export, and visualisations.
-5. Markdown report drafted from real computed numbers.
+1. LLM-as-judge scoring.
+2. Live run, after explicit budget approval.
+3. Aggregation, Power BI export, and visualisations.
+4. Markdown report drafted from real computed numbers.
 
-## Intended Command
+## Dry-Run Command
 
-The final tool will run end to end with:
+The current raw-response pipeline can be exercised without API keys or network calls:
 
 ```powershell
 uv run oecd-ai-visibility run --config config/study.yaml --dry-run
 ```
 
-If `uv` is unavailable, the fallback will be a standard Python 3.11+ virtual environment using the same `pyproject.toml`.
+Dry-run mode uses committed fixtures in `data/fixtures/`, writes validated `RawResponseRecord` JSON files to `data/raw/`, and reuses cached raw responses unless `--no-cache` is passed.
+
+Live provider mode is available only by explicit opt-in:
+
+```powershell
+uv run oecd-ai-visibility run --config config/study.yaml --live
+```
+
+Providers with missing API-key environment variables are skipped with a warning.
 
 ## Methodological Principle
 

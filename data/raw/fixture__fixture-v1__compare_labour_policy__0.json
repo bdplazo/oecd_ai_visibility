@@ -1,0 +1,24 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "compare_labour_policy",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T08:50:01.948677Z",
+  "latency_seconds": 0.0005232000257819891,
+  "response_text": "The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.\n",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 51,
+    "output_tokens": 50,
+    "total_tokens": 101
+  },
+  "raw_payload": {
+    "fixture_id": "peer_comparison",
+    "query_id": "compare_labour_policy",
+    "query_text": "Which organisation is most useful for labour market policy evidence: the OECD, ILO, or World Bank?",
+    "run_index": 0,
+    "fixture_payload": {
+      "fixture_kind": "peer_answer"
+    }
+  }
+}
