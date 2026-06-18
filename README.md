@@ -90,6 +90,7 @@ outputs/figures/        Sanity-check PNG figures
 src/oecd_ai_visibility/ Collection, scoring, analysis, figures, and validation code
 tests/                  Unit tests for schemas, runner, scoring, analysis, figures, validation
 METHODOLOGY.md          Field definitions, interpretation rules, and validation note
+ANALYTICAL_REPORT.md    Concise analytical interpretation for communications intelligence
 PORTFOLIO_CASE_STUDY.md Standalone 1-2 page portfolio narrative
 APPLICATION_SNIPPETS.md CV, LinkedIn, cover-letter, and interview-ready text
 ```
