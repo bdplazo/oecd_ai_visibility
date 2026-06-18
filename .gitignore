@@ -13,3 +13,6 @@ data/scored/validation_sample_stratified_review.xlsx
 # OS/editor noise
 .DS_Store
 Thumbs.db
+
+# Others
+APPLICATION_SNIPPETS.md
