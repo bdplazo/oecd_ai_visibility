@@ -4,6 +4,11 @@ Small, reproducible research tool for measuring how prominently the OECD appears
 
 This project is designed as an exploratory communications-intelligence study: transparent methodology, defensible data handling, and reproducible outputs matter more than scale.
 
+> **Before analysing Phase 5 outputs**, read [METHODOLOGY.md](METHODOLOGY.md). It explains —
+> in plain, non-engineering terms — which providers were included, how the data was scored, and
+> exactly what each field means and does not mean. This context should travel with the numbers
+> into any analysis table, Power BI dashboard, or report.
+
 ## Current Status
 
 Phase 3 is in place: schemas, study configuration, query framework, provider adapters, a fixture-backed dry-run raw pipeline, deterministic dry-run scoring, and validation sample export.
