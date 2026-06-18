@@ -15,7 +15,7 @@ providers:
     env_var: OPENAI_API_KEY
   - name: anthropic
     enabled: true
-    model: claude-3-5-sonnet-latest
+    model: claude-sonnet-4-6
     temperature: 0.0
     max_output_tokens: 900
     supports_citations: false

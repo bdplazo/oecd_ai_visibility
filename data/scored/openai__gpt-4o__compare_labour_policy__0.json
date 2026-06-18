@@ -1,0 +1,24 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "compare_labour_policy",
+  "category": "comparative_peer",
+  "run_index": 0,
+  "response_text": "The usefulness of an organization for labor market policy evidence depends on the specific needs and context. Here's a brief overview of each:\n\n1. **OECD (Organisation for Economic Co-operation and Development):**\n   - Focuses on high-income and some middle-income countries.\n   - Provides detailed labor market analysis, policy recommendations, and comparative data.\n   - Useful for evidence on labor market trends, skills development, and employment policies in developed economies.\n\n2. **ILO (International Labour Organization):**\n   - Specializes in labor standards, rights at work, and social protection.\n   - Offers comprehensive data and analysis on global labor issues, including decent work and employment conditions.\n   - Ideal for evidence on labor rights, international labor standards, and social dialogue.\n\n3. **World Bank:**\n   - Focuses on economic development and poverty reduction.\n   - Provides data and research on labor markets in developing countries.\n   - Useful for evidence on employment, economic growth, and labor market reforms in low and middle-income countries.\n\nEach organization has its strengths, so the choice depends on the specific focus and geographic context of the labor market policy in question.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.365913Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "World Bank": "supporting",
+      "ILO": "supporting"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

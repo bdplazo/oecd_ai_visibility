@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "compare_labour_policy",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:27:43.259891Z",
+  "latency_seconds": 10.424163600197062,
+  "response_text": "This is a genuinely contested question worth thinking through carefully rather than giving a simple answer.\n\n## Comparative Strengths\n\n### OECD\n- **Strong on**: Rigorous comparative data for developed economies, Employment Outlook reports, active labour market policy evaluation\n- **Limitations**: Membership bias toward wealthy nations, policy recommendations can reflect particular economic orthodoxies\n- **Best for**: Evidence on minimum wages, employment protection, skills policy in high-income contexts\n\n### ILO\n- **Strong on**: Normative frameworks, global coverage, decent work indicators, worker rights dimensions\n- **Limitations**: Tripartite structure can produce consensus-driven rather than analytically sharp conclusions, variable research quality\n- **Best for**: Developing country labour standards, informal economy, international labour standards compliance\n\n### World Bank\n- **Strong on**: Development economics rigour, impact evaluations, jobs in low/middle-income countries, large research capacity\n- **Limitations**: Historically ideologically consistent (sometimes criticized as pro-flexibility), conditionality concerns affect credibility\n- **Best for**: Developing economy labour markets, poverty-employment links, randomized evaluations\n\n## Honest Assessment\n\n**It genuinely depends on**:\n- Which country context you're examining\n- Whether you prioritize statistical rigour vs. normative breadth\n- Your specific policy question\n\nMany serious researchers **triangulate across all three** precisely because each has systematic blind spots.\n\nWhat specific labour market question are you investigating? That would sharpen the answer considerably.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 32,
+    "output_tokens": 331,
+    "total_tokens": 363
+  },
+  "raw_payload": {
+    "id": "msg_011CEz5STJSA56CrTLKwjUhB",
+    "content": [
+      {
+        "citations": null,
+        "text": "This is a genuinely contested question worth thinking through carefully rather than giving a simple answer.\n\n## Comparative Strengths\n\n### OECD\n- **Strong on**: Rigorous comparative data for developed economies, Employment Outlook reports, active labour market policy evaluation\n- **Limitations**: Membership bias toward wealthy nations, policy recommendations can reflect particular economic orthodoxies\n- **Best for**: Evidence on minimum wages, employment protection, skills policy in high-income contexts\n\n### ILO\n- **Strong on**: Normative frameworks, global coverage, decent work indicators, worker rights dimensions\n- **Limitations**: Tripartite structure can produce consensus-driven rather than analytically sharp conclusions, variable research quality\n- **Best for**: Developing country labour standards, informal economy, international labour standards compliance\n\n### World Bank\n- **Strong on**: Development economics rigour, impact evaluations, jobs in low/middle-income countries, large research capacity\n- **Limitations**: Historically ideologically consistent (sometimes criticized as pro-flexibility), conditionality concerns affect credibility\n- **Best for**: Developing economy labour markets, poverty-employment links, randomized evaluations\n\n## Honest Assessment\n\n**It genuinely depends on**:\n- Which country context you're examining\n- Whether you prioritize statistical rigour vs. normative breadth\n- Your specific policy question\n\nMany serious researchers **triangulate across all three** precisely because each has systematic blind spots.\n\nWhat specific labour market question are you investigating? That would sharpen the answer considerably.",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 32,
+      "output_tokens": 331,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

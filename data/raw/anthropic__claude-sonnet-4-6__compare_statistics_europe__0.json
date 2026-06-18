@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "compare_statistics_europe",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:27:53.687646Z",
+  "latency_seconds": 9.904478800017387,
+  "response_text": "# Choosing Between OECD, Eurostat, and World Bank Data\n\n## Use OECD Data When...\n\n**Your focus is on developed/high-income countries**\n- Coverage is strongest for 38 member countries\n- Particularly good for comparative analysis among wealthy nations\n\n**Topic areas where OECD excels**\n- Tax policy and revenue statistics\n- Education (PISA, Education at a Glance)\n- Productivity and labour market analysis\n- Pension systems\n- Health system performance\n- Regulatory policy\n\n**You need policy-oriented indicators** with standardized definitions across members\n\n---\n\n## Use Eurostat When...\n\n- Your analysis is **specifically about EU/EEA countries**\n- You need **legally harmonized data** (collected under EU regulations)\n- Working with **regional data** (NUTS levels)\n- Topics like EU-specific policies, structural funds, or single market indicators\n\n---\n\n## Use World Bank When...\n\n- You need **broad global coverage** including low/middle-income countries\n- Development economics topics\n- Long historical time series for developing nations\n- Poverty and inequality measures (PovcalNet/PIP)\n\n---\n\n## Practical Considerations\n\n| Factor | OECD | Eurostat | World Bank |\n|--------|------|----------|------------|\n| Country coverage | ~38 | ~30 | ~200 |\n| Harmonization | High | Highest | Variable |\n| Developing countries | Limited | No | Strong |\n\n**A common approach is cross-checking** — the sources sometimes disagree, which itself is analytically informative.\n\nWould you like guidance on a specific topic or country group?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 26,
+    "output_tokens": 377,
+    "total_tokens": 403
+  },
+  "raw_payload": {
+    "id": "msg_01DFwgpnvzs4TYA5FG1auW76",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Choosing Between OECD, Eurostat, and World Bank Data\n\n## Use OECD Data When...\n\n**Your focus is on developed/high-income countries**\n- Coverage is strongest for 38 member countries\n- Particularly good for comparative analysis among wealthy nations\n\n**Topic areas where OECD excels**\n- Tax policy and revenue statistics\n- Education (PISA, Education at a Glance)\n- Productivity and labour market analysis\n- Pension systems\n- Health system performance\n- Regulatory policy\n\n**You need policy-oriented indicators** with standardized definitions across members\n\n---\n\n## Use Eurostat When...\n\n- Your analysis is **specifically about EU/EEA countries**\n- You need **legally harmonized data** (collected under EU regulations)\n- Working with **regional data** (NUTS levels)\n- Topics like EU-specific policies, structural funds, or single market indicators\n\n---\n\n## Use World Bank When...\n\n- You need **broad global coverage** including low/middle-income countries\n- Development economics topics\n- Long historical time series for developing nations\n- Poverty and inequality measures (PovcalNet/PIP)\n\n---\n\n## Practical Considerations\n\n| Factor | OECD | Eurostat | World Bank |\n|--------|------|----------|------------|\n| Country coverage | ~38 | ~30 | ~200 |\n| Harmonization | High | Highest | Variable |\n| Developing countries | Limited | No | Strong |\n\n**A common approach is cross-checking** — the sources sometimes disagree, which itself is analytically informative.\n\nWould you like guidance on a specific topic or country group?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 26,
+      "output_tokens": 377,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

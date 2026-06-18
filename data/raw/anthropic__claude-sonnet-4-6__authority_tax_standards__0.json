@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "authority_tax_standards",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:23:53.184046Z",
+  "latency_seconds": 10.441547599853948,
+  "response_text": "## International Organisations Setting Corporate Tax Standards\n\nSeveral key international organisations play significant roles in establishing corporate tax standards and frameworks:\n\n### Primary Standard-Setters\n\n**OECD (Organisation for Economic Co-operation and Development)**\n- Most influential body in international corporate taxation\n- Developed the **BEPS (Base Erosion and Profit Shifting)** framework\n- Produces the **Model Tax Convention** used as basis for bilateral tax treaties\n- Led the **Two-Pillar Solution** (Pillar One and Pillar Two/Global Minimum Tax of 15%)\n- Publishes Transfer Pricing Guidelines\n\n**G20**\n- Provides political backing for OECD tax initiatives\n- Endorsed the BEPS project and global minimum tax\n\n### Broader Participation Bodies\n\n**OECD/G20 Inclusive Framework on BEPS**\n- Over 140 countries participating\n- Extends OECD standards beyond member states\n\n**United Nations**\n- Produces the **UN Model Double Taxation Convention** (often preferred by developing countries)\n- Committee of Experts on International Cooperation in Tax Matters\n- Advocates for a **UN Tax Convention** (gaining momentum recently)\n\n### Regional Bodies\n\n**European Union**\n- Implements directives on corporate taxation (e.g., Anti-Tax Avoidance Directives)\n- Enforces state aid rules affecting corporate tax\n\n**African Tax Administration Forum (ATAF)**\n- Regional guidance for African nations\n\n### Notable Limitation\nThese organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 16,
+    "output_tokens": 366,
+    "total_tokens": 382
+  },
+  "raw_payload": {
+    "id": "msg_017khCnyqTFzYuo1J8QTSeuW",
+    "content": [
+      {
+        "citations": null,
+        "text": "## International Organisations Setting Corporate Tax Standards\n\nSeveral key international organisations play significant roles in establishing corporate tax standards and frameworks:\n\n### Primary Standard-Setters\n\n**OECD (Organisation for Economic Co-operation and Development)**\n- Most influential body in international corporate taxation\n- Developed the **BEPS (Base Erosion and Profit Shifting)** framework\n- Produces the **Model Tax Convention** used as basis for bilateral tax treaties\n- Led the **Two-Pillar Solution** (Pillar One and Pillar Two/Global Minimum Tax of 15%)\n- Publishes Transfer Pricing Guidelines\n\n**G20**\n- Provides political backing for OECD tax initiatives\n- Endorsed the BEPS project and global minimum tax\n\n### Broader Participation Bodies\n\n**OECD/G20 Inclusive Framework on BEPS**\n- Over 140 countries participating\n- Extends OECD standards beyond member states\n\n**United Nations**\n- Produces the **UN Model Double Taxation Convention** (often preferred by developing countries)\n- Committee of Experts on International Cooperation in Tax Matters\n- Advocates for a **UN Tax Convention** (gaining momentum recently)\n\n### Regional Bodies\n\n**European Union**\n- Implements directives on corporate taxation (e.g., Anti-Tax Avoidance Directives)\n- Enforces state aid rules affecting corporate tax\n\n**African Tax Administration Forum (ATAF)**\n- Regional guidance for African nations\n\n### Notable Limitation\nThese organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 16,
+      "output_tokens": 366,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

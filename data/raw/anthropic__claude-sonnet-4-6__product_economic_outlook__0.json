@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_economic_outlook",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:26:46.834465Z",
+  "latency_seconds": 8.605731499847025,
+  "response_text": "# OECD Economic Outlook\n\n## What It Is\n\nThe **OECD Economic Outlook** is a flagship publication of the **Organisation for Economic Co-operation and Development (OECD)**, providing analysis and forecasts of major economic trends across member and selected non-member countries.\n\n---\n\n## Key Features\n\n### Publication Schedule\n- Published **twice a year** (typically in **May/June** and **November/December**)\n- Interim updates are sometimes released between main editions\n\n### Coverage\n- Analyzes economic conditions in **OECD member countries** (38 members) and major non-member economies\n- Covers the **global economy** as a whole\n\n---\n\n## Main Content Areas\n\n- **GDP growth forecasts**\n- **Inflation projections**\n- **Employment and labor market trends**\n- **Trade and current account balances**\n- **Fiscal and monetary policy analysis**\n- **Structural reform recommendations**\n- **Risk assessments** (upside and downside scenarios)\n\n---\n\n## Purpose and Audience\n\n- Informs **policymakers**, **governments**, and **central banks**\n- Used by **researchers**, **businesses**, and **financial markets**\n- Provides **policy recommendations** to promote sustainable growth\n\n---\n\n## Notable Aspects\n\n- Includes detailed **statistical annexes** with historical and projected data\n- Often addresses **specific themes** like climate, inequality, or financial stability\n- Widely cited in **media and academic research**\n\n---\n\nWould you like information about a specific recent edition or a particular topic covered in the Outlook?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 19,
+    "output_tokens": 353,
+    "total_tokens": 372
+  },
+  "raw_payload": {
+    "id": "msg_01BNWkmC4cZi1T6wJjhdjrHT",
+    "content": [
+      {
+        "citations": null,
+        "text": "# OECD Economic Outlook\n\n## What It Is\n\nThe **OECD Economic Outlook** is a flagship publication of the **Organisation for Economic Co-operation and Development (OECD)**, providing analysis and forecasts of major economic trends across member and selected non-member countries.\n\n---\n\n## Key Features\n\n### Publication Schedule\n- Published **twice a year** (typically in **May/June** and **November/December**)\n- Interim updates are sometimes released between main editions\n\n### Coverage\n- Analyzes economic conditions in **OECD member countries** (38 members) and major non-member economies\n- Covers the **global economy** as a whole\n\n---\n\n## Main Content Areas\n\n- **GDP growth forecasts**\n- **Inflation projections**\n- **Employment and labor market trends**\n- **Trade and current account balances**\n- **Fiscal and monetary policy analysis**\n- **Structural reform recommendations**\n- **Risk assessments** (upside and downside scenarios)\n\n---\n\n## Purpose and Audience\n\n- Informs **policymakers**, **governments**, and **central banks**\n- Used by **researchers**, **businesses**, and **financial markets**\n- Provides **policy recommendations** to promote sustainable growth\n\n---\n\n## Notable Aspects\n\n- Includes detailed **statistical annexes** with historical and projected data\n- Often addresses **specific themes** like climate, inequality, or financial stability\n- Widely cited in **media and academic research**\n\n---\n\nWould you like information about a specific recent edition or a particular topic covered in the Outlook?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 19,
+      "output_tokens": 353,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

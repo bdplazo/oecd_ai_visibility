@@ -1,0 +1,24 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "compare_economic_advice",
+  "category": "comparative_peer",
+  "run_index": 0,
+  "response_text": "The OECD, IMF, and World Bank are prominent international organizations that provide economic policy advice, but they differ in their focus, structure, and approach:\n\n### OECD (Organisation for Economic Co-operation and Development)\n- **Focus**: Primarily serves developed countries, promoting policies to improve economic and social well-being.\n- **Structure**: An intergovernmental organization with 38 member countries.\n- **Approach**: \n  - Provides a platform for governments to share experiences and seek solutions to common problems.\n  - Conducts research and publishes reports on a wide range of economic and social issues.\n  - Offers policy recommendations based on best practices and comparative analysis.\n  - Emphasizes data collection and analysis, producing indicators and statistics.\n\n### IMF (International Monetary Fund)\n- **Focus**: Global financial stability, monetary cooperation, and economic growth.\n- **Structure**: Comprises 190 member countries.\n- **Approach**:\n  - Provides financial assistance and short-term loans to countries facing balance of payments problems.\n  - Offers policy advice through surveillance and monitoring of global and individual economies.\n  - Conducts regular assessments of member countries' economic policies (Article IV consultations).\n  - Focuses on macroeconomic stability, fiscal policy, and exchange rate policies.\n\n### World Bank\n- **Focus**: Poverty reduction and sustainable development in developing countries.\n- **Structure**: Consists of two main institutions: the International Bank for Reconstruction and Development (IBRD) and the International Development Association (IDA).\n- **Approach**:\n  - Provides long-term loans and grants for development projects and programs.\n  - Offers policy advice and technical assistance to support economic development.\n  - Focuses on infrastructure, education, health, and governance.\n  - Emphasizes poverty alleviation and sustainable development goals.\n\n### Key Differences\n- **Target Audience**: OECD focuses on developed countries, IMF on global financial stability, and World Bank on developing countries.\n- **Financial Assistance**: IMF provides short-term financial support, while the World Bank offers long-term development financing.\n- **Policy Focus**: OECD emphasizes policy research and best practices, IMF focuses on macroeconomic stability, and World Bank targets development and poverty reduction.\n\nEach organization plays a unique role in shaping global economic policy, leveraging their expertise to address different aspects of economic challenges.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.329256Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "IMF": "supporting",
+      "World Bank": "supporting"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

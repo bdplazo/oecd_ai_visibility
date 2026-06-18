@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_pisa",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:26:41.732874Z",
+  "latency_seconds": 5.098471200093627,
+  "response_text": "**PISA** stands for the **Programme for International Student Assessment**. It is a large-scale international study that evaluates the knowledge and skills of 15-year-old students in key subject areas, primarily:\n\n- **Reading**\n- **Mathematics**\n- **Science**\n\nIt is run by the **OECD** (Organisation for Economic Co-operation and Development), an intergovernmental organization based in Paris. PISA is conducted every three years (though some cycles have been adjusted), and it involves students from dozens of countries and economies, including both OECD members and partner countries.\n\nThe results are widely used by governments and policymakers to compare educational performance across countries and to inform education policy decisions.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 17,
+    "output_tokens": 159,
+    "total_tokens": 176
+  },
+  "raw_payload": {
+    "id": "msg_01FKLt27CXQrKtJ54KDjsysb",
+    "content": [
+      {
+        "citations": null,
+        "text": "**PISA** stands for the **Programme for International Student Assessment**. It is a large-scale international study that evaluates the knowledge and skills of 15-year-old students in key subject areas, primarily:\n\n- **Reading**\n- **Mathematics**\n- **Science**\n\nIt is run by the **OECD** (Organisation for Economic Co-operation and Development), an intergovernmental organization based in Paris. PISA is conducted every three years (though some cycles have been adjusted), and it involves students from dozens of countries and economies, including both OECD members and partner countries.\n\nThe results are widely used by governments and policymakers to compare educational performance across countries and to inform education policy decisions.",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 17,
+      "output_tokens": 159,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

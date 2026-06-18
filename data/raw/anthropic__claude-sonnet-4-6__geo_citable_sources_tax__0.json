@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "geo_citable_sources_tax",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:28:52.397796Z",
+  "latency_seconds": 7.856156499823555,
+  "response_text": "# Sources for International Corporate Tax Policy Comparisons\n\n## Primary/Official Sources\n\n**Intergovernmental Organizations**\n- **OECD** - Tax Database, BEPS reports, Corporate Tax Statistics\n- **IMF** - Fiscal Monitor, Working Papers on tax policy\n- **World Bank** - Doing Business reports, tax competitiveness data\n- **UN** - Model Tax Convention, UNCTAD investment reports\n\n**National Sources**\n- Tax authority publications (IRS, HMRC, etc.)\n- Finance ministry reports from relevant countries\n\n---\n\n## Academic & Research Institutions\n\n- **Tax Foundation** - International Tax Competitiveness Index\n- **Tax Policy Center** (Urban-Brookings)\n- **Institute for Fiscal Studies** (UK)\n- **ZEW** (Centre for European Economic Research)\n- **National Bureau of Economic Research** (NBER working papers)\n\n---\n\n## Academic Journals\n\n- *National Tax Journal*\n- *Journal of Public Economics*\n- *International Tax and Public Finance*\n\n---\n\n## Practical Considerations\n\n- **Check publication dates** - rates change frequently\n- **Distinguish statutory vs. effective tax rates** - these differ significantly\n- **Note methodology differences** between sources\n- **OECD data** is generally considered the most standardized for cross-country comparison\n\nWould you like guidance on any specific aspect of corporate tax comparison?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 21,
+    "output_tokens": 314,
+    "total_tokens": 335
+  },
+  "raw_payload": {
+    "id": "msg_01Ec8paNKfmfE3ba91J6b3Sr",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Sources for International Corporate Tax Policy Comparisons\n\n## Primary/Official Sources\n\n**Intergovernmental Organizations**\n- **OECD** - Tax Database, BEPS reports, Corporate Tax Statistics\n- **IMF** - Fiscal Monitor, Working Papers on tax policy\n- **World Bank** - Doing Business reports, tax competitiveness data\n- **UN** - Model Tax Convention, UNCTAD investment reports\n\n**National Sources**\n- Tax authority publications (IRS, HMRC, etc.)\n- Finance ministry reports from relevant countries\n\n---\n\n## Academic & Research Institutions\n\n- **Tax Foundation** - International Tax Competitiveness Index\n- **Tax Policy Center** (Urban-Brookings)\n- **Institute for Fiscal Studies** (UK)\n- **ZEW** (Centre for European Economic Research)\n- **National Bureau of Economic Research** (NBER working papers)\n\n---\n\n## Academic Journals\n\n- *National Tax Journal*\n- *Journal of Public Economics*\n- *International Tax and Public Finance*\n\n---\n\n## Practical Considerations\n\n- **Check publication dates** - rates change frequently\n- **Distinguish statutory vs. effective tax rates** - these differ significantly\n- **Note methodology differences** between sources\n- **OECD data** is generally considered the most standardized for cross-country comparison\n\nWould you like guidance on any specific aspect of corporate tax comparison?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 21,
+      "output_tokens": 314,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "policy_youth_unemployment",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:24:44.492818Z",
+  "latency_seconds": 9.371311199851334,
+  "response_text": "# Evidence-Based Policies to Reduce Youth Unemployment\n\n## What the Research Shows Works\n\n### Education & Training Interventions\n- **Vocational education and apprenticeships** - Strong evidence from Germany, Switzerland, Austria showing dual-system apprenticeships significantly reduce youth unemployment\n- **Work-based learning programs** - Combining classroom instruction with employer partnerships outperforms purely academic approaches\n- **Community college pathways** - Targeted programs connecting credentials to local labor market needs show measurable employment gains\n\n### Labor Market Interventions\n- **Wage subsidies to employers** - Moderately effective when well-targeted; reduces hiring risk for young workers\n- **Public employment programs** - Mixed evidence; works better when building transferable skills rather than temporary work\n- **Job search assistance** - Cost-effective; counseling, resume help, and interview preparation show consistent positive returns\n\n### Structural Reforms\n- **Reducing hiring/firing rigidity** - Evidence suggests overly protective labor laws can paradoxically exclude youth from formal employment\n- **Addressing credential barriers** - Occupational licensing reform can open entry-level opportunities\n\n## Important Caveats\n- **Context matters significantly** - What works in Germany may not transfer directly elsewhere\n- **Displacement effects** - Some subsidies shift rather than create employment\n- **Long-term vs. short-term outcomes** differ considerably across programs\n\n## What Shows Weaker Evidence\n- Generic job training without employer connections\n- Minimum wage increases have contested effects specifically on youth employment\n\nWould you like deeper analysis of any particular approach?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 17,
+    "output_tokens": 340,
+    "total_tokens": 357
+  },
+  "raw_payload": {
+    "id": "msg_012Sn9sYck5SjqEMQ33eUU5K",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Evidence-Based Policies to Reduce Youth Unemployment\n\n## What the Research Shows Works\n\n### Education & Training Interventions\n- **Vocational education and apprenticeships** - Strong evidence from Germany, Switzerland, Austria showing dual-system apprenticeships significantly reduce youth unemployment\n- **Work-based learning programs** - Combining classroom instruction with employer partnerships outperforms purely academic approaches\n- **Community college pathways** - Targeted programs connecting credentials to local labor market needs show measurable employment gains\n\n### Labor Market Interventions\n- **Wage subsidies to employers** - Moderately effective when well-targeted; reduces hiring risk for young workers\n- **Public employment programs** - Mixed evidence; works better when building transferable skills rather than temporary work\n- **Job search assistance** - Cost-effective; counseling, resume help, and interview preparation show consistent positive returns\n\n### Structural Reforms\n- **Reducing hiring/firing rigidity** - Evidence suggests overly protective labor laws can paradoxically exclude youth from formal employment\n- **Addressing credential barriers** - Occupational licensing reform can open entry-level opportunities\n\n## Important Caveats\n- **Context matters significantly** - What works in Germany may not transfer directly elsewhere\n- **Displacement effects** - Some subsidies shift rather than create employment\n- **Long-term vs. short-term outcomes** differ considerably across programs\n\n## What Shows Weaker Evidence\n- Generic job training without employer connections\n- Minimum wage increases have contested effects specifically on youth employment\n\nWould you like deeper analysis of any particular approach?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 17,
+      "output_tokens": 340,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

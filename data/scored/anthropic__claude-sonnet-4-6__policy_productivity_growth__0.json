@@ -1,0 +1,21 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "policy_productivity_growth",
+  "category": "policy_recommendation",
+  "run_index": 0,
+  "response_text": "# Improving Long-Term Productivity Growth: Policy Approaches\n\n## Core Investment Areas\n\n**Human Capital**\n- Education quality improvements, particularly STEM and technical skills\n- Vocational training and apprenticeship programs\n- Healthcare access (healthy workers are more productive)\n- Immigration policies attracting skilled workers\n\n**Physical Infrastructure**\n- Transportation networks reducing logistics costs\n- Digital infrastructure (broadband, 5G)\n- Energy reliability and transition to stable supplies\n\n**Research & Development**\n- Public funding for basic research\n- R&D tax incentives for private sector\n- University-industry partnerships\n\n## Institutional & Regulatory Reforms\n\n- Reducing regulatory barriers to business entry and competition\n- Strengthening property rights and contract enforcement\n- Reducing corruption and improving governance quality\n- Streamlining permitting processes\n\n## Market Structure Considerations\n\n- Antitrust enforcement (monopolies often reduce innovation incentives)\n- Technology transfer policies\n- Financial system development enabling capital allocation\n\n## Honest Complications\n\n- **Trade-offs exist**: Some regulations reduce productivity but serve other legitimate goals\n- **Time horizons matter**: Many investments take decades to show results\n- **Context dependency**: What works varies significantly by country development level\n- **Measurement challenges**: Productivity statistics may miss quality improvements\n\n## Areas of Genuine Debate\n\n- Optimal public vs. private R&D balance\n- Industrial policy effectiveness\n- Immigration's distributional effects\n\nWhat specific context or aspect interests you most?",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.879682Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": false,
+    "oecd_prominence": "none",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

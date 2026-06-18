@@ -1,0 +1,26 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "authority_ai_policy",
+  "category": "authority_standard_setting",
+  "run_index": 0,
+  "response_text": "Several international organizations provide guidance on responsible AI policy for governments. Some of the key ones include:\n\n1. **Organisation for Economic Co-operation and Development (OECD)**: The OECD has developed the OECD AI Principles, which provide a framework for the responsible development and use of AI.\n\n2. **United Nations Educational, Scientific and Cultural Organization (UNESCO)**: UNESCO has established recommendations on the ethics of AI, focusing on human rights and ethical considerations.\n\n3. **European Union (EU)**: The EU has been active in creating guidelines and regulations for AI, including the proposed AI Act, which aims to ensure AI systems are safe and respect fundamental rights.\n\n4. **World Economic Forum (WEF)**: The WEF provides insights and frameworks for AI governance, emphasizing collaboration between public and private sectors.\n\n5. **International Telecommunication Union (ITU)**: The ITU works on AI for Good initiatives, promoting AI technologies that align with sustainable development goals.\n\n6. **Global Partnership on AI (GPAI)**: GPAI is an international initiative that supports and guides the responsible development and use of AI, fostering collaboration among countries.\n\nThese organizations offer frameworks, principles, and recommendations to help governments develop policies that ensure AI technologies are used ethically and responsibly.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:43.629129Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [
+      "OECD AI Principles"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "United Nations": "incidental",
+      "World Economic Forum": "incidental"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

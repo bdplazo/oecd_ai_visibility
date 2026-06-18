@@ -1,0 +1,26 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "compare_global_risks",
+  "category": "comparative_peer",
+  "run_index": 0,
+  "response_text": "The OECD and the World Economic Forum (WEF) both provide analyses on global economic risks, but they approach these topics from slightly different perspectives and methodologies.\n\n### OECD Analysis\n\n1. **Focus and Scope**: \n   - The OECD primarily focuses on economic policies, providing in-depth analysis on macroeconomic trends, fiscal policies, and structural reforms.\n   - It emphasizes data-driven insights and policy recommendations for its member countries, often highlighting issues like productivity, inequality, and sustainable growth.\n\n2. **Reports**:\n   - The OECD Economic Outlook and Going for Growth reports are key publications that assess economic risks and provide forecasts.\n   - They often address risks related to economic imbalances, trade tensions, and financial market vulnerabilities.\n\n3. **Methodology**:\n   - Utilizes extensive economic data and statistical models.\n   - Provides country-specific analysis and policy advice.\n\n### World Economic Forum Reports\n\n1. **Focus and Scope**:\n   - The WEF takes a broader view, incorporating economic, geopolitical, environmental, and technological risks.\n   - It emphasizes the interconnectedness of global risks and the need for collaborative solutions.\n\n2. **Reports**:\n   - The Global Risks Report is a flagship publication that identifies and analyzes the most pressing global risks.\n   - It covers a wide range of issues, including climate change, cyber threats, and geopolitical tensions.\n\n3. **Methodology**:\n   - Based on surveys and expert opinions from a diverse range of stakeholders, including business leaders, academics, and policymakers.\n   - Focuses on risk perception and potential impact rather than detailed economic forecasts.\n\n### Comparison\n\n- **Scope**: The OECD is more focused on economic policies and member countries, while the WEF covers a broader range of global risks.\n- **Methodology**: The OECD relies heavily on data and economic modeling, whereas the WEF uses surveys and expert opinions.\n- **Purpose**: OECD reports are often more prescriptive, offering specific policy recommendations, while WEF reports aim to raise awareness and foster dialogue on global risks.\n\nBoth organizations provide valuable insights, but their reports serve different purposes and audiences.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.469098Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [
+      "OECD Economic Outlook",
+      "Going for Growth"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "World Economic Forum": "supporting"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

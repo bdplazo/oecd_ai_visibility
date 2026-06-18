@@ -32,8 +32,14 @@ OECD_PUBLICATIONS = (
 class DryRunJudge(Judge):
     """Transparent, conservative heuristic judge requiring no keys or network."""
 
-    def __init__(self, *, peer_organisations: list[str]) -> None:
-        super().__init__(provider="dry-run", model="deterministic-v1")
+    def __init__(
+        self,
+        *,
+        peer_organisations: list[str],
+        provider: str = "dry-run",
+        model: str = "deterministic-v1",
+    ) -> None:
+        super().__init__(provider=provider, model=model)
         self.peer_organisations = peer_organisations
 
     def score(self, *, raw_record: RawResponseRecord, query: QuerySpec) -> JudgeScore:

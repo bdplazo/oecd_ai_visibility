@@ -1,0 +1,23 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_going_for_growth",
+  "category": "named_product_recall",
+  "run_index": 0,
+  "response_text": "\"Going for Growth\" is an economic policy analysis publication by the Organisation for Economic Co-operation and Development (OECD). It is part of the OECD's efforts to promote economic growth and improve living standards among its member countries. The publication provides a comparative analysis of structural policy reforms and offers recommendations to enhance productivity, employment, and overall economic performance.\n\nKey features of \"Going for Growth\" include:\n\n1. **Benchmarking**: It assesses and compares the economic performance of different countries, identifying strengths and weaknesses in various policy areas.\n\n2. **Policy Recommendations**: The publication suggests specific reforms tailored to each country to address identified challenges and boost growth.\n\n3. **Focus Areas**: It covers a wide range of policy areas, including labor markets, education, innovation, taxation, and regulatory frameworks.\n\n4. **Evidence-Based Analysis**: The recommendations are based on empirical research and data analysis, aiming to provide actionable insights for policymakers.\n\n5. **Regular Updates**: \"Going for Growth\" is published regularly, allowing for the tracking of progress and the adaptation of recommendations to changing economic conditions.\n\nOverall, it serves as a tool for governments to identify and implement effective policies for sustainable economic growth.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.229934Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "primary",
+    "oecd_publications_named": [
+      "Going for Growth"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

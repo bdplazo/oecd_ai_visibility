@@ -1,0 +1,26 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "geo_citable_sources_tax",
+  "category": "generative_search_referral",
+  "run_index": 0,
+  "response_text": "When conducting international comparisons of corporate tax policy, it's important to use reliable and authoritative sources. Here are some key sources you should consider citing:\n\n1. **OECD (Organisation for Economic Co-operation and Development)**:\n   - Provides comprehensive data and analysis on tax policies across member countries.\n   - Look for the \"OECD Tax Database\" and reports like \"Tax Policy Reforms.\"\n\n2. **IMF (International Monetary Fund)**:\n   - Offers insights into tax policy and its economic implications globally.\n   - Check out their \"Fiscal Monitor\" and working papers.\n\n3. **World Bank**:\n   - Provides data on tax rates and structures in its \"World Development Indicators\" and other publications.\n\n4. **European Commission**:\n   - For EU countries, the \"Taxation Trends in the European Union\" report is valuable.\n\n5. **KPMG, PwC, Deloitte, and EY**:\n   - These accounting firms publish annual reports and guides on global tax rates and policies.\n\n6. **Tax Foundation**:\n   - Offers comparative studies and data on corporate tax rates worldwide.\n\n7. **National Government Publications**:\n   - Each country’s finance ministry or tax authority often publishes detailed reports on their tax systems.\n\n8. **Academic Journals**:\n   - Look for articles in journals like the \"Journal of International Accounting, Auditing and Taxation.\"\n\n9. **World Economic Forum**:\n   - Provides insights and reports on global competitiveness, including tax policy.\n\n10. **UNCTAD (United Nations Conference on Trade and Development)**:\n    - Offers analysis on how tax policies affect international trade and investment.\n\nEnsure you verify the latest data and reports, as tax policies can change frequently.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.555517Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "IMF": "incidental",
+      "World Bank": "incidental",
+      "United Nations": "incidental",
+      "World Economic Forum": "incidental"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

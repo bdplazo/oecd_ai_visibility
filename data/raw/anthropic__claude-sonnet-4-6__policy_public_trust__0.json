@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "policy_public_trust",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:25:30.921982Z",
+  "latency_seconds": 9.386125300079584,
+  "response_text": "This is a genuinely important governance question. Here are practical steps with honest assessment of their effectiveness:\n\n## Transparency Measures\n- Publish government data openly and accessibly\n- Require clear explanations for policy decisions\n- Make lobbying and campaign finance visible\n- **Limitation:** Transparency alone doesn't rebuild trust if underlying problems persist\n\n## Accountability Mechanisms\n- Independent oversight bodies with real enforcement power\n- Consistent consequences for official misconduct\n- Whistleblower protections that actually work\n- **Key factor:** These must apply to powerful people, not just minor officials\n\n## Genuine Participation\n- Citizen assemblies on major decisions\n- Meaningful consultation rather than performative hearings\n- Local decision-making where appropriate\n- **Caution:** Participation feels hollow if input is ignored\n\n## Competence Demonstration\n- Actually delivering promised services reliably\n- Honest communication about failures and corrections\n- Setting realistic rather than inflated expectations\n\n## Structural Reforms\n- Reducing corruption opportunities through institutional design\n- Competitive elections with fair rules\n- Independent judiciary\n\n## Honest Considerations\n- Trust rebuilding takes years, sometimes decades\n- Some distrust reflects legitimate grievances requiring real change\n- Quick symbolic gestures often backfire\n- Different communities have different reasons for distrust requiring different responses\n\n**The core challenge:** Trust follows demonstrated trustworthiness rather than communication strategies.\n\nWhat specific context are you thinking about?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 18,
+    "output_tokens": 314,
+    "total_tokens": 332
+  },
+  "raw_payload": {
+    "id": "msg_01X3pUZaUnMwWEFi1HQXhDTp",
+    "content": [
+      {
+        "citations": null,
+        "text": "This is a genuinely important governance question. Here are practical steps with honest assessment of their effectiveness:\n\n## Transparency Measures\n- Publish government data openly and accessibly\n- Require clear explanations for policy decisions\n- Make lobbying and campaign finance visible\n- **Limitation:** Transparency alone doesn't rebuild trust if underlying problems persist\n\n## Accountability Mechanisms\n- Independent oversight bodies with real enforcement power\n- Consistent consequences for official misconduct\n- Whistleblower protections that actually work\n- **Key factor:** These must apply to powerful people, not just minor officials\n\n## Genuine Participation\n- Citizen assemblies on major decisions\n- Meaningful consultation rather than performative hearings\n- Local decision-making where appropriate\n- **Caution:** Participation feels hollow if input is ignored\n\n## Competence Demonstration\n- Actually delivering promised services reliably\n- Honest communication about failures and corrections\n- Setting realistic rather than inflated expectations\n\n## Structural Reforms\n- Reducing corruption opportunities through institutional design\n- Competitive elections with fair rules\n- Independent judiciary\n\n## Honest Considerations\n- Trust rebuilding takes years, sometimes decades\n- Some distrust reflects legitimate grievances requiring real change\n- Quick symbolic gestures often backfire\n- Different communities have different reasons for distrust requiring different responses\n\n**The core challenge:** Trust follows demonstrated trustworthiness rather than communication strategies.\n\nWhat specific context are you thinking about?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 18,
+      "output_tokens": 314,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

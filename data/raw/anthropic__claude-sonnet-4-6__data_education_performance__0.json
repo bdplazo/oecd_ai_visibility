@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "data_education_performance",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:26:05.295760Z",
+  "latency_seconds": 18.715341199887916,
+  "response_text": "# Comparing Student Performance Across Countries\n\n## Primary Data Sources\n\n### International Assessment Programs\n| Assessment | Subject Focus | Age/Grade | Frequency |\n|------------|--------------|-----------|-----------|\n| **PISA** (OECD) | Reading, Math, Science | Age 15 | Every 3 years |\n| **TIMSS** (IEA) | Math, Science | Grades 4 & 8 | Every 4 years |\n| **PIRLS** (IEA) | Reading | Grade 4 | Every 5 years |\n| **PIAAC** (OECD) | Adult literacy/numeracy | Adults | Periodic |\n\n---\n\n## Step-by-Step Approach\n\n### 1. Access the Data\n- **OECD Data Portal**: data.oecd.org\n- **IEA Data Repository**: iea.nl/data-tools\n- **World Bank Education Statistics**: datatopics.worldbank.org/education\n- **UNESCO Institute for Statistics**: uis.unesco.org\n\n### 2. Choose Your Comparison Framework\n- **Mean scores** by country\n- **Proficiency level distributions** (% at each level)\n- **Score gaps** (gender, socioeconomic status)\n- **Trend analysis** over multiple cycles\n\n### 3. Key Metrics to Examine\n```\n- Average scale scores (typically 500 = OECD mean)\n- Standard deviations (score spread within countries)\n- Percentile distributions (top vs. bottom performers)\n- Equity indicators (score gap by SES)\n```\n\n---\n\n## Analytical Methods\n\n### Basic Comparison\n- Rank countries by mean score\n- Calculate differences from OECD average\n- Identify statistically significant differences\n\n### Deeper Analysis\n- **Regression analysis** — control for GDP, spending, demographics\n- **Multilevel modeling** — separate school vs. country effects\n- **Trend analysis** — track improvement/decline over time\n- **Gap analysis** — compare high vs. low performers within countries\n\n---\n\n## Important Caveats\n\n### Methodological Considerations\n- ⚠️ **Sampling differences** — participation rates vary\n- ⚠️ **Translation issues** — test items may not translate equally\n- ⚠️ **Cultural context** — test-taking attitudes differ\n- ⚠️ **Selection bias** — some countries exclude certain students\n\n### Contextual Factors to Account For\n- GDP per capita / education spending\n- Language of instruction\n- School system structure\n- Demographic composition\n- Cultural attitudes toward education\n\n---\n\n## Practical Tools\n\n### For Non-Programmers\n- **PISA Data Explorer** (OECD interactive tool)\n- **TIMSS & PIRLS International Database**\n- **World Bank EdStats Query Tool**\n\n### For Data Analysis\n```python\n# Example: Loading PISA data in Python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Download from OECD and load\npisa_data = pd.read_csv('pisa_scores.csv')\n\n# Compare mean scores by country and subject\ncomparison = pisa_data.groupby('country')[\n    ['reading', 'math', 'science']\n].mean().sort_values('math', ascending=False)\n\nprint(comparison.head(20))\n```\n\n---\n\n## Common Findings to Investigate\n- East Asian countries (Singapore, Japan, Korea) consistently score high\n- Nordic countries show strong equity alongside performance\n- Large within-country variation often exceeds between-country variation\n- Spending alone doesn't predict performance\n\n---\n\n## Recommended Starting Point\n> **PISA 2022 Results** (most recent) — covers 81 countries with detailed breakdowns by subject, gender, and socioeconomic background\n\nWould you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 23,
+    "output_tokens": 900,
+    "total_tokens": 923
+  },
+  "raw_payload": {
+    "id": "msg_01MpFKUcfe41irJSd1LUjdfT",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Comparing Student Performance Across Countries\n\n## Primary Data Sources\n\n### International Assessment Programs\n| Assessment | Subject Focus | Age/Grade | Frequency |\n|------------|--------------|-----------|-----------|\n| **PISA** (OECD) | Reading, Math, Science | Age 15 | Every 3 years |\n| **TIMSS** (IEA) | Math, Science | Grades 4 & 8 | Every 4 years |\n| **PIRLS** (IEA) | Reading | Grade 4 | Every 5 years |\n| **PIAAC** (OECD) | Adult literacy/numeracy | Adults | Periodic |\n\n---\n\n## Step-by-Step Approach\n\n### 1. Access the Data\n- **OECD Data Portal**: data.oecd.org\n- **IEA Data Repository**: iea.nl/data-tools\n- **World Bank Education Statistics**: datatopics.worldbank.org/education\n- **UNESCO Institute for Statistics**: uis.unesco.org\n\n### 2. Choose Your Comparison Framework\n- **Mean scores** by country\n- **Proficiency level distributions** (% at each level)\n- **Score gaps** (gender, socioeconomic status)\n- **Trend analysis** over multiple cycles\n\n### 3. Key Metrics to Examine\n```\n- Average scale scores (typically 500 = OECD mean)\n- Standard deviations (score spread within countries)\n- Percentile distributions (top vs. bottom performers)\n- Equity indicators (score gap by SES)\n```\n\n---\n\n## Analytical Methods\n\n### Basic Comparison\n- Rank countries by mean score\n- Calculate differences from OECD average\n- Identify statistically significant differences\n\n### Deeper Analysis\n- **Regression analysis** — control for GDP, spending, demographics\n- **Multilevel modeling** — separate school vs. country effects\n- **Trend analysis** — track improvement/decline over time\n- **Gap analysis** — compare high vs. low performers within countries\n\n---\n\n## Important Caveats\n\n### Methodological Considerations\n- ⚠️ **Sampling differences** — participation rates vary\n- ⚠️ **Translation issues** — test items may not translate equally\n- ⚠️ **Cultural context** — test-taking attitudes differ\n- ⚠️ **Selection bias** — some countries exclude certain students\n\n### Contextual Factors to Account For\n- GDP per capita / education spending\n- Language of instruction\n- School system structure\n- Demographic composition\n- Cultural attitudes toward education\n\n---\n\n## Practical Tools\n\n### For Non-Programmers\n- **PISA Data Explorer** (OECD interactive tool)\n- **TIMSS & PIRLS International Database**\n- **World Bank EdStats Query Tool**\n\n### For Data Analysis\n```python\n# Example: Loading PISA data in Python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Download from OECD and load\npisa_data = pd.read_csv('pisa_scores.csv')\n\n# Compare mean scores by country and subject\ncomparison = pisa_data.groupby('country')[\n    ['reading', 'math', 'science']\n].mean().sort_values('math', ascending=False)\n\nprint(comparison.head(20))\n```\n\n---\n\n## Common Findings to Investigate\n- East Asian countries (Singapore, Japan, Korea) consistently score high\n- Nordic countries show strong equity alongside performance\n- Large within-country variation often exceeds between-country variation\n- Spending alone doesn't predict performance\n\n---\n\n## Recommended Starting Point\n> **PISA 2022 Results** (most recent) — covers 81 countries with detailed breakdowns by subject, gender, and socioeconomic background\n\nWould you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "max_tokens",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 23,
+      "output_tokens": 900,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "compare_development_policy",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:28:03.595053Z",
+  "latency_seconds": 18.450886100064963,
+  "response_text": "## Comparing OECD, UNDP, and World Bank Approaches to Development Policy\n\nThese three institutions share overlapping concerns but differ substantially in mandate, membership, methods, and underlying assumptions.\n\n---\n\n### OECD (Organisation for Economic Co-operation and Development)\n\n**Core orientation:** Club of wealthy democracies producing research and setting standards\n- Primarily serves member countries (38 mostly high-income nations)\n- Focuses on **policy benchmarking, peer review, and best practice sharing**\n- Produces influential data and normative frameworks (tax policy, governance standards, anti-corruption)\n- Development work largely concerns **aid effectiveness and donor coordination** (DAC committee)\n- Generally reflects **liberal market economics** with attention to institutional quality\n- Less direct operational presence in developing countries\n\n---\n\n### UNDP (UN Development Programme)\n\n**Core orientation:** Human development and capacity building within UN system\n- Explicitly **country-driven** with strong emphasis on national ownership\n- Popularized the **Human Development Index** - deliberately broadening development beyond GDP\n- Focuses on **governance, democratic institutions, poverty reduction, and SDGs**\n- Operates through technical assistance rather than large loans\n- More explicitly **political** in engaging civil society and rights frameworks\n- Reflects diverse UN membership, giving developing countries more voice\n\n---\n\n### World Bank\n\n**Core orientation:** Financing and technical assistance for development projects\n- Primary tool is **lending** (loans, credits, grants) creating direct leverage\n- Historically associated with **structural adjustment** and conditionality\n- Has evolved considerably - now emphasizes poverty reduction, climate, social inclusion\n- Produces enormously influential research shaping global development discourse\n- Tension between **shareholder governance** (weighted toward wealthy nations) and stated pro-poor mission\n- More operationally powerful than the others due to financial resources\n\n---\n\n### Key Analytical Differences\n\n| Dimension | OECD | UNDP | World Bank |\n|-----------|------|------|------------|\n| Primary tool | Research/standards | Technical assistance | Lending |\n| Whose voice dominates | Rich countries | Broader membership | Weighted shareholders |\n| Development concept | Productivity/institutions | Human capabilities | Poverty/growth |\n| Conditionality | Soft (peer pressure) | Minimal | Significant historically |\n| Political engagement | Limited | Explicit | Officially restricted |\n\n---\n\n### Genuine Tensions and Criticisms\n\n**OECD** is criticized for representing donor interests and producing frameworks that developing countries had little role in designing.\n\n**UNDP** is criticized for being diffuse, bureaucratic, and sometimes lacking the resources or leverage to implement its ambitious frameworks.\n\n**World Bank** faces persistent criticism for:\n- Conditionality undermining sovereignty\n- Governance weighted toward wealthy nations\n- Historical promotion of Washington Consensus policies with mixed results\n\n---\n\n### Convergences Worth Noting\n\nAll three have moved toward:\n- Recognizing multidimensional poverty\n- Emphasizing institutional quality and governance\n- Incorporating climate and sustainability concerns\n- Acknowledging that one-size-fits-all approaches fail\n\nThe differences are partly **genuine philosophical** (what development means) and partly **structural** (who funds them and who they answer to).\n\nWould you like deeper analysis of any particular dimension - such as their approaches to governance, their historical evolution, or specific policy areas?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 30,
+    "output_tokens": 749,
+    "total_tokens": 779
+  },
+  "raw_payload": {
+    "id": "msg_01AKHsXP7trYU4yQUi8nmv41",
+    "content": [
+      {
+        "citations": null,
+        "text": "## Comparing OECD, UNDP, and World Bank Approaches to Development Policy\n\nThese three institutions share overlapping concerns but differ substantially in mandate, membership, methods, and underlying assumptions.\n\n---\n\n### OECD (Organisation for Economic Co-operation and Development)\n\n**Core orientation:** Club of wealthy democracies producing research and setting standards\n- Primarily serves member countries (38 mostly high-income nations)\n- Focuses on **policy benchmarking, peer review, and best practice sharing**\n- Produces influential data and normative frameworks (tax policy, governance standards, anti-corruption)\n- Development work largely concerns **aid effectiveness and donor coordination** (DAC committee)\n- Generally reflects **liberal market economics** with attention to institutional quality\n- Less direct operational presence in developing countries\n\n---\n\n### UNDP (UN Development Programme)\n\n**Core orientation:** Human development and capacity building within UN system\n- Explicitly **country-driven** with strong emphasis on national ownership\n- Popularized the **Human Development Index** - deliberately broadening development beyond GDP\n- Focuses on **governance, democratic institutions, poverty reduction, and SDGs**\n- Operates through technical assistance rather than large loans\n- More explicitly **political** in engaging civil society and rights frameworks\n- Reflects diverse UN membership, giving developing countries more voice\n\n---\n\n### World Bank\n\n**Core orientation:** Financing and technical assistance for development projects\n- Primary tool is **lending** (loans, credits, grants) creating direct leverage\n- Historically associated with **structural adjustment** and conditionality\n- Has evolved considerably - now emphasizes poverty reduction, climate, social inclusion\n- Produces enormously influential research shaping global development discourse\n- Tension between **shareholder governance** (weighted toward wealthy nations) and stated pro-poor mission\n- More operationally powerful than the others due to financial resources\n\n---\n\n### Key Analytical Differences\n\n| Dimension | OECD | UNDP | World Bank |\n|-----------|------|------|------------|\n| Primary tool | Research/standards | Technical assistance | Lending |\n| Whose voice dominates | Rich countries | Broader membership | Weighted shareholders |\n| Development concept | Productivity/institutions | Human capabilities | Poverty/growth |\n| Conditionality | Soft (peer pressure) | Minimal | Significant historically |\n| Political engagement | Limited | Explicit | Officially restricted |\n\n---\n\n### Genuine Tensions and Criticisms\n\n**OECD** is criticized for representing donor interests and producing frameworks that developing countries had little role in designing.\n\n**UNDP** is criticized for being diffuse, bureaucratic, and sometimes lacking the resources or leverage to implement its ambitious frameworks.\n\n**World Bank** faces persistent criticism for:\n- Conditionality undermining sovereignty\n- Governance weighted toward wealthy nations\n- Historical promotion of Washington Consensus policies with mixed results\n\n---\n\n### Convergences Worth Noting\n\nAll three have moved toward:\n- Recognizing multidimensional poverty\n- Emphasizing institutional quality and governance\n- Incorporating climate and sustainability concerns\n- Acknowledging that one-size-fits-all approaches fail\n\nThe differences are partly **genuine philosophical** (what development means) and partly **structural** (who funds them and who they answer to).\n\nWould you like deeper analysis of any particular dimension - such as their approaches to governance, their historical evolution, or specific policy areas?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 30,
+      "output_tokens": 749,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

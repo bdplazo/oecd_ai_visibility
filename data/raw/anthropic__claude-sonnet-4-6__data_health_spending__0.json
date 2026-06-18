@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "data_health_spending",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:26:32.576067Z",
+  "latency_seconds": 9.152894200058654,
+  "response_text": "## Best Sources for Comparing Health Spending & Outcomes Across High-Income Countries\n\n### Primary Recommended Sources\n\n**OECD Health Statistics**\n- Arguably the **gold standard** for this comparison\n- Covers 38 member countries with standardized data\n- Includes spending, life expectancy, disease rates, access metrics\n- Available at: stats.oecd.org or oecd.org/health\n\n**Commonwealth Fund**\n- Publishes regular **international comparisons** specifically among high-income nations\n- Their *Mirror, Mirror* report directly ranks health system performance\n- More accessible/readable than raw OECD data\n\n### Other Useful Sources\n\n| Source | Strength |\n|--------|----------|\n| **WHO Global Health Observatory** | Broader country coverage |\n| **World Bank Health Data** | Long time series |\n| **Our World in Data** | Visualizations of OECD/WHO data |\n| **Lancet/NEJM studies** | Peer-reviewed analysis |\n\n### Practical Suggestion\n- **Start with Commonwealth Fund** for readable comparisons\n- **Use OECD** for specific data points and methodology\n- **Our World in Data** for quick visualizations\n\n### Key Caveat\nBe aware that **measurement differences** across countries (how spending is categorized, cause-of-death coding) can affect comparisons even in standardized datasets.\n\nWould you like guidance on specific metrics to look at?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 24,
+    "output_tokens": 328,
+    "total_tokens": 352
+  },
+  "raw_payload": {
+    "id": "msg_01EZeqoaihsFbTvYUUyoYfcE",
+    "content": [
+      {
+        "citations": null,
+        "text": "## Best Sources for Comparing Health Spending & Outcomes Across High-Income Countries\n\n### Primary Recommended Sources\n\n**OECD Health Statistics**\n- Arguably the **gold standard** for this comparison\n- Covers 38 member countries with standardized data\n- Includes spending, life expectancy, disease rates, access metrics\n- Available at: stats.oecd.org or oecd.org/health\n\n**Commonwealth Fund**\n- Publishes regular **international comparisons** specifically among high-income nations\n- Their *Mirror, Mirror* report directly ranks health system performance\n- More accessible/readable than raw OECD data\n\n### Other Useful Sources\n\n| Source | Strength |\n|--------|----------|\n| **WHO Global Health Observatory** | Broader country coverage |\n| **World Bank Health Data** | Long time series |\n| **Our World in Data** | Visualizations of OECD/WHO data |\n| **Lancet/NEJM studies** | Peer-reviewed analysis |\n\n### Practical Suggestion\n- **Start with Commonwealth Fund** for readable comparisons\n- **Use OECD** for specific data points and methodology\n- **Our World in Data** for quick visualizations\n\n### Key Caveat\nBe aware that **measurement differences** across countries (how spending is categorized, cause-of-death coding) can affect comparisons even in standardized datasets.\n\nWould you like guidance on specific metrics to look at?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 24,
+      "output_tokens": 328,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

@@ -79,6 +79,16 @@ def score_command(
         bool,
         typer.Option("--dry-run", help="Use deterministic local judge with no API calls."),
     ] = False,
+    heuristic_live_cache: Annotated[
+        bool,
+        typer.Option(
+            "--heuristic-live-cache",
+            help=(
+                "Score existing live raw caches with the deterministic local heuristic; "
+                "no judge API calls are made."
+            ),
+        ),
+    ] = False,
     live: Annotated[
         bool,
         typer.Option("--live", help="Use live judge adapter when implemented."),
@@ -94,11 +104,19 @@ def score_command(
             help="Export deterministic CSV sample for manual review.",
         ),
     ] = True,
+    aggregate: Annotated[
+        bool,
+        typer.Option(
+            "--aggregate/--no-aggregate",
+            help="Export a tidy scored CSV to the configured aggregated_csv path.",
+        ),
+    ] = False,
 ) -> None:
     """Score cached raw provider responses."""
 
-    if dry_run and live:
-        raise typer.BadParameter("Use either --dry-run or --live, not both.")
+    selected_modes = [dry_run, heuristic_live_cache, live]
+    if sum(selected_modes) > 1:
+        raise typer.BadParameter("Use only one scoring mode.")
 
     _configure_logging()
     config_path = config.resolve()
@@ -106,8 +124,10 @@ def score_command(
     load_dotenv(project_root / ".env")
 
     study_config = load_study_config(config_path)
-    effective_dry_run = dry_run or (not live and study_config.dry_run.enabled_by_default)
-    if not effective_dry_run:
+    effective_dry_run = dry_run or (
+        not heuristic_live_cache and not live and study_config.dry_run.enabled_by_default
+    )
+    if live:
         raise typer.BadParameter("Live judge scoring is not implemented in Phase 3.")
 
     queries_path = _resolve_project_path(study_config.paths.queries, project_root)
@@ -120,6 +140,8 @@ def score_command(
         dry_run=effective_dry_run,
         use_cache=not no_cache,
         export_validation_sample=validation_sample,
+        heuristic_live_cache=heuristic_live_cache,
+        export_aggregated_csv=aggregate,
     )
 
     typer.echo(
@@ -130,6 +152,8 @@ def score_command(
     )
     if result.validation_sample_path:
         typer.echo(f"Validation sample: {result.validation_sample_path}")
+    if result.aggregated_csv_path:
+        typer.echo(f"Aggregated CSV: {result.aggregated_csv_path}")
 
 
 def _configure_logging() -> None:

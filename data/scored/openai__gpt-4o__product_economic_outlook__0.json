@@ -1,0 +1,23 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_economic_outlook",
+  "category": "named_product_recall",
+  "run_index": 0,
+  "response_text": "The OECD Economic Outlook is a biannual report published by the Organisation for Economic Co-operation and Development (OECD). It provides analysis and projections for the global economy, focusing on the economic performance of OECD member countries and other major economies. The report includes:\n\n1. **Economic Forecasts**: Short-term and medium-term projections for GDP growth, inflation, employment, and other key economic indicators.\n\n2. **Policy Analysis**: Recommendations for fiscal, monetary, and structural policies to address economic challenges and promote sustainable growth.\n\n3. **Global Trends**: Examination of global economic trends and their implications for member and non-member countries.\n\n4. **Special Topics**: In-depth analysis of specific economic issues, such as trade tensions, technological change, or environmental challenges.\n\nThe report is a valuable resource for policymakers, economists, and analysts, providing insights into economic conditions and policy options.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.193732Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "primary",
+    "oecd_publications_named": [
+      "OECD Economic Outlook"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

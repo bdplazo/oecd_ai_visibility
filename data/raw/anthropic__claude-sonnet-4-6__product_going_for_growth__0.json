@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_going_for_growth",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:26:55.445101Z",
+  "latency_seconds": 10.190310100093484,
+  "response_text": "# Going for Growth\n\n**Going for Growth** is an annual publication and policy framework produced by the **OECD (Organisation for Economic Co-operation and Development)**, first launched in **2005**.\n\n## Core Purpose\n\nIt provides a systematic assessment of structural policy priorities for OECD member countries (and increasingly some non-member economies) aimed at **raising long-term economic growth and living standards**.\n\n## Key Features\n\n### Methodology\n- Identifies **five priority reform areas** for each country based on quantitative indicators and cross-country comparisons\n- Benchmarks countries against best performers\n- Tracks follow-through on previously recommended reforms\n\n### Policy Areas Typically Covered\n- Labour market participation and productivity\n- Education and skills\n- Product market regulation and competition\n- Tax policy\n- Trade and investment openness\n- Innovation and R&D frameworks\n\n### Analytical Approach\n- Uses **indicators of structural policies** to identify gaps relative to best practices\n- Distinguishes between **responsiveness** (whether countries act on recommendations) and **reform effort**\n- Incorporates equity considerations alongside efficiency\n\n## Evolution Over Time\n\n- Initially focused purely on growth\n- Later editions incorporated **income distribution** and **environmental sustainability** concerns\n- Post-2008 crisis editions emphasized employment and fiscal consolidation\n- More recent editions address green growth and resilience\n\n## Significance\n\nIt is influential in **peer review processes** and shapes policy discussions within OECD country surveillance, complementing the Economic Surveys.\n\nWould you like more detail on any specific aspect?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 17,
+    "output_tokens": 337,
+    "total_tokens": 354
+  },
+  "raw_payload": {
+    "id": "msg_01SyW6NyZnBBMJK4bPppVS34",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Going for Growth\n\n**Going for Growth** is an annual publication and policy framework produced by the **OECD (Organisation for Economic Co-operation and Development)**, first launched in **2005**.\n\n## Core Purpose\n\nIt provides a systematic assessment of structural policy priorities for OECD member countries (and increasingly some non-member economies) aimed at **raising long-term economic growth and living standards**.\n\n## Key Features\n\n### Methodology\n- Identifies **five priority reform areas** for each country based on quantitative indicators and cross-country comparisons\n- Benchmarks countries against best performers\n- Tracks follow-through on previously recommended reforms\n\n### Policy Areas Typically Covered\n- Labour market participation and productivity\n- Education and skills\n- Product market regulation and competition\n- Tax policy\n- Trade and investment openness\n- Innovation and R&D frameworks\n\n### Analytical Approach\n- Uses **indicators of structural policies** to identify gaps relative to best practices\n- Distinguishes between **responsiveness** (whether countries act on recommendations) and **reform effort**\n- Incorporates equity considerations alongside efficiency\n\n## Evolution Over Time\n\n- Initially focused purely on growth\n- Later editions incorporated **income distribution** and **environmental sustainability** concerns\n- Post-2008 crisis editions emphasized employment and fiscal consolidation\n- More recent editions address green growth and resilience\n\n## Significance\n\nIt is influential in **peer review processes** and shapes policy discussions within OECD country surveillance, complementing the Economic Surveys.\n\nWould you like more detail on any specific aspect?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 17,
+      "output_tokens": 337,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

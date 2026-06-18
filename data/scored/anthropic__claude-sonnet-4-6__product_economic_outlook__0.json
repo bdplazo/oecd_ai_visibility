@@ -1,0 +1,23 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_economic_outlook",
+  "category": "named_product_recall",
+  "run_index": 0,
+  "response_text": "# OECD Economic Outlook\n\n## What It Is\n\nThe **OECD Economic Outlook** is a flagship publication of the **Organisation for Economic Co-operation and Development (OECD)**, providing analysis and forecasts of major economic trends across member and selected non-member countries.\n\n---\n\n## Key Features\n\n### Publication Schedule\n- Published **twice a year** (typically in **May/June** and **November/December**)\n- Interim updates are sometimes released between main editions\n\n### Coverage\n- Analyzes economic conditions in **OECD member countries** (38 members) and major non-member economies\n- Covers the **global economy** as a whole\n\n---\n\n## Main Content Areas\n\n- **GDP growth forecasts**\n- **Inflation projections**\n- **Employment and labor market trends**\n- **Trade and current account balances**\n- **Fiscal and monetary policy analysis**\n- **Structural reform recommendations**\n- **Risk assessments** (upside and downside scenarios)\n\n---\n\n## Purpose and Audience\n\n- Informs **policymakers**, **governments**, and **central banks**\n- Used by **researchers**, **businesses**, and **financial markets**\n- Provides **policy recommendations** to promote sustainable growth\n\n---\n\n## Notable Aspects\n\n- Includes detailed **statistical annexes** with historical and projected data\n- Often addresses **specific themes** like climate, inequality, or financial stability\n- Widely cited in **media and academic research**\n\n---\n\nWould you like information about a specific recent edition or a particular topic covered in the Outlook?",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:45.361395Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "primary",
+    "oecd_publications_named": [
+      "OECD Economic Outlook"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

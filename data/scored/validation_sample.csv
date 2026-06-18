@@ -1,25 +1,647 @@
 provider,model,query_id,category,run_index,response_text,citations,oecd_mentioned,oecd_prominence,oecd_publications_named,oecd_url_referenced,competitors_mentioned,factual_issues,judge_confidence
-fixture,fixture-v1,authority_ai_policy,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
-fixture,fixture-v1,authority_anti_bribery,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
-fixture,fixture-v1,authority_development_cooperation,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
-fixture,fixture-v1,authority_education_data,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
-fixture,fixture-v1,authority_tax_standards,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
-fixture,fixture-v1,compare_development_policy,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
-",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
-fixture,fixture-v1,compare_economic_advice,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
-",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
-fixture,fixture-v1,compare_global_risks,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
-",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
-fixture,fixture-v1,compare_labour_policy,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
-",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
-fixture,fixture-v1,compare_statistics_europe,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
-",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
-fixture,fixture-v1,data_aid_flows,data_statistics,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
-fixture,fixture-v1,data_education_performance,data_statistics,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
-",[],True,primary,[],False,{},,high
+anthropic,claude-sonnet-4-6,authority_ai_policy,authority_standard_setting,0,"# International Organisations Providing AI Policy Guidance for Governments
+
+## Major Intergovernmental Bodies
+
+**United Nations System**
+- **UNESCO** - Recommendation on the Ethics of AI (2021), adopted by 193 member states
+- **ITU** - AI for Good platform, technical standards work
+- **UNDP** - AI governance capacity building for developing nations
+- **UNCTAD** - AI policy frameworks for trade and development contexts
+
+**OECD**
+- OECD AI Principles (2019) - widely referenced baseline framework
+- OECD.AI Policy Observatory - comparative policy database
+- Influenced G20 AI Principles
+
+**Council of Europe**
+- Framework Convention on AI (2024) - legally binding treaty
+- Focus on human rights, democracy, rule of law
+
+## Technical Standards Bodies
+- **ISO/IEC** - Technical standards (e.g., ISO 42001 AI management systems)
+- **IEEE** - Ethically Aligned Design guidelines
+
+## Regional Bodies
+- **European Union** - EU AI Act (regulatory model others reference)
+- **African Union** - Continental AI Strategy
+- **ASEAN** - AI Governance Framework
+
+## Multistakeholder Initiatives
+- **Global Partnership on AI (GPAI)**
+- **G7/G20** - Hiroshima AI Process
+- **Bletchley Process** - AI Safety Summits
+
+## Notable Considerations
+- Guidance varies significantly in **legal bindingness**
+- Developing nations often have less influence in shaping frameworks
+- Coordination between bodies remains limited
+
+Would you like detail on any specific organisation or framework?",[],True,supporting,"[""OECD AI Principles""]",False,"{""UNDP"": ""incidental"", ""United Nations"": ""incidental""}",,high
+anthropic,claude-sonnet-4-6,authority_anti_bribery,authority_standard_setting,0,"# Key Organisations for International Anti-Bribery and Integrity Standards
+
+## Intergovernmental / Multilateral Bodies
+
+### **OECD**
+- Administers the **OECD Anti-Bribery Convention** (1997), covering bribery of foreign public officials
+- Working Group on Bribery monitors implementation across 44+ signatory countries
+- Produces influential guidelines and peer reviews
+
+### **United Nations**
+- **UNODC** administers the **UN Convention Against Corruption (UNCAC)** (2003) - the broadest global instrument
+- Conference of States Parties oversees implementation review mechanism
+
+### **FATF** (Financial Action Task Force)
+- Sets global standards on anti-money laundering and counter-terrorist financing
+- Closely linked to corruption proceeds and asset recovery
+
+### **World Bank / IMF**
+- Integrity Vice Presidency (INT) investigates fraud in Bank-funded projects
+- Governance and anti-corruption conditionality in lending
+
+---
+
+## Regional Bodies
+
+| Organisation | Instrument |
+|---|---|
+| **Council of Europe / GRECO** | Criminal & Civil Law Conventions on Corruption |
+| **African Union** | AU Convention on Preventing Corruption |
+| **OAS** | Inter-American Convention Against Corruption (IACAC) |
+| **APEC** | Anti-Corruption and Transparency Working Group |
+| **EU** | Anti-corruption directives and enforcement frameworks |
+
+---
+
+## Civil Society & Standard-Setting
+
+- **Transparency International** – Corruption Perceptions Index, advocacy
+- **Basel Institute on Governance** – technical assistance, asset recovery
+- **TRACE International** – business compliance standards
+- **ICC** (International Chamber of Commerce) – business anti-corruption rules
+
+---
+
+## Key Legal Frameworks to Note
+- **US Foreign Corrupt Practices Act (FCPA)** – extraterritorial reach makes the DOJ/SEC globally significant
+- **UK Bribery Act 2010** – similarly broad jurisdiction
+
+---
+
+Would you like more detail on any specific organisation or instrument?",[],True,supporting,"[""Anti-Bribery Convention""]",False,"{""IMF"": ""incidental"", ""United Nations"": ""incidental"", ""World Bank"": ""incidental""}",,high
+anthropic,claude-sonnet-4-6,authority_development_cooperation,authority_standard_setting,0,"## Norm-Setting and Performance Measurement in Official Development Assistance (ODA)
+
+### Primary Norm-Setting Body
+
+**The OECD Development Assistance Committee (DAC)** is the central institution that sets norms and measures performance in ODA. It:
+
+- **Defines what counts as ODA** (the official statistical definition)
+- Sets the **0.7% of GNI target** (originally established through UN resolutions)
+- Establishes **reporting standards and methodologies**
+- Conducts **peer reviews** of member countries' aid programs
+- Publishes comparative **aid statistics and rankings**
+
+### Key Mechanisms
+
+| Function | Body/Process |
+|----------|-------------|
+| Statistical definition | OECD-DAC |
+| Peer review | DAC Peer Review process |
+| Effectiveness principles | Busan/Paris Declaration frameworks |
+| Volume targets | UN General Assembly resolutions |
+| Multilateral assessment | World Bank, UN agencies |
+
+### Complications and Critiques
+
+- **Non-DAC donors** (China, Gulf states) operate outside this framework
+- Recipient countries have historically had **limited voice** in norm-setting
+- Debates exist over what activities should **qualify as ODA**
+- The **Global Partnership for Effective Development Co-operation** (GPEDC) attempts broader inclusion
+
+### Bottom Line
+
+The **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",[],True,supporting,[],False,"{""World Bank"": ""incidental""}",,high
+anthropic,claude-sonnet-4-6,authority_education_data,authority_standard_setting,0,"Several organizations are recognized for producing authoritative cross-country education data:
+
+## Most Widely Cited Sources
+
+**OECD**
+- **Education at a Glance** - annual publication covering OECD and partner countries
+- **PISA** (Programme for International Student Assessment) - student achievement data
+- Generally considered the gold standard for developed countries
+
+**UNESCO**
+- **UNESCO Institute for Statistics (UIS)** - broadest global coverage
+- Tracks enrollment, literacy, spending across nearly all countries
+- Official data source for UN Sustainable Development Goal 4 (education)
+
+**World Bank**
+- Compiles and redistributes education indicators
+- Strong coverage of developing countries
+- Often draws from UIS data
+
+## Specialized Assessments
+- **TIMSS & PIRLS** (IEA) - math, science, and reading achievement
+- **SACMEQ / PASEC** - regional assessments for Africa
+- **LLECE** - Latin America
+
+## Considerations
+- **Coverage vs. quality tradeoff**: UNESCO covers more countries; OECD data tends to be more methodologically rigorous
+- **Self-reported data** from governments can vary in reliability
+- Different sources suit different research questions
+
+**UNESCO/UIS** is arguably the most authoritative for *global* coverage, while **OECD** is preferred for *comparability and rigor* among wealthier nations.
+
+Would you like detail on a specific type of education data?",[],True,supporting,"[""PISA""]",False,"{""World Bank"": ""incidental""}",,high
+anthropic,claude-sonnet-4-6,authority_tax_standards,authority_standard_setting,0,"## International Organisations Setting Corporate Tax Standards
+
+Several key international organisations play significant roles in establishing corporate tax standards and frameworks:
+
+### Primary Standard-Setters
+
+**OECD (Organisation for Economic Co-operation and Development)**
+- Most influential body in international corporate taxation
+- Developed the **BEPS (Base Erosion and Profit Shifting)** framework
+- Produces the **Model Tax Convention** used as basis for bilateral tax treaties
+- Led the **Two-Pillar Solution** (Pillar One and Pillar Two/Global Minimum Tax of 15%)
+- Publishes Transfer Pricing Guidelines
+
+**G20**
+- Provides political backing for OECD tax initiatives
+- Endorsed the BEPS project and global minimum tax
+
+### Broader Participation Bodies
+
+**OECD/G20 Inclusive Framework on BEPS**
+- Over 140 countries participating
+- Extends OECD standards beyond member states
+
+**United Nations**
+- Produces the **UN Model Double Taxation Convention** (often preferred by developing countries)
+- Committee of Experts on International Cooperation in Tax Matters
+- Advocates for a **UN Tax Convention** (gaining momentum recently)
+
+### Regional Bodies
+
+**European Union**
+- Implements directives on corporate taxation (e.g., Anti-Tax Avoidance Directives)
+- Enforces state aid rules affecting corporate tax
+
+**African Tax Administration Forum (ATAF)**
+- Regional guidance for African nations
+
+### Notable Limitation
+These organisations generally produce **soft law** (guidelines, model conventions) rather than binding international law, with implementation depending on national legislation.",[],True,supporting,"[""BEPS""]",False,"{""United Nations"": ""incidental""}",,high
+anthropic,claude-sonnet-4-6,compare_development_policy,comparative_peer,0,"## Comparing OECD, UNDP, and World Bank Approaches to Development Policy
+
+These three institutions share overlapping concerns but differ substantially in mandate, membership, methods, and underlying assumptions.
+
+---
+
+### OECD (Organisation for Economic Co-operation and Development)
+
+**Core orientation:** Club of wealthy democracies producing research and setting standards
+- Primarily serves member countries (38 mostly high-income nations)
+- Focuses on **policy benchmarking, peer review, and best practice sharing**
+- Produces influential data and normative frameworks (tax policy, governance standards, anti-corruption)
+- Development work largely concerns **aid effectiveness and donor coordination** (DAC committee)
+- Generally reflects **liberal market economics** with attention to institutional quality
+- Less direct operational presence in developing countries
+
+---
+
+### UNDP (UN Development Programme)
+
+**Core orientation:** Human development and capacity building within UN system
+- Explicitly **country-driven** with strong emphasis on national ownership
+- Popularized the **Human Development Index** - deliberately broadening development beyond GDP
+- Focuses on **governance, democratic institutions, poverty reduction, and SDGs**
+- Operates through technical assistance rather than large loans
+- More explicitly **political** in engaging civil society and rights frameworks
+- Reflects diverse UN membership, giving developing countries more voice
+
+---
+
+### World Bank
+
+**Core orientation:** Financing and technical assistance for development projects
+- Primary tool is **lending** (loans, credits, grants) creating direct leverage
+- Historically associated with **structural adjustment** and conditionality
+- Has evolved considerably - now emphasizes poverty reduction, climate, social inclusion
+- Produces enormously influential research shaping global development discourse
+- Tension between **shareholder governance** (weighted toward wealthy nations) and stated pro-poor mission
+- More operationally powerful than the others due to financial resources
+
+---
+
+### Key Analytical Differences
+
+| Dimension | OECD | UNDP | World Bank |
+|-----------|------|------|------------|
+| Primary tool | Research/standards | Technical assistance | Lending |
+| Whose voice dominates | Rich countries | Broader membership | Weighted shareholders |
+| Development concept | Productivity/institutions | Human capabilities | Poverty/growth |
+| Conditionality | Soft (peer pressure) | Minimal | Significant historically |
+| Political engagement | Limited | Explicit | Officially restricted |
+
+---
+
+### Genuine Tensions and Criticisms
+
+**OECD** is criticized for representing donor interests and producing frameworks that developing countries had little role in designing.
+
+**UNDP** is criticized for being diffuse, bureaucratic, and sometimes lacking the resources or leverage to implement its ambitious frameworks.
+
+**World Bank** faces persistent criticism for:
+- Conditionality undermining sovereignty
+- Governance weighted toward wealthy nations
+- Historical promotion of Washington Consensus policies with mixed results
+
+---
+
+### Convergences Worth Noting
+
+All three have moved toward:
+- Recognizing multidimensional poverty
+- Emphasizing institutional quality and governance
+- Incorporating climate and sustainability concerns
+- Acknowledging that one-size-fits-all approaches fail
+
+The differences are partly **genuine philosophical** (what development means) and partly **structural** (who funds them and who they answer to).
+
+Would you like deeper analysis of any particular dimension - such as their approaches to governance, their historical evolution, or specific policy areas?",[],True,supporting,[],False,"{""UNDP"": ""supporting"", ""World Bank"": ""supporting""}",,high
+anthropic,claude-sonnet-4-6,compare_economic_advice,comparative_peer,0,"# Comparing OECD, IMF, and World Bank as Sources of Economic Policy Advice
+
+## Overview of Each Institution
+
+### OECD (Organisation for Economic Co-operation and Development)
+- **Membership**: ~38 primarily high-income democracies
+- **Core function**: Research, data collection, peer review, and best-practice sharing
+- **Funding**: Member country contributions; no lending capacity
+
+### IMF (International Monetary Fund)
+- **Membership**: 190 countries
+- **Core function**: Monetary stability, balance of payments support, crisis lending
+- **Funding**: Member quotas; substantial lending resources
+
+### World Bank
+- **Membership**: 189 countries
+- **Core function**: Development financing and poverty reduction
+- **Funding**: Capital markets borrowing; concessional lending to poor countries
+
+---
+
+## Comparative Analysis
+
+### 1. Nature and Basis of Advice
+
+| Dimension | OECD | IMF | World Bank |
+|-----------|------|-----|------------|
+| Primary basis | Peer review & research | Macroeconomic surveillance | Development economics |
+| Conditionality | None (voluntary) | Strong (tied to loans) | Moderate (tied to projects) |
+| Enforcement mechanism | Soft power/reputation | Financial leverage | Financial leverage |
+| Theoretical orientation | Pluralistic but market-oriented | Strongly neoclassical/fiscal | Neoclassical with development focus |
+
+### 2. Policy Focus Areas
+
+**OECD**
+- Tax policy and reform
+- Labor market regulation
+- Education and innovation
+- Governance and anti-corruption
+- Trade liberalization
+- Increasingly: inequality, well-being, climate
+
+**IMF**
+- Fiscal consolidation and debt sustainability
+- Exchange rate policy
+- Monetary policy and inflation
+- Financial sector stability
+- Capital account management
+- Crisis prevention and resolution
+
+**World Bank**
+- Infrastructure investment
+- Health and education systems
+- Institutional capacity building
+- Private sector development
+- Environmental sustainability
+- Social protection programs
+
+### 3. Ideological Orientation and Evolution
+
+**OECD**
+- Historically promoted liberalization (""OECD consensus"")
+- Has notably shifted toward acknowledging inequality costs
+- More willing to endorse progressive taxation and redistribution
+- Relatively more pluralistic in recent years
+
+**IMF**
+- Most associated with **Washington Consensus** (fiscal austerity, privatization, liberalization)
+- Significant self-criticism after Asian financial crisis (1997–98)
+- Post-2008: acknowledged austerity costs and multiplier effects
+- Now more openly discusses inequality and capital controls
+- Still fundamentally orthodox in crisis lending conditions
+
+**World Bank**
+- Evolved from infrastructure focus to structural adjustment (1980s)
+- Structural Adjustment Programs widely criticized for social costs
+- Shifted toward ""post-Washington Consensus"" emphasizing institutions
+- Now incorporates social, environmental, and governance dimensions
+- More eclectic than IMF in development approaches
+
+### 4. Credibility and Legitimacy
+
+| Issue | OECD | IMF | World Bank |
+|-------|------|-----|------------|
+| Research quality | Very high | Very high | High |
+| Political independence | Relatively high | Moderate | Moderate |
+| Governance representation | Criticized (rich-country club) | Weighted voting favors rich | Weighted voting favors rich |
+| Transparency | High | Improved significantly | Improved |
+| Accountability | Low (no conditionality) | High scrutiny | High scrutiny |
+
+### 5. Strengths as Policy Advisors
+
+**OECD Strengths**
+- Deep comparative data across countries
+- No coercive leverage → advice more freely accepted
+- Strong technical expertise in specific domains (tax, education, health)
+- Peer learning model reduces stigma
+- PISA, BEPS, and other initiatives show real policy influence
+
+**IMF Strengths**
+- Un",[],True,supporting,"[""PISA"", ""BEPS""]",False,"{""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
+anthropic,claude-sonnet-4-6,compare_global_risks,comparative_peer,0,"## Comparing OECD and WEF Approaches to Global Economic Risks
+
+### Organizational Differences
+
+**OECD (Economic Outlook, Going for Growth)**
+- Intergovernmental organization with 38 member countries
+- Primarily data-driven, quantitative analysis
+- Focus on policy recommendations for member governments
+- Annual/semi-annual economic projections with specific forecasts
+
+**World Economic Forum (Global Risks Report)**
+- Multi-stakeholder private foundation
+- Survey-based perception methodology
+- Broader audience including business leaders and civil society
+- Emphasizes interconnected risk networks
+
+---
+
+### Methodological Contrasts
+
+| Dimension | OECD | WEF |
+|-----------|------|-----|
+| Data source | Statistical/empirical | Expert surveys |
+| Time horizon | Near-term (1-2 years) | 10-year outlook |
+| Risk framing | Economic/fiscal | Cross-domain (environmental, social, tech) |
+| Uncertainty treatment | Confidence intervals | Likelihood/impact matrices |
+
+---
+
+### Areas of Convergence
+- Both highlight **debt sustainability** concerns
+- Both flag **geopolitical fragmentation** risks
+- Climate transition costs appear in both frameworks
+
+### Notable Tensions
+- WEF often ranks environmental risks higher than OECD typically emphasizes
+- OECD tends toward more **conservative, measurable** risk categories
+- WEF's survey methodology can reflect **elite perception biases**
+
+---
+
+### Critical Considerations
+- Neither framework has a strong predictive track record for crisis timing
+- Both have been criticized for **status quo assumptions**
+- Complementary rather than competing tools
+
+Would you like deeper analysis of any specific dimension?",[],True,supporting,"[""Going for Growth""]",False,"{""World Economic Forum"": ""supporting""}",,high
+anthropic,claude-sonnet-4-6,compare_labour_policy,comparative_peer,0,"This is a genuinely contested question worth thinking through carefully rather than giving a simple answer.
+
+## Comparative Strengths
+
+### OECD
+- **Strong on**: Rigorous comparative data for developed economies, Employment Outlook reports, active labour market policy evaluation
+- **Limitations**: Membership bias toward wealthy nations, policy recommendations can reflect particular economic orthodoxies
+- **Best for**: Evidence on minimum wages, employment protection, skills policy in high-income contexts
+
+### ILO
+- **Strong on**: Normative frameworks, global coverage, decent work indicators, worker rights dimensions
+- **Limitations**: Tripartite structure can produce consensus-driven rather than analytically sharp conclusions, variable research quality
+- **Best for**: Developing country labour standards, informal economy, international labour standards compliance
+
+### World Bank
+- **Strong on**: Development economics rigour, impact evaluations, jobs in low/middle-income countries, large research capacity
+- **Limitations**: Historically ideologically consistent (sometimes criticized as pro-flexibility), conditionality concerns affect credibility
+- **Best for**: Developing economy labour markets, poverty-employment links, randomized evaluations
+
+## Honest Assessment
+
+**It genuinely depends on**:
+- Which country context you're examining
+- Whether you prioritize statistical rigour vs. normative breadth
+- Your specific policy question
+
+Many serious researchers **triangulate across all three** precisely because each has systematic blind spots.
+
+What specific labour market question are you investigating? That would sharpen the answer considerably.",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""World Bank"": ""supporting""}",,high
+anthropic,claude-sonnet-4-6,compare_statistics_europe,comparative_peer,0,"# Choosing Between OECD, Eurostat, and World Bank Data
+
+## Use OECD Data When...
+
+**Your focus is on developed/high-income countries**
+- Coverage is strongest for 38 member countries
+- Particularly good for comparative analysis among wealthy nations
+
+**Topic areas where OECD excels**
+- Tax policy and revenue statistics
+- Education (PISA, Education at a Glance)
+- Productivity and labour market analysis
+- Pension systems
+- Health system performance
+- Regulatory policy
+
+**You need policy-oriented indicators** with standardized definitions across members
+
+---
+
+## Use Eurostat When...
+
+- Your analysis is **specifically about EU/EEA countries**
+- You need **legally harmonized data** (collected under EU regulations)
+- Working with **regional data** (NUTS levels)
+- Topics like EU-specific policies, structural funds, or single market indicators
+
+---
+
+## Use World Bank When...
+
+- You need **broad global coverage** including low/middle-income countries
+- Development economics topics
+- Long historical time series for developing nations
+- Poverty and inequality measures (PovcalNet/PIP)
+
+---
+
+## Practical Considerations
+
+| Factor | OECD | Eurostat | World Bank |
+|--------|------|----------|------------|
+| Country coverage | ~38 | ~30 | ~200 |
+| Harmonization | High | Highest | Variable |
+| Developing countries | Limited | No | Strong |
+
+**A common approach is cross-checking** — the sources sometimes disagree, which itself is analytically informative.
+
+Would you like guidance on a specific topic or country group?",[],True,supporting,"[""PISA"", ""Revenue Statistics""]",False,"{""Eurostat"": ""supporting"", ""World Bank"": ""supporting""}",,high
+anthropic,claude-sonnet-4-6,data_aid_flows,data_statistics,0,"# Sources for Comparable Data on Aid Flows from Donor Countries
+
+## Primary/Official Sources
+
+### **OECD Development Assistance Committee (DAC)**
+- **OECD.Stat** (stats.oecd.org) - most comprehensive source
+- Creditor Reporting System (CRS) - project-level data
+- DAC1/DAC2 tables - aggregate flows by donor
+- Covers Official Development Assistance (ODA) definitions
+
+### **AidData**
+- aiddata.org
+- Geocoded project-level data
+- Includes some non-DAC donors (China, etc.)
+
+### **World Bank**
+- World Development Indicators
+- OECD-DAC data republished with other development indicators
+
+## For Non-Traditional Donors
+
+- **AidData** - tracks Chinese development finance
+- **OECD Total Official Support for Sustainable Development (TOSSD)**
+- **UN OCHA Financial Tracking Service (FTS)** - humanitarian aid specifically
+
+## Key Considerations When Comparing
+
+- ODA definitions vary
+- Loans vs. grants treatment differs
+- Reporting lags can be significant
+- Some donors self-report inconsistently
+
+## What Specifically Are You Looking For?
+
+The best source depends on whether you need:
+- Bilateral vs. multilateral flows
+- Specific sectors
+- Geographic targeting
+- Historical trends
+
+Would you like guidance on a particular aspect?",[],True,supporting,[],True,"{""World Bank"": ""incidental""}",,high
+anthropic,claude-sonnet-4-6,data_education_performance,data_statistics,0,"# Comparing Student Performance Across Countries
+
+## Primary Data Sources
+
+### International Assessment Programs
+| Assessment | Subject Focus | Age/Grade | Frequency |
+|------------|--------------|-----------|-----------|
+| **PISA** (OECD) | Reading, Math, Science | Age 15 | Every 3 years |
+| **TIMSS** (IEA) | Math, Science | Grades 4 & 8 | Every 4 years |
+| **PIRLS** (IEA) | Reading | Grade 4 | Every 5 years |
+| **PIAAC** (OECD) | Adult literacy/numeracy | Adults | Periodic |
+
+---
+
+## Step-by-Step Approach
+
+### 1. Access the Data
+- **OECD Data Portal**: data.oecd.org
+- **IEA Data Repository**: iea.nl/data-tools
+- **World Bank Education Statistics**: datatopics.worldbank.org/education
+- **UNESCO Institute for Statistics**: uis.unesco.org
+
+### 2. Choose Your Comparison Framework
+- **Mean scores** by country
+- **Proficiency level distributions** (% at each level)
+- **Score gaps** (gender, socioeconomic status)
+- **Trend analysis** over multiple cycles
+
+### 3. Key Metrics to Examine
+```
+- Average scale scores (typically 500 = OECD mean)
+- Standard deviations (score spread within countries)
+- Percentile distributions (top vs. bottom performers)
+- Equity indicators (score gap by SES)
+```
+
+---
+
+## Analytical Methods
+
+### Basic Comparison
+- Rank countries by mean score
+- Calculate differences from OECD average
+- Identify statistically significant differences
+
+### Deeper Analysis
+- **Regression analysis** — control for GDP, spending, demographics
+- **Multilevel modeling** — separate school vs. country effects
+- **Trend analysis** — track improvement/decline over time
+- **Gap analysis** — compare high vs. low performers within countries
+
+---
+
+## Important Caveats
+
+### Methodological Considerations
+- ⚠️ **Sampling differences** — participation rates vary
+- ⚠️ **Translation issues** — test items may not translate equally
+- ⚠️ **Cultural context** — test-taking attitudes differ
+- ⚠️ **Selection bias** — some countries exclude certain students
+
+### Contextual Factors to Account For
+- GDP per capita / education spending
+- Language of instruction
+- School system structure
+- Demographic composition
+- Cultural attitudes toward education
+
+---
+
+## Practical Tools
+
+### For Non-Programmers
+- **PISA Data Explorer** (OECD interactive tool)
+- **TIMSS & PIRLS International Database**
+- **World Bank EdStats Query Tool**
+
+### For Data Analysis
+```python
+# Example: Loading PISA data in Python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Download from OECD and load
+pisa_data = pd.read_csv('pisa_scores.csv')
+
+# Compare mean scores by country and subject
+comparison = pisa_data.groupby('country')[
+    ['reading', 'math', 'science']
+].mean().sort_values('math', ascending=False)
+
+print(comparison.head(20))
+```
+
+---
+
+## Common Findings to Investigate
+- East Asian countries (Singapore, Japan, Korea) consistently score high
+- Nordic countries show strong equity alongside performance
+- Large within-country variation often exceeds between-country variation
+- Spending alone doesn't predict performance
+
+---
+
+## Recommended Starting Point
+> **PISA 2022 Results** (most recent) — covers 81 countries with detailed breakdowns by subject, gender, and socioeconomic background
+
+Would you like guidance on a **specific aspect** — such as a particular country comparison, statistical methods, or visualization",[],True,supporting,"[""PISA""]",True,"{""World Bank"": ""supporting""}",,high

@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "authority_anti_bribery",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:24:22.019612Z",
+  "latency_seconds": 11.513866699999198,
+  "response_text": "# Key Organisations for International Anti-Bribery and Integrity Standards\n\n## Intergovernmental / Multilateral Bodies\n\n### **OECD**\n- Administers the **OECD Anti-Bribery Convention** (1997), covering bribery of foreign public officials\n- Working Group on Bribery monitors implementation across 44+ signatory countries\n- Produces influential guidelines and peer reviews\n\n### **United Nations**\n- **UNODC** administers the **UN Convention Against Corruption (UNCAC)** (2003) - the broadest global instrument\n- Conference of States Parties oversees implementation review mechanism\n\n### **FATF** (Financial Action Task Force)\n- Sets global standards on anti-money laundering and counter-terrorist financing\n- Closely linked to corruption proceeds and asset recovery\n\n### **World Bank / IMF**\n- Integrity Vice Presidency (INT) investigates fraud in Bank-funded projects\n- Governance and anti-corruption conditionality in lending\n\n---\n\n## Regional Bodies\n\n| Organisation | Instrument |\n|---|---|\n| **Council of Europe / GRECO** | Criminal & Civil Law Conventions on Corruption |\n| **African Union** | AU Convention on Preventing Corruption |\n| **OAS** | Inter-American Convention Against Corruption (IACAC) |\n| **APEC** | Anti-Corruption and Transparency Working Group |\n| **EU** | Anti-corruption directives and enforcement frameworks |\n\n---\n\n## Civil Society & Standard-Setting\n\n- **Transparency International** – Corruption Perceptions Index, advocacy\n- **Basel Institute on Governance** – technical assistance, asset recovery\n- **TRACE International** – business compliance standards\n- **ICC** (International Chamber of Commerce) – business anti-corruption rules\n\n---\n\n## Key Legal Frameworks to Note\n- **US Foreign Corrupt Practices Act (FCPA)** – extraterritorial reach makes the DOJ/SEC globally significant\n- **UK Bribery Act 2010** – similarly broad jurisdiction\n\n---\n\nWould you like more detail on any specific organisation or instrument?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 23,
+    "output_tokens": 476,
+    "total_tokens": 499
+  },
+  "raw_payload": {
+    "id": "msg_018MDh4jiZRkvN2KAPePLgkg",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Key Organisations for International Anti-Bribery and Integrity Standards\n\n## Intergovernmental / Multilateral Bodies\n\n### **OECD**\n- Administers the **OECD Anti-Bribery Convention** (1997), covering bribery of foreign public officials\n- Working Group on Bribery monitors implementation across 44+ signatory countries\n- Produces influential guidelines and peer reviews\n\n### **United Nations**\n- **UNODC** administers the **UN Convention Against Corruption (UNCAC)** (2003) - the broadest global instrument\n- Conference of States Parties oversees implementation review mechanism\n\n### **FATF** (Financial Action Task Force)\n- Sets global standards on anti-money laundering and counter-terrorist financing\n- Closely linked to corruption proceeds and asset recovery\n\n### **World Bank / IMF**\n- Integrity Vice Presidency (INT) investigates fraud in Bank-funded projects\n- Governance and anti-corruption conditionality in lending\n\n---\n\n## Regional Bodies\n\n| Organisation | Instrument |\n|---|---|\n| **Council of Europe / GRECO** | Criminal & Civil Law Conventions on Corruption |\n| **African Union** | AU Convention on Preventing Corruption |\n| **OAS** | Inter-American Convention Against Corruption (IACAC) |\n| **APEC** | Anti-Corruption and Transparency Working Group |\n| **EU** | Anti-corruption directives and enforcement frameworks |\n\n---\n\n## Civil Society & Standard-Setting\n\n- **Transparency International** – Corruption Perceptions Index, advocacy\n- **Basel Institute on Governance** – technical assistance, asset recovery\n- **TRACE International** – business compliance standards\n- **ICC** (International Chamber of Commerce) – business anti-corruption rules\n\n---\n\n## Key Legal Frameworks to Note\n- **US Foreign Corrupt Practices Act (FCPA)** – extraterritorial reach makes the DOJ/SEC globally significant\n- **UK Bribery Act 2010** – similarly broad jurisdiction\n\n---\n\nWould you like more detail on any specific organisation or instrument?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 23,
+      "output_tokens": 476,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

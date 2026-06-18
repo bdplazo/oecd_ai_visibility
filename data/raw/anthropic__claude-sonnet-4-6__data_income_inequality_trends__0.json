@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "data_income_inequality_trends",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:25:48.080003Z",
+  "latency_seconds": 9.505925199948251,
+  "response_text": "## Income Inequality Trends in Advanced Economies\n\n### Broad Patterns (Recent Years)\n\n**Long-term trajectory**\n- Inequality rose significantly from the 1980s through roughly 2010 in most advanced economies\n- The trend has been **more mixed since then**, varying considerably by country\n\n**Recent developments worth noting**\n- Some measures showed modest **narrowing during 2020-2022** due to pandemic-era transfers\n- However, **wealth inequality** generally widened as asset prices rose\n- Inflation post-2021 disproportionately hurt lower-income households, potentially reversing gains\n\n### Key Dimensions\n\n| Factor | Direction |\n|--------|-----------|\n| Wage inequality | Modestly compressing in some countries |\n| Wealth concentration | Continuing to rise |\n| Top 1% income share | Elevated but somewhat plateaued |\n| Intergenerational mobility | Declining in many countries |\n\n### Country Variation\n- **Nordic countries** maintain relatively lower inequality\n- **US and UK** remain among the more unequal advanced economies\n- **Southern Europe** saw inequality rise sharply after 2008 austerity\n\n### Driving Forces Debated\n- Technology and automation\n- Declining union membership\n- Tax and transfer policy changes\n- Housing costs as a major new factor\n- Returns to capital vs. labor\n\n### Important Caveats\n- Data lags make truly \"latest\" trends uncertain\n- Measurement methods significantly affect conclusions\n\nWould you like me to focus on any specific aspect or country?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 19,
+    "output_tokens": 346,
+    "total_tokens": 365
+  },
+  "raw_payload": {
+    "id": "msg_01Fdvq3PJZsfu3drLaz59G86",
+    "content": [
+      {
+        "citations": null,
+        "text": "## Income Inequality Trends in Advanced Economies\n\n### Broad Patterns (Recent Years)\n\n**Long-term trajectory**\n- Inequality rose significantly from the 1980s through roughly 2010 in most advanced economies\n- The trend has been **more mixed since then**, varying considerably by country\n\n**Recent developments worth noting**\n- Some measures showed modest **narrowing during 2020-2022** due to pandemic-era transfers\n- However, **wealth inequality** generally widened as asset prices rose\n- Inflation post-2021 disproportionately hurt lower-income households, potentially reversing gains\n\n### Key Dimensions\n\n| Factor | Direction |\n|--------|-----------|\n| Wage inequality | Modestly compressing in some countries |\n| Wealth concentration | Continuing to rise |\n| Top 1% income share | Elevated but somewhat plateaued |\n| Intergenerational mobility | Declining in many countries |\n\n### Country Variation\n- **Nordic countries** maintain relatively lower inequality\n- **US and UK** remain among the more unequal advanced economies\n- **Southern Europe** saw inequality rise sharply after 2008 austerity\n\n### Driving Forces Debated\n- Technology and automation\n- Declining union membership\n- Tax and transfer policy changes\n- Housing costs as a major new factor\n- Returns to capital vs. labor\n\n### Important Caveats\n- Data lags make truly \"latest\" trends uncertain\n- Measurement methods significantly affect conclusions\n\nWould you like me to focus on any specific aspect or country?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 19,
+      "output_tokens": 346,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

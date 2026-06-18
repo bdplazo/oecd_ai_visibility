@@ -1,0 +1,21 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "data_income_inequality_trends",
+  "category": "data_statistics",
+  "run_index": 0,
+  "response_text": "Recent trends in income inequality across advanced economies reveal several key patterns:\n\n1. **Stagnant Middle Class**: Many advanced economies are experiencing a stagnation or decline in middle-class incomes, with wage growth not keeping pace with productivity gains.\n\n2. **Wealth Concentration**: There is an increasing concentration of wealth among the top earners, with the richest individuals and families accumulating a larger share of total wealth.\n\n3. **Technological Impact**: Automation and digitalization are disproportionately benefiting high-skilled workers, widening the income gap between them and low-skilled workers.\n\n4. **Globalization Effects**: While globalization has driven economic growth, it has also contributed to job displacement in certain sectors, affecting income distribution.\n\n5. **Policy Responses**: Some countries are implementing policies to address inequality, such as progressive taxation, increased minimum wages, and social welfare programs.\n\n6. **Gender and Racial Disparities**: Persistent gender and racial income gaps continue to contribute to overall inequality, with women and minority groups often earning less than their counterparts.\n\n7. **Housing and Education Costs**: Rising costs in housing and education are exacerbating inequality, as they disproportionately affect lower-income households.\n\nThese trends highlight the complex and multifaceted nature of income inequality in advanced economies, prompting ongoing debates about effective policy interventions.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:43.974885Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": false,
+    "oecd_prominence": "none",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

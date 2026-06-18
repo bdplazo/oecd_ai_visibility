@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "geo_citable_sources_ai_governance",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:28:41.722852Z",
+  "latency_seconds": 10.67158340010792,
+  "response_text": "# Reliable Sources for Government AI Governance Frameworks\n\n## Primary/Official Government Sources\n\n**United States**\n- White House Office of Science and Technology Policy (OSTP)\n- NIST AI Risk Management Framework (ai.gov, nist.gov)\n- Congressional Research Service reports\n- Federal Register notices and executive orders\n\n**European Union**\n- EUR-Lex (official EU law database)\n- European Commission official publications\n- European Parliament legislative documents\n\n**International Bodies**\n- OECD AI Policy Observatory (oecd.ai)\n- UNESCO AI Ethics recommendations\n- ITU AI for Good publications\n- G7/G20 official communiqués\n\n## Academic & Research Institutions\n\n- Brookings Institution AI governance research\n- Georgetown CSET (Center for Security and Emerging Technology)\n- Oxford Internet Institute\n- MIT Technology Policy program\n- Stanford HAI (Human-Centered AI)\n\n## Quality Indicators to Check\n\n- [ ] Primary source documents over secondary summaries\n- [ ] Publication dates (this field changes rapidly)\n- [ ] Author credentials and institutional affiliation\n- [ ] Peer review status where applicable\n- [ ] Whether analysis distinguishes proposals from enacted policy\n\n## Practical Cautions\n\n- **Verify currency** - frameworks update frequently\n- **Check jurisdiction** - frameworks vary significantly by country\n- **Distinguish binding vs. voluntary** guidelines\n- **Cross-reference** multiple sources for contested interpretations\n\nWould you like recommendations for a specific jurisdiction or policy area?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 19,
+    "output_tokens": 334,
+    "total_tokens": 353
+  },
+  "raw_payload": {
+    "id": "msg_01FVLnPPdnG1RRttaUxzjtVT",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Reliable Sources for Government AI Governance Frameworks\n\n## Primary/Official Government Sources\n\n**United States**\n- White House Office of Science and Technology Policy (OSTP)\n- NIST AI Risk Management Framework (ai.gov, nist.gov)\n- Congressional Research Service reports\n- Federal Register notices and executive orders\n\n**European Union**\n- EUR-Lex (official EU law database)\n- European Commission official publications\n- European Parliament legislative documents\n\n**International Bodies**\n- OECD AI Policy Observatory (oecd.ai)\n- UNESCO AI Ethics recommendations\n- ITU AI for Good publications\n- G7/G20 official communiqués\n\n## Academic & Research Institutions\n\n- Brookings Institution AI governance research\n- Georgetown CSET (Center for Security and Emerging Technology)\n- Oxford Internet Institute\n- MIT Technology Policy program\n- Stanford HAI (Human-Centered AI)\n\n## Quality Indicators to Check\n\n- [ ] Primary source documents over secondary summaries\n- [ ] Publication dates (this field changes rapidly)\n- [ ] Author credentials and institutional affiliation\n- [ ] Peer review status where applicable\n- [ ] Whether analysis distinguishes proposals from enacted policy\n\n## Practical Cautions\n\n- **Verify currency** - frameworks update frequently\n- **Check jurisdiction** - frameworks vary significantly by country\n- **Distinguish binding vs. voluntary** guidelines\n- **Cross-reference** multiple sources for contested interpretations\n\nWould you like recommendations for a specific jurisdiction or policy area?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 19,
+      "output_tokens": 334,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

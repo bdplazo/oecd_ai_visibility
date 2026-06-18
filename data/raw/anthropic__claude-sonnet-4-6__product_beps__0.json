@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_beps",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:27:12.934036Z",
+  "latency_seconds": 11.177151399897411,
+  "response_text": "# BEPS: Base Erosion and Profit Shifting\n\n## Definition\nBEPS refers to **tax planning strategies used by multinational enterprises (MNEs)** that exploit gaps and mismatches in tax rules to artificially shift profits to low or no-tax locations, eroding the tax base of higher-tax countries.\n\n---\n\n## Core Problem\n- Profits are reported where taxes are lowest\n- Economic activity actually occurs elsewhere\n- Legal structures don't reflect economic substance\n- Countries lose significant tax revenue\n\n---\n\n## The OECD/G20 BEPS Project\nLaunched in **2013**, the OECD developed **15 Action Plans** to address these issues:\n\n| Actions | Focus Area |\n|---------|-----------|\n| 1-5 | Digital economy, hybrid mismatches, harmful tax practices |\n| 6-10 | Treaty abuse, transfer pricing, permanent establishment |\n| 11-15 | Data collection, dispute resolution, multilateral instruments |\n\n---\n\n## Key Mechanisms Targeted\n- **Transfer pricing manipulation** – mispricing intra-group transactions\n- **Hybrid mismatches** – instruments treated differently across jurisdictions\n- **Treaty shopping** – using treaties without genuine economic presence\n- **Artificial PE avoidance** – avoiding taxable presence\n- **IP holding structures** – parking intellectual property in low-tax jurisdictions\n\n---\n\n## BEPS 2.0 (Pillar One & Two)\nMore recent developments include:\n- **Pillar One** – Reallocating taxing rights to market jurisdictions\n- **Pillar Two** – Global minimum tax of **15%** for large MNEs\n\n---\n\n## Significance\nBEPS represents the most significant reform of international tax rules in nearly **a century**, affecting how companies like Google, Apple, and Amazon are taxed globally.\n\nWould you like more detail on any specific aspect?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 16,
+    "output_tokens": 429,
+    "total_tokens": 445
+  },
+  "raw_payload": {
+    "id": "msg_01NKKPSyCHui4d7zWSh8tmGq",
+    "content": [
+      {
+        "citations": null,
+        "text": "# BEPS: Base Erosion and Profit Shifting\n\n## Definition\nBEPS refers to **tax planning strategies used by multinational enterprises (MNEs)** that exploit gaps and mismatches in tax rules to artificially shift profits to low or no-tax locations, eroding the tax base of higher-tax countries.\n\n---\n\n## Core Problem\n- Profits are reported where taxes are lowest\n- Economic activity actually occurs elsewhere\n- Legal structures don't reflect economic substance\n- Countries lose significant tax revenue\n\n---\n\n## The OECD/G20 BEPS Project\nLaunched in **2013**, the OECD developed **15 Action Plans** to address these issues:\n\n| Actions | Focus Area |\n|---------|-----------|\n| 1-5 | Digital economy, hybrid mismatches, harmful tax practices |\n| 6-10 | Treaty abuse, transfer pricing, permanent establishment |\n| 11-15 | Data collection, dispute resolution, multilateral instruments |\n\n---\n\n## Key Mechanisms Targeted\n- **Transfer pricing manipulation** – mispricing intra-group transactions\n- **Hybrid mismatches** – instruments treated differently across jurisdictions\n- **Treaty shopping** – using treaties without genuine economic presence\n- **Artificial PE avoidance** – avoiding taxable presence\n- **IP holding structures** – parking intellectual property in low-tax jurisdictions\n\n---\n\n## BEPS 2.0 (Pillar One & Two)\nMore recent developments include:\n- **Pillar One** – Reallocating taxing rights to market jurisdictions\n- **Pillar Two** – Global minimum tax of **15%** for large MNEs\n\n---\n\n## Significance\nBEPS represents the most significant reform of international tax rules in nearly **a century**, affecting how companies like Google, Apple, and Amazon are taxed globally.\n\nWould you like more detail on any specific aspect?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 16,
+      "output_tokens": 429,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_pisa",
+  "category": "named_product_recall",
+  "run_index": 0,
+  "response_text": "PISA, or the Programme for International Student Assessment, is an international study that evaluates the educational performance of 15-year-old students in reading, mathematics, and science. It is conducted every three years and aims to assess how well students can apply their knowledge to real-world situations.\n\nPISA is run by the Organisation for Economic Co-operation and Development (OECD), an intergovernmental organization that promotes policies to improve the economic and social well-being of people around the world.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.158230Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "incidental",
+    "oecd_publications_named": [
+      "PISA"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

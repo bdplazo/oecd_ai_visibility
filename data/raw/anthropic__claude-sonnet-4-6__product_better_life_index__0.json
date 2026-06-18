@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_better_life_index",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:27:05.640186Z",
+  "latency_seconds": 7.289860100019723,
+  "response_text": "The **Better Life Index** is a tool created by the **OECD (Organisation for Economic Co-operation and Development)** that measures **well-being and quality of life** across countries. It goes beyond traditional economic indicators like GDP to assess what makes life better for people.\n\nIt covers **11 dimensions (topics)**:\n\n1. **Housing** – rooms per person, basic facilities\n2. **Income** – household net wealth and financial wealth\n3. **Jobs** – employment rates, job security, earnings\n4. **Community** – social support networks\n5. **Education** – educational attainment, skills\n6. **Environment** – air quality, water quality\n7. **Civic Engagement** – voter turnout, rule-making consultation\n8. **Health** – life expectancy, self-reported health\n9. **Life Satisfaction** – overall happiness and well-being\n10. **Safety** – homicide rates, feeling of safety\n11. **Work-Life Balance** – time for leisure and personal care\n\nA notable feature is that it allows users to **customize the weight** given to each dimension based on their own values, reflecting that different people prioritize different aspects of life.\n\nIt is used to compare well-being across OECD member countries and some partner nations.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 15,
+    "output_tokens": 283,
+    "total_tokens": 298
+  },
+  "raw_payload": {
+    "id": "msg_01GvDDi3ZZxwPnapKcAgy4Dq",
+    "content": [
+      {
+        "citations": null,
+        "text": "The **Better Life Index** is a tool created by the **OECD (Organisation for Economic Co-operation and Development)** that measures **well-being and quality of life** across countries. It goes beyond traditional economic indicators like GDP to assess what makes life better for people.\n\nIt covers **11 dimensions (topics)**:\n\n1. **Housing** – rooms per person, basic facilities\n2. **Income** – household net wealth and financial wealth\n3. **Jobs** – employment rates, job security, earnings\n4. **Community** – social support networks\n5. **Education** – educational attainment, skills\n6. **Environment** – air quality, water quality\n7. **Civic Engagement** – voter turnout, rule-making consultation\n8. **Health** – life expectancy, self-reported health\n9. **Life Satisfaction** – overall happiness and well-being\n10. **Safety** – homicide rates, feeling of safety\n11. **Work-Life Balance** – time for leisure and personal care\n\nA notable feature is that it allows users to **customize the weight** given to each dimension based on their own values, reflecting that different people prioritize different aspects of life.\n\nIt is used to compare well-being across OECD member countries and some partner nations.",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 15,
+      "output_tokens": 283,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

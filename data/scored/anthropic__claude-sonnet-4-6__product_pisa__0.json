@@ -1,0 +1,23 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "product_pisa",
+  "category": "named_product_recall",
+  "run_index": 0,
+  "response_text": "**PISA** stands for the **Programme for International Student Assessment**. It is a large-scale international study that evaluates the knowledge and skills of 15-year-old students in key subject areas, primarily:\n\n- **Reading**\n- **Mathematics**\n- **Science**\n\nIt is run by the **OECD** (Organisation for Economic Co-operation and Development), an intergovernmental organization based in Paris. PISA is conducted every three years (though some cycles have been adjusted), and it involves students from dozens of countries and economies, including both OECD members and partner countries.\n\nThe results are widely used by governments and policymakers to compare educational performance across countries and to inform education policy decisions.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:45.328972Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "primary",
+    "oecd_publications_named": [
+      "PISA"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

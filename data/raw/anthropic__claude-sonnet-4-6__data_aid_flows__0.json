@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "data_aid_flows",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:26:24.015698Z",
+  "latency_seconds": 8.555880000116304,
+  "response_text": "# Sources for Comparable Data on Aid Flows from Donor Countries\n\n## Primary/Official Sources\n\n### **OECD Development Assistance Committee (DAC)**\n- **OECD.Stat** (stats.oecd.org) - most comprehensive source\n- Creditor Reporting System (CRS) - project-level data\n- DAC1/DAC2 tables - aggregate flows by donor\n- Covers Official Development Assistance (ODA) definitions\n\n### **AidData**\n- aiddata.org\n- Geocoded project-level data\n- Includes some non-DAC donors (China, etc.)\n\n### **World Bank**\n- World Development Indicators\n- OECD-DAC data republished with other development indicators\n\n## For Non-Traditional Donors\n\n- **AidData** - tracks Chinese development finance\n- **OECD Total Official Support for Sustainable Development (TOSSD)**\n- **UN OCHA Financial Tracking Service (FTS)** - humanitarian aid specifically\n\n## Key Considerations When Comparing\n\n- ODA definitions vary\n- Loans vs. grants treatment differs\n- Reporting lags can be significant\n- Some donors self-report inconsistently\n\n## What Specifically Are You Looking For?\n\nThe best source depends on whether you need:\n- Bilateral vs. multilateral flows\n- Specific sectors\n- Geographic targeting\n- Historical trends\n\nWould you like guidance on a particular aspect?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 20,
+    "output_tokens": 327,
+    "total_tokens": 347
+  },
+  "raw_payload": {
+    "id": "msg_01977uvs9mNiZAwdvMSntSY9",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Sources for Comparable Data on Aid Flows from Donor Countries\n\n## Primary/Official Sources\n\n### **OECD Development Assistance Committee (DAC)**\n- **OECD.Stat** (stats.oecd.org) - most comprehensive source\n- Creditor Reporting System (CRS) - project-level data\n- DAC1/DAC2 tables - aggregate flows by donor\n- Covers Official Development Assistance (ODA) definitions\n\n### **AidData**\n- aiddata.org\n- Geocoded project-level data\n- Includes some non-DAC donors (China, etc.)\n\n### **World Bank**\n- World Development Indicators\n- OECD-DAC data republished with other development indicators\n\n## For Non-Traditional Donors\n\n- **AidData** - tracks Chinese development finance\n- **OECD Total Official Support for Sustainable Development (TOSSD)**\n- **UN OCHA Financial Tracking Service (FTS)** - humanitarian aid specifically\n\n## Key Considerations When Comparing\n\n- ODA definitions vary\n- Loans vs. grants treatment differs\n- Reporting lags can be significant\n- Some donors self-report inconsistently\n\n## What Specifically Are You Looking For?\n\nThe best source depends on whether you need:\n- Bilateral vs. multilateral flows\n- Specific sectors\n- Geographic targeting\n- Historical trends\n\nWould you like guidance on a particular aspect?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 20,
+      "output_tokens": 327,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

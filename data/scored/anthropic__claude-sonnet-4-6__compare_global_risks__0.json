@@ -1,0 +1,25 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "compare_global_risks",
+  "category": "comparative_peer",
+  "run_index": 0,
+  "response_text": "## Comparing OECD and WEF Approaches to Global Economic Risks\n\n### Organizational Differences\n\n**OECD (Economic Outlook, Going for Growth)**\n- Intergovernmental organization with 38 member countries\n- Primarily data-driven, quantitative analysis\n- Focus on policy recommendations for member governments\n- Annual/semi-annual economic projections with specific forecasts\n\n**World Economic Forum (Global Risks Report)**\n- Multi-stakeholder private foundation\n- Survey-based perception methodology\n- Broader audience including business leaders and civil society\n- Emphasizes interconnected risk networks\n\n---\n\n### Methodological Contrasts\n\n| Dimension | OECD | WEF |\n|-----------|------|-----|\n| Data source | Statistical/empirical | Expert surveys |\n| Time horizon | Near-term (1-2 years) | 10-year outlook |\n| Risk framing | Economic/fiscal | Cross-domain (environmental, social, tech) |\n| Uncertainty treatment | Confidence intervals | Likelihood/impact matrices |\n\n---\n\n### Areas of Convergence\n- Both highlight **debt sustainability** concerns\n- Both flag **geopolitical fragmentation** risks\n- Climate transition costs appear in both frameworks\n\n### Notable Tensions\n- WEF often ranks environmental risks higher than OECD typically emphasizes\n- OECD tends toward more **conservative, measurable** risk categories\n- WEF's survey methodology can reflect **elite perception biases**\n\n---\n\n### Critical Considerations\n- Neither framework has a strong predictive track record for crisis timing\n- Both have been criticized for **status quo assumptions**\n- Complementary rather than competing tools\n\nWould you like deeper analysis of any specific dimension?",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:45.732083Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [
+      "Going for Growth"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "World Economic Forum": "supporting"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

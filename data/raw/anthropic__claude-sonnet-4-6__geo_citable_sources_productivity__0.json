@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "geo_citable_sources_productivity",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:28:32.286349Z",
+  "latency_seconds": 9.433757700026035,
+  "response_text": "# Key Sources for Productivity Growth Evidence in Advanced Economies\n\n## Major Institutional Sources\n\n**International Organizations**\n- **OECD** - Compendium of Productivity Indicators (annual); Going for Growth reports\n- **IMF** - World Economic Outlook chapters on productivity; Working Papers series\n- **World Bank** - World Development Report; Total Factor Productivity databases\n- **BIS** - Working papers on productivity and finance\n\n## Academic Journals\n- *Journal of Economic Perspectives* (accessible synthesis articles)\n- *American Economic Review*\n- *Journal of Economic Growth*\n- *Review of Economics and Statistics*\n\n## Prominent Research Centers\n- **Brookings Institution** - Hamilton Project productivity analyses\n- **McKinsey Global Institute** - sector-level productivity studies\n- **Peterson Institute for International Economics**\n- **NBER** - Working papers (Fernald, Syverson, Gordon are notable authors)\n\n## Key Individual Researchers\n- **John Fernald** (San Francisco Fed) - TFP measurement\n- **Robert Gordon** - secular stagnation arguments\n- **Chad Syverson** - productivity puzzles\n- **Daron Acemoglu** - technology and productivity\n\n## Specific Databases\n- **Penn World Tables**\n- **EU KLEMS**\n- **Conference Board Total Economy Database**\n\n## Honest Caveats\n- My knowledge cuts off in early 2025\n- Verify publication dates carefully, as this literature moves quickly\n- Pre-publication NBER/CEPR working papers may be more current than journal articles\n\nWould you like recommendations focused on a specific aspect, like AI's productivity effects or the post-pandemic period?",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 24,
+    "output_tokens": 380,
+    "total_tokens": 404
+  },
+  "raw_payload": {
+    "id": "msg_01U24ugW6BiRZTZTV1Epi2eC",
+    "content": [
+      {
+        "citations": null,
+        "text": "# Key Sources for Productivity Growth Evidence in Advanced Economies\n\n## Major Institutional Sources\n\n**International Organizations**\n- **OECD** - Compendium of Productivity Indicators (annual); Going for Growth reports\n- **IMF** - World Economic Outlook chapters on productivity; Working Papers series\n- **World Bank** - World Development Report; Total Factor Productivity databases\n- **BIS** - Working papers on productivity and finance\n\n## Academic Journals\n- *Journal of Economic Perspectives* (accessible synthesis articles)\n- *American Economic Review*\n- *Journal of Economic Growth*\n- *Review of Economics and Statistics*\n\n## Prominent Research Centers\n- **Brookings Institution** - Hamilton Project productivity analyses\n- **McKinsey Global Institute** - sector-level productivity studies\n- **Peterson Institute for International Economics**\n- **NBER** - Working papers (Fernald, Syverson, Gordon are notable authors)\n\n## Key Individual Researchers\n- **John Fernald** (San Francisco Fed) - TFP measurement\n- **Robert Gordon** - secular stagnation arguments\n- **Chad Syverson** - productivity puzzles\n- **Daron Acemoglu** - technology and productivity\n\n## Specific Databases\n- **Penn World Tables**\n- **EU KLEMS**\n- **Conference Board Total Economy Database**\n\n## Honest Caveats\n- My knowledge cuts off in early 2025\n- Verify publication dates carefully, as this literature moves quickly\n- Pre-publication NBER/CEPR working papers may be more current than journal articles\n\nWould you like recommendations focused on a specific aspect, like AI's productivity effects or the post-pandemic period?",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 24,
+      "output_tokens": 380,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}

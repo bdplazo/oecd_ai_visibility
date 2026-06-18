@@ -1,0 +1,26 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "geo_citable_sources_tax",
+  "category": "generative_search_referral",
+  "run_index": 0,
+  "response_text": "# Sources for International Corporate Tax Policy Comparisons\n\n## Primary/Official Sources\n\n**Intergovernmental Organizations**\n- **OECD** - Tax Database, BEPS reports, Corporate Tax Statistics\n- **IMF** - Fiscal Monitor, Working Papers on tax policy\n- **World Bank** - Doing Business reports, tax competitiveness data\n- **UN** - Model Tax Convention, UNCTAD investment reports\n\n**National Sources**\n- Tax authority publications (IRS, HMRC, etc.)\n- Finance ministry reports from relevant countries\n\n---\n\n## Academic & Research Institutions\n\n- **Tax Foundation** - International Tax Competitiveness Index\n- **Tax Policy Center** (Urban-Brookings)\n- **Institute for Fiscal Studies** (UK)\n- **ZEW** (Centre for European Economic Research)\n- **National Bureau of Economic Research** (NBER working papers)\n\n---\n\n## Academic Journals\n\n- *National Tax Journal*\n- *Journal of Public Economics*\n- *International Tax and Public Finance*\n\n---\n\n## Practical Considerations\n\n- **Check publication dates** - rates change frequently\n- **Distinguish statutory vs. effective tax rates** - these differ significantly\n- **Note methodology differences** between sources\n- **OECD data** is generally considered the most standardized for cross-country comparison\n\nWould you like guidance on any specific aspect of corporate tax comparison?",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:45.871004Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [
+      "BEPS"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "IMF": "incidental",
+      "World Bank": "incidental"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

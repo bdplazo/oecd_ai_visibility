@@ -1,0 +1,21 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "policy_income_inequality",
+  "category": "policy_recommendation",
+  "run_index": 0,
+  "response_text": "This is a well-studied policy question with genuine tradeoffs. Here are approaches with evidence behind them:\n\n## Policies with Strong Evidence\n\n**Human Capital Investment**\n- Early childhood education (high returns, reduces gaps before they compound)\n- Quality public education funding\n- Workforce retraining programs\n- These build productive capacity rather than just redistributing\n\n**Labor Market Policies**\n- Minimum wage increases (moderate ones show limited employment effects)\n- Strengthening collective bargaining rights\n- Reducing barriers to worker mobility\n\n**Tax Structure**\n- Shifting from income taxes toward consumption/wealth taxes\n- Closing loopholes that disproportionately benefit high earners\n- Earned income tax credits (broadly supported across political spectrum)\n\n## More Contested Approaches\n\n- **Redistribution scale** - economists debate how much reduces growth vs. corrects market failures\n- **Universal basic income** - promising experiments but large-scale effects uncertain\n- **Industrial policy** - can create good jobs but risks inefficiency\n\n## Honest Complications\n\n- Some inequality reflects productivity differences, some reflects rent-seeking - policies should distinguish between them\n- Short-term vs. long-term tradeoffs are real\n- Implementation quality matters enormously\n- Context varies significantly between countries\n\n## Reasonable Consensus Points\nMost economists agree that **extreme inequality itself can harm growth** through reduced mobility, political instability, and demand suppression.\n\nWhat specific aspect interests you most?",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.963928Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": false,
+    "oecd_prominence": "none",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

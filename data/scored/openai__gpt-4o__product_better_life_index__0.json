@@ -1,0 +1,23 @@
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "query_id": "product_better_life_index",
+  "category": "named_product_recall",
+  "run_index": 0,
+  "response_text": "The Better Life Index, developed by the Organisation for Economic Co-operation and Development (OECD), measures well-being across countries. It evaluates various dimensions of life quality, including:\n\n1. **Housing**: Conditions and costs.\n2. **Income**: Household income and wealth.\n3. **Jobs**: Employment rates and job security.\n4. **Community**: Social connections and support networks.\n5. **Education**: Access to and quality of education.\n6. **Environment**: Quality of the environment and pollution levels.\n7. **Governance**: Civic engagement and trust in institutions.\n8. **Health**: Life expectancy and health status.\n9. **Life Satisfaction**: Overall happiness and satisfaction with life.\n10. **Safety**: Personal security and crime rates.\n11. **Work-Life Balance**: Time devoted to leisure and personal care.\n\nThe index allows users to prioritize these factors according to their personal values to see how countries perform based on their preferences.",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T13:01:44.273432Z",
+  "judge_provider": "heuristic-local",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "incidental",
+    "oecd_publications_named": [
+      "Better Life Index"
+    ],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

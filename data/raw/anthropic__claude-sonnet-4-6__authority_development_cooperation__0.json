@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "query_id": "authority_development_cooperation",
+  "run_index": 0,
+  "requested_at_utc": "2026-06-18T10:24:33.538093Z",
+  "latency_seconds": 10.936804600059986,
+  "response_text": "## Norm-Setting and Performance Measurement in Official Development Assistance (ODA)\n\n### Primary Norm-Setting Body\n\n**The OECD Development Assistance Committee (DAC)** is the central institution that sets norms and measures performance in ODA. It:\n\n- **Defines what counts as ODA** (the official statistical definition)\n- Sets the **0.7% of GNI target** (originally established through UN resolutions)\n- Establishes **reporting standards and methodologies**\n- Conducts **peer reviews** of member countries' aid programs\n- Publishes comparative **aid statistics and rankings**\n\n### Key Mechanisms\n\n| Function | Body/Process |\n|----------|-------------|\n| Statistical definition | OECD-DAC |\n| Peer review | DAC Peer Review process |\n| Effectiveness principles | Busan/Paris Declaration frameworks |\n| Volume targets | UN General Assembly resolutions |\n| Multilateral assessment | World Bank, UN agencies |\n\n### Complications and Critiques\n\n- **Non-DAC donors** (China, Gulf states) operate outside this framework\n- Recipient countries have historically had **limited voice** in norm-setting\n- Debates exist over what activities should **qualify as ODA**\n- The **Global Partnership for Effective Development Co-operation** (GPEDC) attempts broader inclusion\n\n### Bottom Line\n\nThe **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",
+  "citations": [],
+  "token_usage": {
+    "input_tokens": 19,
+    "output_tokens": 341,
+    "total_tokens": 360
+  },
+  "raw_payload": {
+    "id": "msg_013r64GK8d8JuQ72eEeeEFWq",
+    "content": [
+      {
+        "citations": null,
+        "text": "## Norm-Setting and Performance Measurement in Official Development Assistance (ODA)\n\n### Primary Norm-Setting Body\n\n**The OECD Development Assistance Committee (DAC)** is the central institution that sets norms and measures performance in ODA. It:\n\n- **Defines what counts as ODA** (the official statistical definition)\n- Sets the **0.7% of GNI target** (originally established through UN resolutions)\n- Establishes **reporting standards and methodologies**\n- Conducts **peer reviews** of member countries' aid programs\n- Publishes comparative **aid statistics and rankings**\n\n### Key Mechanisms\n\n| Function | Body/Process |\n|----------|-------------|\n| Statistical definition | OECD-DAC |\n| Peer review | DAC Peer Review process |\n| Effectiveness principles | Busan/Paris Declaration frameworks |\n| Volume targets | UN General Assembly resolutions |\n| Multilateral assessment | World Bank, UN agencies |\n\n### Complications and Critiques\n\n- **Non-DAC donors** (China, Gulf states) operate outside this framework\n- Recipient countries have historically had **limited voice** in norm-setting\n- Debates exist over what activities should **qualify as ODA**\n- The **Global Partnership for Effective Development Co-operation** (GPEDC) attempts broader inclusion\n\n### Bottom Line\n\nThe **OECD-DAC** holds the dominant norm-setting role, though its authority is increasingly contested in a multipolar aid landscape.",
+        "type": "text"
+      }
+    ],
+    "model": "claude-sonnet-4-6",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 19,
+      "output_tokens": 341,
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global"
+    },
+    "stop_details": null
+  }
+}
