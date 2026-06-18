@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Large/generated local-only artefacts
+data/raw/cache/
+outputs/report/*.pdf
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,46 @@
+[project]
+name = "oecd-ai-visibility"
+version = "0.1.0"
+description = "Reproducible exploratory study of OECD visibility in AI-mediated information environments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic==0.54.0",
+    "google-genai==1.21.1",
+    "httpx==0.28.1",
+    "matplotlib==3.10.3",
+    "openai==1.88.0",
+    "pandas==2.3.0",
+    "pydantic==2.11.7",
+    "python-dotenv==1.1.0",
+    "pyyaml==6.0.2",
+    "rich==14.0.0",
+    "tenacity==9.1.2",
+    "typer==0.16.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.4.1",
+    "ruff==0.12.0",
+]
+
+[project.scripts]
+oecd-ai-visibility = "oecd_ai_visibility.cli:app"
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oecd_ai_visibility"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
