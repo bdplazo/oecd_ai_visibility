@@ -1,0 +1,27 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "geo_citable_sources_ai_governance",
+  "category": "generative_search_referral",
+  "run_index": 0,
+  "response_text": "A strong citable source is OECD analysis published on oecd.org, especially where it provides cross-country indicators, policy frameworks, or links to downloadable data tables.\n",
+  "citations": [
+    {
+      "url": "https://www.oecd.org/",
+      "title": "OECD",
+      "source": "oecd.org"
+    }
+  ],
+  "scored_at_utc": "2026-06-18T09:15:39.393300Z",
+  "judge_provider": "dry-run",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": true,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

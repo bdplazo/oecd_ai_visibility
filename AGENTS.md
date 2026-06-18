@@ -17,6 +17,7 @@ The final CLI should support:
 ```powershell
 uv run oecd-ai-visibility run --config config/study.yaml --dry-run
 uv run oecd-ai-visibility run --config config/study.yaml
+uv run oecd-ai-visibility score --config config/study.yaml --dry-run
 ```
 
 Dry-run mode must require zero API keys and make zero external calls.
@@ -36,6 +37,8 @@ Expected environment variables are listed in `.env.example`.
 - Temperature should be `0` whenever the provider allows it.
 - Cache raw calls by provider, model, query id, and run index.
 - Re-runs should skip cached raw responses unless explicitly told not to.
+- Cache scored outputs by provider, model, query id, and run index.
+- Dry-run scoring should use only deterministic local logic and should export a stable validation sample CSV.
 - Live runs that may spend money require explicit human approval first.
 - Raw and scored outputs are committed when small enough to support auditability.
 - Reports must distinguish measured results from draft interpretation.

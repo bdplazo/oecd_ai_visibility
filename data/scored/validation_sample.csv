@@ -1,0 +1,25 @@
+provider,model,query_id,category,run_index,response_text,citations,oecd_mentioned,oecd_prominence,oecd_publications_named,oecd_url_referenced,competitors_mentioned,factual_issues,judge_confidence
+fixture,fixture-v1,authority_ai_policy,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high
+fixture,fixture-v1,authority_anti_bribery,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high
+fixture,fixture-v1,authority_development_cooperation,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high
+fixture,fixture-v1,authority_education_data,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high
+fixture,fixture-v1,authority_tax_standards,authority_standard_setting,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high
+fixture,fixture-v1,compare_development_policy,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
+",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
+fixture,fixture-v1,compare_economic_advice,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
+",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
+fixture,fixture-v1,compare_global_risks,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
+",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
+fixture,fixture-v1,compare_labour_policy,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
+",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
+fixture,fixture-v1,compare_statistics_europe,comparative_peer,0,"The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.
+",[],True,supporting,[],False,"{""ILO"": ""supporting"", ""IMF"": ""supporting"", ""World Bank"": ""supporting""}",,high
+fixture,fixture-v1,data_aid_flows,data_statistics,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high
+fixture,fixture-v1,data_education_performance,data_statistics,0,"The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.
+",[],True,primary,[],False,{},,high

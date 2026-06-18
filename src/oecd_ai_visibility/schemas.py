@@ -161,6 +161,8 @@ class ScoredRecord(BaseModel):
     query_id: str = Field(..., pattern=r"^[a-z0-9_]+$")
     category: str = Field(..., min_length=1)
     run_index: int = Field(..., ge=0)
+    response_text: str = Field(..., min_length=1)
+    citations: list[Citation] = Field(default_factory=list)
     scored_at_utc: datetime = Field(default_factory=lambda: datetime.now(UTC))
     judge_provider: str = Field(..., min_length=1)
     judge_model: str = Field(..., min_length=1)

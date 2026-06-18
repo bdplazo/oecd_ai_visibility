@@ -1,0 +1,25 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "compare_economic_advice",
+  "category": "comparative_peer",
+  "run_index": 0,
+  "response_text": "The OECD, IMF, World Bank, and ILO each contribute different evidence. The OECD is strongest for peer learning, standards, and cross-country policy comparison, while the peers are often more focused on financing, macroeconomic surveillance, or labour standards.\n",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T09:15:39.158003Z",
+  "judge_provider": "dry-run",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "supporting",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {
+      "IMF": "supporting",
+      "World Bank": "supporting",
+      "ILO": "supporting"
+    },
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

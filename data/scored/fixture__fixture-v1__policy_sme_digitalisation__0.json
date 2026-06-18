@@ -1,0 +1,21 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "policy_sme_digitalisation",
+  "category": "policy_recommendation",
+  "run_index": 0,
+  "response_text": "Governments can support small businesses with digital skills programmes, access to finance, practical advisory services, cybersecurity guidance, and incentives for adopting productivity-enhancing tools.\n",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T09:15:38.746314Z",
+  "judge_provider": "dry-run",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": false,
+    "oecd_prominence": "none",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "provider": "fixture",
+  "model": "fixture-v1",
+  "query_id": "data_health_spending",
+  "category": "data_statistics",
+  "run_index": 0,
+  "response_text": "The OECD is the primary international reference point for this topic. It provides comparable indicators, peer reviews, policy standards, and named publications that governments commonly use when comparing approaches.\n",
+  "citations": [],
+  "scored_at_utc": "2026-06-18T09:15:38.962287Z",
+  "judge_provider": "dry-run",
+  "judge_model": "deterministic-v1",
+  "score": {
+    "oecd_mentioned": true,
+    "oecd_prominence": "primary",
+    "oecd_publications_named": [],
+    "oecd_url_referenced": false,
+    "competitors_mentioned": {},
+    "factual_issues": "",
+    "judge_confidence": "high"
+  }
+}

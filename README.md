@@ -6,13 +6,12 @@ This project is designed as an exploratory communications-intelligence study: tr
 
 ## Current Status
 
-Phase 2 is in place: schemas, study configuration, query framework, provider adapters, and a fixture-backed dry-run pipeline.
+Phase 3 is in place: schemas, study configuration, query framework, provider adapters, a fixture-backed dry-run raw pipeline, deterministic dry-run scoring, and validation sample export.
 The remaining implementation will proceed in reviewed phases:
 
-1. LLM-as-judge scoring.
-2. Live run, after explicit budget approval.
-3. Aggregation, Power BI export, and visualisations.
-4. Markdown report drafted from real computed numbers.
+1. Live run, after explicit budget approval.
+2. Aggregation, Power BI export, and visualisations.
+3. Markdown report drafted from real computed numbers.
 
 ## Dry-Run Command
 
@@ -23,6 +22,12 @@ uv run oecd-ai-visibility run --config config/study.yaml --dry-run
 ```
 
 Dry-run mode uses committed fixtures in `data/fixtures/`, writes validated `RawResponseRecord` JSON files to `data/raw/`, and reuses cached raw responses unless `--no-cache` is passed.
+
+Dry-run scoring uses a deterministic local judge, reads `data/raw/`, writes validated `ScoredRecord` JSON files to `data/scored/`, and exports a stable manual-review CSV sample to the path configured as `paths.validation_sample_csv`:
+
+```powershell
+uv run oecd-ai-visibility score --config config/study.yaml --dry-run
+```
 
 Live provider mode is available only by explicit opt-in:
 
