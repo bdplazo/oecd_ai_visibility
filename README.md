@@ -77,7 +77,7 @@ This repository maps directly to the OECD communications intelligence role by sh
 - **Communications intelligence:** query categories that reflect authority, referral, products, peers, and policy discoverability.
 - **Metric and proxy design:** explicit flags for mention, prominence, URL reference, peer visibility, and publication recall.
 - **Data quality and validation:** a blind human validation step with agreement metrics and a documented decision rule.
-- **Power BI-ready outputs:** tidy CSV tables suitable for dashboards and repeated reporting.
+- **Power BI-ready (or another data viz software) outputs:** tidy CSV tables suitable for dashboards and repeated reporting.
 - **Clear synthesis for decision-makers:** concise outputs and portfolio-ready figures that separate findings from caveats.
 
 ## Repository Structure
