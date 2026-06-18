@@ -150,7 +150,7 @@ def test_figure_builders_return_figures_with_axes() -> None:
     ):
         figure = builder(frame)
         assert figure.axes  # at least one axis was drawn
-        assert figure.axes[0].get_title()  # title is set
+        assert figure.axes[0].get_title(loc="left")  # title is set
 
 
 def test_build_figures_writes_all_png_files(tmp_path: Path) -> None:
@@ -160,6 +160,7 @@ def test_build_figures_writes_all_png_files(tmp_path: Path) -> None:
     result = build_figures(aggregated_csv=csv_path, figures_dir=figures_dir)
 
     expected = {
+        "oecd_visibility_summary.png",
         "oecd_mention_rate_by_provider_model.png",
         "oecd_mention_rate_by_category.png",
         "oecd_prominence_distribution.png",

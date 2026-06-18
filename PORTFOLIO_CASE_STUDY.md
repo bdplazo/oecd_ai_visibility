@@ -35,7 +35,7 @@ The scoring pipeline uses a deterministic local heuristic to produce auditable m
 - named OECD publications and products
 - configured peer organisation mentions
 
-The outputs are structured for analysis and reporting: response-level scored CSVs, tidy helper tables for publications/peers/citations, Power BI-ready summary tables, and sanity-check figures.
+The outputs are structured for analysis and reporting: response-level scored CSVs, tidy helper tables for publications/peers/citations, Power BI-ready summary tables, and portfolio-ready figures. The compact figure guide is in [VISUAL_GALLERY.md](VISUAL_GALLERY.md).
 
 ## Validation
 

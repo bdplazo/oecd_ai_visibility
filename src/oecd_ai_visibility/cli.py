@@ -358,7 +358,7 @@ def figures_command(
         typer.Option("--config", "-c", help="Path to the study YAML configuration."),
     ] = Path("config/study.yaml"),
 ) -> None:
-    """Render minimal sanity figures from the aggregated scored CSV.
+    """Render portfolio-ready figures from the aggregated scored CSV.
 
     Plots existing scored data only; makes no provider or judge calls.
     """

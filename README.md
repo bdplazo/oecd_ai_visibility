@@ -12,6 +12,8 @@ This matters because discovery is increasingly mediated by AI systems. Communica
 
 The project demonstrates a compact, auditable workflow for the OECD role: query design, provider response collection, deterministic scoring, Power BI-ready exports, visual checks, and a completed human validation step that tests whether the core OECD visibility metrics are reliable enough to use.
 
+For a fast visual read of the current findings, see [VISUAL_GALLERY.md](VISUAL_GALLERY.md).
+
 ## Why This Matters
 
 AI-mediated information environments create new visibility questions for public institutions:
@@ -76,7 +78,7 @@ This repository maps directly to the OECD communications intelligence role by sh
 - **Metric and proxy design:** explicit flags for mention, prominence, URL reference, peer visibility, and publication recall.
 - **Data quality and validation:** a blind human validation step with agreement metrics and a documented decision rule.
 - **Power BI-ready outputs:** tidy CSV tables suitable for dashboards and repeated reporting.
-- **Clear synthesis for decision-makers:** concise outputs that separate findings from caveats.
+- **Clear synthesis for decision-makers:** concise outputs and portfolio-ready figures that separate findings from caveats.
 
 ## Repository Structure
 
@@ -86,12 +88,13 @@ data/queries.yaml       Designed OECD-relevant query set
 data/raw/               Cached raw provider responses and dry-run fixtures
 data/scored/            Deterministic scores, aggregated CSVs, validation artifacts
 outputs/tables/         Power BI-ready summary tables
-outputs/figures/        Sanity-check PNG figures
+outputs/figures/        Portfolio-ready PNG figures and visual summary page
 src/oecd_ai_visibility/ Collection, scoring, analysis, figures, and validation code
 tests/                  Unit tests for schemas, runner, scoring, analysis, figures, validation
 METHODOLOGY.md          Field definitions, interpretation rules, and validation note
 ANALYTICAL_REPORT.md    Concise analytical interpretation for communications intelligence
 PORTFOLIO_CASE_STUDY.md Standalone 1-2 page portfolio narrative
+VISUAL_GALLERY.md       Compact figure gallery with interpretation and caveats
 APPLICATION_SNIPPETS.md CV, LinkedIn, cover-letter, and interview-ready text
 ```
 
